@@ -1,0 +1,38 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about marketing. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: This is a hierarchy of effects or sequential model used to explain how advertising works:\nA. ADD.\nB. AIDA.\nC. PESTLE.\nD. SWOT.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about marketing. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The owners of independent gasoline stations in a community meet secretly and agree to keep their prices high to protect their profitability. If their plan is discovered and they are charged with a crime, they could be\nA. found guilty under the Sherman Antitrust Act and face prison time\nB. found guilty under the Magnuson-Moss Warranty Act and face large fines\nC. found guilty under the Adamson Act and face prison time and fines\nD. found not guilty because retailers are allowed to set their own price levels\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about marketing. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  Which of the following is not an element of the marketing mix?\nA. Promotion.\nB. Product.\nC. Target market.\nD. Pricing.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about marketing. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Where the winning bidder obtains an unprofitable contract that he/she is duty bound to deliver because their bid price was set so low, this is known as:\nA. Winner's curse.\nB. Winner's price.\nC. Winner's reward.\nD. Loss-leader pricing.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about marketing. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  Collectively organizations that combine to enable offerings to reach end users quickly and efficiently constitute a marketing channel, are sometimes referred to as a:\nA. Vehicle.\nB. Courier.\nC. Transportation.\nD. Distribution channel.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about marketing. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: _____________ is an assessment of a company's mix of products, services, investments, and other assets in order to optimize the use of resources and to assess its suitability, level of risk, and expected financial return.\nA. SWOT analysis.\nB. Political analysis.\nC. Portfolio analysis.\nD. Competitive analysis.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    }
+}

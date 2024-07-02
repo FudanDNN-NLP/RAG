@@ -1,0 +1,32 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about world religions. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  What can murtis be translated as?\nA. Offerings\nB. Prayers\nC. Apparitions\nD. Idols\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about world religions. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following terms denote the Japanese art of flower arranging?\nA. Zazen\nB. Tariki\nC. Kami\nD. Ikebana\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about world religions. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the name of the most famous dharmashastras, which probably dates from around the first century?\nA. Laws of Dharma\nB. Laws of Karma\nC. Laws of Vishnu\nD. Laws of Manu\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about world religions. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the communal meal offered at the place of worship called in Sikhism?\nA. Sangat\nB. Langar\nC. Gurdwara\nD. Panth\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about world religions. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  What genre of Sikh literature is denoted by the term janam-sakhis?\nA. Spiritual narratives\nB. Redemption narratives\nC. Birth narratives\nD. Theological narratives\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    }
+}

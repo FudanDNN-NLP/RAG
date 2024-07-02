@@ -1,0 +1,193 @@
+06/15 14:26:20 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/fever]
+06/15 14:26:20 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-15 14:26:20.839699: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 14:26:20.893471: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 14:26:21.773141: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.62s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.46s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.23s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/2202620_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.732 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:02<00:14,  2.02s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:04<00:12,  2.17s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:06<00:09,  1.96s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.93s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.82s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.75s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:11<00:01,  1.46s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.57s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:4
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:4
+If you want to use `BertLMHeadModel` as a standalone, add `is_decoder=True.`
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/15 14:27:13 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/fever]
+[2024-06-15 14:27:13,963] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-15 14:27:13 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-15 14:27:13,965] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@True
+2024-06-15 14:27:13 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@True
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.
+Answer: 
+q:Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.
+*****************
+searching
+*****************
+Jun 15, 2024 2:27:13 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+["Colin Kaepernick, the San Francisco 49ers' backup quarterback, will make his first NFL start on Saturday against the St. Louis Rams.\nKaepernick, a second-round draft pick out of Nevada, will replace Alex Smith, who has been benched after throwing 10 interceptions in the last five games.\nThe 49ers' decision to start Kaepernick was first reported by CSNBayArea.com.\nKaepernick, 25, has completed 30 of 43 passes for 412 yards, with three touchdowns and no interceptions in three games this season.\nHe's also rushed for 214 yards on 32 carries.\nKaepernick's first start will come against the Rams, who have the NFL's top-ranked defense.\nThe 49ers are 6-2-1 and in first place in the NFC West.\nSmith, 28, has thrown for 1,931 yards with 10 touchdowns and 10 interceptions this season.\nHe's completed 62.5 percent of his passes.\nSmith's passer rating is 78.9.\nThe 49ers' decision to start Kaepernick comes after coach Jim Harbaugh said on Monday that Smith would remain", 'Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 14.01it/s]
+====================================================================================================
+1    3db8730f-698d-46c0-a131-d64b9aa8489f 	 1.3 
+  In the 49ers' first game with new head coach Jim Tomsula, the 49ers defeated the Minnesota Vikings 20–3 on Monday Night Football. In his first career start, Carlos Hyde rushed 26 times for 168 yards and two touchdowns. Hyde's 168 rushing yards were the most by a 49ers player since 2012, when Colin Kaepernick rushed for 181 against the Packers. Colin Kaepernick went 17 for 26 with 165 yards passing. The 49ers defense was stout, holding the Vikings to just three points and sacking Vikings quarterback Teddy Bridgewater five times. Adrian Peterson, returning from suspension, rushed for only 31 yards on 10 carries. This game also marked the return of NaVorro Bowman, who missed all of the 2014 season with an injury. He had seven tackles and a sack in the season opener. In addition, the 49ers introduced black alternate uniforms.
+====================================================================================================
+2    d2e2f5b8-fadb-4b83-ac55-2bce0b6eb781 	 0.7377981606090318 
+  49ers quarterback Colin Kaepernick threw 4 interceptions in this game, with 2 of them being returned for touchdowns. The two "pick sixes" led to the first scores of the game for Arizona. Kaepernick became the first quarterback in the Super Bowl era to throw 2 pick sixes to begin the game. Overall, the Cardinals bombed the 49ers, 47-7. With the win, the Cardinals improved to 3-0 for the second straight season.
+====================================================================================================
+3    22466617-13c4-4456-9e06-b18e11d2ef8f 	 0.6291107516193954 
+  the Seahawks, Ravens and Giants before conceding the starting spot back to Smith. However, with Smith's effectiveness in question coming back from injury, coach Mike Nolan announced on November 14, 2007, that Dilfer would be the starting quarterback. Dilfer would go on to start in games against the Rams, in victory over the Cardinals in overtime, and against the Panthers. On December 9 in a home game against the Vikings, Dilfer suffered a head injury resulting in a concussion while diving for a 1st down on 4th and 2 that took him out of the game and subsequently the season. He was succeeded by third string backup Shaun Hill.
+====================================================================================================
+4    6c024e58-d07f-4a2f-a9a3-931f247609d3 	 0.42306889750970966 
+  Despite a good showing by the 49ers defense (holding the Packers to a season-low 17 points and sacking Aaron Rodgers 3 times), the 49ers offense struggled all game. It was another frustrating day for Colin Kaepernick, who consistently missed receivers and threw an interception. Throughout the game, he was sacked six times. In the last two weeks, Kaepernick had no touchdown passes and five interceptions with a quarterback rating of 12.7. With yet another tough loss, the 49ers dropped to 1–3, and were outscored by a total of 110–48 in their first 4 games. By the end of week 4, the 49ers were last in the league in total points scored.
+====================================================================================================
+5    ba9280d7-0293-473f-a090-862cfc84f519 	 0.3777931347054349 
+  This was Blaine Gabbert's first game as starting quarterback with the 49ers, replacing Colin Kaepernick. The 49ers were also without tight end Vernon Davis, who was traded to the Denver Broncos, after nine and a half seasons with the team. With the win, the 49ers improved to 3–6.
+====================================================================================================
+6    270a4e77-8857-4eab-8ab0-b3a45d003407 	 0.2869230027081543 
+  49ers quarterback Colin Kaepernick became the first player since 1925 to throw two interceptions returned for touchdowns (pick sixes) to start a game. He had four interceptions in the game overall and the Cardinals thrashed the 49ers 47–7. This is the most points the Cardinals have ever scored against the 49ers. In the past two weeks, the 49ers were outscored 90–25. With the loss, the 49ers dropped to 1–2.
+====================================================================================================
+7    de0c7e0d-1cec-49df-a08f-5b0c0a23bd05 	 0.2533333880697326 
+  On May 22, 2013, Crabtree underwent surgery to repair a torn Achilles tendon. The surgery required a minimum of six months to recover. On August 27, 2013, the 49ers placed Crabtree on the reserve/physically unable to perform list. He was most likely to return to the field in mid-November 2013. On November 25, 2013, rumors circulated online that he would be activated since November 26 would be the deadline for the team to activate him or face benching him for the rest of the season. On November 26, 2013, the 49ers activated him and waived a backup quarterback to make room for him on the 53-man roster. Crabtree played his first game of the 2013 season on December 1, 2013, in Week 13 against the St. Louis Rams making 2 receptions for 68 yards and the 49ers won the game 23–13. Crabtree caught his first and only touchdown of the season against the Tampa Bay Buccaneers. On January 19, 2014, an under-thrown pass to Crabtree from Kaepernick (into double coverage) in the final seconds of the NFC Championship against the Seahawks was tipped by Richard Sherman and intercepted by Malcolm Smith as the 49ers lost, 23–17.
+====================================================================================================
+8    e2ad31cf-3039-4e5a-bc1e-178739d9879b 	 0.19406078789918962 
+  In his first career playoff game, 25-year-old 49ers quarterback Colin Kaepernick rushed for 181 yards and two touchdowns, setting both the NFL single-game record for rushing yards by a quarterback and the 49ers postseason record for rushing, regardless of position. He also passed for 263 yards and two scores. Overall, San Francisco racked up 579 yards, including a franchise record 323 rushing yards, and scored a touchdown in every quarter to earn their second consecutive trip to the NFC Championship Game. However, Kaepernick didn't get off to a good start. Less than two minutes into the game, he threw a 
+====================================================================================================
+9    8c1910f2-6716-43b4-87d0-f2a35d77329b 	 0.12786412603668157 
+  The 49ers met the Ravens for the first time since Super Bowl XLVII, in which the Ravens won 34–31. In the second quarter, Colin Kaepernick threw a 76-yard pass to ex-Raven Torrey Smith to extend San Francisco's lead to 13–3. In the fourth quarter, Kaepernick threw another touchdown, this time to Quinton Patton, for 11 yards to lead the 49ers 25–13. This was Patton's first NFL touchdown. With the win, the 49ers avenged their Super Bowl loss and broke their 4-game losing streak, and they improved to 2–4.
+====================================================================================================
+10    090eeb1a-9bd8-463f-aec0-8bc35f542840 	 0.10386119531244742 
+  Blaine Gabbert made his second start and remained starter for the rest of the season with Colin Kaepernick undergoing season-ending surgery on his left non-throwing shoulder. After the loss, the 49ers fell to 3–7.
+*****************
+reranking
+*****************
+Converted docs to temp collection
+
+Loading collection:   0%|          | 0/10 [00:00<?, ?it/s][ALoading collection: 100%|██████████| 10/10 [00:00<00:00, 105649.97it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:00<00:00,  1.80it/s][A100%|██████████| 1/1 [00:00<00:00,  1.55it/s]
+Completed passage expansion
+
+loading collection....:   0%|          | 0/9 [00:00<?, ?it/s][Aloading collection....:  78%|███████▊  | 7/9 [00:00<00:00, 48852.13it/s]
+  0%|          | 0/500 [00:53<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    docs = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 267, in retrieval
+    reranked_docs, _ = self._rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 229, in _rerank
+    docs = rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 21, in rerank
+    reranked_docs, similarity_scores = run_rerank(model, expansion_model, tokenizer, bert_tokenizer, mode, query, docs, top_k)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 79, in run_rerank
+    reranked_docs, scores = tilde_rerank(model, expansion_model, tokenizer, bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 30, in tilde_rerank
+    index_collection(model, tokenizer)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 73, in index_collection
+    indexing_main(model, tokenizer, args)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/TILDE/indexingv2.py", line 72, in main
+    dataset = MsmarcoDataset(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/TILDE/indexingv2.py", line 27, in __init__
+    data = json.loads(line)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-06-15 14:28:08 [INFO] server: Stop milvus...
+[2024-06-15 14:28:13,984] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 2203316) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-15_14:28:13
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2203316)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

@@ -1,0 +1,87 @@
+20240611_222633
+tabulate format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dataset                                   version    metric    mode      llama-3-8b-ragga-disturb
+----------------------------------------  ---------  --------  ------  --------------------------
+mmlu_high_school_european_history         756fbf     accuracy  gen                          68.75
+mmlu_business_ethics                      96eedd     accuracy  gen                          60.00
+mmlu_moral_disputes                       dc9858     accuracy  gen                          50.00
+mmlu_high_school_statistics               2f2320     accuracy  gen                          50.00
+mmlu_miscellaneous                        42286f     accuracy  gen                          80.00
+mmlu_formal_logic                         61e6e5     accuracy  gen                          50.00
+mmlu_high_school_government_and_politics  45ac5f     accuracy  gen                          89.47
+mmlu_prehistory                           e83871     accuracy  gen                          80.00
+mmlu_security_studies                     4405c0     accuracy  gen                          60.00
+mmlu_high_school_biology                  3050f1     accuracy  gen                          75.00
+mmlu_logical_fallacies                    e4ae3b     accuracy  gen                          75.00
+mmlu_high_school_world_history            d15b35     accuracy  gen                          95.00
+mmlu_professional_medicine                998a16     accuracy  gen                          70.00
+mmlu_high_school_mathematics              d09724     accuracy  gen                           5.00
+mmlu_college_medicine                     9ca438     accuracy  gen                          70.59
+mmlu_high_school_us_history               347c09     accuracy  gen                          75.00
+mmlu_sociology                            0de6fa     accuracy  gen                          70.00
+mmlu_econometrics                         0cb287     accuracy  gen                          45.45
+mmlu_high_school_psychology               9697d9     accuracy  gen                          75.00
+mmlu_human_aging                          79d875     accuracy  gen                          60.00
+mmlu_us_foreign_policy                    f90662     accuracy  gen                          90.00
+mmlu_conceptual_physics                   51f9f8     accuracy  gen                          70.00
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+-------------------------------------------------------------------------------------------------------------------------------- THIS IS A DIVIDER --------------------------------------------------------------------------------------------------------------------------------
+
+csv format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dataset,version,metric,mode,llama-3-8b-ragga-disturb
+mmlu_high_school_european_history,756fbf,accuracy,gen,68.75
+mmlu_business_ethics,96eedd,accuracy,gen,60.00
+mmlu_moral_disputes,dc9858,accuracy,gen,50.00
+mmlu_high_school_statistics,2f2320,accuracy,gen,50.00
+mmlu_miscellaneous,42286f,accuracy,gen,80.00
+mmlu_formal_logic,61e6e5,accuracy,gen,50.00
+mmlu_high_school_government_and_politics,45ac5f,accuracy,gen,89.47
+mmlu_prehistory,e83871,accuracy,gen,80.00
+mmlu_security_studies,4405c0,accuracy,gen,60.00
+mmlu_high_school_biology,3050f1,accuracy,gen,75.00
+mmlu_logical_fallacies,e4ae3b,accuracy,gen,75.00
+mmlu_high_school_world_history,d15b35,accuracy,gen,95.00
+mmlu_professional_medicine,998a16,accuracy,gen,70.00
+mmlu_high_school_mathematics,d09724,accuracy,gen,5.00
+mmlu_college_medicine,9ca438,accuracy,gen,70.59
+mmlu_high_school_us_history,347c09,accuracy,gen,75.00
+mmlu_sociology,0de6fa,accuracy,gen,70.00
+mmlu_econometrics,0cb287,accuracy,gen,45.45
+mmlu_high_school_psychology,9697d9,accuracy,gen,75.00
+mmlu_human_aging,79d875,accuracy,gen,60.00
+mmlu_us_foreign_policy,f90662,accuracy,gen,90.00
+mmlu_conceptual_physics,51f9f8,accuracy,gen,70.00
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+-------------------------------------------------------------------------------------------------------------------------------- THIS IS A DIVIDER --------------------------------------------------------------------------------------------------------------------------------
+
+raw format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
+Model: llama-3-8b-ragga-disturb
+mmlu_high_school_european_history: {'accuracy': 68.75, 'type': 'GEN'}
+mmlu_business_ethics: {'accuracy': 60.0, 'type': 'GEN'}
+mmlu_moral_disputes: {'accuracy': 50.0, 'type': 'GEN'}
+mmlu_high_school_statistics: {'accuracy': 50.0, 'type': 'GEN'}
+mmlu_miscellaneous: {'accuracy': 80.0, 'type': 'GEN'}
+mmlu_formal_logic: {'accuracy': 50.0, 'type': 'GEN'}
+mmlu_high_school_government_and_politics: {'accuracy': 89.47368421052632, 'type': 'GEN'}
+mmlu_prehistory: {'accuracy': 80.0, 'type': 'GEN'}
+mmlu_security_studies: {'accuracy': 60.0, 'type': 'GEN'}
+mmlu_high_school_biology: {'accuracy': 75.0, 'type': 'GEN'}
+mmlu_logical_fallacies: {'accuracy': 75.0, 'type': 'GEN'}
+mmlu_high_school_world_history: {'accuracy': 95.0, 'type': 'GEN'}
+mmlu_professional_medicine: {'accuracy': 70.0, 'type': 'GEN'}
+mmlu_high_school_mathematics: {'accuracy': 5.0, 'type': 'GEN'}
+mmlu_college_medicine: {'accuracy': 70.58823529411765, 'type': 'GEN'}
+mmlu_high_school_us_history: {'accuracy': 75.0, 'type': 'GEN'}
+mmlu_sociology: {'accuracy': 70.0, 'type': 'GEN'}
+mmlu_econometrics: {'accuracy': 45.45454545454545, 'type': 'GEN'}
+mmlu_high_school_psychology: {'accuracy': 75.0, 'type': 'GEN'}
+mmlu_human_aging: {'accuracy': 60.0, 'type': 'GEN'}
+mmlu_us_foreign_policy: {'accuracy': 90.0, 'type': 'GEN'}
+mmlu_conceptual_physics: {'accuracy': 70.0, 'type': 'GEN'}
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

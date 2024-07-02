@@ -1,0 +1,20 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about college physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The quantum efficiency of a photon detector is 0.1. If 100 photons are sent into the detector, one after the other, the detector will detect photons\nA. an average of 10 times, with an rms deviation of about 4\nB. an average of 10 times, with an rms deviation of about 3\nC. an average of 10 times, with an rms deviation of about 1\nD. an average of 10 times, with an rms deviation of about 0.1\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about college physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Excited states of the helium atom can be characterized as para- (antiparallel electron spins) and ortho- (parallel electron spins). The observation that an ortho- state has lower energy than the corresponding para- state can be understood in terms of which of the following?\nA. The Heisenberg uncertainty principle\nB. The Pauli exclusion principle\nC. The Bohr model of the atom\nD. Nuclear hyperfine coupling\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about college physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: De Broglie hypothesized that the linear momentum and wavelength of a free massive particle are related by which of the following constants?\nA. Planck’s constant\nB. Boltzmann’s constant\nC. The Rydberg constant\nD. The speed of light\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    }
+}

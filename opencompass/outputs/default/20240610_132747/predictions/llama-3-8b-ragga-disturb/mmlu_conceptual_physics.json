@@ -1,0 +1,38 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about conceptual physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A 10-N force at an angle 45° above the horizontal has a horizontal component of about\nA. 7 N\nB. 5 N\nC. 10 N\nD. 12 N\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about conceptual physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A voltage will be induced in a wire loop when the magnetic field within that loop\nA. changes\nB. aligns with the electric field\nC. is at right angles to the electric field\nD. converts to magnetic energy\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about conceptual physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Spectral lines of the elements are\nA. chaotic\nB. ordered\nC. positioned by amplitude\nD. in phase\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about conceptual physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: In a series circuit, if the current in one lamp is 2 A, the current in the lamp next to it is\nA. half, 1 A\nB. 2 A\nC. Depends on which lamp is closer to the battery\nD. Not enough information to say\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about conceptual physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: When you look at the red petals of a rose the color light you're seeing is\nA. red.\nB. green.\nC. white minus red.\nD. a mixture of green and yellow.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about conceptual physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: In a vacuum, an object has no\nA. buoyant force\nB. mass\nC. weight\nD. All of these\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    }
+}

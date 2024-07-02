@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the term for a sub-optimal but acceptable outcome of negotiations between parties?\nA. Bargaining\nB. Satisficing\nC. Accepting\nD. Compromising\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is D. Compromising.\n\nCompromising refers to a situation where two or more parties agree on an intermediate solution that neither fully satisfies their individual goals, but both parties find it acceptable. This can be seen as a sub-opt",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}

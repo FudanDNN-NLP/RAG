@@ -1,0 +1,20 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about formal logic. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Identify the conclusion of the following argument. It is hard not to verify in our peers the same weakened intelligence due to emotions that we observe in our everyday patients. The arrogance of our consciousness, which in general, belongs to the strongest defense mechanisms, blocks the unconscious complexes. Because of this, it is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts. (Sigmund Freud, The Origin and Development of Psychoanalysis)\nA. It is hard not to verify in our peers the same weakened intelligence due to emotions that we observe in our everyday patients.\nB. The arrogance of our consciousness, which in general, belongs to the strongest defense mechanisms, blocks the unconscious complexes.\nC. Because of this, it is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts.\nD. It is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about formal logic. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  Use the following key to translate the given formula of PL to natural, English sentences.\nA: Marina reads a Percy Jackson book.\nB: Izzy plays Minecraft.\nC: Emily stops working.\nD: Russell makes dinner.\nE: Ashleigh stops by.\n(~B • E) ⊃ D\nA. If it's not the case that both Izzy plays Minecraft and Ashleigh stops by then Russell makes dinner.\nB. If it's both not the case that Izzy plays Minecraft and Ashleigh stops by then Russell makes dinner.\nC. Izzy playing Minecraft and Ashleigh stopping by entails that Russell makes dinner.\nD. Russell's making dinner is a sufficient condition for Izzy not playing Minecraft and Ashleigh stopping by.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about formal logic. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  Which of the following propositions is an immediate (one-step) consequence in PL of the given premises?\n~E ⊃ ~F\nG ⊃ F\nH ∨ ~E\nH ⊃ I\n~I\nA. E ⊃ F\nB. F ⊃ G\nC. H ⊃ ~E\nD. ~H\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    }
+}

@@ -1,0 +1,3 @@
+dataset,version,metric,mode,llama-3-8b-ragga-disturb
+MuSiQue,c2174f,EM score,gen,0.08
+MuSiQue,c2174f,F1 score,gen,0.13

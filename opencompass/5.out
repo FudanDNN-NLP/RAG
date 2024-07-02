@@ -1,0 +1,19 @@
+2024-06-15 15:40:01.084774: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 15:40:01.189258: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 15:40:02.070389: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+!!!!!!!!!!!!!!!!!!!!IGI
+['run.py', './configs/myeval/eval_pubhealth.py', '-w', 'outputs/f_hh_mt_r_s/eval_pubhealth']
+06/15 15:40:04 - OpenCompass - WARNING - SlurmRunner is not used, so the partition argument is ignored.
+06/15 15:40:04 - OpenCompass - INFO - Partitioned into 1 tasks.
+06/15 15:40:04 - OpenCompass - WARNING - !!!!!!!!!!!!['run.py', './configs/myeval/eval_pubhealth.py', '-w', 'outputs/f_hh_mt_r_s/eval_pubhealth']
+  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [2:25:41<00:00, 8741.60s/it]100%|██████████| 1/1 [2:25:41<00:00, 8741.60s/it]
+launch OpenICLInfer[llama-3-8b-ragga-disturb/PubHealth] on GPU 4
+06/15 18:05:45 - OpenCompass - INFO - Partitioned into 1 tasks.
+  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:07<00:00,  7.93s/it]100%|██████████| 1/1 [00:07<00:00,  7.93s/it]
+launch OpenICLEval[llama-3-8b-ragga-disturb/PubHealth] on CPU 
+dataset    version    metric    mode      llama-3-8b-ragga-disturb
+---------  ---------  --------  ------  --------------------------
+PubHealth  7958c2     Acc       gen                           0.56
+06/15 18:05:53 - OpenCompass - INFO - write summary to /data/zfr/finalTest/opencompass/outputs/f_hh_mt_r_s/eval_pubhealth/20240615_154003/summary/summary_20240615_154003.txt
+06/15 18:05:53 - OpenCompass - INFO - write csv to /data/zfr/finalTest/opencompass/outputs/f_hh_mt_r_s/eval_pubhealth/20240615_154003/summary/summary_20240615_154003.csv

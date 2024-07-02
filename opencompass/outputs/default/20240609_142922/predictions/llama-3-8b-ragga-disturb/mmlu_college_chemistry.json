@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about college chemistry. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The rate, r, of a zero-order chemical reaction A → B can be expressed as which of the following?\nA. r = k ln[A]\nB. r = k [A]^2\nC. r = k [A]\nD. r = k\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is D. r = k.\n\nIn a zero-order reaction, the rate of the reaction is independent of the concentration of the reactant(s). This means that the rate of the reaction remains constant over time and does not change with changes",
+        "gold": "D",
+        "context": "temp contexts"
+    }
+}

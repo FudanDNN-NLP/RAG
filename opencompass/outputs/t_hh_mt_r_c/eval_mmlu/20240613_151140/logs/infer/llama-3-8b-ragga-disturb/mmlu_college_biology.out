@@ -1,0 +1,135 @@
+06/13 15:11:46 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/mmlu_college_biology,llama-3-8b-ragga-disturb/mmlu_college_chemistry,llama-3-8b-ragga-disturb/mmlu_college_computer_science,llama-3-8b-ragga-disturb/mmlu_college_mathematics,llama-3-8b-ragga-disturb/mmlu_college_physics,llama-3-8b-ragga-disturb/mmlu_electrical_engineering,llama-3-8b-ragga-disturb/mmlu_astronomy,llama-3-8b-ragga-disturb/mmlu_anatomy,llama-3-8b-ragga-disturb/mmlu_abstract_algebra,llama-3-8b-ragga-disturb/mmlu_machine_learning,llama-3-8b-ragga-disturb/mmlu_clinical_knowledge,llama-3-8b-ragga-disturb/mmlu_global_facts,llama-3-8b-ragga-disturb/mmlu_management,llama-3-8b-ragga-disturb/mmlu_nutrition,llama-3-8b-ragga-disturb/mmlu_marketing,llama-3-8b-ragga-disturb/mmlu_professional_accounting,llama-3-8b-ragga-disturb/mmlu_high_school_geography,llama-3-8b-ragga-disturb/mmlu_international_law,llama-3-8b-ragga-disturb/mmlu_moral_scenarios,llama-3-8b-ragga-disturb/mmlu_computer_security,llama-3-8b-ragga-disturb/mmlu_high_school_microeconomics,llama-3-8b-ragga-disturb/mmlu_professional_law,llama-3-8b-ragga-disturb/mmlu_medical_genetics,llama-3-8b-ragga-disturb/mmlu_professional_psychology,llama-3-8b-ragga-disturb/mmlu_jurisprudence,llama-3-8b-ragga-disturb/mmlu_world_religions,llama-3-8b-ragga-disturb/mmlu_philosophy,llama-3-8b-ragga-disturb/mmlu_virology,llama-3-8b-ragga-disturb/mmlu_high_school_chemistry,llama-3-8b-ragga-disturb/mmlu_public_relations,llama-3-8b-ragga-disturb/mmlu_high_school_macroeconomics,llama-3-8b-ragga-disturb/mmlu_human_sexuality,llama-3-8b-ragga-disturb/mmlu_elementary_mathematics,llama-3-8b-ragga-disturb/mmlu_high_school_physics,llama-3-8b-ragga-disturb/mmlu_high_school_computer_science,llama-3-8b-ragga-disturb/mmlu_high_school_european_history,llama-3-8b-ragga-disturb/mmlu_business_ethics,llama-3-8b-ragga-disturb/mmlu_moral_disputes,llama-3-8b-ragga-disturb/mmlu_high_school_statistics,llama-3-8b-ragga-disturb/mmlu_miscellaneous,llama-3-8b-ragga-disturb/mmlu_formal_logic,llama-3-8b-ragga-disturb/mmlu_high_school_government_and_politics,llama-3-8b-ragga-disturb/mmlu_prehistory,llama-3-8b-ragga-disturb/mmlu_security_studies,llama-3-8b-ragga-disturb/mmlu_high_school_biology,llama-3-8b-ragga-disturb/mmlu_logical_fallacies,llama-3-8b-ragga-disturb/mmlu_high_school_world_history,llama-3-8b-ragga-disturb/mmlu_professional_medicine,llama-3-8b-ragga-disturb/mmlu_high_school_mathematics,llama-3-8b-ragga-disturb/mmlu_college_medicine,llama-3-8b-ragga-disturb/mmlu_high_school_us_history,llama-3-8b-ragga-disturb/mmlu_sociology,llama-3-8b-ragga-disturb/mmlu_econometrics,llama-3-8b-ragga-disturb/mmlu_high_school_psychology,llama-3-8b-ragga-disturb/mmlu_human_aging,llama-3-8b-ragga-disturb/mmlu_us_foreign_policy,llama-3-8b-ragga-disturb/mmlu_conceptual_physics]
+06/13 15:11:46 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-13 15:11:47.067453: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-13 15:11:47.121590: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-13 15:11:47.883583: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.45s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.43s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.35s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.03it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.13s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/490804_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.728 seconds.
+Prefix dict has been built successfully.
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /HuggingFaceH4/zephyr-7b-alpha/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 88, in run
+    self.dataset = build_dataset_from_cfg(self.dataset_cfg)
+  File "/data/zfr/finalTest/opencompass/opencompass/utils/build.py", line 13, in build_dataset_from_cfg
+    return LOAD_DATASET.build(dataset_cfg)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+    return self.build_func(cfg, *args, **kwargs, registry=self)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 98, in build_from_cfg
+    obj_cls = registry.get(obj_type)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/mmengine/registry/registry.py", line 451, in get
+    self.import_from_location()
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/mmengine/registry/registry.py", line 376, in import_from_location
+    import_module(loc)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/data/zfr/finalTest/opencompass/opencompass/datasets/__init__.py", line 1, in <module>
+    from .advglue import *  # noqa: F401, F403
+  File "/data/zfr/finalTest/opencompass/opencompass/datasets/advglue.py", line 6, in <module>
+    from opencompass.openicl.icl_evaluator import AccEvaluator
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/__init__.py", line 2, in <module>
+    from .icl_evaluator import *  # noqa
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_evaluator/__init__.py", line 13, in <module>
+    from .lm_evaluator import LMEvaluator  # noqa
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_evaluator/lm_evaluator.py", line 10, in <module>
+    from opencompass.openicl.icl_inferencer import GenInferencer
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/__init__.py", line 6, in <module>
+    from .icl_gen_inferencer import GenInferencer  # noqa
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 44, in <module>
+    import JointTest.JointRetrival2 as jt
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 6, in <module>
+    from JointTest.retrieval2.queries2retrievers import search
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/queries2retrievers.py", line 52, in <module>
+    llm, embed_model, _ = data2nodes.setingAll()
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/data2nodes.py", line 82, in setingAll
+    Settings.llm = get_llm()
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/data2nodes.py", line 51, in get_llm
+    llm = HuggingFaceLLM(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/llms/huggingface/base.py", line 161, in __init__
+    self._model = model or AutoModelForCausalLM.from_pretrained(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 484, in from_pretrained
+    resolved_config_file = cached_file(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/utils/hub.py", line 399, in cached_file
+    resolved_file = hf_hub_download(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1221, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1282, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, head_call_error) = _get_metadata_or_catch_error(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1722, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(url=url, proxies=proxies, timeout=etag_timeout, headers=headers)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1645, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 372, in _request_wrapper
+    response = _request_wrapper(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 395, in _request_wrapper
+    response = get_session().request(method=method, url=url, **params)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 66, in send
+    return super().send(request, *args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/requests/adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /HuggingFaceH4/zephyr-7b-alpha/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))"), '(Request ID: a254b567-6e7e-45dc-8686-ec242ea095ef)')
+[2024-06-13 15:12:05,195] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 491069) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-13_15:12:05
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 491069)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

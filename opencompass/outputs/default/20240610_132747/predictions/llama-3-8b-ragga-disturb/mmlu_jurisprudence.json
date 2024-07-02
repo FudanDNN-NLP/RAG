@@ -1,0 +1,20 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about jurisprudence. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which statement best explains the purpose of Hart's distinction between 'being obliged' and 'having an obligation'?\nA. It demonstrates the difference between the internal and the external aspect of a rule.\nB. It refutes the natural lawyer' view of the role of morality in law.\nC. It explains the nature of power-conferring rules.\nD. It illuminates the concept of a rule.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about jurisprudence. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which proposition below is the most consistent with what Rawls claims the POP would opt for in respect of 'social primary goods'?\nA. The POP will choose wealth over a compassionate society.\nB. The POP will choose equality over power.\nC. The POP will be unselfish.\nD. The POP will choose to protect the disabled.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about jurisprudence. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Cicero's conception of natural law is 'based on the idea that 'true law is right reason in agreement with Nature.' Reason is a key element because:\nA. It is a sin for humans not to apply reason.\nB. The principles of natural law are discoverable by reason.\nC. Natural law does not apply without good reason.\nD. The law of nature is the basis of all positive law.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}

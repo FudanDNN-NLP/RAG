@@ -1,0 +1,98 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following statements expresses a relationship between aging and sexual functioning\nA. Aging is related to an increase in vaginal lubrication\nB. Aging is associated with an increase in the frequency and number of orgasmic contractions in both sexes\nC. There is no significant relationship between aging and sexual responses in either sex\nD. Aging is related to some loss of erectile rigidity in the male\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: If you were hired by a large company to develop a new training program, your first step would probably be to conduct a:\nA. needs analysis.\nB. job evaluation.\nC. summative evaluation.\nD. formative evaluation.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: One Friday afternoon, just before leaving on a weekend tip, a psychologist receives a call from a therapy client who claims to have taken an overdose of pills in a suicide attempt. The psychologist: tells the client to call a physician immediately and to come in at 9:00 A.M. on Monday for a session. The psychologist makes no other attempt to intervene, and the client dies later that evening without making any other calls for assistance. In this situation, the psychologist's behavior was clearly\nA. unethical, because the client's needs were not addressed more directly\nB. unethical, because the psychologist should have delayed the trip and given the client an appointment for that afternoon\nC. unethical, because the psychologist should have called a physician directly\nD. ethical, because it was not possible to determine whether or not the client was being manipulative\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: According to Gerald Patterson and his colleagues (1992), which of the following is a key contributor to aggressive behavior in children?\nA. the child’s intelligence.\nB. the child’s “basic personality.”\nC. the strength of the parent-child attachment.\nD. the parents’ childrearing behaviors\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The STATISTICS are a method of measuring variables and organizing and analyzing data statistical method can be descriptive or inferential and have a scale of measurement. From your knowledge about statistics measurement, what is the RATIO DATA?\nA. Ratio Data is scaled and at equal distances but no absolute zero\nB. Ratio Data orders the amount of variable, but no info about how much\nC. Ratio Data is an interval data with an absolute zero\nD. Ratio Data divides variables into unordered categories\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: When a psychologist doesn’t feel he or she is competent to accept a case, the most justifiable option is to:\nA. Try his or her best\nB. Refer out\nC. Read a chapter on the issue\nD. Charge the client less\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "6": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A father brings his 22-year-old son to you for evaluation. Within the past 6 weeks, this formerly socially active young man has quit his job as a restaurant manager, has become withdrawn, and now spends most of his time in his room watching TV. He reports that he occasionally receives messages from aliens through the TV. Based on this information, which of the following is the most appropriate DSM-IV diagnosis\nA. Schizophreniform Disorder\nB. Brief Reactive Psychosis\nC. Schizophrenia\nD. Antisocial Personality Disorder\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "7": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Trend analysis is a type of analysis of variance that is used when:\nA. a study’s independent variable is quantitative.\nB. a study’s dependent variable is qualitative.\nC. a cross-sectional research design has been used.\nD. a factorial research design has been used.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "8": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Female applicants consistently obtain lower scores on a selection test than do male applicants. However, when they are hired, females perform as well on the job as do males. This situation illustrates which of the following?\nA. differential validity\nB. differential selection\nC. adverse impact\nD. unfairness\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "9": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: On the basis of his investigation of the relationship between affiliation and anxiety, Schachter concluded that which of the following best accounted for the desire of high-anxiety research participants to wait with other high-anxiety participants?\nA. demand characteristics\nB. evaluation apprehension\nC. relief from discomfort\nD. social comparison\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "10": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A stroke that affects the posterior region of the corpus callosum, thus disconnecting the visual centers of the brain from the language centers of the brain, may result in this syndrome:\nA. Agraphia without alexia\nB. Alexia without agraphia\nC. Aphasia\nD. Apraxia\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "11": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Research in the workplace has shown that a subordinate’s participation in goal setting leads to the selection of goals that, when compared to goals set for subordinates unilaterally by their supervisors, are\nA. more challenging\nB. Of about the same level of difficulty\nC. never accomplished\nD. less challenging\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "12": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: If you believe another psychologist has committed an ethical violation, you should first:\nA. Report it to the APA Ethics Committee\nB. Report it to his or her state professional standards board\nC. Wait to see whether he or she commits a second violation\nD. Discuss your concerns with him or her\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "13": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Behaviorist views have been criticized by other approaches for a number of reasons. Ethologists argued that the behaviorists ignored innate, built-in biases in learning due to evolution, but also disagreed with:\nA. the use of the animals in laboratory experiments\nB. the use of the humans in laboratory experiments\nC. the use of the trial-and-error system\nD. the use of the operant conditioning principle\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "14": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: According to Bem’s (1972) self-perception theory:\nA. people experience discomfort (dissonance) when their behaviors are not consistent with their attitudes, beliefs, or values.\nB. people enhance their own sense of self-worth by associating or identifying with others who are successful.\nC. people tend to attribute their successes to dispositional factors and failures to situational factors.\nD. people infer their own attitudes and emotions by observing their own behaviors and the circumstances in which those behaviors occur.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "15": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional psychology. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Comparison of an individual’s score with an inappropriate norm group affects all of the following except\nA. relevance of the score\nB. reliably of the score\nC. decisions about the subject\nD. validity of the score\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    }
+}

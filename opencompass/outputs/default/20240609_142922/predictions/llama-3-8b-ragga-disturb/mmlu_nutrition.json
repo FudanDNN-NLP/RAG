@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about nutrition. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which foods tend to be consumed in lower quantities in Wales and Scotland (as of 2020)?\n\nA. Meat\nB. Confectionary\nC. Fruits and vegetables\nD. Potatoes\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "Based on the information provided, it can be inferred that fruits and vegetables are consumed in lower quantities in Wales and Scotland compared to meat, confectionary, and potatoes. Therefore, the correct answer is:\n\nC. Fruits and vegetables",
+        "gold": "C",
+        "context": "temp contexts"
+    }
+}

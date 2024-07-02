@@ -1,0 +1,12 @@
+{
+    "accuracy": 0.0,
+    "details": {
+        "0": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:She is planning to invest the money for the period.\n\n Ericka has 5,00.00 USD for her daughter's wedding\n\nHe has decided to invest an amount of 150.00 USD pay check over a period of 30.\n\nLaSorda told the House of of Canada finance committee he would demand an hour w\n John is investment retirement\n\nThe interest rate expected is 10% per annum with quarterly compounding\n\n bank offers her an interest rate of .0% per annum comp annually on a CD (certificate of deposit) that she\n\n1.\n16.\n\n1\n1\n may need money after 4\n\nHe receives his pay check twice every month.\n\nInvestment *All deposits made at start of the period Returns\n\n American investors have been working towards developing a $10 / unit solar lantern for replacement of kerosene lamps.\n\nThe last 10 percent of performance generates one-third of the cost and two-thirds of the problems.\n\nThere are many highly successful businesses in the United States.\n\nThere will be no takeoffs either, because electronics will occupy 100 percent of every airplane's weight.\n\nThere are also many highly paid executives.\n\nThere is a multiple-choice question about professional accounting. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: You bought a limousine for $98,000 and are planning to rent it for weddings, ceremonies and parties at $245 per hour. If you estimate the car will be hired for 2 hours a day on average, with daily costs at about $50, what is the estimated yearly yield on your investment if you work all year round, i.e. every day of the year, including any festivities and weekends?\nA. 164%\nB. 1.64%\nC. 0.45%\nD. 183%\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "To calculate the estimated yearly yield on Ericka's investment, we first need to find out how much she can earn from renting the limousine each year. \n\nLet's break down the information given:\n\n* The limousine was purchased for $",
+            "predictions": "",
+            "references": "A"
+        }
+    },
+    "type": "GEN"
+}

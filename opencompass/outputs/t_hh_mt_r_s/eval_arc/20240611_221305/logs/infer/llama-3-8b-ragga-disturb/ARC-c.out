@@ -1,0 +1,111 @@
+06/11 22:13:10 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/ARC-c]
+06/11 22:13:10 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-11 22:13:10.606270: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-11 22:13:10.659911: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-11 22:13:11.446143: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.38s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.34s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.31s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.09s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/1691039_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.725 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.28s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:06,  1.13s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.15s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.12s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.09s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.08s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.04s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:08<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:08<00:00,  1.04s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'MonoT5', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:1
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'MonoT5', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:1
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/11 22:13:42 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/ARC-c]
+[2024-06-11 22:13:42,578] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-11 22:13:42 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/497 [00:00<?, ?it/s][2024-06-11 22:13:42,669] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-11 22:13:42 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+retrieving
+*****************
+*****************
+searching
+*****************
+Jun 11, 2024 10:13:42 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+["The recent meteorite impact on the planet has caused a significant increase in its rotation speed. This has led to a decrease in the planet's day length, as the planet now completes a full rotation in less time. The planet's density has not been affected, and its gravity remains unchanged. The planet's year length, however, has not been affected by this event.\n\nThe impact of the meteorite has caused a significant shift in the planet's angular momentum. This has led to a redistribution of mass around the planet's axis, causing the planet to spin faster. The planet's rotation speed has increased by approximately 10%, resulting in a shorter day length.\n\nThe decrease in day length has led to a number of changes on the planet's surface. The planet's climate has been affected, with colder temperatures and more extreme weather patterns. The shorter day length has also led to a decrease in the amount of sunlight that reaches the planet's surface, resulting in a decrease in photosynthesis and a decrease in the planet's overall productivity.\n\nDespite these changes, the planet's overall stability has not been affected. The planet's gravitational pull remains unchanged, and the planet's orbit around its star remains stable. The planet's year length has not been affected by this event, and the planet continues to orbit its star as it always has.\n", 'An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?\nA. Planetary density will decrease.\nB. Planetary years will become longer.\nC. Planetary days will become shorter.\nD. Planetary gravity will become stronger.']
+2024-06-11 22:13:58 [ERROR] server: Open /data/zfr/finalTest/opencompass/JointTest/data/wikipedia_milvus1.db failed, the file has been opened by another program
+2024-06-11 22:13:58 [ERROR] server_manager: Start local milvus failed
+2024-06-11 22:13:58 [ERROR] milvus_client: Failed to create new connection using: 4229df691e4c42fb800ee70e20e7b2d0
+  0%|          | 0/497 [00:16<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    documents = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 251, in retrieval
+    search_docs, _ = self._search(query=query, retrieval_config=self.retrieval_config)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 193, in _search
+    docs = search(query, top_k=kwargs["retrieval_config"]["search_k"], search_method=kwargs["retrieval_config"]["search_method"], milvus_id=self.milvus_id)
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/queries2retrievers.py", line 282, in search
+    dense_results = get_text_retriever(similarity_top_k=top_k).retrieve(pseudo_doc)
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/nodes2retrievers.py", line 102, in get_text_retriever
+    vector_store = MilvusVectorStore(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/vector_stores/milvus/base.py", line 219, in __init__
+    self._milvusclient = MilvusClient(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/pymilvus/milvus_client/milvus_client.py", line 58, in __init__
+    self._using = self._create_connection(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/pymilvus/milvus_client/milvus_client.py", line 651, in _create_connection
+    raise ex from ex
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/pymilvus/milvus_client/milvus_client.py", line 648, in _create_connection
+    connections.connect(using, user, password, db_name, token, uri=uri, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/pymilvus/orm/connections.py", line 382, in connect
+    raise ConnectionConfigException(message="Open local milvus failed")
+pymilvus.exceptions.ConnectionConfigException: <ConnectionConfigException: (code=1, message=Open local milvus failed)>
+[2024-06-11 22:14:03,755] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 1691373) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-11_22:14:03
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1691373)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

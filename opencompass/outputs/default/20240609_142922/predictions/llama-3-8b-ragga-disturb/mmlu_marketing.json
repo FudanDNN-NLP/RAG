@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about marketing. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: This is a hierarchy of effects or sequential model used to explain how advertising works:\nA. ADD.\nB. AIDA.\nC. PESTLE.\nD. SWOT.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is B. AIDA.\n\nExplanation:\n\n* AIDA stands for Attention, Interest, Desire, and Action. It's a well-known hierarchical model that explains the process of how advertising works in influencing consumer behavior.\n* ADD refers to Advertising",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}

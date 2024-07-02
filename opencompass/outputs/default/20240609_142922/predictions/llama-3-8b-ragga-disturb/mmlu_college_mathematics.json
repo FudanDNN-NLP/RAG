@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about college mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Let k be the number of real solutions of the equation e^x + x - 2 = 0 in the interval [0, 1], and let n be the number of real solutions that are not in [0, 1]. Which of the following is true?\nA. k = 0 and n = 1\nB. k = 1 and n = 0\nC. k = n = 1\nD. k > 1\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The answer to this question is B. k = 1 and n = 0.\n\nExplanation:\n\nThe function e^x + x - 2 has only one real solution in the interval [0, 1] because it is continuous and different",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}

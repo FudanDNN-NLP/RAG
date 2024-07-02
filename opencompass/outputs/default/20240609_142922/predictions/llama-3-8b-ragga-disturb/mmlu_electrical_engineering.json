@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about electrical engineering. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The Barkhausen criterion for an oscillator\nA. Loop gain should be unity\nB. Loop gain should be less than unity\nC. The phase of a feedback signal with respect to input should be 0° or 360°\nD. Both A and C\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is D.\n\nThe Barkhausen criterion states that an oscillator will oscillate if the loop gain (the product of the amplifier gain and the feedback factor) is equal to one, and the phase shift between the output and input signals is either",
+        "gold": "D",
+        "context": "temp contexts"
+    }
+}

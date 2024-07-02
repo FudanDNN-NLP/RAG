@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about international law. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which State ordinarily exercises jurisdiction in respect of crimes committed on board vessels?\nA. The coastal State\nB. The flag State\nC. All States enjoy such jurisdiction\nD. The International Tribunal for the Law of the Sea\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is B. The flag State.\n\nExplanation:\n\nUnder international law, the flag state has primary jurisdiction over crimes committed on board its vessels, regardless of where they are located. This means that if a crime is committed on a ship flying the",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}

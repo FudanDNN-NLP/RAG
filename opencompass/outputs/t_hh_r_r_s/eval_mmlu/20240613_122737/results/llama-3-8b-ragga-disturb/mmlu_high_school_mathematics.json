@@ -1,0 +1,126 @@
+{
+    "accuracy": 10.0,
+    "details": {
+        "0": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: If a pentagon P with vertices at (– 2, – 4), (– 4, 1), (–1, 4), (2, 4), and (3, 0) is reflected across the line y = x to get a new pentagon, P’, then one of the vertices of P’ is\nA. (0, – 3)\nB. (4, 1)\nC. (2, 2)\nD. (– 4, –2)\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer is C. (2, 2). The reflection of the point (-2, -4) across the line y=x would be (4, 2), which is one of the vertices of the new pentagon P'.",
+            "predictions": "C",
+            "references": "D"
+        },
+        "1": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The length of a rectangle is twice its width. Given the length of the diagonal is $5\\sqrt{5}$, find the area of the rectangle.\nA. 2500\nB. 2\nC. 50\nD. 25\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found using the Pythagorean theorem. Let's denote the width and length of the rectangle as w and l respectively. Since the length is twice the width, we have l = 2w.\n\nWe are given",
+            "predictions": "",
+            "references": "C"
+        },
+        "2": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A positive integer n is called “powerful” if, for every prime factor p of n, p^2 is also a factor of n. An example of a powerful number is\nA. 392\nB. 336\nC. 300\nD. 297\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question is B. 336.\n\nExplanation:\nA powerful number is defined as an integer that has at least one prime factor raised to the power of two in its prime factorization. In other words, a powerful number must have at",
+            "predictions": "B",
+            "references": "A"
+        },
+        "3": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: At breakfast, lunch, and dinner, Joe randomly chooses with equal probabilities either an apple, an orange, or a banana to eat. On a given day, what is the probability that Joe will eat at least two different kinds of fruit?\nA. \\frac{7}{9}\nB. \\frac{8}{9}\nC. \\frac{5}{9}\nD. \\frac{9}{11}\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer is A. The probability of eating at least two different kinds of fruit can be calculated as follows:\n1. Probability of eating exactly one kind of fruit = (1/3) * (2/3) + (1/3)",
+            "predictions": "A",
+            "references": "B"
+        },
+        "4": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Suppose $f(x)$ is a function that has this property: For all real numbers $a$ and $b$ such that $a<b$, the portion of the graph of $y=f(x)$ between $x=a$ and $x=b$ lies below the line segment whose endpoints are $(a,f(a))$ and $(b,f(b))$. (A function with this property is called strictly convex.) Given that $f(x)$ passes through $(-2,5)$ and $(2,9)$, what is the range of all possible values for $f(1)$? Express your answer in interval notation.\nA. (-inf, 10)\nB. (-inf, 9)\nC. (-inf, 8)\nD. (-inf, 7)\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is A. (-inf, 10). The given information states that f(x) is a strictly convex function, which means that it lies above the chord connecting any two points on its graph. In particular, since f(-2)=",
+            "predictions": "A",
+            "references": "C"
+        },
+        "5": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: John divided his souvenir hat pins into two piles. The two piles had an equal number of pins. He gave his brother one-half of one-third of one pile. John had 66 pins left. How many pins did John originally have?\nA. 396\nB. 72\nC. 66\nD. 36\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found using algebraic reasoning and basic arithmetic operations.\n\nLet's start by assuming that John had x pins initially. Since he divided them into two equal piles, each pile would have x/2 pins.\n\nJohn gave his",
+            "predictions": "",
+            "references": "B"
+        },
+        "6": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A meteorologist reports that there is a 30% probability of rain and no sun. If there is a 40% probability of no rain, then the probability of both rain and sun is\nA. 0.16\nB. 0.24\nC. 0.3\nD. 0.5\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found using the following steps:\n1. Find the probability of rain given that there is no sun (P(R|~S)).\n2. Find the probability of no rain given that there is no sun (P(~",
+            "predictions": "",
+            "references": "C"
+        },
+        "7": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the sum of all positive integer values of $n$ such that $n^2$ is a factor of $1200$?\nA. 42\nB. 12\nC. 36\nD. 39\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found by factoring 1200 into its prime factors and then finding the sum of all positive integer values of n such that n^2 is a factor of 1200.\n\nFirst, let's factor 120",
+            "predictions": "",
+            "references": "A"
+        },
+        "8": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:Let me talk to you a minute about what a hemoglobin A1c is. Some of you are very familiar with it. It's abbreviated HbA1c. It's called hemoglobin A1c, glycated hemoglobin, glycosylated hemoglobin. They do an HbA1c, and you get a 90-day view or a 3-month overview of what blood sugar has been running. The basics of the test, if I were to explain this in various, over-simplistic terms, they're looking at red blood cells, and they're looking at what percentage of the red blood cells are basically sugarcoated. Think of taking a red blood cell and dipping it in sugar and now it looks like a glazed donut, so to speak, but it's a red blood cell. A normal number is going to be below 5.7, 5.7%. Less than that 5.6 or down to probably closer to 4, that's a normal range for that. Once you get closer to 6%, 6.2, 6.3, and 6.5, you're at really high risk of developing type 2 diabetes. Once you get above 6.5, you basically got type 2 diabetes. That's just how it works, and an uncontrolled type 2 diabetic can be at 7-1/2 or 8-1/2. I've seen them 9-1/2 or 10. Now you understand a little bit about the hemoglobin A1c test, what it actually looks for. They got torn up by the spleen. You make a new one in its place, and they get replaced. Knowing that, let's now talk about what they found in this study. They also looked at that. The A1c numbers were basically stable in that person. That's the way it should be done. That's what it comes down to. If they're not converting that into something useful, you can still have this issue. On the flip side of that, when you look at a hemoglobin A1c, also look at their triglycerides, look at their fasting blood sugar, not the best reading. That one's pretty variable. Look at their hemoglobin A1c. That's just going to mess things up even further, and you can be chasing. I'm also a huge fan of understanding the numbers properly, making sure you don't over-diagnose patients or misdiagnose patients. If you're a 7 and you don't feel right, maybe you need to be a 10. If you're at 7 and your A1c numbers haven't gotten better, maybe you need to be a 10 or 11 or 12 to feel normal for your body. That's a normal range. It doesn't mean that any number within that range is perfect for any patient. That means that if you're in the range, you may need to fiddle with it or you might not, but if you're outside that range, there's likely a problem. Don't misunderstand the range. Jennifer explains it with a simple approach which is easy to understand. Doctors agree-smoking can lead to heart inflammation, so can high blood pressure and high cholesterol. loses. At the new 5 to 1 payout, he could get a bet that pays 0.625 if he wins and costs 0.125 if he loses, this is 0.125 better than his original bet in both states. Therefore his original bet now has a value of -0.125. Given his new wealth level of 0.875, his 40% bet (the Kelly amount for the 5 to 1 payout) is 0.35. The two formulations are equivalent. In the original formulation, the bettor has 0.25 bet at 2 to 1 and 0.225 bet at 5 to 1. If he wins, he gets 2.625 and if \n\n as above but doubled, and the winner takes the kitty. ; If there are tied winners, total payout is either split between or among the winners or multiplied for each winner, depending on how the players agree to do this before starting the game. 2 to go – Standard game, the numbers 1 to 9 start up. On the first roll, the number 2 must be one of the ones dropped. Any player who rolls a 4 on their first roll loses immediately. ; 3 to go – The same as \"2 to go\" but the number 3 must be dropped instead. ; 3 down extreme – Numbers \n\nThus, the ratio kcat/Km is equivalent to the rate constant for the reaction between free enzyme and free substrate.Thus we can think of [E] = [Eo], so that the Michaelis–Menten equation becomes V = kcat/Km [E][S].At very low substrate concentrations, where 20 0 0 2 4 6 8 40 60 80 [S] mmole/liter To obtain Vmax and Km from such data, a double-reciprocal [S] << Km, most of the enzyme is free.E + S E + P ES k1 k–1 kcat V = kcat [ES]\n\nAt this steady state, [ES] is nearly constant, so that or, since the concentration of the free enzyme, [E], is equal to [Eo] – [ES], Rearranging, and defning the constant Km as we get or, remembering that V = kcat [ES], we obtain the famous Michaelis–Menten equation As [S] is increased to higher and higher levels, essentially all of the enzyme will be bound to substrate at steady state; at this point, a maximum rate of reaction, Vmax , will be reached where V = Vmax = kcat [Eo]. Thus, it is convenient to rewrite the Michaelis–Menten equation as rate of ES formation k1 [E][S] rate of ES breakdown k–1 [ES] + kcat [ES] = k1 k–1 + kcat [ES] = [E][S] = [Eo] – [ES] [S] k1 k–1 + kcat k1 k–1 + kcat Km + [S] kcat [Eo][S] [ES] = [Eo][S] Km + [S] V = Km + [S] Vmax [S]V =\n\nTHE DOUBLE-RECIPROCAL PLOT A typical plot of V versus [S] for an enzyme that follows Michaelis–Menten kinetics is shown below. From this plot, neither the value of Vmax nor of Km is immediately clear. THE SIGNIFICANCE OF Km, kcat, and kcat /Km As described in the text, Km is an approximate measure of substrate affnity for the enzyme: it is numerically equal to the concentration of [S] at V = 0.5 Vmax. In general, a lower value of Km means tighter substrate binding. In fact, for those cases where kcat is much smaller than k–1, the Km will be equal to Kd, the dissociation constant for substrate binding to the enzyme (Kd = 1/Ka; see Figure 3–44). At very low substrate concentrations, where 20 0 0 2 4 6 8 40 60 80 [S] mmole/liter To obtain Vmax and Km from such data, a double-reciprocal [S] << Km, most of the enzyme is free. Thus we can think of [E] = [Eo], so that the Michaelis–Menten equation becomes V = kcat/Km [E][S]. Thus, the ratio kcat/Km is equivalent to the rate constant for the reaction between free enzyme and free substrate.For simplicity, in this Panel we have discussed enzymes that have only one substrate, such as the lysozyme enzyme described in the text (see p. 144).Most enzymes have two substrates, one of which is often an active carrier\n\nSOME ENZYMES ARE DIFFUSION LIMITED The values of kcat, Km, and kcat /Km for some selected molecule—such as NADH or ATP.\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: We roll a fair 6-sided die 5 times. What is the probability that we get a 6 in at most 2 of the rolls?\nA. \\frac{125}{648}\nB. \\frac{25}{648}\nC. \\frac{625}{648}\nD. \\frac{1}{648}\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to the question is C. \\frac{625}{648}.",
+            "predictions": "C",
+            "references": "C"
+        },
+        "9": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: How many arithmetic sequences of consecutive odd integers sum to 240?\nA. 8\nB. 12\nC. 10\nD. 4\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found using the formula for the sum of an arithmetic sequence, which is given as follows:\nSum = (n/2)(a1 + an)\nwhere n is the number of terms in the sequence, a1",
+            "predictions": "",
+            "references": "B"
+        },
+        "10": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Positive integers $x$ and $y$ have a product of 56 and $x < y$. Seven times the reciprocal of the smaller integer plus 14 times the reciprocal of the larger integer equals 4. What is the value of $x$?\nA. 13\nB. 14\nC. 1\nD. 2\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found using algebraic manipulation.\n\nLet's start with the given information:\nx * y = 56 (product of x and y)\n7/x + 14/y = 4 (seven times the reciprocal of the",
+            "predictions": "",
+            "references": "D"
+        },
+        "11": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Given that $n > 1$, what is the smallest positive integer $n$ whose positive divisors have a product of $n^6$?\nA. 30\nB. 64\nC. 2048\nD. 60\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found using the following reasoning:\nTo find the smallest positive integer n whose positive divisors have a product of n^6, we need to consider all possible factors of n and their corresponding exponents.\n\nLet's start",
+            "predictions": "",
+            "references": "D"
+        },
+        "12": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the remainder when $2^{87} +3$ is divided by $7$?\nA. 0\nB. 1\nC. 2\nD. 4\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found using modular arithmetic, which is a system of arithmetic that performs calculations on remainders rather than actual numbers.\n\nTo find the remainder when $2^{87}+3$ is divided by $7$, we need",
+            "predictions": "",
+            "references": "D"
+        },
+        "13": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Jane's quiz scores were 98, 97, 92, 85 and 93. What was her mean score?\nA. 92\nB. 93\nC. 94.5\nD. 95\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question can be found using the formula for calculating the mean of a set of numbers.\n\nMean = (Sum of all values) / Number of values\n\nIn this case, the sum of Jane's quiz scores is:\n98 + ",
+            "predictions": "",
+            "references": "B"
+        },
+        "14": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Suppose the graph of f is both increasing and concave up on a <= x <= b. Then, using the same number of subdivisions, and with L, R, M, and T denoting, respectively, left, right, midpoint, and trapezoid sums, it follows that\nA. R <= T <= M <= L\nB. L <= T <= M <= R\nC. R <= M <= T <= L\nD. L <= M <= T <= R\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is B. L <= T <= M <= R.\n\nExplanation:\nWhen the function is both increasing and concave up, it means that the function is rising and curving upward. This implies that the function is always above its tangent line",
+            "predictions": "B",
+            "references": "D"
+        },
+        "15": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: An ant crawls straight from $(-4,6)$ to the origin, and then continues straight on to $(4,3)$. How far does it travel?\nA. 16\nB. 2\\sqrt{2}\nC. 5\nD. 5+2\\sqrt{13}\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The distance traveled by the ant can be calculated using the Pythagorean theorem.\n\nFirst, let's find the distance between (-4,6) and (0,0):\n\nDistance = √((0-(-4))^2 + (0-6",
+            "predictions": "D",
+            "references": "D"
+        },
+        "16": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Let $n$ be the product of the two smallest 3-digit prime numbers. Find the sum of the digits of $n$.\nA. 8\nB. 3\nC. 6\nD. 9\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The two smallest 3-digit prime numbers are 101 and 103, so their product is 10,303. The sum of the digits of this number is 1 + 0 + 3 + 0 + 3 = 7",
+            "predictions": "",
+            "references": "A"
+        },
+        "17": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The polynomial which results from the expansion of $(x^2+5x+6)^2+(px+q)(x^3+7x^2+3x)$ has degree $2$. Find $p+q$.\nA. -2\nB. -4\nC. -1\nD. 1\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question is D. 1.\n\nHere's why:\n\nWhen we expand the expression $(x^2+5x+6)^2+(px+q)(x^3+7x^2+3x)$, we",
+            "predictions": "D",
+            "references": "B"
+        },
+        "18": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: If $f(x)=ax^6-bx^4+x-1$ and $f(2)=5$, then what is the value of $f(-2)$?\nA. 1\nB. 3\nC. 0\nD. 5\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "To find the answer, we need to first determine the values of 'a' and 'b'. We can do this by plugging in x = 2 into the equation f(x) = ax^6 - bx^4 + x - ",
+            "predictions": "",
+            "references": "A"
+        },
+        "19": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about high school mathematics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the range of the function $f(x) = \\frac{1}{1-x}$? Express your answer in interval notation.\nA. (-\\infty,-1)\\cup (1,\\infty)\nB. (-\\infty,0)\\cup (0,\\infty)\nC. [-1,1]\nD. (-1,1)\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is A. The range of the function f(x) = 1/(1-x) is (-∞, -1) ∪ (1, ∞). This can be seen by noting that for x < 1,",
+            "predictions": "A",
+            "references": "B"
+        }
+    },
+    "type": "GEN"
+}

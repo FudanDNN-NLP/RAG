@@ -1,0 +1,62 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: _______ such as bitcoin are becoming increasingly mainstream and have a whole host of associated ethical implications, for example, they are______ and more ______. However, they have also been used to engage in _______.\nA. Cryptocurrencies, Expensive, Secure, Financial Crime\nB. Traditional currency, Cheap, Unsecure, Charitable giving\nC. Cryptocurrencies, Cheap, Secure, Financial crime\nD. Traditional currency, Expensive, Unsecure, Charitable giving\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "A. Cryptocurrencies, Expensive, Secure, Financial Crime",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Typical advertising regulatory bodies suggest, for example that adverts must not: encourage _________, cause unnecessary ________ or _____, and must not cause _______ offence.\nA. Unsafe practices, Wants, Fear, Trivial\nB. Unsafe practices, Distress, Fear, Serious\nC. Safe practices, Wants, Jealousy, Trivial\nD. Safe practices, Distress, Jealousy, Serious\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is B. Unsafe practices, Distress, Fear, Serious.\n\nExplanation:\nAdvertising regulatory bodies aim to ensure that advertisements are ethical and do not harm consumers. They suggest that ads should not encourage unsafe practices, cause unnecessary distress, create fear",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: ______ are the obligations of workers towards their employer, based on individual contracts and wider employment laws.\nA. Employee rights\nB. Employee rights\nC. Employer duties\nD. Employee duties\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is D. Employee duties.\n\nConfidence: 95%",
+        "gold": "D",
+        "context": "\n\n"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  ______ is an employee's preferred ratio between work-related and non-work-related activities which, due to intensification of work and technological shifts, has become a hotly contested issue in recent years.\nA. Presenteeism\nB. Absenteeism\nC. Work-play balance\nD. Work-life balance\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "D. Work-life balance",
+        "gold": "D",
+        "context": "\n\n"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  _______ can be a likened to their natural counterparts, comprising of a balanced network of interdependent organisms and their environments thus adding value to sustainability thinking due to the consideration of companies and industries as being bound together, and interdependent due to all kinds of resources and wastes.\nA. Industrial supply loops\nB. Industrial ecosystems\nC. Ecological ecosystems\nD. Corporate ecosystems\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "B. Industrial ecosystems",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: ________, where for example one party possess more resources, unfair distribution of ________, where one party gains more from the relationship, and CSOs being ________, are all limitations and risks of business-CSO collaborations.\nA. Power imbalance, Benefits, Hoodwinked\nB. Power imbalance, Resources, Co-opted\nC. Informational asymmetries, Benefits, Hoodwinked\nD. Informational asymmetries, Resources, Co-opted\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is D. Informational asymmetries, Resources, Co-opted.\n\nExplanation:\nBusiness-CSO (Corporate Social Organization) collaborations can be beneficial for both parties involved, but there are also some limitations and risks to consider. One limitation",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "6": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Although corporate profit maximization is not directly prescribed by major normative theories to which normative theory is it most similar?\nA. hedonistic utilitarianism\nB. preference utilitarianism\nC. The Categorical Imperative\nD. ethics of care\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The answer to this question is A, hedonistic utilitarianism.\n\nHedonistic utilitarianism is an ethical theory that holds that actions are right if they promote happiness and wrong if they do not. This theory is similar to the idea",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "7": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What does Milton Friedman believe to be the sole responsibility of business?\nA. The only social responsibility of business is to its shareholders\nB. Managers should act in ways that balance the interest of society and shareholders\nC. The primary responsibility organizations have is to its employees\nD. The primary responsibility organizations have is to its stakeholders\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "A. The only social responsibility of business is to its shareholders",
+        "gold": "A",
+        "context": "\n\n"
+    },
+    "8": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: ______ regulation goes further than the ______ that CSOs have with businesses, as it also concerns _______of such processes.\nA. Legal, Interactions, Mechanics\nB. Civil, Relations, Outcomes\nC. Political, Interactions, Outcomes\nD. Environmental, Relations, Mechanics\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "A. Legal, Interactions, Mechanics",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "9": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about business ethics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: _______ working practices refer to working patterns which involve temporal, spatial and task related fluidity.\nA. Dynamic\nB. Fluid\nC. Flexible\nD. Modern\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is C. Flexible.\n\nExplanation: Flexible working practices refer to work arrangements that allow employees to have more control over their work schedules, tasks, and locations. This can include telecommuting, flexible hours, job sharing, and compressed work",
+        "gold": "C",
+        "context": "\n\n"
+    }
+}

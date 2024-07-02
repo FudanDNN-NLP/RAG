@@ -1,0 +1,18 @@
+{
+    
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 调试程序: 包含参数的当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "OPENAI_API_BASE": "https://api.pumpkinaigc.online/v1",
+                "OPENAI_API_KEY": "sk-aeEDQklGBuDJ8wYvB9E57d12D36b4c8995E7A8E30f2a5aDb"
+            },
+            "args": "${command:pickArgs}"
+        }
+    ]
+}

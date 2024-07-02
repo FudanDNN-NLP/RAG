@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about college physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The quantum efficiency of a photon detector is 0.1. If 100 photons are sent into the detector, one after the other, the detector will detect photons\nA. an average of 10 times, with an rms deviation of about 4\nB. an average of 10 times, with an rms deviation of about 3\nC. an average of 10 times, with an rms deviation of about 1\nD. an average of 10 times, with an rms deviation of about 0.1\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is C. An average of 10 times, with an rms deviation of about 1.\n\nExplanation:\n\nQuantum efficiency (QE) is defined as the ratio of detected photons to incident photons. In this case, the QE is ",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}

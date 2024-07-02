@@ -1,0 +1,3 @@
+dataset,version,metric,mode,llama-3-8b-ragga-disturb
+TriviaQA,c2174f,EM score,gen,0.56
+TriviaQA,c2174f,F1 score,gen,0.59

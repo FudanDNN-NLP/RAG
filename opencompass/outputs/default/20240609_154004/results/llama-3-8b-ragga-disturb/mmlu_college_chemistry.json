@@ -1,0 +1,12 @@
+{
+    "accuracy": 100.0,
+    "details": {
+        "0": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:If this reaction occurred in a single step, its reaction rate (r) would be proportional to the rate of collisions between and CO molecules: r = k[][CO], where k is the reaction rate constant, and square brackets indicate a molar concentration.\n\nA + B → C Ea is the activation energy (per mole) of the reaction in unit J/mol, ; T is the absolute temperature in unit K, ; R is the gas constant in unit J/mol/K.\n\nBut the overall rate of reaction is the rate of formation of final product (here ), so that r r2 ≈ r1.\n\n1) +  +slow rate-determining ; 2)  CO → +  (fast step) fact however, reaction rate is second- in and zero-order in, with rate equation r = k\n\n mechanism two elementary steps explains the is: In mechanismactive intermediate is formed the step with rate r1 reacts in the second step with rate r2.\n\nHowever NO the first the reverse → 2 with rate r1, the minus sign the rate of reaction.\nThe overall rate is by second step: r =2 �� very few react at continue second step, is.\n\n + () → +ining) other possible case step and, the first step in the reverse direction: r2 ≪ r−1.\n\nThis suggests that the rate is determined by a step in which two molecules react, with the CO molecule entering at another, faster, step.\n\nThere is a multiple-choice question about college chemistry. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The rate, r, of a zero-order chemical reaction A → B can be expressed as which of the following?\nA. r = k ln[A]\nB. r = k [A]^2\nC. r = k [A]\nD. r = k\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "D. r = k",
+            "predictions": "D",
+            "references": "D"
+        }
+    },
+    "type": "GEN"
+}

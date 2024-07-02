@@ -1,0 +1,202 @@
+06/15 14:26:18 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/nq]
+06/15 14:26:18 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-15 14:26:19.395390: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 14:26:19.448505: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 14:26:20.276708: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.50s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.51s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.45s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.21s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/2202622_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.754 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:02<00:19,  2.72s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:05<00:17,  2.91s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:08<00:13,  2.77s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:10<00:10,  2.54s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:12<00:06,  2.30s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:14<00:04,  2.09s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:15<00:01,  1.91s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:16<00:00,  1.55s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:16<00:00,  2.06s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:6
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:6
+If you want to use `BertLMHeadModel` as a standalone, add `is_decoder=True.`
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/15 14:27:08 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/nq]
+[2024-06-15 14:27:08,688] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-15 14:27:08 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-15 14:27:08,690] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@True
+2024-06-15 14:27:08 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@True
+*****************
+retrieving
+*****************
+cq:Question: who got the first nobel prize in physics
+Answer: 
+q:who got the first nobel prize in physics
+*****************
+searching
+*****************
+Jun 15, 2024 2:27:08 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+['In 1901, the first Nobel Prize in Physics was awarded to Hendrik Lorentz and Pieter Zeeman "in recognition of the exceptional service they rendered by their discoveries in the domain of modern physics."\n\nHendrik Lorentz was a Dutch physicist who made significant contributions to the field of electromagnetism. He is best known for his development of the Lorentz transformation, which is a mathematical formula that describes how space and time appear to change when an observer is moving at a constant velocity. This formula is essential to the theory of relativity, which was developed by Albert Einstein.\n\nPieter Zeeman was also a Dutch physicist who made a significant discovery in the field of magnetism. In 1896, he discovered that when a magnetic field is applied to a glowing gas, the spectral lines of the gas split into multiple lines. This phenomenon is now known as the Zeeman effect.\n\nThe discovery of the Zeeman effect was significant because it provided evidence for the existence of magnetic fields in gases. It also helped to confirm the theory of electromagnetism, which was developed by James Clerk Maxwell.\n\nThe awarding of the first Nobel Prize in Physics to Lorentz and Zeeman was a significant moment in the history of physics. It recognized the contributions of two pioneering scientists who made significant discoveries in the field of modern physics', 'who got the first nobel prize in physics']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 10.76it/s]
+====================================================================================================
+1    e1ff55de-05ad-45f1-bde6-5163909df749 	 1.0 
+  In 1892, Hendrik Lorentz proposed a modification of Fresnel's model, in which the aether is completely stationary. He succeeded in deriving Fresnel's dragging coefficient as the result of an interaction between the moving water with an undragged aether. He also discovered that the transition from one to another reference frame could be simplified by using an auxiliary time variable which he called local time:  In 1895, Lorentz more generally explained Fresnel's coefficient based on the concept of local time. However, Lorentz's theory had the same fundamental problem as Fresnel's: a stationary aether contradicted the Michelson–Morley experiment. So in 1892 Lorentz proposed that moving bodies contract in the direction of motion (FitzGerald-Lorentz contraction hypothesis, since George FitzGerald had already arrived in 1889 at this conclusion). The equations that he used to describe these effects were further developed by him until 1904. These are now called the Lorentz transformations in his honor, and are identical in form to the equations that Einstein was later to derive from first principles. Unlike Einstein's equations, however, Lorentz's transformations were strictly ad hoc, their only justification being that they seemed to work.
+====================================================================================================
+2    759e3836-4f86-42d3-aefa-d06905f7f1a8 	 0.8476524513499634 
+  Einstein's "Zur Elektrodynamik bewegter Körper" ("On the Electrodynamics of Moving Bodies") was received on 30 June 1905 and published 26 September of that same year. It reconciled conflicts between Maxwell's equations (the laws of electricity and magnetism) and the laws of Newtonian mechanics by introducing changes to the laws of mechanics. Observationally, the effects of these changes are most apparent at high speeds (where objects are moving at speeds close to the speed of light). The theory developed in this paper later became known as Einstein's special theory of relativity. There is evidence from Einstein's writings that he collaborated with his first wife, Mileva Marić, on this work. The decision to publish only under his name seems to have been mutual, but the exact reason is unknown. This paper predicted that, when 
+====================================================================================================
+3    add75875-c58d-405e-b5ec-3a2eb93ef903 	 0.8217996201807286 
+  Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is best known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics. Relativity and quantum mechanics are together the two pillars of modern physics. His mass–energy equivalence formula E = mc2 , which arises from relativity theory, has been dubbed "the world's most famous equation". His work is also known for its influence on the philosophy of science. He received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the 
+====================================================================================================
+4    820917c4-e5b7-4b98-b14c-ebb235b55a35 	 0.7312638629385605 
+  The usual treatment (e.g., Albert Einstein's original work) is based on the invariance of the speed of light. However, this is not necessarily the starting point: indeed (as is exposed, for example, in the second volume of the Course of Theoretical Physics by Landau and Lifshitz), what is really at stake is the locality of interactions: one supposes that the influence that one particle, say, exerts on another can not be transmitted instantaneously. Hence, there exists a theoretical maximal speed of information transmission which must be invariant, and it turns out that this speed coincides with the speed of light in vacuum. Newton had himself called the idea of action at a distance philosophically "absurd", and held that gravity had to be transmitted by some agent according to certain laws. Michelson and Morley in 1887 designed an experiment, employing an interferometer and a half-silvered mirror, 
+====================================================================================================
+5    4bb52e83-02a3-4b39-bc99-d2961e8a7201 	 0.6072049037925722 
+  The Nobel Prize in Physics (Nobelpriset i fysik) is awarded annually by the Royal Swedish Academy of Sciences to scientists who have made outstanding contributions in Physics. It is one of the five Nobel Prizes which were established by the will of Alfred Nobel in 1895. Every year, the Royal Swedish Academy of Sciences sends out forms, which amount to a personal and exclusive invitation, to about three thousand selected individuals to invite them to submit nominations. The names of the nominees are never publicly announced, and neither are they told that they have been considered for the Prize. Nomination records are strictly sealed 
+====================================================================================================
+6    0cd3a326-b89a-474e-aa3b-689a4d54d5b3 	 0.43666480916948025 
+  of a linear transformation iswhere the speed of light is a finite universal constant determining the highest possible relative velocity between inertial frames. If v ≪ c the Galilean transformation is a good approximation to the Lorentz transformation. Only experiment can answer the question which of the two possibilities, κ = 0 or κ < 0 , is realized in our world. The experiments measuring the speed of light, first performed by a Danish physicist Ole Rømer, show that it is finite, and the Michelson–Morley experiment showed that it is an absolute speed, and thus that κ < 0 .
+====================================================================================================
+7    1bbe2528-5624-4b1d-a188-e42bef17d619 	 0.3 
+ Hendrik Antoon Lorentz made significant contributions to both physics and society. In the field of physics, Lorentz played a crucial role in the development of the classical theory of electromagnetism. Together with James Clerk Maxwell, Lorentz formulated the electron theory, which provided electromagnetism with its final form. This theory, often referred to as the Maxwell-Lorentz theory, explained phenomena such as the Zeeman effect, which gave the first indication of the existence of electrons.
+
+Lorentz's groundbreaking work also included the establishment of the Lorentz transformation in 1904. This transformation preceded Albert Einstein's special theory of relativity and laid the foundation for it. Lorentz's contributions to theoretical physics were recognized with the Nobel Prize in Physics in 1902.
+
+Outside of his scientific achievements, Lorentz made important contributions to society. He played an influential role in promoting the new developments in physics through his involvement in the Solvay conferences as the chairman. These conferences brought together leading physicists to discuss and advance the field.
+
+Furthermore, Lorentz held important positions nationally and internationally. He chaired the Zuiderzee committee at the national level, contributing to the management and protection of the Zuiderzee, a former inlet of the North Sea in the Netherlands. Internationally, Lorentz served as the president of the International Commission on Intellectual Cooperation of the League of Nations. His leadership in this role helped foster intellectual collaboration between nations.
+
+Lorentz's unique greatness was widely recognized, and he was greatly respected by his peers. Albert Einstein, one of the greatest scientists of all time, expressed that Lorentz meant more to him personally than anyone else he had met in his life.
+
+In summary, Hendrik Antoon Lorentz's contributions to physics include the development of the electron theory, the explanation of the Zeeman effect, and the establishment of the Lorentz transformation. In society, he played a prominent role in advancing physics through the Solvay conferences and held important positions both nationally and internationally. His impact on both fields was widely recognized and admired.
+====================================================================================================
+8    48703b7f-5e71-417a-9b4c-72188673456a 	 0.2189606756919177 
+   Around 1904–1905, the works of Hendrik Lorentz, Henri Poincaré and finally Albert Einstein's special theory of relativity, exclude the possibility of propagation of any effects faster than the speed of light. It followed that Newton's law of gravitation would have to be replaced with another law, compatible with the principle of relativity, while still obtaining the Newtonian limit for circumstances where relativistic effects are negligible. Such attempts were made by Henri Poincaré (1905), Hermann Minkowski (1907) and Arnold Sommerfeld (1910). In 1907 Einstein came to the conclusion that to achieve this a successor to special relativity was needed. From 1907 to 1915, Einstein worked towards a new theory, using his equivalence principle as a key concept to guide his way. According 
+====================================================================================================
+9    3cb8a3db-f820-467b-b489-e8aac8e4509f 	 0.21203330383190744 
+  Lorentz subsequently reinterpreted these as the fundamental equations of electrodynamics and Oliver Heaviside developed the notation we use today. The theory behind Maxwell's equations was the first grand unification theory of the forces of Nature as this theory united the electric and magnetic fields. A person who is stationary may experience only an electric field but a person who is in relative motion may experience an electric current and a magnetic field. Thus the one field (called the electromagnetic field) may appear in different guises. In his famous 1905 'Special Relativity' paper, Albert Einstein  showed that Maxwell's equations were invariant under a Lorentz 
+====================================================================================================
+10    bcfa498b-ad81-4089-8bf2-1e9901afe592 	 0.18191404806518222 
+  for stained-glass windows have discoveries of physicists Pieter Zeeman and Hendrik Lorentz as a subject. One of these stained-glass windows contained a portrait of Hendrik Lorentz and formulas devised by him that describe the behavior of electrons. Other stained-glass windows show the instruments to measure the splitting of spectral lines of atoms under the influence of a magnetic field is measured, the so-called Zeeman effect. He also made portraits of the physicists Albert Einstein and Paul Ehrenfest. Kamerlingh Onnes' work was included in the 1939 exhibition and sale Onze Kunst van Heden (Our Art of Today) at the Rijksmuseum in Amsterdam. In 1953 Kamerlingh Onnes with Bert Nienhuis Piet Wiegman, Dirk Hubers and Frans Wildenhain, took part of the exhibition "five contemporary potters" in Museum Boijmans Van Beuningen, which was one of the first museum presentations of modern artisan ceramics in the Netherlands.
+*****************
+reranking
+*****************
+Converted docs to temp collection
+
+Loading collection:   0%|          | 0/10 [00:00<?, ?it/s][ALoading collection: 100%|██████████| 10/10 [00:00<00:00, 96866.14it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:03<00:00,  3.63s/it][A100%|██████████| 1/1 [00:03<00:00,  3.74s/it]
+Completed passage expansion
+
+loading collection....:   0%|          | 0/12 [00:00<?, ?it/s][Aloading collection....:  75%|███████▌  | 9/12 [00:00<00:00, 63872.65it/s]
+  0%|          | 0/500 [00:56<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    docs = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 267, in retrieval
+    reranked_docs, _ = self._rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 229, in _rerank
+    docs = rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 21, in rerank
+    reranked_docs, similarity_scores = run_rerank(model, expansion_model, tokenizer, bert_tokenizer, mode, query, docs, top_k)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 79, in run_rerank
+    reranked_docs, scores = tilde_rerank(model, expansion_model, tokenizer, bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 30, in tilde_rerank
+    index_collection(model, tokenizer)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 73, in index_collection
+    indexing_main(model, tokenizer, args)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/TILDE/indexingv2.py", line 72, in main
+    dataset = MsmarcoDataset(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/TILDE/indexingv2.py", line 27, in __init__
+    data = json.loads(line)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-06-15 14:28:05 [INFO] server: Stop milvus...
+[2024-06-15 14:28:12,603] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 2203277) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-15_14:28:12
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2203277)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

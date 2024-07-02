@@ -1,0 +1,12 @@
+{
+    "accuracy": 0.0,
+    "details": {
+        "0": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:y stored in a capacitor of capacitance C(x) and charge Q is  The two conjugate energies happen to stand opposite to each other, only because of the linearity of the capacitance—except now Q is no longer a constant.\n\nThey reflect the two different pathways storing energy into the capacitor, resulting in, for instance, the \"pull\" a capacitor's plates.\n\nThe of the amp/s) to the coulomb is same as that of the watt (J/s) to the joule.\n\nSuch a capacitor would transfer the energy which in capac into, done by the force acting on plates.\nConstant instant and average expressed amperas \" charging is1.2 A and ( through a) over a period time expressed coulombsas \" battery is 3000 C\nConversely, current of one ampere is one coul of going past a given point per: In general Q is I flow for a time t = I t\n\nCompute the force on as a x the whichates them\n SI unit of carried in 1\n code is resistance\n\n theity ; is the electric potential ; &Phi; is the magnetic flux ; R is the electrical resistance ; C is the capacitance ; L is the inductance where\n\nThere is a multiple-choice question about high school physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The plates of a capacitor are charged to a potential difference of 5 V. If the capacitance is 2 mF, what is the charge on the positive plate?\nA. 0.005 C\nB. 0.01 C\nC. 0.02 C\nD. 0.5 C\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "A. 0.005 C",
+            "predictions": "C",
+            "references": "B"
+        }
+    },
+    "type": "GEN"
+}

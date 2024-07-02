@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about global facts. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: As of 2016, about what percentage of adults aged 18 years or older were overweight?\nA. 10%\nB. 20%\nC. 40%\nD. 80%\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is B. 20%. According to the World Health Organization (WHO), in 2016, approximately 39% of adults worldwide were overweight, and among them, 13% were obese. However, it's important to note",
+        "gold": "C",
+        "context": "temp contexts"
+    }
+}

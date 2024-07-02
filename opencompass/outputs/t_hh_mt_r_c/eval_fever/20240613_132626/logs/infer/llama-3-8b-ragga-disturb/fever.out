@@ -1,0 +1,319 @@
+06/13 13:26:30 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/fever]
+06/13 13:26:30 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-13 13:26:31.251224: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-13 13:26:31.304578: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-13 13:26:32.169615: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.49s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.46s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.36s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.03it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.14s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/422312_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.711 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:07,  1.09s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:07,  1.20s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:05,  1.09s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:04,  1.07s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.12s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:06<00:02,  1.12s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:07<00:01,  1.07s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:08<00:00,  1.12it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:08<00:00,  1.02s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'MonoT5', 'compression_method': 'recomp', 'repack_method': 'compact'},milvus:5
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'MonoT5', 'compression_method': 'recomp', 'repack_method': 'compact'}
+milvus:5
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/13 13:27:05 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/fever]
+[2024-06-13 13:27:05,659] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-13 13:27:05 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-13 13:27:05,753] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:05 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.
+Answer: 
+q:Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.
+[2024-06-13 13:27:05,760] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.
+Answer: 
+2024-06-13 13:27:05 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.
+Answer: 
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 1/500 [00:00<02:44,  3.03it/s][2024-06-13 13:27:05,998] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:05 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Tilda Swinton is a vegan.
+Answer: 
+q:Tilda Swinton is a vegan.
+[2024-06-13 13:27:06,005] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Tilda Swinton is a vegan.
+Answer: 
+2024-06-13 13:27:06 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Tilda Swinton is a vegan.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 2/500 [00:00<01:42,  4.86it/s][2024-06-13 13:27:06,116] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:06 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Fox 2000 Pictures released the film Soul Food.
+Answer: 
+q:Fox 2000 Pictures released the film Soul Food.
+[2024-06-13 13:27:06,123] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Fox 2000 Pictures released the film Soul Food.
+Answer: 
+2024-06-13 13:27:06 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Fox 2000 Pictures released the film Soul Food.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 3/500 [00:02<07:19,  1.13it/s][2024-06-13 13:27:07,811] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:07 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Anne Rice was born in New Jersey.
+Answer: 
+q:Anne Rice was born in New Jersey.
+[2024-06-13 13:27:07,818] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Anne Rice was born in New Jersey.
+Answer: 
+2024-06-13 13:27:07 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Anne Rice was born in New Jersey.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 4/500 [00:03<09:56,  1.20s/it][2024-06-13 13:27:09,502] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:09 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Telemundo is a English-language television network.
+Answer: 
+q:Telemundo is a English-language television network.
+[2024-06-13 13:27:09,509] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Telemundo is a English-language television network.
+Answer: 
+2024-06-13 13:27:09 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Telemundo is a English-language television network.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 5/500 [00:04<07:24,  1.11it/s][2024-06-13 13:27:09,857] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:09 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Damon Albarn's debut album was released in 2011.
+Answer: 
+q:Damon Albarn's debut album was released in 2011.
+[2024-06-13 13:27:09,864] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Damon Albarn's debut album was released in 2011.
+Answer: 
+2024-06-13 13:27:09 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Damon Albarn's debut album was released in 2011.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 6/500 [00:05<09:34,  1.16s/it][2024-06-13 13:27:11,537] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:11 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: There is a capital called Mogadishu.
+Answer: 
+q:There is a capital called Mogadishu.
+[2024-06-13 13:27:11,544] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: There is a capital called Mogadishu.
+Answer: 
+2024-06-13 13:27:11 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: There is a capital called Mogadishu.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|▏         | 7/500 [00:05<06:45,  1.22it/s][2024-06-13 13:27:11,655] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:11 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Savages was exclusively a German film.
+Answer: 
+q:Savages was exclusively a German film.
+[2024-06-13 13:27:11,661] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Savages was exclusively a German film.
+Answer: 
+2024-06-13 13:27:11 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Savages was exclusively a German film.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 8/500 [00:06<04:54,  1.67it/s][2024-06-13 13:27:11,772] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:11 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Happiness in Slavery is a gospel song by Nine Inch Nails.
+Answer: 
+q:Happiness in Slavery is a gospel song by Nine Inch Nails.
+[2024-06-13 13:27:11,780] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Happiness in Slavery is a gospel song by Nine Inch Nails.
+Answer: 
+2024-06-13 13:27:11 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Happiness in Slavery is a gospel song by Nine Inch Nails.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 9/500 [00:07<07:40,  1.07it/s][2024-06-13 13:27:13,460] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:13 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Andrew Kevin Walker is only Chinese.
+Answer: 
+q:Andrew Kevin Walker is only Chinese.
+[2024-06-13 13:27:13,467] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Andrew Kevin Walker is only Chinese.
+Answer: 
+2024-06-13 13:27:13 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Andrew Kevin Walker is only Chinese.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 10/500 [00:09<09:07,  1.12s/it][2024-06-13 13:27:14,977] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:14 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Shooter is about an expert marksman who tries to stop the assassination of the president.
+Answer: 
+q:Shooter is about an expert marksman who tries to stop the assassination of the president.
+[2024-06-13 13:27:14,985] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Shooter is about an expert marksman who tries to stop the assassination of the president.
+Answer: 
+2024-06-13 13:27:14 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: Shooter is about an expert marksman who tries to stop the assassination of the president.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 11/500 [00:09<06:46,  1.20it/s][2024-06-13 13:27:15,162] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-13 13:27:15 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.
+Claim: House is a sitcom.
+Answer: 
+q:House is a sitcom.
+*****************
+searching
+*****************
+Jun 13, 2024 1:27:15 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+["House is a medical drama television series, which premiered on the Fox network in November 2004. The show is a medical mystery drama, starring Hugh Laurie in the lead role as Dr. Gregory House, an unconventional and brilliant diagnostician at the fictional Princeton-Plainsboro Teaching Hospital in New Jersey. The series is produced by Heel and Toe Productions, in association with Shore Z Productions, Bad Hat Harry Productions, and 20th Century Fox Television. The show's executive producers are David Shore, Katie Jacobs, and Paul Attanasio.\n\nThe series follows the life of Dr. House, a medical genius who has a reputation for being a difficult and unorthodox doctor. House has a team of diagnosticians, including Dr. James Wilson (Robert Sean Leonard), Dr. Eric Foreman (Omar Epps), Dr. Allison Cameron (Jennifer Morrison), and Dr. Robert Chase (Jesse Spencer), who work with him to solve medical mysteries. The show's format is similar to that of a procedural drama, with each episode focusing on a different patient and medical mystery.\n\nThe show has been praised for its strong writing, acting, and production values. Hugh Laurie's performance as Dr. House has been particularly acclaimed, earning him numerous awards and nominations,", 'House is a sitcom.']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 37.04it/s]
+E20240613 13:27:47.859800 424477 server.cpp:47] [SERVER][BlockLock][milvus] Process exit
+[2024-06-13 13:27:49,468] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: -9) local_rank: 0 (pid: 422724) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-13_13:27:49
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : -9 (pid: 422724)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 422724
+============================================================

@@ -1,0 +1,1243 @@
+06/13 13:26:30 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/openbookqa]
+06/13 13:26:30 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-13 13:26:30.815849: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-13 13:26:30.869958: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-13 13:26:31.655662: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.32s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.28s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.24s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.04s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/422310_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.724 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.21s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:08,  1.45s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:06,  1.37s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.30s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:06<00:03,  1.24s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:07<00:02,  1.18s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:08<00:01,  1.17s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.16s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'MonoT5', 'compression_method': 'recomp', 'repack_method': 'compact'},milvus:3
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'MonoT5', 'compression_method': 'recomp', 'repack_method': 'compact'}
+milvus:3
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/13 13:27:03 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/openbookqa]
+[2024-06-13 13:27:03,972] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-13 13:27:03 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-13 13:27:04,076] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:04 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to
+A. make more phone calls
+B. quit eating lunch out
+C. buy less with monopoly money
+D. have lunch with friends
+Answer:
+q:A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is toA person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to
+A. make more phone calls
+B. quit eating lunch out
+C. buy less with monopoly money
+D. have lunch with friends
+[2024-06-13 13:27:04,083] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to
+A. make more phone calls
+B. quit eating lunch out
+C. buy less with monopoly money
+D. have lunch with friends
+Answer:
+2024-06-13 13:27:04 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to
+A. make more phone calls
+B. quit eating lunch out
+C. buy less with monopoly money
+D. have lunch with friends
+Answer:
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 1/500 [00:00<04:03,  2.05it/s][2024-06-13 13:27:04,471] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:04 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: There is most likely going to be fog around:
+A. a marsh
+B. a tundra
+C. the plains
+D. a desert
+Answer:
+q:There is most likely going to be fog around:There is most likely going to be fog around:
+A. a marsh
+B. a tundra
+C. the plains
+D. a desert
+[2024-06-13 13:27:04,477] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: There is most likely going to be fog around:
+A. a marsh
+B. a tundra
+C. the plains
+D. a desert
+Answer:
+2024-06-13 13:27:04 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: There is most likely going to be fog around:
+A. a marsh
+B. a tundra
+C. the plains
+D. a desert
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 2/500 [00:00<02:33,  3.24it/s][2024-06-13 13:27:04,653] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:04 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Predators eat
+A. lions
+B. humans
+C. bunnies
+D. grass
+Answer:
+q:Predators eatPredators eat
+A. lions
+B. humans
+C. bunnies
+D. grass
+[2024-06-13 13:27:04,659] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Predators eat
+A. lions
+B. humans
+C. bunnies
+D. grass
+Answer:
+2024-06-13 13:27:04 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Predators eat
+A. lions
+B. humans
+C. bunnies
+D. grass
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 3/500 [00:02<07:48,  1.06it/s][2024-06-13 13:27:06,350] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:06 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Oak tree seeds are planted and a sidewalk is paved right next to that spot, until eventually, the tree is tall and the roots must extend past the sidewalk, which means
+A. roots may be split
+B. roots may begin to die
+C. parts may break the concrete
+D. roots may fall apart
+Answer:
+q:Oak tree seeds are planted and a sidewalk is paved right next to that spot, until eventually, the tree is tall and the roots must extend past the sidewalk, which meansOak tree seeds are planted and a sidewalk is paved right next to that spot, until eventually, the tree is tall and the roots must extend past the sidewalk, which means
+A. roots may be split
+B. roots may begin to die
+C. parts may break the concrete
+D. roots may fall apart
+[2024-06-13 13:27:06,357] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Oak tree seeds are planted and a sidewalk is paved right next to that spot, until eventually, the tree is tall and the roots must extend past the sidewalk, which means
+A. roots may be split
+B. roots may begin to die
+C. parts may break the concrete
+D. roots may fall apart
+Answer:
+2024-06-13 13:27:06 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Oak tree seeds are planted and a sidewalk is paved right next to that spot, until eventually, the tree is tall and the roots must extend past the sidewalk, which means
+A. roots may be split
+B. roots may begin to die
+C. parts may break the concrete
+D. roots may fall apart
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 4/500 [00:03<09:07,  1.10s/it][2024-06-13 13:27:07,700] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:07 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An electric car runs on electricity via
+A. gasoline
+B. a power station
+C. electrical conductors
+D. fuel
+Answer:
+q:An electric car runs on electricity viaAn electric car runs on electricity via
+A. gasoline
+B. a power station
+C. electrical conductors
+D. fuel
+[2024-06-13 13:27:07,706] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An electric car runs on electricity via
+A. gasoline
+B. a power station
+C. electrical conductors
+D. fuel
+Answer:
+2024-06-13 13:27:07 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An electric car runs on electricity via
+A. gasoline
+B. a power station
+C. electrical conductors
+D. fuel
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 5/500 [00:05<10:47,  1.31s/it][2024-06-13 13:27:09,370] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:09 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: As the rain forest is deforested the atmosphere will increase with
+A. oxygen
+B. nitrogen
+C. carbon
+D. rain
+Answer:
+q:As the rain forest is deforested the atmosphere will increase withAs the rain forest is deforested the atmosphere will increase with
+A. oxygen
+B. nitrogen
+C. carbon
+D. rain
+[2024-06-13 13:27:09,377] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: As the rain forest is deforested the atmosphere will increase with
+A. oxygen
+B. nitrogen
+C. carbon
+D. rain
+Answer:
+2024-06-13 13:27:09 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: As the rain forest is deforested the atmosphere will increase with
+A. oxygen
+B. nitrogen
+C. carbon
+D. rain
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 6/500 [00:06<10:46,  1.31s/it][2024-06-13 13:27:10,681] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:10 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: an electric car contains a motor that runs on
+A. gas
+B. hydrogen
+C. ions
+D. plutonium
+Answer:
+q:an electric car contains a motor that runs onan electric car contains a motor that runs on
+A. gas
+B. hydrogen
+C. ions
+D. plutonium
+[2024-06-13 13:27:10,687] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: an electric car contains a motor that runs on
+A. gas
+B. hydrogen
+C. ions
+D. plutonium
+Answer:
+2024-06-13 13:27:10 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: an electric car contains a motor that runs on
+A. gas
+B. hydrogen
+C. ions
+D. plutonium
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|▏         | 7/500 [00:06<07:38,  1.07it/s][2024-06-13 13:27:10,832] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:10 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The middle of the day usually involves the bright star nearest to the earth to be straight overhead why?
+A. moons gravity
+B. human planet rotation
+C. global warming
+D. moon rotation
+Answer:
+q:The middle of the day usually involves the bright star nearest to the earth to be straight overhead why?The middle of the day usually involves the bright star nearest to the earth to be straight overhead why?
+A. moons gravity
+B. human planet rotation
+C. global warming
+D. moon rotation
+[2024-06-13 13:27:10,839] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The middle of the day usually involves the bright star nearest to the earth to be straight overhead why?
+A. moons gravity
+B. human planet rotation
+C. global warming
+D. moon rotation
+Answer:
+2024-06-13 13:27:10 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The middle of the day usually involves the bright star nearest to the earth to be straight overhead why?
+A. moons gravity
+B. human planet rotation
+C. global warming
+D. moon rotation
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 8/500 [00:08<09:32,  1.16s/it][2024-06-13 13:27:12,495] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:12 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The summer solstice in the northern hemisphere is four months before
+A. May
+B. July
+C. April
+D. October
+Answer:
+q:The summer solstice in the northern hemisphere is four months beforeThe summer solstice in the northern hemisphere is four months before
+A. May
+B. July
+C. April
+D. October
+[2024-06-13 13:27:12,502] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The summer solstice in the northern hemisphere is four months before
+A. May
+B. July
+C. April
+D. October
+Answer:
+2024-06-13 13:27:12 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The summer solstice in the northern hemisphere is four months before
+A. May
+B. July
+C. April
+D. October
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 9/500 [00:09<08:02,  1.02it/s][2024-06-13 13:27:13,079] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:13 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The main component in dirt is
+A. microorganisms
+B. broken stones
+C. pollution
+D. bacteria
+Answer:
+q:The main component in dirt isThe main component in dirt is
+A. microorganisms
+B. broken stones
+C. pollution
+D. bacteria
+[2024-06-13 13:27:13,086] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The main component in dirt is
+A. microorganisms
+B. broken stones
+C. pollution
+D. bacteria
+Answer:
+2024-06-13 13:27:13 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The main component in dirt is
+A. microorganisms
+B. broken stones
+C. pollution
+D. bacteria
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 10/500 [00:10<09:43,  1.19s/it][2024-06-13 13:27:14,735] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:14 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: It's easier for human's to survive in:
+A. a cave
+B. the ocean.
+C. a town
+D. alone
+Answer:
+q:It's easier for human's to survive in:It's easier for human's to survive in:
+A. a cave
+B. the ocean.
+C. a town
+D. alone
+[2024-06-13 13:27:14,742] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: It's easier for human's to survive in:
+A. a cave
+B. the ocean.
+C. a town
+D. alone
+Answer:
+2024-06-13 13:27:14 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: It's easier for human's to survive in:
+A. a cave
+B. the ocean.
+C. a town
+D. alone
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 11/500 [00:10<07:11,  1.13it/s][2024-06-13 13:27:14,918] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:14 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A cactus stem is used to store
+A. fruit
+B. liquid
+C. food
+D. spines
+Answer:
+q:A cactus stem is used to storeA cactus stem is used to store
+A. fruit
+B. liquid
+C. food
+D. spines
+[2024-06-13 13:27:14,924] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A cactus stem is used to store
+A. fruit
+B. liquid
+C. food
+D. spines
+Answer:
+2024-06-13 13:27:14 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A cactus stem is used to store
+A. fruit
+B. liquid
+C. food
+D. spines
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|▏         | 12/500 [00:11<05:21,  1.52it/s][2024-06-13 13:27:15,068] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:15 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A red-tailed hawk is searching for prey. It is most likely to swoop down on
+A. an eagle
+B. a cow
+C. a gecko
+D. a deer
+Answer:
+q:A red-tailed hawk is searching for prey. It is most likely to swoop down onA red-tailed hawk is searching for prey. It is most likely to swoop down on
+A. an eagle
+B. a cow
+C. a gecko
+D. a deer
+[2024-06-13 13:27:15,074] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A red-tailed hawk is searching for prey. It is most likely to swoop down on
+A. an eagle
+B. a cow
+C. a gecko
+D. a deer
+Answer:
+2024-06-13 13:27:15 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A red-tailed hawk is searching for prey. It is most likely to swoop down on
+A. an eagle
+B. a cow
+C. a gecko
+D. a deer
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  3%|▎         | 13/500 [00:12<07:47,  1.04it/s][2024-06-13 13:27:16,719] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:16 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The chance of wildfires is increased by
+A. parched foliage
+B. torrential rain
+C. lush foliage
+D. careful fire maintenance
+Answer:
+q:The chance of wildfires is increased byThe chance of wildfires is increased by
+A. parched foliage
+B. torrential rain
+C. lush foliage
+D. careful fire maintenance
+[2024-06-13 13:27:16,726] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The chance of wildfires is increased by
+A. parched foliage
+B. torrential rain
+C. lush foliage
+D. careful fire maintenance
+Answer:
+2024-06-13 13:27:16 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: The chance of wildfires is increased by
+A. parched foliage
+B. torrential rain
+C. lush foliage
+D. careful fire maintenance
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  3%|▎         | 14/500 [00:12<05:57,  1.36it/s][2024-06-13 13:27:16,934] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:16 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A positive effect of burning biofuel is
+A. shortage of crops for the food supply
+B. an increase in air pollution
+C. powering the lights in a home
+D. deforestation in the amazon to make room for crops
+Answer:
+q:A positive effect of burning biofuel isA positive effect of burning biofuel is
+A. shortage of crops for the food supply
+B. an increase in air pollution
+C. powering the lights in a home
+D. deforestation in the amazon to make room for crops
+[2024-06-13 13:27:16,941] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A positive effect of burning biofuel is
+A. shortage of crops for the food supply
+B. an increase in air pollution
+C. powering the lights in a home
+D. deforestation in the amazon to make room for crops
+Answer:
+2024-06-13 13:27:16 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A positive effect of burning biofuel is
+A. shortage of crops for the food supply
+B. an increase in air pollution
+C. powering the lights in a home
+D. deforestation in the amazon to make room for crops
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  3%|▎         | 15/500 [00:14<08:12,  1.02s/it][2024-06-13 13:27:18,603] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:18 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: As gasoline costs rise, alternative fuels are being used, which means that
+A. wind power will be expensive
+B. gas costs will rise
+C. oil costs will be maintained
+D. gasoline will be needed less
+Answer:
+q:As gasoline costs rise, alternative fuels are being used, which means thatAs gasoline costs rise, alternative fuels are being used, which means that
+A. wind power will be expensive
+B. gas costs will rise
+C. oil costs will be maintained
+D. gasoline will be needed less
+[2024-06-13 13:27:18,610] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: As gasoline costs rise, alternative fuels are being used, which means that
+A. wind power will be expensive
+B. gas costs will rise
+C. oil costs will be maintained
+D. gasoline will be needed less
+Answer:
+2024-06-13 13:27:18 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: As gasoline costs rise, alternative fuels are being used, which means that
+A. wind power will be expensive
+B. gas costs will rise
+C. oil costs will be maintained
+D. gasoline will be needed less
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  3%|▎         | 16/500 [00:15<07:03,  1.14it/s][2024-06-13 13:27:19,147] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:19 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A person wants to be able to have more natural power in their home. They choose to cease using a traditional electric company to source this electricity, and so decide to install
+A. sun grafts
+B. sunlight shields
+C. panels collecting sunlight
+D. solar bees
+Answer:
+q:A person wants to be able to have more natural power in their home. They choose to cease using a traditional electric company to source this electricity, and so decide to installA person wants to be able to have more natural power in their home. They choose to cease using a traditional electric company to source this electricity, and so decide to install
+A. sun grafts
+B. sunlight shields
+C. panels collecting sunlight
+D. solar bees
+[2024-06-13 13:27:19,154] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A person wants to be able to have more natural power in their home. They choose to cease using a traditional electric company to source this electricity, and so decide to install
+A. sun grafts
+B. sunlight shields
+C. panels collecting sunlight
+D. solar bees
+Answer:
+2024-06-13 13:27:19 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A person wants to be able to have more natural power in their home. They choose to cease using a traditional electric company to source this electricity, and so decide to install
+A. sun grafts
+B. sunlight shields
+C. panels collecting sunlight
+D. solar bees
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  3%|▎         | 17/500 [00:16<08:57,  1.11s/it][2024-06-13 13:27:20,815] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:20 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A Mola Mola might live where?
+A. Lake Michigan
+B. The Mississippi River
+C. Bay of Bengal
+D. Lake Eerie
+Answer:
+q:A Mola Mola might live where?A Mola Mola might live where?
+A. Lake Michigan
+B. The Mississippi River
+C. Bay of Bengal
+D. Lake Eerie
+[2024-06-13 13:27:20,822] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A Mola Mola might live where?
+A. Lake Michigan
+B. The Mississippi River
+C. Bay of Bengal
+D. Lake Eerie
+Answer:
+2024-06-13 13:27:20 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A Mola Mola might live where?
+A. Lake Michigan
+B. The Mississippi River
+C. Bay of Bengal
+D. Lake Eerie
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  4%|▎         | 18/500 [00:17<07:24,  1.08it/s][2024-06-13 13:27:21,295] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:21 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Which requires energy to move?
+A. weasel
+B. willow
+C. mango
+D. poison ivy
+Answer:
+q:Which requires energy to move?Which requires energy to move?
+A. weasel
+B. willow
+C. mango
+D. poison ivy
+[2024-06-13 13:27:21,302] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Which requires energy to move?
+A. weasel
+B. willow
+C. mango
+D. poison ivy
+Answer:
+2024-06-13 13:27:21 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Which requires energy to move?
+A. weasel
+B. willow
+C. mango
+D. poison ivy
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  4%|▍         | 19/500 [00:17<05:37,  1.43it/s][2024-06-13 13:27:21,481] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:21 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An animal that only eats plants is a
+A. rat
+B. moth
+C. chimpanzee
+D. pig
+Answer:
+q:An animal that only eats plants is aAn animal that only eats plants is a
+A. rat
+B. moth
+C. chimpanzee
+D. pig
+[2024-06-13 13:27:21,488] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An animal that only eats plants is a
+A. rat
+B. moth
+C. chimpanzee
+D. pig
+Answer:
+2024-06-13 13:27:21 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An animal that only eats plants is a
+A. rat
+B. moth
+C. chimpanzee
+D. pig
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+[2024-06-13 13:27:21,566] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:21 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: There was a lot more water vapor in the air when we went on a trip to
+A. Hanoi
+B. Athens
+C. Baghdad
+D. Phoenix
+Answer:
+q:There was a lot more water vapor in the air when we went on a trip toThere was a lot more water vapor in the air when we went on a trip to
+A. Hanoi
+B. Athens
+C. Baghdad
+D. Phoenix
+[2024-06-13 13:27:21,573] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: There was a lot more water vapor in the air when we went on a trip to
+A. Hanoi
+B. Athens
+C. Baghdad
+D. Phoenix
+Answer:
+2024-06-13 13:27:21 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: There was a lot more water vapor in the air when we went on a trip to
+A. Hanoi
+B. Athens
+C. Baghdad
+D. Phoenix
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  4%|▍         | 21/500 [00:19<06:14,  1.28it/s][2024-06-13 13:27:23,229] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An example of conservation is avoiding the use of
+A. gasoline
+B. air
+C. snow
+D. clothes
+Answer:
+q:An example of conservation is avoiding the use ofAn example of conservation is avoiding the use of
+A. gasoline
+B. air
+C. snow
+D. clothes
+[2024-06-13 13:27:23,236] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An example of conservation is avoiding the use of
+A. gasoline
+B. air
+C. snow
+D. clothes
+Answer:
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An example of conservation is avoiding the use of
+A. gasoline
+B. air
+C. snow
+D. clothes
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+[2024-06-13 13:27:23,315] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: What can feathers on Spheniscidae be used for?
+A. keeping warm
+B. flying
+C. sleeping
+D. eating
+Answer:
+q:What can feathers on Spheniscidae be used for?What can feathers on Spheniscidae be used for?
+A. keeping warm
+B. flying
+C. sleeping
+D. eating
+[2024-06-13 13:27:23,322] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: What can feathers on Spheniscidae be used for?
+A. keeping warm
+B. flying
+C. sleeping
+D. eating
+Answer:
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: What can feathers on Spheniscidae be used for?
+A. keeping warm
+B. flying
+C. sleeping
+D. eating
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  5%|▍         | 23/500 [00:19<04:10,  1.91it/s][2024-06-13 13:27:23,502] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Overpopulation can cause
+A. More fresh water for people to drink
+B. Lower Life Expectancy in Countries
+C. More food for more people
+D. More space for places to people to live
+Answer:
+q:Overpopulation can causeOverpopulation can cause
+A. More fresh water for people to drink
+B. Lower Life Expectancy in Countries
+C. More food for more people
+D. More space for places to people to live
+[2024-06-13 13:27:23,509] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Overpopulation can cause
+A. More fresh water for people to drink
+B. Lower Life Expectancy in Countries
+C. More food for more people
+D. More space for places to people to live
+Answer:
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Overpopulation can cause
+A. More fresh water for people to drink
+B. Lower Life Expectancy in Countries
+C. More food for more people
+D. More space for places to people to live
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+[2024-06-13 13:27:23,588] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Shining a light through a diamond can
+A. make a lot of bright lights shine
+B. summon a brilliant wave of color
+C. heat up a room
+D. make a lot of money
+Answer:
+q:Shining a light through a diamond canShining a light through a diamond can
+A. make a lot of bright lights shine
+B. summon a brilliant wave of color
+C. heat up a room
+D. make a lot of money
+[2024-06-13 13:27:23,595] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Shining a light through a diamond can
+A. make a lot of bright lights shine
+B. summon a brilliant wave of color
+C. heat up a room
+D. make a lot of money
+Answer:
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Shining a light through a diamond can
+A. make a lot of bright lights shine
+B. summon a brilliant wave of color
+C. heat up a room
+D. make a lot of money
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  5%|▌         | 25/500 [00:19<02:53,  2.73it/s][2024-06-13 13:27:23,674] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: If you were attacked by a shark and had to punch it sharply where it pulls in air from, you'd use your hand to make contact with
+A. its snout
+B. its gills
+C. its nose
+D. its belly
+Answer:
+q:If you were attacked by a shark and had to punch it sharply where it pulls in air from, you'd use your hand to make contact withIf you were attacked by a shark and had to punch it sharply where it pulls in air from, you'd use your hand to make contact with
+A. its snout
+B. its gills
+C. its nose
+D. its belly
+[2024-06-13 13:27:23,681] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: If you were attacked by a shark and had to punch it sharply where it pulls in air from, you'd use your hand to make contact with
+A. its snout
+B. its gills
+C. its nose
+D. its belly
+Answer:
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: If you were attacked by a shark and had to punch it sharply where it pulls in air from, you'd use your hand to make contact with
+A. its snout
+B. its gills
+C. its nose
+D. its belly
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  5%|▌         | 26/500 [00:19<02:39,  2.98it/s][2024-06-13 13:27:23,893] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: which of these would stop a car quicker?
+A. a wheel with wet brake pads
+B. a wheel without brake pads
+C. a wheel with worn brake pads
+D. a wheel with dry brake pads
+Answer:
+q:which of these would stop a car quicker?which of these would stop a car quicker?
+A. a wheel with wet brake pads
+B. a wheel without brake pads
+C. a wheel with worn brake pads
+D. a wheel with dry brake pads
+[2024-06-13 13:27:23,900] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: which of these would stop a car quicker?
+A. a wheel with wet brake pads
+B. a wheel without brake pads
+C. a wheel with worn brake pads
+D. a wheel with dry brake pads
+Answer:
+2024-06-13 13:27:23 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: which of these would stop a car quicker?
+A. a wheel with wet brake pads
+B. a wheel without brake pads
+C. a wheel with worn brake pads
+D. a wheel with dry brake pads
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  5%|▌         | 27/500 [00:21<05:03,  1.56it/s][2024-06-13 13:27:25,576] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:25 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: what system is needed for a body to get its needed supply of the gas humans breathe in?
+A. the circulatory system
+B. the digestive system
+C. the school system
+D. central nervous system
+Answer:
+q:what system is needed for a body to get its needed supply of the gas humans breathe in?what system is needed for a body to get its needed supply of the gas humans breathe in?
+A. the circulatory system
+B. the digestive system
+C. the school system
+D. central nervous system
+[2024-06-13 13:27:25,583] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: what system is needed for a body to get its needed supply of the gas humans breathe in?
+A. the circulatory system
+B. the digestive system
+C. the school system
+D. central nervous system
+Answer:
+2024-06-13 13:27:25 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: what system is needed for a body to get its needed supply of the gas humans breathe in?
+A. the circulatory system
+B. the digestive system
+C. the school system
+D. central nervous system
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  6%|▌         | 28/500 [00:23<06:43,  1.17it/s][2024-06-13 13:27:27,091] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:27 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Every evening a child can look into the night sky and see that the moon is
+A. gone
+B. breaking
+C. falling
+D. moving upwards
+Answer:
+q:Every evening a child can look into the night sky and see that the moon isEvery evening a child can look into the night sky and see that the moon is
+A. gone
+B. breaking
+C. falling
+D. moving upwards
+[2024-06-13 13:27:27,098] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Every evening a child can look into the night sky and see that the moon is
+A. gone
+B. breaking
+C. falling
+D. moving upwards
+Answer:
+2024-06-13 13:27:27 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Every evening a child can look into the night sky and see that the moon is
+A. gone
+B. breaking
+C. falling
+D. moving upwards
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  6%|▌         | 29/500 [00:23<06:41,  1.17it/s][2024-06-13 13:27:27,935] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:27 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: When it's flying, a plane has no friction with the
+A. wings
+B. ground
+C. air
+D. clouds
+Answer:
+q:When it's flying, a plane has no friction with theWhen it's flying, a plane has no friction with the
+A. wings
+B. ground
+C. air
+D. clouds
+[2024-06-13 13:27:27,942] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: When it's flying, a plane has no friction with the
+A. wings
+B. ground
+C. air
+D. clouds
+Answer:
+2024-06-13 13:27:27 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: When it's flying, a plane has no friction with the
+A. wings
+B. ground
+C. air
+D. clouds
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  6%|▌         | 30/500 [00:25<08:25,  1.07s/it][2024-06-13 13:27:29,609] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 13:27:29 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: To grow plants require
+A. acid rain
+B. pesticides
+C. shafts of sunlight
+D. moonbeam rays
+Answer:
+q:To grow plants requireTo grow plants require
+A. acid rain
+B. pesticides
+C. shafts of sunlight
+D. moonbeam rays
+[2024-06-13 13:27:29,616] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: To grow plants require
+A. acid rain
+B. pesticides
+C. shafts of sunlight
+D. moonbeam rays
+Answer:
+2024-06-13 13:27:29 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: To grow plants require
+A. acid rain
+B. pesticides
+C. shafts of sunlight
+D. moonbeam rays
+Answer:
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  6%|▌         | 31/500 [00:25<06:36,  1.18it/s][2024-06-13 13:27:29,861] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-13 13:27:29 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: What is the best way to guess a babies eye color?
+A. The surroundings they are born in.
+B. Their parents usual diet.
+C. Just take a random guess.
+D. The genealogy records of their family.
+Answer:
+q:What is the best way to guess a babies eye color?What is the best way to guess a babies eye color?
+A. The surroundings they are born in.
+B. Their parents usual diet.
+C. Just take a random guess.
+D. The genealogy records of their family.
+*****************
+searching
+*****************
+Jun 13, 2024 1:27:29 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+["The best way to guess a baby's eye color is by looking at the genealogy records of their family. This is because eye color is determined by a combination of genetic and environmental factors, and the genes that determine eye color are passed down from generation to generation. By examining the eye colors of the baby's parents, grandparents, and other close relatives, it's possible to make an educated guess about what the baby's eye color might be. While the surroundings and diet of the baby may have some impact on eye color, these factors are generally not significant enough to significantly alter the baby's eye color. Ultimately, the best way to determine a baby's eye color is to wait and see.", 'What is the best way to guess a babies eye color?What is the best way to guess a babies eye color?\nA. The surroundings they are born in.\nB. Their parents usual diet.\nC. Just take a random guess.\nD. The genealogy records of their family.']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 22.32it/s]
+E20240613 13:27:49.577064 424612 server.cpp:47] [SERVER][BlockLock][milvus] Process exit
+[2024-06-13 13:27:54,065] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: -9) local_rank: 0 (pid: 422703) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-13_13:27:54
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : -9 (pid: 422703)
+  error_file: <N/A>
+  traceback : Signal 9 (SIGKILL) received by PID 422703
+============================================================

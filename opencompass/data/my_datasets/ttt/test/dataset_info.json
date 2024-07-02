@@ -1,0 +1,59 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "web_questions",
+  "dataset_size": 818895,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/Stanford/web_questions@0e473cbe21d1e91ec18da343644498be6a3f5454/data/train-00000-of-00001.parquet": {
+      "num_bytes": 260156,
+      "checksum": null
+    },
+    "hf://datasets/Stanford/web_questions@0e473cbe21d1e91ec18da343644498be6a3f5454/data/test-00000-of-00001.parquet": {
+      "num_bytes": 142239,
+      "checksum": null
+    }
+  },
+  "download_size": 402395,
+  "features": {
+    "url": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answers": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1221290,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 530711,
+      "num_examples": 3778,
+      "dataset_name": "web_questions"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 288184,
+      "num_examples": 2032,
+      "dataset_name": "web_questions"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

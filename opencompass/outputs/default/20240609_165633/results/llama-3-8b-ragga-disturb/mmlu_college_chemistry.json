@@ -1,0 +1,12 @@
+{
+    "accuracy": 100.0,
+    "details": {
+        "0": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:Its rate law is second-order: r = k[R−Br][].\n\n The rate for a bimolecular gas-phase reaction, predicted by collision theory is unit mol dm−3 s−1.\n\n overall is determined by: r r2 ≪ r1 as very few molecules that react at the first step continue to the second step, which is slower.\n\nThe of a \n\n1 + +  step) ; 2) + CO → +  (slow step, ratedetermining) possible case would be that second step is and rate-determining, meaning that it slower than first step in direction r2 ≪ r−1.\n\nH− is much faster, so the overall rate independent of the concentration of OH−.\n\nIn chemical kinetics, the rate of reaction often determined by slow, known as the rate-determining stepRDS) or rate-limiting.\n\n has two denotes tbut): This reaction is found to be-order with r =Br], which indicates that first slowines.\n\n the simplest case slow overall is rate of step.\n the rateisms a single a the and of is thecular inistry, where it is the first, rate-determining step that is unimolecular.\n\nThere is a multiple-choice question about college chemistry. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The rate, r, of a zero-order chemical reaction A → B can be expressed as which of the following?\nA. r = k ln[A]\nB. r = k [A]^2\nC. r = k [A]\nD. r = k\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "D. r = k",
+            "predictions": "D",
+            "references": "D"
+        }
+    },
+    "type": "GEN"
+}

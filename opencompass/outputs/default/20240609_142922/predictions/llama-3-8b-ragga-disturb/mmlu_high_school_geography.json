@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school geography. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The main factor preventing subsistence economies from advancing economically is the lack of\nA. a currency.\nB. a well-connected transportation infrastructure.\nC. government activity.\nD. a banking service.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is B. a well-connected transportation infrastructure.\n\nExplanation:\n\nSubsistence economies are characterized by self-sufficiency and limited trade, which can make it difficult for them to advance economically. One major factor that hinders their progress is the",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}

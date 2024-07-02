@@ -1,0 +1,17 @@
+# ide
+.idea/
+.vscode
+.DS_Store
+
+# python
+*.pyc
+__pycache__
+
+# data
+data/lucene-index-covid-paragraph
+scratch
+
+# setup
+dist/
+pygaggle.egg-info/
+

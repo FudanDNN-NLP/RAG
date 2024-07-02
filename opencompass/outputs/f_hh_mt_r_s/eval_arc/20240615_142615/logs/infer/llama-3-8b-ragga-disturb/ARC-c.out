@@ -1,0 +1,222 @@
+06/15 14:26:19 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/ARC-c]
+06/15 14:26:19 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-15 14:26:20.356975: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 14:26:20.448726: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 14:26:21.260017: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.30s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.28s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.23s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.04s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/2202619_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.748 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:02<00:15,  2.14s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:04<00:12,  2.09s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:06<00:09,  1.98s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.96s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.86s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:11<00:03,  1.81s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.67s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.35s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:13<00:00,  1.68s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:3
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:3
+If you want to use `BertLMHeadModel` as a standalone, add `is_decoder=True.`
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/15 14:27:12 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/ARC-c]
+[2024-06-15 14:27:12,693] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-15 14:27:12 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/497 [00:00<?, ?it/s][2024-06-15 14:27:12,696] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@True
+2024-06-15 14:27:12 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@True
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?
+A. Planetary density will decrease.
+B. Planetary years will become longer.
+C. Planetary days will become shorter.
+D. Planetary gravity will become stronger.
+Answer:
+q:An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?
+A. Planetary density will decrease.
+B. Planetary years will become longer.
+C. Planetary days will become shorter.
+D. Planetary gravity will become stronger.
+*****************
+searching
+*****************
+Jun 15, 2024 2:27:12 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+["The recent meteorite impact on the planet has caused a significant increase in its rotation speed. This has led to a decrease in the planet's day length, as the planet now completes a full rotation in less time. The planet's density has not been affected, and its gravity remains unchanged. The planet's year length, however, has not been affected by this event.\n\nThe impact of the meteorite has caused a significant shift in the planet's angular momentum. This has led to a redistribution of mass around the planet's axis, causing the planet to spin faster. The planet's rotation speed has increased by approximately 10%, resulting in a shorter day length.\n\nThe decrease in day length has led to a number of changes on the planet's surface. The planet's climate has been affected, with colder temperatures and more extreme weather patterns. The shorter day length has also led to a decrease in the amount of sunlight that reaches the planet's surface, resulting in a decrease in photosynthesis and a decrease in the planet's overall productivity.\n\nDespite these changes, the planet's overall stability has not been affected. The planet's gravitational pull remains unchanged, and the planet's orbit around its star remains stable. The planet's year length has not been affected by this event, and the planet continues to orbit its star as it always has.\n", 'An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?An astronomer observes that a planet rotates faster after a meteorite impact. Which is the most likely effect of this increase in rotation?\nA. Planetary density will decrease.\nB. Planetary years will become longer.\nC. Planetary days will become shorter.\nD. Planetary gravity will become stronger.']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 17.81it/s]
+====================================================================================================
+1    e925bfa4-b68a-4f02-9910-13b12027b84d 	 1.0 
+  a moonless Earth would still possess habitats with climates suitable for complex life and questions whether the spin rate of a moonless Earth can be predicted. Although the giant impact theory posits that the impact forming the Moon increased Earth's rotational speed to make a day about 5 hours long, the Moon has slowly "stolen" much of this speed to reduce Earth's solar day since then to about 24 hours and continues to do so: in 100 million years Earth's solar day will be roughly 24 hours 38 minutes (the same as Mars's solar day); in 1 billion years, 30 hours 23 minutes. Larger 
+====================================================================================================
+2    dc092a38-41ff-4abc-b67f-80e308cfac57 	 0.9742591888175027 
+  Simulations of the chaotic period of terrestrial planet formation suggest that impacts like those hypothesised to have formed the Moon were common. For typical terrestrial planets with a mass of 0.5 to 1 Earth masses, such an impact typically results in a single moon containing 4% of the host planet's mass. The inclination of the resulting moon's orbit is random, but this tilt affects the subsequent dynamic evolution of the system. For example, some orbits may cause the moon to spiral back into the planet. Likewise, the proximity of the planet to the star will also affect the orbital evolution. The net effect is that it is more likely for impact-generated moons to survive when they orbit more distant terrestrial planets and are aligned with the planetary orbit.
+====================================================================================================
+3    901f5e24-c8d9-4061-a485-8e977daaa7ab 	 0.5924483031045308 
+  Though the surface rocks of Earth have cooled enough to solidify, the outer core of the planet is still hot enough to remain liquid. Energy is still being released; volcanic and tectonic activity has pushed rocks into hills and mountains and blown them out of calderas. Meteors also cause impact craters and surrounding ridges. However, if the energy release from these processes halts, then they tend to erode away over time and return toward the lowest potential-energy curve of the ellipsoid. Weather powered by solar energy can also move water, rock, and soil to make Earth slightly out of round. Earth undulates as the shape of its lowest potential energy changes daily due to the gravity of the Sun and Moon as they move around with respect to Earth. This is what causes tides in the oceans' water, which can flow freely along the changing potential.
+====================================================================================================
+4    bcdcd59b-435c-4a1b-ac3a-55b69a7316b7 	 0.3 
+ Pulsed accretion is a phenomenon in young binary protostars where periodic increases in luminosity occur due to variable accretion rates. These variable accretion rates lead to periodic variations in the amount of material falling onto the protostars from their circumbinary disks. This phenomenon has significant implications for their orbital evolution, mass distribution, and potential for planet formation.
+
+The pulsed accretion process can influence the orbital evolution of young binary protostars. The periodic increases in accretion rates can cause gravitational interactions between the two protostars, leading to changes in their orbital parameters such as eccentricity and semi-major axis. As a result, the orbital characteristics of the binary system can be affected, potentially leading to changes in the stability and longevity of the system.
+
+In terms of mass distribution, pulsed accretion can have a significant impact. The variable accretion rates can lead to uneven distribution of material onto the protostars, affecting their individual masses. As a result, the binary system may exhibit a mass asymmetry, where one protostar accretes more material than the other. This uneven mass distribution can influence the subsequent evolution of the protostars and potentially affect the formation and characteristics of planets within the system.
+
+Furthermore, the presence of pulsed accretion in young binary protostars has implications for planet formation. The variable accretion rates can introduce fluctuations in the disk's environment, such as changes in temperature and density. These fluctuations can influence the processes of planetesimal formation and growth within the disk, potentially impacting the formation of protoplanets and their subsequent evolution into fully-formed planets. The periodic variations in accretion rates can also affect the orbital migration of planets, altering their final positions within the system.
+
+Overall, pulsed accretion in young binary protostars plays a crucial role in shaping their orbital evolution, mass distribution, and potential for planet formation. Understanding this phenomenon is essential for comprehending the processes involved in the formation and evolution of binary star systems and the subsequent formation of planets.
+====================================================================================================
+5    ca3f616b-a0d4-4fbe-a3aa-da4b2f8dd39d 	 0.26016320351515265 
+  Tides between the star and planet modify the semi-major axis and orbital eccentricity of the planet. If the planet is orbiting very near to its star, the tide of the planet raises a bulge on the star. If the star's rotational period is longer than the planet's orbital period the location of the bulge lags behind a line between the planet and the center of the star creating a torque between the planet and the star. As a result, the planet loses angular momentum and its semi-major axis decreases with time. If the planet is in an eccentric orbit the strength of the tide is stronger when it is near perihelion. The planet is slowed the most when near perihelion, causing its aphelion to decrease faster than its perihelion, reducing its eccentricity. Unlike disk migration – which lasts a few million years until the gas dissipates – tidal migration continues for billions of years. Tidal evolution of close-in planets produces semi-major axes typically half as large as they were at the time that the gas nebula cleared.
+====================================================================================================
+6    b74c75a2-3d96-4be5-b8c9-91c770f4b6f9 	 0.2440611793622064 
+  within the Roche limit. The inner disk slowly and viscously spread back out to Earth's Roche limit, pushing along outer bodies via resonant interactions. After several tens of years, the disk spread beyond the Roche limit, and started producing new objects that continued the growth of the Moon, until the inner disk was depleted in mass after several hundreds of years. Material in stable Kepler orbits was thus likely to hit the Earth–Moon system sometime later (because the Earth–Moon system's Kepler orbit around the Sun also remains stable). Estimates based on computer simulations of such an event suggest that some twenty percent of 
+====================================================================================================
+7    d19f8523-5a5f-43b8-bb45-9173a6cfd1f9 	 0.21694930840902726 
+   Astronomers think the collision between Earth and Theia happened at about 4.4 to 4.45 bya; about 0.1 billion years after the Solar System began to form. In astronomical terms, the impact would have been of moderate velocity. Theia is thought to have struck Earth at an oblique angle when Earth was nearly fully formed. Computer simulations of this "late-impact" scenario suggest an initial impactor velocity at infinity below 4 km/s, increasing as it fell to over 9.3 km/s at impact, and an impact angle of about 45°. However, oxygen isotope abundance in lunar rock suggests "vigorous mixing" of Theia and Earth, indicating a 
+====================================================================================================
+8    ed507d84-f604-424d-9e6e-dae44a37c0bf 	 0.16143810793751645 
+  density than Earth. Computer models of a giant impact of a Mars-sized body with Earth indicate the impactor's core would likely penetrate Earth and fuse with its own core. This would leave the Moon with less metallic iron than other planetary bodies. ; The Moon is depleted in volatile elements compared to Earth. Vaporizing at comparably lower temperatures, they could be lost in a high-energy event, with the Moon's smaller gravity unable to recapture them while Earth did. ; There is evidence in other star systems of similar collisions, resulting in debris discs. ; Giant collisions are consistent with the leading theory of the formation of the Solar System. ; The stable-isotope ratios of lunar and 
+====================================================================================================
+9    7ab18959-21c3-4389-9d58-a2f048257a58 	 0.12072850090498305 
+  the centre of the planetary body—in effect, the globules of metal will "rain out" from the emulsion to the centre, forming a core. According to the rain-out model, core formation was a relatively rapid process, taking a few dozen millennia to reach completion. This occurred at the end of a lengthy process in which the planets were assembled from colliding planetary embryos. Only the collisions of such large embryos could generate enough heat to melt entire bodies. Furthermore, it was only after all of the iron and nickel delivered by impacting bodies had arrived that core formation could proceed to completion. 
+====================================================================================================
+10    632fec64-bbc2-4619-adf6-28f18caf086c 	 0.10401814808318947 
+  Star Light is set several decades after the events of Mission of Gravity. It takes place mostly on the supergiant planet Dhrawn, which some suspect of being a failed star. The planet has an ammonia/water atmosphere with some oxygen, at temperatures ranging from 70 Kelvins to almost the freezing point of water. The planet rotates extremely slowly, taking around two months for one revolution. It also has a long eccentric orbit around its star, which is a red dwarf, Lalande 21185. Much of the planet's heat seems to come from within. The gravity at the surface is 40 times the Earth's. Almost everything about the planet defies scientific theory, including its size, lack of hydrogen, its temperature, and the presence of free oxygen in its atmosphere.
+*****************
+reranking
+*****************
+Converted docs to temp collection
+
+Loading collection:   0%|          | 0/10 [00:00<?, ?it/s][ALoading collection: 100%|██████████| 10/10 [00:00<00:00, 101311.69it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:00<00:00,  1.89it/s][A100%|██████████| 1/1 [00:00<00:00,  1.63it/s]
+Completed passage expansion
+
+loading collection....: 0it [00:00, ?it/s][Aloading collection....: 0it [00:00, ?it/s]
+
+0it [00:00, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+0it [00:00, ?it/s]
+Completed indexing collection
+Loading hdf5 file.....
+
+Creating direct index.....: 0it [00:00, ?it/s][ACreating direct index.....: 0it [00:00, ?it/s]
+Reranking.....
+  0%|          | 0/497 [00:54<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    docs = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 267, in retrieval
+    reranked_docs, _ = self._rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 229, in _rerank
+    docs = rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 21, in rerank
+    reranked_docs, similarity_scores = run_rerank(model, expansion_model, tokenizer, bert_tokenizer, mode, query, docs, top_k)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 79, in run_rerank
+    reranked_docs, scores = tilde_rerank(model, expansion_model, tokenizer, bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 34, in tilde_rerank
+    reranked_docs, scores = execute_rerank(bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 122, in execute_rerank
+    token_scores = direct_index[doc_id]
+KeyError: '0'
+2024-06-15 14:28:07 [INFO] server: Stop milvus...
+[2024-06-15 14:28:13,532] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 2203297) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-15_14:28:13
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2203297)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

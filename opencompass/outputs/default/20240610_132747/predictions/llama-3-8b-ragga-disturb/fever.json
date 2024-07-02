@@ -1,0 +1,752 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Telemundo is a English-language television network.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Happiness in Slavery is a gospel song by Nine Inch Nails.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The Cretaceous ended.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Sean Penn is only ever a stage actor.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: CBS is the network that aired The Millers.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "6": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Drake Bell put out an EP.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "7": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Colin Kaepernick became a starter during the 49ers 63rd season in the Republican Party.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "8": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Private Lives is a three act play from 1930.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "9": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: David Packouz refused to be an entrepreneur.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "10": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Marcus Bentley is a broadcaster.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "11": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Noah Cyrus is a younger sister of Macy Grey.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "12": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: A View to a Kill is an action movie.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "13": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: A working animal is trained to perform life saving tasks.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "14": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Sancho Panza is a character in Don Quixote.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "15": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Brazzers is a company.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "16": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Viola Davis appeared in Kate & Leopold as Darth Maul.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "17": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Starrcade was an annual professional wrestling event that began in 1988.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "18": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: A&E is a cable and satellite television network.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "19": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Taran Killam is an American writer.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "20": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Despicable Me 2 was directed by a lake.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "21": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Ron Weasley is a President.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "22": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Matteo Renzi is German.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "23": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The heart beats at a resting rate close to 22 beats per minute.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "24": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Ashton Kutcher was directed by George Clooney.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "25": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Youtube is not a website.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "26": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Raees (film) stars a Buddhist.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "27": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The Armenian Genocide was the killing of Armenians who were mostly Ottoman natives.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "28": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: John Dolmayan was born in northern Lebanon.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "29": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Alexandra Daddario is Canadian.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "30": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The 14th Dalai Lama lives in Japan exclusively.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "31": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Home for the Holidays stars the fourth stepchild of Charlie Chaplin\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "32": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The Mod Squad is a series that fits into the genre of crime drama.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "33": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Smriti Mandhana is an Indian cricketer born in July.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "34": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The Saw franchise grossed under $873 million.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "35": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Tremont Street Subway is an expensive project.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "36": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Advertising is a closed sourced message.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "37": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The Penibaetic System is also called Sistema Penibético in Spanish.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "38": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Saturn Corporation is also known as Toyota LLC.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "39": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The human brain contains a hypothalamus.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "40": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Don Bradman was called the \"greatest living Australian\" by Margaret Thatcher.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "41": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Alice Cooper has been working in his field for over 50 years.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "42": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: No Country for Old Men angered Tommy Lee Jones.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "43": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Morse Code is communication.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "44": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Stephen Colbert hosts guests.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "45": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Bessie Smith was married on April 15, 1894.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "46": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Poldark airs on HBO.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "47": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Sean Penn was in a movie.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "48": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Down with Love is only a book.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "49": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Jewell is best known for her song \"Harvest for the World.\"\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "50": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Martin Van Buren was Secretary of State.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "51": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Polynesian languages include french.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "52": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Excuse My French is the debut album of an artist.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "53": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: DreamWorks Animation produced Trollhunters.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "54": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Roland Emmerich is a collector of stamps.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "55": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Calcaneal spurs are only detected by audio techniques.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "56": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Poseidon grossed less than $1 million at the worldwide box office.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "57": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Rio's sequel was released on April 11, 2012.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "58": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Global warming threatens food security.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "59": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Folklore includes proverbs.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "60": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Rick Yune was on a tv series with Marco Polo.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "61": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Angelsberg is in Canada.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "62": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Kentucky is known for bluegrass music.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "63": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Starrcade was never broadcast via pay-per-view television.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "64": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Excuse My French is the debut album of a hip hop recording artist.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "65": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Forceps are a hinged instrument.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "66": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Robert Palmer (writer) has written for the New York Times.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "67": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The 100 also follows the teens parents on the cruise ship.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "68": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Men in Black II stars Tommy Lee Jones in the lead role.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "69": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Anne Rice was born in 1997.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "70": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The Lincoln-Douglas debates happened in Quincy, Illinois.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "71": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Underdog stars Peter Dinklage as the lead role.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "72": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: AMGTV has Animal Rescue.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "73": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Aaron Burr was a department store that went out of business in the eighties.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "74": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Tata Motors is a constituent of the last BSE SENSEX index.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "75": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Aparshakti Khurana directed Dangal.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "76": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: David Spade starred in Joe Dirt 2: Beautiful Loser.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "77": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Policies implemented by Margaret Thatcher came to be known as Thatcherism.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "78": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Valencia has about 800,000 inhabitants, making it the third largest city in Spain.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "79": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Richard Alf was one of the founders of San Diego Comic-Con.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "80": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The Pelican Brief is based solely on a television series.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "81": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: St. Anger was released on June 3, 2003.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "82": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Joe Walsh was inducted into the New Museum.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "83": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Phillip Glass has listened to eleven concertos.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "84": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Wentworth Miller made his screenwriting debut with the 2013 top-grossing film.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "85": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Annette Badland was unable to appear in Wizards vs Aliens.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "86": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Chaka Khan has released at least five studio albums.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "87": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Taylor Lautner appeared on Modern Family.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "88": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Moonlight's filming began in 1815.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "89": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Taran Killam is a stage actor.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "90": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: CHiPs was created in May 2017.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "91": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Poldark airs on the BBC.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "92": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Moonlight premiered at the Telluride Film Festival in 2016.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "93": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Annette Badland murdered Doomsday Dora in The Sparticle Mystery.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "94": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: 2016 Tour de France was a 21-stage musical.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "95": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Ed Wood is a politician.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "96": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Sidse Babett Knudsen is Swedish.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "97": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Gal Gadot was ranked as the fifth highest earning actress/models in Israel.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "98": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Keith Urban was released by Bruno Mars.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "99": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: In 2004 Paramore formed.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "100": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Tinker Tailor Soldier Spy is a music video.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "101": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Goosebumps (film) is penned by Darren Lemke.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "102": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Rob Sheridan is from Alaska.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "103": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Riverdale is an adaptation.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "104": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Kenneth Lonergan is the director of Pacific Rim.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "105": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: José Ferrer was a director.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "106": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Ernest Medina participated in a Korean War mass killing.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "107": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Mud has a Canadian in its cast.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "108": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Diwali spiritually signifies the victory of light over darkness.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "109": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: The maximum elevation in the Hindu Kush is at Tirichmir.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "110": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Gin became popular in Great Britain when it was imported.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "111": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Carlos Santana is a US president.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "112": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Pharrell Williams is not a musician.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "113": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Noah Cyrus is a younger sister of Miley Cyrus.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "114": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Private Lives is a 1940 comedy in three acts by Noel Coward.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "115": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: WGBH-TV is a non-commercial educational PBS member television station.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "116": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Taran Killam is a father.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "117": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Girl is an album.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "118": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Craig David was nominated for an award.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    },
+    "119": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Ingushetia was established in the U.S South Peninsula.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "120": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: House is a crime drama.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "NOT ENOUGH INFO",
+        "context": "temp contexts"
+    },
+    "121": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Jeong Hyeong-don has refused to ever work under FNC Entertainment.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "122": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Civilization IV received mixed reviews.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "123": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Billie Joe Armstrong is from Georgia.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "REFUTES",
+        "context": "temp contexts"
+    },
+    "124": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Rob Sheridan was born in 1979.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "SUPPORTS",
+        "context": "temp contexts"
+    }
+}

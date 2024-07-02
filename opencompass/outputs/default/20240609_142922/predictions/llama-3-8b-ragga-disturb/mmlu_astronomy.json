@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about astronomy. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is true for a type-Ia (\"type one-a\") supernova?\nA. This type occurs in binary systems.\nB. This type occurs in young galaxies.\nC. This type produces gamma-ray bursts.\nD. This type produces high amounts of X-rays.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "A. This type occurs in binary systems.\n\nExplanation: Type Ia supernovae are thought to occur when a white dwarf star in a binary system accumulates material from a companion star until it reaches a critical mass, causing a thermonuclear explosion",
+        "gold": "A",
+        "context": "temp contexts"
+    }
+}

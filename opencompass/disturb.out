@@ -1,0 +1,23 @@
+2024-06-09 16:20:16.912723: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-09 16:20:16.970247: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-09 16:20:17.815302: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+!!!!!!!!!!!!!!!!!!!!IGI
+['run.py', './configs/myeval/eval_mymodel.py', '-w', 'outputs/config0/mmlu']
+06/09 16:20:19 - OpenCompass - WARNING - SlurmRunner is not used, so the partition argument is ignored.
+06/09 16:20:19 - OpenCompass - INFO - Partitioned into 1 tasks.
+06/09 16:20:19 - OpenCompass - WARNING - !!!!!!!!!!!!['run.py', './configs/myeval/eval_mymodel.py', '-w', 'outputs/config0/mmlu']
+  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [02:22<00:00, 142.83s/it]100%|██████████| 1/1 [02:22<00:00, 142.83s/it]
+launch OpenICLInfer[llama-3-8b-ragga-disturb/mmlu_college_biology,llama-3-8b-ragga-disturb/mmlu_college_chemistry,llama-3-8b-ragga-disturb/mmlu_college_computer_science] on GPU 5,6,7
+06/09 16:22:42 - OpenCompass - INFO - Partitioned into 3 tasks.
+  0%|          | 0/3 [00:00<?, ?it/s]                                       0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:07<00:14,  7.45s/it]                                              33%|███▎      | 1/3 [00:07<00:14,  7.45s/it] 67%|██████▋   | 2/3 [00:15<00:07,  7.71s/it]                                              67%|██████▋   | 2/3 [00:15<00:07,  7.71s/it]100%|██████████| 3/3 [00:23<00:00,  7.73s/it]100%|██████████| 3/3 [00:23<00:00,  7.70s/it]
+launch OpenICLEval[llama-3-8b-ragga-disturb/mmlu_college_biology] on CPU 
+launch OpenICLEval[llama-3-8b-ragga-disturb/mmlu_college_chemistry] on CPU 
+launch OpenICLEval[llama-3-8b-ragga-disturb/mmlu_college_computer_science] on CPU 
+dataset                        version    metric    mode      llama-3-8b-ragga-disturb
+-----------------------------  ---------  --------  ------  --------------------------
+mmlu_college_biology           77df39     accuracy  gen                         100.00
+mmlu_college_chemistry         d63112     accuracy  gen                         100.00
+mmlu_college_computer_science  ecf43e     accuracy  gen                         100.00
+06/09 16:23:05 - OpenCompass - INFO - write summary to /data/zfr/finalTest/opencompass/outputs/config0/mmlu/20240609_162019/summary/summary_20240609_162019.txt
+06/09 16:23:05 - OpenCompass - INFO - write csv to /data/zfr/finalTest/opencompass/outputs/config0/mmlu/20240609_162019/summary/summary_20240609_162019.csv

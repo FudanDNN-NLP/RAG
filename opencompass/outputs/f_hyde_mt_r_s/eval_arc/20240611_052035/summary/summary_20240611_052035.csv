@@ -1,0 +1,2 @@
+dataset,version,metric,mode,llama-3-8b-ragga-disturb
+ARC-c,62ce22,accuracy,gen,78.67

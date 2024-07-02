@@ -1,0 +1,50 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about prehistory. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Unlike most other early civilizations, Minoan culture shows little evidence of:\nA. trade.\nB. warfare.\nC. the development of a common religion.\nD. conspicuous consumption by elites.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about prehistory. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: At its peak, the palace at Knossos is thought to have had over _________ rooms.\nA. 100\nB. 500\nC. 1,000\nD. 5,000\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about prehistory. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The secondarily altricial condition of modern human babies may have been an evolutionary solution, in that:\nA. the brain size of hominids had not grown for more than a million years, making it difficult for babies to walk.\nB. it allowed for bipedalism and independence from the mother at an earlier age.\nC. it allowed for subsequent growth of the brain, since bipedalism had resulted in a narrowed birth canal in the female pelvis.\nD. it allowed for growth of the brain to nearly adult size prior to birth, since bipedalism had resulted in a wider birth canal in the female pelvis.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about prehistory. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Toward the end of the Pleistocene, between 28,000 and 18,000 years ago, worldwide sea level was much lower than present day, resulting in the exposure of a landmass east of Siberia called __________. This period is called the _______.\nA. Beringia; Late Beringian Period\nB. Sundaland; McKenzie Maximum\nC. Beringia; Late Glacial Maximum\nD. Wallacea; Late Laurentide Period\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about prehistory. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The significance of Frere's discovery was that what he found was located:\nA. beneath the remains of extinct animals.\nB. on the surface, above the remains of extinct animals.\nC. in a region of Africa where no one thought humans had ever lived.\nD. on top of the ruins of a Medieval castle.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about prehistory. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The _______ developed one of the earliest kingdoms in South America, reaching its height at around _________.\nA. Moche; AD 400\nB. Wari; AD 100\nC. Inca; AD 200\nD. Maya; AD 400\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "6": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about prehistory. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Ancestral Puebloan culture in Chaco Canyon was comprised of:\nA. around 75 substantial settlements and more than 300 smaller communities.\nB. more than 500 towns and villages with monumental architecture.\nC. between 30 and 40 farmsteads and three large pueblos.\nD. one large city state with more than 300 outlying farmsteads.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "7": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about prehistory. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Civilization in the Indus Valley was characterized by:\nA. highly centralized economies.\nB. carefully planned and designed cities.\nC. standardized weights and measures.\nD. all of the above.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    }
+}

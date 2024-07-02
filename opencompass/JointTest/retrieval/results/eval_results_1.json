@@ -1,0 +1,37 @@
+[
+    {
+        "query": "0",
+        "is_hit": true,
+        "expected_id": "437a0215-861e-495c-9fb7-5363fd06675a",
+        "retrieved_id": [
+            "437a0215-861e-495c-9fb7-5363fd06675a",
+            "609f4fa6-d2a2-4169-9e79-81b444cb776a",
+            "6fd27af9-d4e0-4a3b-8bdd-c06fb384a527",
+            "b2d43939-64a9-46ee-a48b-87c251978a7d",
+            "754e122f-74c4-446b-9375-a2bcd352db55",
+            "c5351d6b-81f3-4ea8-91e1-1f0ae7e1ff3c",
+            "ee5a283c-d340-4b6d-8620-ddf30efd7404",
+            "5e71a16d-c2da-4b76-8bae-03924f631582"
+        ]
+    },
+    {
+        "query": "1",
+        "is_hit": true,
+        "expected_id": "1fe45938-6e3a-42ac-852b-e953bf22321c",
+        "retrieved_id": [
+            "1fe45938-6e3a-42ac-852b-e953bf22321c",
+            "2644dcdf-ea1b-4fe3-a939-32bc8b618447",
+            "64e147d3-e4c3-4c1f-b744-2aae4a180e33",
+            "cf62a9aa-40eb-438a-a941-5f5a23ec4cf2",
+            "20461828-4e68-474b-b201-1a1837b9b8a1",
+            "7f3b2429-37b7-4d43-ad79-b573f522b2a9",
+            "5bc2e5a8-c185-4129-a556-328f7300e957",
+            "3650638f-19f8-49cd-b355-de742db3b25a",
+            "e4343575-0992-4cea-bf9b-6105ff597768",
+            "7d5cfbbc-a0ae-430a-9e95-e8dcdd6b9dde",
+            "490e5f7e-1545-429b-9f0f-1f49ba365c3d",
+            "5f55468f-1425-4bed-99fb-d129bc4f30d8",
+            "7aa95742-c432-49e8-bd12-8ec56d7ec14f"
+        ]
+    }
+]

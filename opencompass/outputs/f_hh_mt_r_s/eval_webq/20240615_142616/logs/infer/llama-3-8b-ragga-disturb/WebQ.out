@@ -1,0 +1,191 @@
+06/15 14:26:18 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/WebQ]
+06/15 14:26:18 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-15 14:26:19.395392: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 14:26:19.448503: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 14:26:20.276705: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.57s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.55s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.47s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.06s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.23s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/2202623_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.746 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  2.00s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:11,  2.00s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.90s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.83s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.78s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.76s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.58s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.29s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.60s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:7
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:7
+If you want to use `BertLMHeadModel` as a standalone, add `is_decoder=True.`
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/15 14:27:12 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/WebQ]
+[2024-06-15 14:27:12,670] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-15 14:27:12 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-15 14:27:12,672] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@True
+2024-06-15 14:27:12 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@True
+*****************
+retrieving
+*****************
+cq:Question: what does jamaican people speak?
+Answer: 
+q:what does jamaican people speak?
+*****************
+searching
+*****************
+Jun 15, 2024 2:27:12 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+['Jamaica is an island nation located in the Caribbean Sea. The official language of Jamaica is English, but the majority of Jamaicans speak Jamaican Creole, also known as Patois. Jamaican Creole is a blend of African, European, and indigenous languages, and is heavily influenced by English. The language is characterized by its unique vocabulary, grammar, and pronunciation. While English is the language of education and business, Jamaican Creole is the language of everyday life and is widely spoken in informal settings.\n\nThe origins of Jamaican Creole can be traced back to the arrival of enslaved Africans in Jamaica in the 17th century. The language evolved as a result of the interaction between the enslaved Africans and their European oppressors. Over time, Jamaican Creole has become an integral part of Jamaican culture and identity.\n\nJamaican Creole is a complex language that is often misunderstood and misrepresented. Many people assume that Jamaican Creole is simply a form of broken English, but this is far from the truth. Jamaican Creole is a fully-formed language with its own unique grammar, syntax, and vocabulary.\n\nOne of the most distinctive features of Jamaican Creole is its use of vernacular grammar. In Jamaican Creole, the subject of a sentence is often omitted, and the verb is', 'what does jamaican people speak?']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 17.04it/s]
+====================================================================================================
+1    99792afe-770a-4554-8d8d-ac76e061a447 	 1.0 
+  In Jamaica, everyone is able to speak and understand the vernacular patois (or Patwa), a centuries-old English derived creole. Many also understand and can speak "standard" English; however, in common everyday oral usage, people generally use one or the other exclusively, according to social status and formal education. In everyday commerce, business, banking, media and government—in short, the entire private and public sector—acrolect English is used. This has resulted in a diglossia situation. Situational code-switching, style shifting and code-alternation occur continuously, seamlessly in communication between all Jamaicans of all classes and in all situations, in all speech acts. Recently, Jamaican patois has gone through a process of decreolization, similar to that which happened with AAVE due to the basilect creole variety developing 
+====================================================================================================
+2    4438faad-912d-4397-b324-6575dee072d1 	 0.8373988247034039 
+  the acrolect English. It is important to note that for all practical purposes, English is Jamaica's native language. When the English took over the country from the Spanish in the seventeenth century Jamaica was linguistically a blank slate. The country came under English jurisdiction and the incoming new colonists were English. English became the de facto language because there was no other language there at the time. The native Arawak (Taino) had long disappeared, and with the arrival of the English in 1655 the few Spanish settlers on the island fled to Cuba. The thousands of West African slaves that would be brought in for labour on the island's notorious sugar plantations of the eighteenth century had not yet arrived. Jamaican patois 
+====================================================================================================
+3    4c823e81-f2e7-4eb3-9d18-6657b7ba4062 	 0.8298907311053019 
+  into being when the island's burgeoning sugar industry created a large demand for field labour. The incoming African slave labourers—who spoke many various languages themselves—and the English speaking plantocracy communicated through the formation of a contact creole language unique to Jamaica. Today we know this creole as patois, and even those Jamaicans who don't speak it on a daily basis can speak it fluently, and fully understand it. Jamaican patois is sometimes written (in song lyrics, reported speech in books and newspapers for example) but because of the lack of standardization, many words may be spelled in many different ways. Standard English is taught in Jamaican schools, although teachers may speak to pupils and their parents in patois outside of the classroom.
+====================================================================================================
+4    a5d88eec-f942-4a2a-b627-bdfe7b0ae0ea 	 0.3 
+  Jamaican Patois, known locally as Patwa, is an English–African creole language spoken primarily in Jamaica and the Jamaican diaspora. It is not to be confused with Jamaican English nor with the Rastafarian use of English. The language developed in the 17th century, when enslaved peoples from West and Central Africa blended their dialect and terms with the learned vernacular and dialectal forms of English spoken: British Englishes (including significant exposure to Scottish English) and Hiberno English. Jamaican Patwa is a post-creole speech continuum (a linguistic continuum) meaning that the variety of the language closest to the lexifier language (the acrolect) cannot be distinguished systematically from intermediate varieties (collectively referred to as the mesolect) nor even from the most divergent rural varieties (collectively referred to as the basilect). Jamaicans themselves usually refer to their use of English as patwa, a term without a precise linguistic definition. Jamaican Patois contains many loanwords of African origin, a majority of those etymologically from Gold Coast region (particularly of the Asante-Twi dialect of the Akan language of Ghana).
+====================================================================================================
+5    188f7b84-e627-4945-bc0e-53cda8d83726 	 0.2283462185890393 
+  language in helping to define in verse important aspects of Jamaican culture", according to Ralph Thompson) identifies V. S. Reid's 1949 novel New Day as the first literary work to use Jamaican vernacular as the language of narration. In his History of the Voice (1984), Brathwaite discusses the prominence of pentameter in English poetic tradition, claiming that since the time of Chaucer, and with a few notable exceptions, pentameter has been the prevailing rhythm of English poetry. Brathwaite suggests that such imported literary forms may not be suitable to express the Caribbean experience. He writes, "The hurricane does not roar in pentameters." It is here that nation language becomes of use to the Caribbean poet: "It is 
+====================================================================================================
+6    688caa3d-357c-4592-8004-94ca1df09ede 	 0.2113303732524267 
+  is a mixture of English and an adaptation that English took in the new environment of the Caribbean when it became mixed with the other imported languages. We have also what is called nation language, which is the kind of English spoken by the people who were brought to the Caribbean, not the official English now, but the language of slaves and labourers, the servants who were brought in." Writers who also notably use nation language include Samuel Selvon, Louise Bennett, John Figueroa, Archie Markham, Linton Kwesi Johnson, Marc Matthews, John Agard, Jean Binta Breeze, as well as others of a younger generation. Poet and scholar Mervyn Morris ("one of the first academics to espouse the importance of 
+====================================================================================================
+7    e7ebb798-3609-45d8-8699-cfd204f2b920 	 0.185490570277444 
+  the native languages of the many ethnic and cultural groups within the Caribbean including Spanish, Portuguese, Chinese, Amerindian and English along with several African languages. Some islands have Creole dialects influenced by their linguistic diversity; French, Spanish, Arabic, Hebrew, German, Dutch, Italian, Chinese, Vietnamese and others. Jamaican Patois is also spoken in Costa Rica and French Creole is spoken in Caribbean countries such as Trinidad and Tobago and Guyana in South America. Often these patois are popularly considered "broken English" or slang, but cases such as Jamaican Patois are classified with more correctness as a Creole language; in fact, in the Francophone Caribbean the analogous term for local basilectal languages is créole (see also Jamaican English and Jamaican Creole). 
+====================================================================================================
+8    013e255f-d911-4737-898a-c8e4ad303ef6 	 0.11997116606546139 
+  million Nigerians speak English. Several varieties of English are also spoken in the Caribbean islands that were colonial possessions of Britain, including Jamaica, and the Leeward and Windward Islands and Trinidad and Tobago, Barbados, the Cayman Islands, and Belize. Each of these areas is home both to a local variety of English and a local English-based creole, combining English and African languages. The most prominent varieties are Jamaican English and Jamaican Creole. In Central America, English-based creoles are spoken in on the Caribbean coasts of Nicaragua and Panama. Locals are often fluent both in the local English variety and the local creole languages and code-switching between 
+====================================================================================================
+9    42917505-6d1e-4f3a-abf9-f4b5355eaf83 	 0.0753308671592295 
+  language in the Caribbean that, in fact, largely ignores the pentameter. Nation language is the language which is influenced very strongly by the African model, the African aspect of our New World/Caribbean heritage. English it may be in terms of some of its lexical features. But in its contours, its rhythm and its timbre, its sound explosions, it is not English, even though the words, as you hear them, might be English to a greater or lesser degree." Brathwaite describes reading an article by the Martinician poet and critic Édouard Glissant, in which Glissant describes nation language as a "forced poetics" because it was used strategically by slaves in order to both disguise and maintain their culture.
+====================================================================================================
+10    5315b9ba-99b0-4677-9263-b3dfcc4d4aaa 	 0.06581510782355722 
+  Jamaican Maroon language, Maroon Spirit language, Kromanti, Jamaican Maroon Creole or Deep patwa is a ritual language and formerly mother tongue of Jamaican Maroons. It is an English-based creole with a strong Akan component, specifically from the Fante dialect of the Central Region of Ghana. It is distinct from usual Jamaican Creole, being similar to the creoles of Sierra Leone (Krio) and Suriname such as Sranan and Ndyuka. It is also more purely Akan than regular Patois, with little to no contribution from other African languages. Today, the Maroon Spirit language is used by Jamaican Maroons (largely Coromantees). Another distinct ritual language (also called Kromanti) 
+*****************
+reranking
+*****************
+Converted docs to temp collection
+
+Loading collection:   0%|          | 0/10 [00:00<?, ?it/s][ALoading collection: 100%|██████████| 10/10 [00:00<00:00, 49519.53it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:00<00:00,  1.63it/s][A100%|██████████| 1/1 [00:00<00:00,  1.40it/s]
+Completed passage expansion
+
+loading collection....: 0it [00:00, ?it/s][Aloading collection....: 0it [00:00, ?it/s]
+  0%|          | 0/500 [00:52<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    docs = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 267, in retrieval
+    reranked_docs, _ = self._rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 229, in _rerank
+    docs = rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 21, in rerank
+    reranked_docs, similarity_scores = run_rerank(model, expansion_model, tokenizer, bert_tokenizer, mode, query, docs, top_k)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 79, in run_rerank
+    reranked_docs, scores = tilde_rerank(model, expansion_model, tokenizer, bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 30, in tilde_rerank
+    index_collection(model, tokenizer)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 73, in index_collection
+    indexing_main(model, tokenizer, args)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/TILDE/indexingv2.py", line 94, in main
+    f = h5py.File(os.path.join(args['output_path'], "tildev2_index.hdf5"), "w")
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/h5py/_hl/files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/h5py/_hl/files.py", line 241, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 122, in h5py.h5f.create
+BlockingIOError: [Errno 11] Unable to synchronously create file (unable to lock file, errno = 11, error message = 'Resource temporarily unavailable')
+2024-06-15 14:28:06 [INFO] server: Stop milvus...
+[2024-06-15 14:28:12,651] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 2203281) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-15_14:28:12
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2203281)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

@@ -1,0 +1,44 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional accounting. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: You bought a limousine for $98,000 and are planning to rent it for weddings, ceremonies and parties at $245 per hour. If you estimate the car will be hired for 2 hours a day on average, with daily costs at about $50, what is the estimated yearly yield on your investment if you work all year round, i.e. every day of the year, including any festivities and weekends?\nA. 164%\nB. 1.64%\nC. 0.45%\nD. 183%\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional accounting. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The FASB makes changes to the Accounting Standards Codification by issuing\nA. Accounting Standards Updates.\nB. Emerging Issues Task Force Releases.\nC. Statements of Financial Accounting Standards.\nD. Staff Technical Bulletins.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional accounting. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A company recently moved to a new building. The old building is being actively marketed for sale, and the company expects to complete the sale in four months. Each of the following statements is correct regarding the old building, except:\nA. It will be reclassified as an asset held for sale.\nB. It will be classified as a current asset.\nC. It will no longer be depreciated.\nD. It will be valued at historical cost.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional accounting. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following is an element of a CPA firm's quality control policies and procedures applicable to the firm's accounting and auditing practice?\nA. Engagement performance.\nB. Risk analysis.\nC. Safeguarding of assets.\nD. Information processing.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional accounting. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: During year 2 Pipp Co. incurred the following costs to develop and produce a routine low-risk computer software product: Completion of detailed program design $10000 Costs incurred for coding and testing to establish technological feasibility $15000 Other coding and testing costs incurred after establishment of technological feasibility $44000 In Pipp's December 31 year 2 balance sheet what amount should be capitalized as software cost?\nA. $10,000\nB. $25,000\nC. $44,000\nD. 59000\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional accounting. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: In an e-commerce environment that requires that the information technology (IT) system be available on a continuous basis, more emphasis will be placed on which of the following aspects of the planning than in a traditional organization?\nA. Maintain appropriate written source documents so the data can be re-entered if it is lost or compromised\nB. Maintain redundant systems for instant availability to assure the flow of transactions\nC. Review additional expenses to obtain the required amount of business interruption insurance coverage for the organization\nD. Assure that appropriate data backups are stored in an off-site location\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "6": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about professional accounting. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: On day 1, Jackson, a merchant, mailed Sands a signed letter that contained an offer to sell Sands 500 electric fans at $10 per fan. The letter was received by Sands on day 3. The letter contained a promise not to revoke the offer but no expiration date. On day 4, Jackson mailed Sands a revocation of the offer to sell the fans. Sands received the revocation on day 6. On day 7, Sands mailed Jackson an acceptance of the offer. Jackson received the acceptance on day 9. Under the Sales Article of the UCC, was a contract formed?\nA. No contract was formed because the offer failed to state an expiration date.\nB. No contract was formed because Sands received the revocation of the offer before Sands accepted the offer\nC. A contract was formed on the day Jackson received Sands’ acceptance\nD. A contract was formed on the day Sands mailed the acceptance to Jackson\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school microeconomics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Marginal revenue equals marginal cost at the point where\nA. total revenue is greater than total cost at its greatest distance\nB. total revenue is equal to total cost\nC. marginal product is at its highest point\nD. total product is at its highest point\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is B. Total revenue is equal to total cost.\n\nMarginal revenue (MR) and marginal cost (MC) are two important concepts in microeconomics that help businesses make decisions about production and pricing. MR represents the change in total",
+        "gold": "A",
+        "context": "temp contexts"
+    }
+}

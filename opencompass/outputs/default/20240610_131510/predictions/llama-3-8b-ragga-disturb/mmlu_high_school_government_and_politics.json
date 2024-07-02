@@ -1,0 +1,32 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school government and politics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following best describes the balance the Supreme Court has struck between the establishment clause and the free-exercise clause?\nA. Freedom of speech is protected except in certain situations, such as yelling \"fire\" in a crowded theater.\nB. Once a church has been recognized by the federal government, its tax-exempt status can never be revoked.\nC. Once Congress has created an administrative agency, that agency can be dissolved only by a constitutional amendment.\nD. State-sponsored prayer during school hours is prohibited, but voluntary prayer by student groups before school is allowed.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "D",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school government and politics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The primary function of political action committees (PACs) is to\nA. contribute money to candidates for election\nB. coordinate local get-out-the-vote campaigns\nC. promote the defeat of incumbents in the federal and state legislatures\nD. organize protest demonstrations and other acts of civil disobedience\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school government and politics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Voters who rely exclusively on television network news coverage of national elections are most likely to be aware of\nA. which special interest groups have endorsed which candidates\nB. the relative strength of each candidate's support, as indicated by public opinion polls\nC. candidates' positions on international issues\nD. candidates' positions on domestic issues\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school government and politics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: According to The Federalist Papers, federalism has which of the following effects on political factions?\nA. It provides a structured environment in which factions may flourish.\nB. It limits the dangers of factionalism by diluting political power.\nC. It allows factions to dominate on the national level while limiting their influence on state governments.\nD. It eliminates any opportunity for factions to form.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school government and politics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: While ratifying the Constitution, the primary point of disagreement between Federalists and Anti-Federalists was over\nA. whether representation in Congress should be equal among states or proportional to population\nB. the strength of the federal government relative to the states\nC. the future of the slave trade\nD. whether people had inalienable rights\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}

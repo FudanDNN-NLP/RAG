@@ -1,0 +1,302 @@
+06/11 13:09:30 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/WikiMultihopQA]
+06/11 13:09:30 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-11 13:09:31.448301: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-11 13:09:31.502326: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-11 13:09:32.341364: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.47s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.45s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.44s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.03s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.19s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/1491410_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.740 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:05,  1.20it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:05,  1.14it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:04,  1.06it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:04,  1.04s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:05<00:03,  1.26s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:07<00:02,  1.38s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:08<00:01,  1.34s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.16s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.15s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde', 'rerank_model': 'MonoT5', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:9
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde', 'rerank_model': 'MonoT5', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:9
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/11 13:10:12 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/WikiMultihopQA]
+[2024-06-11 13:10:13,129] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-11 13:10:13 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-11 13:10:13,227] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-11 13:10:13 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+retrieving
+*****************
+*****************
+searching
+*****************
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+['The director of the film Polish-Russian War (Film) is Alexander Sokurov. He was born in Moscow, Russia in 1941. His mother, Lyubov Sokurova, was a Russian actress and director. She passed away in 2009 at the age of 88. Sokurov\'s father, Yuri Sokurov, was a Russian writer and journalist. Sokurov\'s parents divorced when he was young, and he was raised primarily by his mother. Sokurov attended the VGIK (Russian State University of Cinematography) in Moscow, where he studied film directing. He has directed numerous films, including "Russian Ark," "The Sun," and "France."\n"""', 'Who is the mother of the director of film Polish-Russian War (Film)?']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 26.50it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 156.37it/s]
+====================================================================================================
+1    7eb898ba-f574-41b0-a201-b0bb5d48e9d7 	 0.8308922648429871 
+  but now it is under Polish dominion. Several years later, Taras sends his two sons, Andriy (Tony Curtis) and Ostap (Perry Lopez) to the academy at Kyiv, to obtain a Polish education. There, the eldest son, Andriy, falls in love with a Polish princess Natalia Dubrov (played by Christine Kaufmann), to the ire of the locals, who treat the Cossack brothers like scum of the earth. Ultimately, the brothers are forced to flee Kiev, returning to their father’s house on the Ukrainian steppes. There, word comes that the Poles want the Cossacks to raise an army to help them in a new war in the Baltic region. When Andriy objects, he is accused 
+====================================================================================================
+2    7f3e6bf9-79f7-4208-8a32-635ed79666a9 	 0.8293498158454895 
+  by Jerry Weintraub and Werner Herzog, and premiered at the Cannes Film Festival. It was released in theaters by Sony Pictures Classics on January 22, 2015. A. O. Scott of The New York Times called Red Army a "stirring, crazy story—a Russian novel of Tolstoyan sweep and Gogl-esque absurdity.” Time Magazine said: "this playful, poignant film presents a human story that transcends decades, borders and ideologies.” Red Army was the only documentary included in the official selections at the 2014 Cannes, Telluride, Toronto, New York, and AFI, film festivals. Red Army won Audience Awards at the 2014 AFI, Chicago and Middleburg film festivals. In 2017 Polsky was an Executive Producer on the Genius series on National Geographic. He and his brother Alan acquired the rights to the Einstein 
+====================================================================================================
+3    803f8ca5-06b8-42bf-b0d2-9cb36649fdc0 	 0.8291712999343872 
+  The producer largely financed the film with funding from outside the U.S. He claimed this was due to the highlighting of U.S. involvement in the international arms trade. Some of the Russian language dialogues in the film (mostly those by Eugene Lazarev as Gen. Volkov) contain obscene Russian mat wording translated to softer expressions in the original English subtitles. It is unclear whether these pieces were part of the script, or Lazarev's improvisation. A scene in the film featured 50 tanks, which were provided by a Czech source. The tanks were only available until December of the year of filming, as the dealer needed them to sell in Libya. The production team bought 3000 real SA Vz. 58 rifles to stand in for AK-47s because they were cheaper than prop guns.
+====================================================================================================
+4    5227273f-47fb-4162-a2f3-9018d75d468a 	 0.8277757167816162 
+  Russia's War: Blood upon the Snow is a ten-part British-Russian television documentary series that explores the involvement of the Soviet Union in World War 2 while under Joseph Stalin's reign of terror, highlighting the suffering of the general population, members of the Red Army and anyone that Stalin thought might pose a threat to his power. The series was released in 1995, not long after the collapse of the Soviet Union in 1991, an event that allowed Western and Russian historians access to formerly secret Soviet archives for the first time so that the events on the Eastern Front could be better explained to Western audiences. The series is narrated by English actor Nigel Hawthorne and the credits name "Professor Richard Overy", "Professor Dmitri Volkogonov" and "Professor Mikhail Semyryaga" as Historical Consultants. Although Volkogonov did publish books on Soviet history and had extensive access to the archives, it appears that the title "Professor" is honorary as it appears he did not work at a university.
+====================================================================================================
+5    083a90ad-1279-45b5-9958-ddc587e01205 	 0.8270509243011475 
+ Olbracht & Kolochava {2009}, director: Sergey Gubsky (Ukraine), ,  
+====================================================================================================
+6    b6d58fd5-b478-400a-8dd2-0e472cf87cc1 	 0.8262077569961548 
+  Pavel Yurevich Ruminov (Па́вел Ю́рьевич Руми́нов; born 25 November 1974) is a Russian film director. He began his career in Vladivostok directing music videos for Russian acts such as Mumiy Troll and Zemfira before relocating to Moscow. He is best known in Russia for the Internet-based hype surrounding his first feature film Dead Daughters, where he tried to marry horror and arthouse cinema effectively. The film divided critics in Russia, some praised its style and message, others found the structure of the movie to be very strange. He sold the remake rights for Dead Daughters to the Hollywood studio Gold Circle Films but no remake has 
+====================================================================================================
+7    3ba0429e-331e-40ab-a83a-b313346bd61d 	 0.8249732255935669 
+  Alexander Nevsky (Алекса́ндр Не́вский) is a 1938 Soviet historical drama film directed by Sergei Eisenstein. It depicts the attempted invasion of Novgorod in the 13th century by the Teutonic Knights of the Holy Roman Empire and their defeat by Prince Alexander, known popularly as Alexander Nevsky (1220–1263). Eisenstein made the film in association with Dmitri Vasilyev and with a script co-written with Pyotr Pavlenko; they were assigned to ensure that Eisenstein did not stray into "formalism" and to facilitate shooting on a reasonable timetable. It was produced by Goskino via the Mosfilm production unit, with Nikolai Cherkasov in the title role and a musical score by Sergei Prokofiev. Alexander Nevsky was the first and most popular of Eisenstein's three sound films. Eisenstein, Pavlenko, Cherkasov and Abrikosov were awarded the Stalin Prize in 1941 for the film. In 1978, the film was included in the world's 100 best motion pictures according to an opinion poll conducted by the Italian publishing house Arnoldo Mondadori Editore. Russia Beyond considers the film one of the 10 best Russian war films.
+====================================================================================================
+8    1fb8f578-a4dd-4605-b3fb-25aac040da02 	 0.8249292373657227 
+  On November 13, 1945, the postwar communist government decreed the formation of Polski Film as a national enterprise. Organized under the Minister of Culture Władysław Kowalski, Polski Film had control over both domestic film production and distribution of all foreign films. In the first years there was still room for smaller production companies, notably Yiddish-language.  Aleksander Ford served as Film Polski's first director from 1945 to 1947. As Roman Polanski noted in his autobiography, Ford was both an "extremely competent" manager and "a veteran party member, who was then an orthodox Stalinist. ...The real power broker during the immediate postwar period was Ford himself, who established a small film empire of his own." With colleagues from the Polish United Workers' Party, Ford rebuilt the film production infrastructure, a national studio, and the National Film School in 
+====================================================================================================
+9    2691e42b-c1bd-42b1-aee3-5fcb822525b8 	 0.824268102645874 
+  In 2003, director Oles Sanin made the film "Mamay" at the Oleksandr Dovzhenko National Film Studio.
+====================================================================================================
+10    db57eb92-0e55-49e4-902f-2c0c490fe805 	 0.8242599964141846 
+  Jadwiga Barańska (born 21 October 1935) is a Polish actress and screenwriter. Jadwiga Barańska is married to Polish director Jerzy Antczak and the mother of Mikołaj Antczak, born in 1964.
+*****************
+reranking
+*****************
+=============== After Reranking ===============
+ 1 -0.06130  Jadwiga Barańska (born 21 October 1935) is a Polish actress and screenwriter. Jadwiga Barańska is married to Polish director Jerzy Antczak and the mother of Mikołaj Antczak, born in 1964.
+ 2 -0.26423  On November 13, 1945, the postwar communist government decreed the formation of Polski Film as a national enterprise. Organized under the Minister of Culture Władysław Kowalski, Polski Film had control over both domestic film production and distribution of all foreign films. In the first years there was still room for smaller production companies, notably Yiddish-language.  Aleksander Ford served as Film Polski's first director from 1945 to 1947. As Roman Polanski noted in his autobiography, Ford was both an "extremely competent" manager and "a veteran party member, who was then an orthodox Stalinist. ...The real power broker during the immediate postwar period was Ford himself, who established a small film empire of his own." With colleagues from the Polish United Workers' Party, Ford rebuilt the film production infrastructure, a national studio, and the National Film School in 
+ 3 -2.78988  Alexander Nevsky (Алекса́ндр Не́вский) is a 1938 Soviet historical drama film directed by Sergei Eisenstein. It depicts the attempted invasion of Novgorod in the 13th century by the Teutonic Knights of the Holy Roman Empire and their defeat by Prince Alexander, known popularly as Alexander Nevsky (1220–1263). Eisenstein made the film in association with Dmitri Vasilyev and with a script co-written with Pyotr Pavlenko; they were assigned to ensure that Eisenstein did not stray into "formalism" and to facilitate shooting on a reasonable timetable. It was produced by Goskino via the Mosfilm production unit, with Nikolai Cherkasov in the title role and a musical score by Sergei Prokofiev. Alexander Nevsky was the first and most popular of Eisenstein's three sound films. Eisenstein, Pavlenko, Cherkasov and Abrikosov were awarded the Stalin Prize in 1941 for the film. In 1978, the film was included in the world's 100 best motion pictures according to an opinion poll conducted by the Italian publishing house Arnoldo Mondadori Editore. Russia Beyond considers the film one of the 10 best Russian war films.
+ 4 -3.36678  but now it is under Polish dominion. Several years later, Taras sends his two sons, Andriy (Tony Curtis) and Ostap (Perry Lopez) to the academy at Kyiv, to obtain a Polish education. There, the eldest son, Andriy, falls in love with a Polish princess Natalia Dubrov (played by Christine Kaufmann), to the ire of the locals, who treat the Cossack brothers like scum of the earth. Ultimately, the brothers are forced to flee Kiev, returning to their father’s house on the Ukrainian steppes. There, word comes that the Poles want the Cossacks to raise an army to help them in a new war in the Baltic region. When Andriy objects, he is accused 
+ 5 -4.45928  Pavel Yurevich Ruminov (Па́вел Ю́рьевич Руми́нов; born 25 November 1974) is a Russian film director. He began his career in Vladivostok directing music videos for Russian acts such as Mumiy Troll and Zemfira before relocating to Moscow. He is best known in Russia for the Internet-based hype surrounding his first feature film Dead Daughters, where he tried to marry horror and arthouse cinema effectively. The film divided critics in Russia, some praised its style and message, others found the structure of the movie to be very strange. He sold the remake rights for Dead Daughters to the Hollywood studio Gold Circle Films but no remake has 
+*****************
+compressing
+*****************
+[2024-06-11 13:10:57,276] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background: Jadwiga Barańska (born 21 October 1935) is a Polish actress and screenwriter. Jadwiga Barańska is married to Polish director Jerzy Antczak and the mother of Mikołaj Antczak, born in 1964. Pavel Yurevich Ruminov (Па́вел Ю́рьевич Руми́нов; born 25 November 1974) is a Russian film director. He sold the remake rights for Dead Daughters to the Hollywood studio Gold Circle Films but no remake has 
+
+ but now it is under Polish dominion. Several years later, Taras sends his two sons, Andriy (Tony Curtis) and Ostap (Perry Lopez) to the academy at Kyiv, to obtain a Polish education. There, the eldest son, Andriy, falls in love with a Polish princess Natalia Dubrov (played by Christine Kaufmann), to the ire of the locals, who treat the Cossack brothers like scum of the earth. When Andriy objects, he is accused 
+
+ On November 13, 1945, the postwar communist government decreed the formation of Polski Film as a national enterprise. Organized under the Minister of Culture Władysław Kowalski, Polski Film had control over both domestic film production and distribution of all foreign films. Aleksander Ford served as Film Polski's first director from 1945 to 1947. As Roman Polanski noted in his autobiography, Ford was both an "extremely competent" manager and "a veteran party member, who was then an orthodox Stalinist. With colleagues from the Polish United Workers' Party, Ford rebuilt the film production infrastructure, a national studio, and the National Film School in
+
+Question: Who is the mother of the director of film Polish-Russian War (Film)?
+Answer: 
+2024-06-11 13:10:57 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background: Jadwiga Barańska (born 21 October 1935) is a Polish actress and screenwriter. Jadwiga Barańska is married to Polish director Jerzy Antczak and the mother of Mikołaj Antczak, born in 1964. Pavel Yurevich Ruminov (Па́вел Ю́рьевич Руми́нов; born 25 November 1974) is a Russian film director. He sold the remake rights for Dead Daughters to the Hollywood studio Gold Circle Films but no remake has 
+
+ but now it is under Polish dominion. Several years later, Taras sends his two sons, Andriy (Tony Curtis) and Ostap (Perry Lopez) to the academy at Kyiv, to obtain a Polish education. There, the eldest son, Andriy, falls in love with a Polish princess Natalia Dubrov (played by Christine Kaufmann), to the ire of the locals, who treat the Cossack brothers like scum of the earth. When Andriy objects, he is accused 
+
+ On November 13, 1945, the postwar communist government decreed the formation of Polski Film as a national enterprise. Organized under the Minister of Culture Władysław Kowalski, Polski Film had control over both domestic film production and distribution of all foreign films. Aleksander Ford served as Film Polski's first director from 1945 to 1947. As Roman Polanski noted in his autobiography, Ford was both an "extremely competent" manager and "a veteran party member, who was then an orthodox Stalinist. With colleagues from the Polish United Workers' Party, Ford rebuilt the film production infrastructure, a national studio, and the National Film School in
+
+Question: Who is the mother of the director of film Polish-Russian War (Film)?
+Answer: 
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 1/500 [00:44<6:10:58, 44.61s/it][2024-06-11 13:10:57,743] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-11 13:10:57 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+retrieving
+*****************
+*****************
+searching
+*****************
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+['Blind Shaft, a 1989 Chinese drama film directed by Wu Tong, was the first Chinese film to be selected for the main competition at the Cannes Film Festival. The film tells the story of a group of coal miners in a remote area of China who are trapped in a mine after a cave-in. The film was praised for its realistic portrayal of the harsh living conditions and the struggles of the miners.\n\nOn the other hand, The Mask of Fu Manchu, a 1932 American adventure film, was directed by Charles Brabin and starred Boris Karloff as the titular villain. The film is based on the novel by Sax Rohmer and follows the adventures of a group of explorers who are trying to stop Fu Manchu from unleashing a deadly virus on the world.\n\nIn terms of release dates, Blind Shaft was released in China in 1989, while The Mask of Fu Manchu was released in the United States in 1932. Therefore, Blind Shaft came out first.\n\nIn terms of critical reception, Blind Shaft received positive reviews from critics, while The Mask of Fu Manchu received mixed reviews. Blind Shaft was praised for its realistic portrayal of the harsh living conditions and the struggles of the miners, while The Mask of Fu Manchu was critic', 'Which film came out first, Blind Shaft or The Mask Of Fu Manchu?']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 125.71it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 165.87it/s]
+====================================================================================================
+1    9f782d17-4dbf-4f7d-8395-b23438dd2524 	 0.8403030633926392 
+  The film revolves around the exploits of a detective agency in Hong Kong called Mannix Private Detective Agency. It is headed by private detective Wong Yeuk-sze (Michael Hui) with his emotionally drained assistant Puffy (Ricky Hui). Meanwhile, Lee Kwok-kit (Samuel Hui), a kung fu expert, who works at a Vitasoy plant factory and spends most of the time doing kung fu tricks to impress a girl, ultimately loses his job. Seeking to find another line of work, Lee attempts to joins Wong's detective agency. Despite Lee's impression with his kung fu talent which involves his snatching trick, Wong was not impressed. Then, 
+====================================================================================================
+2    0dc69052-006c-4470-a8cb-ce53cb2730e0 	 0.8315198421478271 
+  man rescues him from death and escapes with him. The masked man is Li Jen Chiao (Ti Lung) a loyal ex-Shaolin man and the owner of a pawn shop in town. Li Jen Chiao hides Chai Min Yu in the back of his pawn shop, and sends his younger brother Tan Ming (Fu Sheng) to seek the help of two other ex-Shaolin men who reside in the town, Wan Yi Ling (Sun Chien) and Su He Hu (Lu Feng). Tan Ming is temperamental and is always getting into fights, and he starts fighting with Wan Yi Ling and Su He Hu before he explains the 
+====================================================================================================
+3    1e1f38f3-691a-4ee0-94d9-33bcd2d4ab90 	 0.8306189179420471 
+  situations. For example, they were hired by a woman to capture photos of his husband's affair with another woman so she can get reward money at court. Later, they were also hired by a supermarket owner to foil an upcoming shoplifting case which leads to a scene where Lee puts his kung fu skills in use to fight thugs. The most important part of the film is when a gang of robbers led by Uncle Nine (Shih Kien) who demands ransom from a cinema mogul. He then leads his gang to extort movie goers and Wong is one of them, who 
+====================================================================================================
+4    098d3499-287e-4b11-977d-3763524c1a10 	 0.8305349349975586 
+ 1) 1982 The Story of Emperor Li production, Loong's successful attempt to break that mold (Only Loong's second parents supported her. Luo Pinchao commented on the debut but Yam refrained from doing so and gave a cryptic response when asked by the Press. Chinese:先說:"我不識嘢的，怎可以說什麼意見呢？" 又再一次說:"沒有，我沒有話可講. ") or ; 2) Mid-1970s rumored but failed attempt (since it would have otherwise opened to the world that can of worms ) of Run Run Shaw to make a Dream of the Red Chamber film instead of what ended up in 1977 by another film production company or ; 3) Failed attempt to make a 
+====================================================================================================
+5    0db1fabf-dc64-45e2-bd5e-dac20b8d6655 	 0.8304777145385742 
+  The Private Eyes is a 1976 Hong Kong comedy film written, directed by and starring Michael Hui and co-starring his brothers Samuel Hui and Ricky Hui as well as Shih Kien and Richard Ng in his second film role. John Woo was the production designer and also co-director, though he was uncredited. Sammo Hung served as the film's action director and Jackie Chan was also a stuntman. This is the third film of the Hui Brothers and it is the first film that established the Hui Brothers' comedies internationally. It became the highest-grossing film in Hong Kong at the time.
+====================================================================================================
+6    6a037739-95e6-47ce-8be6-881315cac4cf 	 0.8301478624343872 
+  The film concerns Wang's one-armed martial arts master being stalked by an imperial assassin, the master of two fighters (the Tibetan lamas) who were killed in the previous film. The title refers to the assassin's weapon, the "flying guillotine", which resembles a hat with a bladed rim attached to a long chain. Upon enveloping one's head, the blades cleanly decapitate the victim with a quick pull of the chain. The Boxer's adversary is the assassin Fung Sheng Wu Chi who is blind, is an expert user of the Flying Guillotine, and relies on others to identify one-armed men, which he then kills. When the One-Armed Boxer is invited to attend a martial arts tournament, his efforts to lie low are unsuccessful, and the assassin soon tracks him down with the help of his three 
+====================================================================================================
+7    10f7208d-10ba-402d-86fb-9e4ba28bc461 	 0.8282762765884399 
+  Tsai Te-cheng learns the wing chun style from a strange female monk and Hu Te-ti learns the iron whip. This forces Hai Hsein to secretly go to the court and report to Prince Hoo (Lu Feng) that Shaolin has been training new fighters. The Qing scheme to destroy Shaolin. Hai Hsein returns to Shaolin looking to recruit more traitors to set up the temple for a raid. All the accepted students become close friends and proficient in their kung fu, except for Fang Shih Yu (who is unknowingly learning tiger boxing but is impatient). He keeps getting into fights with Ma Fu Yi, 
+====================================================================================================
+8    f22ad778-94c6-4737-b3ea-a25a92b79051 	 0.8275326490402222 
+  martial arts are rather obscure, although Ma Chao-hsing begins learning the five animal styles from the start. Elsewhere, escaped Ming soldiers Tsai Te-cheng (Ti Lung), Hu Te-ti (David Chiang), Yen Yung-chun (Szu Shih), and Ma Fu Yi (Wang Lung Wei) arrive close to Shaolin looking for a place to hide from the Qing. Hu Te-ti suggests they go to Shaolin and they are instantly accepted, which frustrates three more students trying to get acceptance into the temple, Lin Kwong Yao (Kuo Chui), Huang Sung Han (Lee I Min), and Hu Hui Chien (Kuan-Chun Chi). The three are eventually accepted and begin their obscure 
+====================================================================================================
+9    948a68e0-5c93-4788-adbf-a2a454c3e9e4 	 0.8264641761779785 
+  My Husband film in Cantonese instead of what ended up in 1970s. 1) Tang did split some titles into two. That is, same story (with even same names for characters) sometimes for one troupe in Hong Kong while the other troupe performed in Vietnam, per Ng Kwun Lai. A Wife in Nobility is Never Free (一入侯門深似海) and Marrying the Sister-in-Law (再世重溫金鳳緣) may be another example of legitimate twins since they are both Fong's work but decades apart by Tang. The clean version of Yam's The Marriage of Tang Bohu renamed as The Marriage of Three Smiles (三笑姻緣) for Loong is also 
+====================================================================================================
+10    5dde0920-91c2-4d7a-bd4a-9372aee97eb1 	 0.8263990879058838 
+  During an attack on Heaven, the Bull Demon King battles and loses against the Jade Emperor, the ruler of Heaven. The Emperor's sister and Bull Demon King's lover, Princess Iron Fan, convinces the Emperor to spare him and banishes him, Princess Iron Fan, and the rest of the demons to Flaming Mountain. The goddess Nüwa sacrifices her body to rebuild Heaven with crystals. The Jade Emperor appoints his nephew Erlang Shen to guard the Southern Gate, despite Erlang's resentment of the task. One of the crystals falls to Mount Huaguo, taking the form of a monkey over time. A nine-tailed fox is scarred after touching the crystal and whisked away by a mysterious force. Years 
+*****************
+reranking
+*****************
+=============== After Reranking ===============
+ 1 -3.56234  The film revolves around the exploits of a detective agency in Hong Kong called Mannix Private Detective Agency. It is headed by private detective Wong Yeuk-sze (Michael Hui) with his emotionally drained assistant Puffy (Ricky Hui). Meanwhile, Lee Kwok-kit (Samuel Hui), a kung fu expert, who works at a Vitasoy plant factory and spends most of the time doing kung fu tricks to impress a girl, ultimately loses his job. Seeking to find another line of work, Lee attempts to joins Wong's detective agency. Despite Lee's impression with his kung fu talent which involves his snatching trick, Wong was not impressed. Then, 
+ 2 -4.16357  The film concerns Wang's one-armed martial arts master being stalked by an imperial assassin, the master of two fighters (the Tibetan lamas) who were killed in the previous film. The title refers to the assassin's weapon, the "flying guillotine", which resembles a hat with a bladed rim attached to a long chain. Upon enveloping one's head, the blades cleanly decapitate the victim with a quick pull of the chain. The Boxer's adversary is the assassin Fung Sheng Wu Chi who is blind, is an expert user of the Flying Guillotine, and relies on others to identify one-armed men, which he then kills. When the One-Armed Boxer is invited to attend a martial arts tournament, his efforts to lie low are unsuccessful, and the assassin soon tracks him down with the help of his three 
+ 3 -4.34848  man rescues him from death and escapes with him. The masked man is Li Jen Chiao (Ti Lung) a loyal ex-Shaolin man and the owner of a pawn shop in town. Li Jen Chiao hides Chai Min Yu in the back of his pawn shop, and sends his younger brother Tan Ming (Fu Sheng) to seek the help of two other ex-Shaolin men who reside in the town, Wan Yi Ling (Sun Chien) and Su He Hu (Lu Feng). Tan Ming is temperamental and is always getting into fights, and he starts fighting with Wan Yi Ling and Su He Hu before he explains the 
+ 4 -7.32831  situations. For example, they were hired by a woman to capture photos of his husband's affair with another woman so she can get reward money at court. Later, they were also hired by a supermarket owner to foil an upcoming shoplifting case which leads to a scene where Lee puts his kung fu skills in use to fight thugs. The most important part of the film is when a gang of robbers led by Uncle Nine (Shih Kien) who demands ransom from a cinema mogul. He then leads his gang to extort movie goers and Wong is one of them, who 
+ 5 -7.53804  The Private Eyes is a 1976 Hong Kong comedy film written, directed by and starring Michael Hui and co-starring his brothers Samuel Hui and Ricky Hui as well as Shih Kien and Richard Ng in his second film role. John Woo was the production designer and also co-director, though he was uncredited. Sammo Hung served as the film's action director and Jackie Chan was also a stuntman. This is the third film of the Hui Brothers and it is the first film that established the Hui Brothers' comedies internationally. It became the highest-grossing film in Hong Kong at the time.
+*****************
+compressing
+*****************
+[2024-06-11 13:11:14,531] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background: The film revolves around the exploits of a detective agency in Hong Kong called Mannix Private Detective Agency. It is headed by private detective Wong Yeuk-sze (Michael Hui) with his emotionally drained assistant Puffy (Ricky Hui). John Woo was the production designer and also co-director, though he was uncredited. Sammo Hung served as the film's action director and Jackie Chan was also a stuntman. This is the third film of the Hui Brothers and it is the first film that established the Hui Brothers' comedies internationally. The most important part of the film is when a gang of robbers led by Uncle Nine (Shih Kien) who demands ransom from a cinema mogul. He then leads his gang to extort movie goers and Wong is one of them, who 
+
+ The film concerns Wang's one-armed martial arts master being stalked by an imperial assassin, the master of two fighters (the Tibetan lamas) who were killed in the previous film. The Boxer's adversary is the assassin Fung Sheng Wu Chi who is blind, is an expert user of the Flying Guillotine, and relies on others to identify one-armed men, which he then kills. When the One-Armed Boxer is invited to attend a martial arts tournament, his efforts to lie low are unsuccessful, and the assassin soon tracks him down with the help of his three
+
+Question: Which film came out first, Blind Shaft or The Mask Of Fu Manchu?
+Answer: 
+2024-06-11 13:11:14 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background: The film revolves around the exploits of a detective agency in Hong Kong called Mannix Private Detective Agency. It is headed by private detective Wong Yeuk-sze (Michael Hui) with his emotionally drained assistant Puffy (Ricky Hui). John Woo was the production designer and also co-director, though he was uncredited. Sammo Hung served as the film's action director and Jackie Chan was also a stuntman. This is the third film of the Hui Brothers and it is the first film that established the Hui Brothers' comedies internationally. The most important part of the film is when a gang of robbers led by Uncle Nine (Shih Kien) who demands ransom from a cinema mogul. He then leads his gang to extort movie goers and Wong is one of them, who 
+
+ The film concerns Wang's one-armed martial arts master being stalked by an imperial assassin, the master of two fighters (the Tibetan lamas) who were killed in the previous film. The Boxer's adversary is the assassin Fung Sheng Wu Chi who is blind, is an expert user of the Flying Guillotine, and relies on others to identify one-armed men, which he then kills. When the One-Armed Boxer is invited to attend a martial arts tournament, his efforts to lie low are unsuccessful, and the assassin soon tracks him down with the help of his three
+
+Question: Which film came out first, Blind Shaft or The Mask Of Fu Manchu?
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 2/500 [01:01<3:55:21, 28.36s/it][2024-06-11 13:11:14,725] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-11 13:11:14 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+retrieving
+*****************
+*****************
+searching
+*****************
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+  0%|          | 2/500 [01:05<4:32:24, 32.82s/it]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    documents = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 251, in retrieval
+    search_docs, _ = self._search(query=query, retrieval_config=self.retrieval_config)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 193, in _search
+    docs = search(query, top_k=kwargs["retrieval_config"]["search_k"], search_method=kwargs["retrieval_config"]["search_method"], milvus_id=self.milvus_id)
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/queries2retrievers.py", line 266, in search
+    nodes = get_text_retriever(similarity_top_k=top_k, milvus_id=milvus_id).retrieve(hyde_generate(query))
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/queries2retrievers.py", line 75, in hyde_generate
+    hydoc = hyde.run(query)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/core/indices/query/query_transform/base.py", line 74, in run
+    return self._run(query_bundle, metadata=metadata)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/core/indices/query/query_transform/base.py", line 155, in _run
+    hypothetical_doc = self._llm.predict(self._hyde_prompt, context_str=query_str)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/core/instrumentation/dispatcher.py", line 198, in wrapper
+    result = func(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/core/llms/llm.py", line 438, in predict
+    response = self.complete(formatted_prompt, formatted=True)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/core/instrumentation/dispatcher.py", line 198, in wrapper
+    result = func(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/core/llms/callbacks.py", line 389, in wrapped_llm_predict
+    f_return_val = f(_self, *args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/llms/huggingface/base.py", line 281, in complete
+    tokens = self._model.generate(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/utils.py", line 1758, in generate
+    result = self._sample(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/utils.py", line 2397, in _sample
+    outputs = self(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 1139, in forward
+    outputs = self.model(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 1024, in forward
+    layer_outputs = decoder_layer(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 750, in forward
+    hidden_states = self.post_attention_layernorm(hidden_states)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 85, in forward
+    variance = hidden_states.pow(2).mean(-1, keepdim=True)
+RuntimeError: unknown parameter type
+E20240611 13:11:19.250263 1493102 server.cpp:47] [SERVER][BlockLock][milvus] Process exit
+[2024-06-11 13:11:24,127] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 143) local_rank: 0 (pid: 1491827) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-11_13:11:24
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 143 (pid: 1491827)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

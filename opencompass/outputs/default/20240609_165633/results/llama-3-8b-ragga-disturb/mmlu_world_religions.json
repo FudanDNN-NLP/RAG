@@ -1,0 +1,12 @@
+{
+    "accuracy": 100.0,
+    "details": {
+        "0": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:y and commonly visible aspect of Hinduism, they are not necessary to Hindu worship.\n\nThe earliest murti are mentioned by Pāṇini in 4th century BCE.\n\nMurti is sometimes referred to as murthi, or vigraha or pratima.\n\nIn Hindu temples, it is a symbolic icon.\n\nA murti is itself not a god in Hinduism, but it is a shape, embodiment or manifestation of a deity.\n\n Murti (Sanskrit: मूर्ति, Mūrti; ) is a general term for an image, statue or idol of a deity or mortal in Hindu culture.\nA murti is by carving stone wood working, metal casting or pottery.\n\nur are also found in nhe Jain traditions, where they serve as symbols rever mortals Jain tem, and worshiped in murtipaka rituals.\n\nIn religious context, they found in Hindu temples or, where may be treated a bel guest serve as participant pu in Hinduism.\n categories: Bey anth forms of trad Hinduism cherishicon where alternate symbols areaped a mur, such as the Shoni for Devi, and the salrama for Vishnu.\n\nA mur is embiment of, the Ultimate Re Brahman Hindus.\n\nOtherti include thea.\n\n material of construction and relative scale of murti be correlated to the scale of the temple dimensions, using twelve types of comparative measurements.\n\nIt may be found inside or outside a temple or home, installed to be moved with a festive procession (utsava murti), or just be a landmark.\n\nA murti in contemporary usage is any image or statue.\n\ndecorate the area near the murti.\n\nIt is a significant part of Hindu iconography, and is implemented in many ways.\n\nSaumya images are most common in Hindu temples.\n\nThere is a multiple-choice question about world religions. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion:  What can murtis be translated as?\nA. Offerings\nB. Prayers\nC. Apparitions\nD. Idols\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "D. Idols",
+            "predictions": "D",
+            "references": "D"
+        }
+    },
+    "type": "GEN"
+}

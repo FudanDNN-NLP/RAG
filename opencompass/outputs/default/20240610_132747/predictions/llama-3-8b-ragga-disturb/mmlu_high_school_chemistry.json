@@ -1,0 +1,32 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school chemistry. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: London dispersion forces are caused by\nA. temporary dipoles created by the position of electrons around the nuclei in a molecule\nB. the three-dimensional intermolecular bonding present in all covalent substances\nC. the uneven electron-to-proton ratio found on individual atoms of a molecule\nD. the electronegativity differences between the different atoms in a molecule\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school chemistry. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The symbol for antimony is\nA. W\nB. Sb\nC. Fe\nD. An\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school chemistry. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: All of the following ions have the same electron configuration except\nA. Rb+\nB. Se2-\nC. As5+\nD. Sr2+\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school chemistry. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Hydrogen fluoride, HF, is a liquid at 15°C. All other hydrogen halides (represented by HX, where X is any other halogen) are gases at the same temperature. Why?\nA. Fluorine has a very high electronegativity; therefore the H-F bond is stronger than any other H-X bond.\nB. HF is smaller than any other H-X molecule; therefore it exhibits stronger London dispersion forces.\nC. The dipoles in a HF molecule exhibit a particularly strong attraction force to the dipoles in other HF molecules.\nD. The H-F bond is the most ionic in character compared to all other hydrogen halides.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about high school chemistry. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following indicates that a reaction is spontaneous?\nA. at equilibrium there are more products than reactants\nB. the value of ΔG° is greater than zero\nC. the value of ΔS° is greater than zero\nD. the value of Keq is less than one\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "A",
+        "context": "temp contexts"
+    }
+}

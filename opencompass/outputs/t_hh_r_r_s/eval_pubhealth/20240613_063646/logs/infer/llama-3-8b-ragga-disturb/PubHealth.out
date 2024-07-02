@@ -1,0 +1,895 @@
+06/13 06:36:51 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/PubHealth]
+06/13 06:36:51 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-13 06:36:51.597475: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-13 06:36:51.651559: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-13 06:36:52.412783: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.31s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.24s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.19s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.01s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/171715_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.714 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:05,  1.37it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.38it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.37it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:02<00:02,  1.35it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:03<00:02,  1.34it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.32it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.32it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.52it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:05<00:00,  1.41it/s]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'RankLLaMA', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:4
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'RankLLaMA', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:4
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.31s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.05it/s]
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at meta-llama/Llama-2-7b-hf and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/13 06:37:34 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/PubHealth]
+[2024-06-13 06:37:35,000] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-13 06:37:35 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-13 06:37:35,103] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 06:37:35 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: A mother revealed to her child in a letter after her death that she had just one eye because she had donated the other to him.
+Answer: 
+q:A mother revealed to her child in a letter after her death that she had just one eye because she had donated the other to him.
+[2024-06-13 06:37:35,111] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: A mother revealed to her child in a letter after her death that she had just one eye because she had donated the other to him.
+Answer: 
+2024-06-13 06:37:35 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: A mother revealed to her child in a letter after her death that she had just one eye because she had donated the other to him.
+Answer: 
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 1/500 [00:02<19:42,  2.37s/it][2024-06-13 06:37:37,378] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 06:37:37 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: Study says too many Americans still drink too much.
+Answer: 
+q:Study says too many Americans still drink too much.
+[2024-06-13 06:37:37,384] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: Study says too many Americans still drink too much.
+Answer: 
+2024-06-13 06:37:37 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: Study says too many Americans still drink too much.
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 2/500 [00:02<08:46,  1.06s/it][2024-06-13 06:37:37,517] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-13 06:37:37 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: Viral image Says 80% of novel coronavirus cases are "mild.
+Answer: 
+q:Viral image Says 80% of novel coronavirus cases are "mild.
+*****************
+searching
+*****************
+Jun 13, 2024 6:37:37 AM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+['A viral image circulating on social media claims that 80% of novel coronavirus cases are "mild."\nThe image, which has been shared thousands of times on Facebook, Twitter, and other platforms, features a chart that purports to show the number of confirmed cases of COVID-19, the disease caused by the virus, and the number of "mild" cases.\nThe chart shows that 80% of cases are "mild," while 15% are "severe" and 5% are "critical."\nBut the chart is misleading.\nThe data it uses is from a study published in the New England Journal of Medicine on March 4, 2020, which looked at 44,000 confirmed cases of COVID-19 in China.\nThe study found that 81% of cases were "mild," but it also found that 14% were "severe" and 5% were "critical."\nThe chart, however, only shows the percentage of "mild" cases, and it does not include the percentage of "severe" and "critical" cases.\nThis can make it seem like the vast majority of people who get COVID-19 will have a mild case, when in fact the majority of people who get COVID-19 will have a mild case, but a significant number will have a severe or critical', 'Viral image Says 80% of novel coronavirus cases are "mild.']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 24.11it/s]
+====================================================================================================
+1    a74b0377-560f-49a9-8d1a-4e4cdc4b9578 	 1.0 
+  were overwhelmed dealing with those who had the COVID-19. Some social-media users have used the numbers of urns returned to families and the number of cremations conducted in Wuhan to estimate a death toll in Wuhan of about 42,000 or 46,800, compared to an official toll of 2,548 people attributed to the virus in Wuhan as of 27 March. There were 13,856 cremations in Wuhan in the fourth quarter of 2019, according to Bloomberg calculations based on data from the city's civil-affairs agency. That was 2,419 lower than in the fourth quarter of 2018. Health experts, United States intelligence 
+====================================================================================================
+2    9e605b94-889a-4fb4-896d-a157a2d390e5 	 0.5929728989294445 
+  on the outbreak on 5 January 2020. Professor Zhang Yongzhen of Fudan University completed sequencing of the novel virus on the same day, and published the results to the online database GenBank on 11 January. On 14 January, the WHO tweeted: "Preliminary investigations conducted by the Chinese authorities have found no clear evidence of human-to-human transmission of the novel coronavirus (2019-nCoV) identified in Wuhan, China." On 15 February 2021, WHO investigators in China said they had found evidence that the initial outbreak in Wuhan was more widespread than originally thought. They asked the Chinese government for permission to study hundreds of thousands of blood samples from Wuhan; as of 15 February, this permission had not been granted.
+====================================================================================================
+3    2b7cc999-f3cf-4b5c-9b70-d73cdd4db9ab 	 0.5806709938464132 
+  Xinjiang re-education camps emerged. Anna Hayes of Australia's James Cook University expressed concern about possible spread in the camps. As of late March, users of the social-media site Sina Weibo widely shared an undated photograph showing long lines at the Hankou funeral home in Wuhan. According to Caixin Global, the Hankou funeral home was operating 19 hours a day. Caixin also reported that there were a number of people who died with COVID-19 symptoms but were not tested and were thus excluded from the official case-tally. Some patients died of other diseases due to a lack of proper treatment when 
+====================================================================================================
+4    ba7c9b75-8a2c-4263-982e-d82a08692ced 	 0.5770831577172721 
+  British scientists, and British government officials have expressed doubts about the accuracy of the figures provided by the Chinese government relating to the epidemic, raising concerns that the Beijing government has deliberately under-reported the extent of infections and deaths. Chinese Premier Li Keqiang reported on 24 March 2020 that the spread of domestically transmitted epidemic has essentially stopped and the outbreak has been controlled in China. Asymptomatic cases (people who tested positive but did not develop symptoms) were not counted as confirmed cases before 1 March. On 17 April 2020 the Wuhan government revised the number of COVID-19 deaths, 
+====================================================================================================
+5    66e62623-b46a-4b07-b209-41ed343ea3c5 	 0.5741486133355812 
+  academic misconduct related to the analysis published by the Gao Shan group. On 30 January, Wang Liming, a neuroscientist from Zhejiang University expressed anger on a Weibo post about George F. Gao's latest NEJM article. Wang believed that the article indicated that the Chinese CDC had clear evidence of human-to-human transmission in early January and kept it secret until three weeks later. Although the post was soon deleted, China CDC came under the spotlight. China CDC had to respond on the next day that the research was a retrospective analysis of the 425 cases reported to CDC on 23 January. Jennifer Zeis of NEJM's media Relations Department told The Paper, a Chinese newspaper that 
+====================================================================================================
+6    1c6003e1-7e13-4fd2-ba15-8c01055c070f 	 0.5579638371406895 
+  On 1 April, two United States officials said that China had deliberately concealed its cases and deaths according to a report by United States Intelligence Community. The officials asked not to be identified because the report is secret, and declined to detail its contents. The sources stated that the Chinese central government does not know the extent of the outbreak because lower-level officials reported falsified statistics to avoid losing their positions. The CIA is currently investigating in China to assess the COVID-19 totals. During the pandemic, no reports of cases of the COVID-19 in Xinjiang prisons or of conditions in 
+====================================================================================================
+7    fd9d182e-fa2c-41ec-9526-e50133fc14bb 	 0.47263550535277754 
+  for deaths that occurred at home that went previously unreported, as well as for the subtraction of deaths that were previously double-counted by different hospitals, resulting in a net increase of 1,290 reported deaths in the city. Blood samples taken by the Chinese CDC from a random sampling of 34,000 Wuhan citizens one month after the virus first wave was contained showed 4.43% of people had antibodies which would equate to almost 500,000 infections. In the wider Hubei area 0.44% of those sampled were positive for antibodies, while of 12,000 nationally representative samples taken only two recorded positive results.
+====================================================================================================
+8    200d2844-2b06-4b81-bc93-5608adb8e3f1 	 0.4322209812020568 
+  inputted into the app, researchers estimated that when cases peaked on 1 April 2020, 2.1 million people in the UK aged between 20 and 69 may have had COVID-19, and that as of 23 May 2020, 280,000 people in that age range currently had symptoms consistent with COVID-19. The study also estimates the risk level to health workers, compared with the general public. Research based on the app was described in papers in Science on 5 May 2020 and in Nature on 11 May 2020. Using data from the app, researchers were able to identify six distinct types of COVID-19 and forecast which initial symptoms were more likely to lead to severe illnesses.
+====================================================================================================
+9    13a98fb3-9bd2-4aac-8ba4-df18b0069d20 	 0.4205670993846413 
+  The severity of COVID-19 varies. The disease may take a mild course with few or no symptoms, resembling other common upper respiratory diseases such as the common cold. In 3–4% of cases (7.4% for those over age 65) symptoms are severe enough to cause hospitalization. Mild cases typically recover within two weeks, while those with severe or critical diseases may take three to six weeks to recover. Among those who have died, the time from symptom onset to death has ranged from two to eight weeks. The Italian Istituto Superiore di Sanità reported that the median time between the onset of symptoms and death was twelve days, with seven being hospitalised. However, people transferred to 
+====================================================================================================
+10    1a0a49dc-9689-42d5-8d31-7ec6bdf9799b 	 0.3 
+ Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019. The disease has since spread worldwide, leading to an ongoing pandemic.
+
+Symptoms of COVID‑19 are variable, but often include fever, cough, headache, fatigue, breathing difficulties, loss of smell, and loss of taste. Symptoms may begin one to fourteen days after exposure to the virus. At least a third of people who are infected do not develop noticeable symptoms. Of those people who develop symptoms noticeable enough to be classed as patients, most (81%) develop mild to moderate symptoms (up to mild pneumonia), while 14% develop severe symptoms (dyspnea, hypoxia, or more than 50% lung involvement on imaging), and 5% suffer critical symptoms (respiratory failure, shock, or multiorgan dysfunction). Older people are at a higher risk of developing severe symptoms. Some people continue to experience a range of effects (long COVID) for months after recovery, and damage to organs has been observed. Multi-year studies are underway to further investigate the long-term effects of the disease.
+
+COVID‑19 transmits when people breathe in air contaminated by droplets and small airborne particles containing the virus. The risk of breathing these in is highest when people are in close proximity, but they can be inhaled over longer distances, particularly indoors. Transmission can also occur if splashed or sprayed with contaminated fluids in the eyes, nose or mouth, and, rarely, via contaminated surfaces. People remain contagious for up to 20 days, and can spread the virus even if they do not develop symptoms.
+
+Several testing methods have been developed to diagnose the disease. The standard diagnostic method is by detection of the virus's nucleic acid by real-time reverse transcription polymerase chain reaction (rRT-PCR), transcription-mediated amplification (TMA), or by reverse transcription loop-mediated isothermal amplification (RT-LAMP) from a nasopharyngeal swab.
+
+Several COVID-19 vaccines have been approved and distributed in various countries, which have initiated mass vaccination campaigns. Other preventive measures include physical or social distancing, quarantining, ventilation of indoor spaces, covering coughs and sneezes, hand washing, and keeping unwashed hands away from the face. The use of face masks or coverings has been recommended in public settings to minimize the risk of transmissions. While work is underway to develop drugs that inhibit the virus, the primary treatment is symptomatic. Management involves the treatment of symptoms, supportive care, isolation, and experimental measures.
+
+Nomenclature
+
+During the initial outbreak in Wuhan, the virus and disease were commonly referred to as "coronavirus" and "Wuhan coronavirus", with the disease sometimes called "Wuhan pneumonia". In the past, many diseases have been named after geographical locations, such as the Spanish flu, Middle East respiratory syndrome, and Zika virus. In January 2020, the World Health Organization (WHO) recommended 2019-nCoV and 2019-nCoV acute respiratory disease as interim names for the virus and disease per 2015 guidance and international guidelines against using geographical locations or groups of people in disease and virus names to prevent social stigma. The official names COVID‑19 and SARS-CoV-2 were issued by the WHO on 11 February 2020. The Director-General, Tedros Adhanom explained that CO stands for corona, VI for virus, D for disease, and 19 for 2019, the year in which the outbreak was first identified. The WHO additionally uses "the COVID‑19 virus" and "the virus responsible for COVID‑19" in public communications.
+
+Signs and symptoms
+
+Cause
+COVID‑19 is caused by infection with a strain of coronavirus known as severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).
+
+Transmission
+
+Virology
+
+Severe acute respiratory syndrome coronavirus2 (SARS-CoV-2) is a novel severe acute respiratory syndrome coronavirus. It was first isolated from three people with pneumonia connected to the cluster of acute respiratory illness cases in Wuhan. All structural features of the novel SARS-CoV-2 virus particle occur in related coronaviruses in nature.
+
+Outside the human body, the virus is destroyed by household soap, which bursts its protective bubble.
+
+SARS-CoV-2 is closely related to the original SARS-CoV. It is thought to have an animal (zoonotic) origin. Genetic analysis has revealed that the coronavirus genetically clusters with the genus Betacoronavirus, in subgenus Sarbecovirus (lineage B) together with two bat-derived strains. It is 96% identical at the whole genome level to other bat coronavirus samples (BatCov RaTG13). The structural proteins of SARS-CoV-2 include membrane glycoprotein (M), envelope protein (E), nucleocapsid protein (N), and the spike protein (S). The M protein of SARS-CoV-2 is about 98% similar to the M protein of bat SARS-CoV, maintains around 98% homology with pangolin SARS-CoV, and has 90% homology with the M protein of SARS-CoV; whereas, the similarity is only around 38% with the M protein of MERS-CoV.
+
+SARS-CoV-2 variants
+
+The many thousands of SARS-CoV-2 variants are grouped into either clades or lineages. The WHO, in collaboration with partners, expert networks, national authorities, institutions and researchers, have established nomenclature systems for naming and tracking SARS-CoV-2 genetic lineages by GISAID, Nextstrain and Pango. At the present time, the expert group convened by WHO has recommended the labeling of variants using letters of the Greek Alphabet, for example, Alpha, Beta, Delta, and Gamma, giving the justification that they "will be easier and more practical to discussed by non-scientific audiences." Nextstrain divides the variants into five clades (19A, 19B, 20A, 20B, and 20C), while GISAID divides them into seven (L, O, V, S, G, GH, and GR). The Pango tool groups variants into lineages, with many circulating lineages being classed under the B.1 lineage.
+
+Several notable variants of SARS-CoV-2 emerged throughout 2020. Cluster 5 emerged among minks and mink farmers in Denmark. After strict quarantines and a mink euthanasia campaign, the cluster was assessed to no longer be circulating among humans in Denmark as of 1 February 2021.
+
+, there are five dominant variants of SARS-CoV-2 spreading among global populations: the Alpha variant (B.1.1.7, formerly called the UK variant), first found in London and Kent, the Beta variant (B.1.351, formerly called the South Africa variant), the Gamma variant (P.1, formerly called the Brazil variant), the Delta variant (B.1.617.2, formerly called the India variant), and the Omicron variant (B.1.1.529), which had spread to 57 countries as of 7 December.
+
+Pathophysiology
+
+The SARS-CoV-2 virus can infect a wide range of cells and systems of the body. COVID‑19 is most known for affecting the upper respiratory tract (sinuses, nose, and throat) and the lower respiratory tract (windpipe and lungs). The lungs are the organs most affected by COVID‑19 because the virus accesses host cells via the receptor for the enzyme angiotensin-converting enzyme 2 (ACE2), which is most abundant on the surface of type II alveolar cells of the lungs. The virus uses a special surface glycoprotein called a "spike" to connect to the ACE2 receptor and enter the host cell.
+
+Respiratory tract
+Following viral entry, COVID‑19 infects the ciliated epithelium of the nasopharynx and upper airways.
+
+Nervous system
+One common symptom, loss of smell, results from infection of the support cells of the olfactory epithelium, with subsequent damage to the olfactory neurons. The involvement of both the central and peripheral nervous system in COVID‑19 has been reported in many medical publications. It is clear that many people with COVID-19 exhibit neurological or mental health issues. The virus is not detected in the CNS of the majority of COVID-19 patients with neurological issues. However, SARS-CoV-2 has been detected at low levels in the brains of those who have died from COVID‑19, but these results need to be confirmed. While virus has been detected in cerebrospinal fluid of autopsies, the exact mechanism by which it invades the CNS remains unclear and may first involve invasion of peripheral nerves given the low levels of ACE2 in the brain. The virus may also enter the bloodstream from the lungs and cross the blood-brain barrier to gain access to the CNS, possibly within an infected white blood cell.
+
+Gastrointestinal tract
+The virus also affects gastrointestinal organs as ACE2 is abundantly expressed in the glandular cells of gastric, duodenal and rectal epithelium as well as endothelial cells and enterocytes of the small intestine.
+
+Cardiovascular system
+The virus can cause acute myocardial injury and chronic damage to the cardiovascular system. An acute cardiac injury was found in 12% of infected people admitted to the hospital in Wuhan, China, and is more frequent in severe disease. Rates of cardiovascular symptoms are high, owing to the systemic inflammatory response and immune system disorders during disease progression, but acute myocardial injuries may also be related to ACE2 receptors in the heart. ACE2 receptors are highly expressed in the heart and are involved in heart function. A high incidence of thrombosis and venous thromboembolism have been found in people transferred to Intensive care units (ICU) with COVID‑19 infections, and may be related to poor prognosis. Blood vessel dysfunction and clot formation (as suggested by high D-dimer levels caused by blood clots) are thought to play a significant role in mortality, incidences of clots leading to pulmonary embolisms, and ischaemic events within the brain have been noted as complications leading to death in people infected with SARS-CoV-2. Infection appears to set off a chain of vasoconstrictive responses within the body, constriction of blood vessels within the pulmonary circulation has also been posited as a mechanism in which oxygenation decreases alongside the presentation of viral pneumonia. Furthermore, microvascular (arterioles and capillaries) blood vessel damage has been reported in a small number of tissue samples of the brainswithout detected SARS-CoV-2and the olfactory bulbs from those who have died from COVID‑19. COVID‑19 was also found to cause substantial – including morphological and mechanical – changes to blood cells – such as increased sizes – sometimes persisting for months after hospital discharge.
+
+Other organs
+Another common cause of death is complications related to the kidneys. Early reports show that up to 30% of hospitalized patients both in China and in New York have experienced some injury to their kidneys, including some persons with no previous kidney problems.
+
+Autopsies of people who died of COVID‑19 have found diffuse alveolar damage, and lymphocyte-containing inflammatory infiltrates within the lung.
+
+Immunopathology
+
+Although SARS-CoV-2 has a tropism for ACE2-expressing epithelial cells of the respiratory tract, people with severe COVID‑19 have symptoms of systemic hyperinflammation. Clinical laboratory findings of elevated IL2, IL7, IL6, granulocyte-macrophage colony-stimulating factor (GMCSF), interferon gamma-induced protein10 (IP10), monocyte chemoattractant protein1 (MCP1), macrophage inflammatory protein 1alpha (MIP1alpha), and tumour necrosis factor (TNFα) indicative of cytokine release syndrome (CRS) suggest an underlying immunopathology.
+
+Additionally, people with COVID‑19 and acute respiratory distress syndrome (ARDS) have classical serum biomarkers of CRS, including elevated C-reactive protein (CRP), lactate dehydrogenase (LDH), D-dimer, and ferritin.
+
+Systemic inflammation results in vasodilation, allowing inflammatory lymphocytic and monocytic infiltration of the lung and the heart. In particular, pathogenic GM-CSF-secreting T cells were shown to correlate with the recruitment of inflammatory IL-6-secreting monocytes and severe lung pathology in people with COVID‑19. Lymphocytic infiltrates have also been reported at autopsy.
+
+Viral and host factors
+
+Virus proteins
+
+Multiple viral and host factors affect the pathogenesis of the virus. The S-protein, otherwise known as the spike protein, is the viral component that attaches to the host receptor via the ACE2 receptors. It includes two subunits: S1 and S2. S1 determines the virus-host range and cellular tropism via the receptor-binding domain. S2 mediates the membrane fusion of the virus to its potential cell host via the H1 and HR2, which are heptad repeat regions. Studies have shown that S1 domain induced IgG and IgA antibody levels at a much higher capacity. It is the focus spike proteins expression that are involved in many effective COVID‑19 vaccines.
+
+The M protein is the viral protein responsible for the transmembrane transport of nutrients. It is the cause of the bud release and the formation of the viral envelope. The N and E protein are accessory proteins that interfere with the host's immune response.
+
+Host factors
+Human angiotensin converting enzyme 2 (hACE2) is the host factor that SARS-COV2 virus targets causing COVID‑19. Theoretically, the usage of angiotensin receptor blockers (ARB) and ACE inhibitors upregulating ACE2 expression might increase morbidity with COVID‑19, though animal data suggest some potential protective effect of ARB; however no clinical studies have proven susceptibility or outcomes. Until further data is available, guidelines and recommendations for hypertensive patients remain.
+
+The effect of the virus on ACE2 cell surfaces leads to leukocytic infiltration, increased blood vessel permeability, alveolar wall permeability, as well as decreased secretion of lung surfactants. These effects cause the majority of the respiratory symptoms. However, the aggravation of local inflammation causes a cytokine storm eventually leading to a systemic inflammatory response syndrome.
+
+Among healthy adults not exposed to SARS-CoV-2, about 35% have CD4+ T cells that recognize the SARS-CoV-2 S protein (particularly the S2 subunit) and about 50% react to other proteins of the virus, suggesting cross-reactivity from previous common colds caused by other coronaviruses.
+
+It is unknown whether different persons use similar antibody genes in response to COVID‑19.
+
+Host cytokine response
+
+The severity of the inflammation can be attributed to the severity of what is known as the cytokine storm. Levels of interleukin1B, interferon-gamma, interferon-inducible protein 10, and monocyte chemoattractant protein1 were all associated with COVID‑19 disease severity. Treatment has been proposed to combat the cytokine storm as it remains to be one of the leading causes of morbidity and mortality in COVID‑19 disease.
+
+A cytokine storm is due to an acute hyperinflammatory response that is responsible for clinical illness in an array of diseases but in COVID‑19, it is related to worse prognosis and increased fatality. The storm causes acute respiratory distress syndrome, blood clotting events such as strokes, myocardial infarction, encephalitis, acute kidney injury, and vasculitis. The production of IL-1, IL-2, IL-6, TNF-alpha, and interferon-gamma, all crucial components of normal immune responses, inadvertently become the causes of a cytokine storm. The cells of the central nervous system, the microglia, neurons, and astrocytes, are also involved in the release of pro-inflammatory cytokines affecting the nervous system, and effects of cytokine storms toward the CNS are not uncommon.
+
+Pregnancy response
+There are many unknowns for pregnant women during the COVID‑19 pandemic. Given that they are prone to suffering from complications and severe disease infection with other types of coronaviruses, they have been identified as a vulnerable group and advised to take supplementary preventive measures.
+
+Physiological responses to pregnancy can include:
+ Immunological: The immunological response to COVID-19, like other viruses, depends on a working immune system. It adapts during pregnancy to allow the development of the fetus whose genetic load is only partially shared with their mother, leading to a different immunological reaction to infections during the course of pregnancy.
+ Respiratory: Many factors can make pregnant women more vulnerable to hard respiratory infections. One of them is the total reduction of the lungs' capacity and inability to clear secretions.
+ Coagulation: During pregnancy, there are higher levels of circulating coagulation factors, and the pathogenesis of SARS-CoV-2 infection can be implicated. The thromboembolic events with associated mortality are a risk for pregnant women.
+
+However, from the evidence base, it is difficult to conclude whether pregnant women are at increased risk of grave consequences of this virus.
+
+In addition to the above, other clinical studies have proved that SARS-CoV-2 can affect the period of pregnancy in different ways. On the one hand, there is little evidence of its impact up to 12 weeks gestation. On the other hand, COVID-19 infection may cause increased rates of unfavorable outcomes in the course of the pregnancy. Some examples of these could be fetal growth restriction, preterm birth, and perinatal mortality, which refers to the fetal death past 22 or 28 completed weeks of pregnancy as well as the death among live-born children up to seven completed days of life.
+
+Unvaccinated women in later stages of pregnancy with COVID-19 are more likely than other patients to need very intensive care. Babies born to mothers with COVID-19 are more likely to have breathing problems. Pregnant women are strongly encouraged to get vaccinated.
+
+Diagnosis
+
+COVID‑19 can provisionally be diagnosed on the basis of symptoms and confirmed using reverse transcription polymerase chain reaction (RT-PCR) or other nucleic acid testing of infected secretions. Along with laboratory testing, chest CT scans may be helpful to diagnose COVID‑19 in individuals with a high clinical suspicion of infection. Detection of a past infection is possible with serological tests, which detect antibodies produced by the body in response to the infection.
+
+Viral testing
+
+The standard methods of testing for presence of SARS-CoV-2 are nucleic acid tests, which detects the presence of viral RNA fragments. As these tests detect RNA but not infectious virus, its "ability to determine duration of infectivity of patients is limited." The test is typically done on respiratory samples obtained by a nasopharyngeal swab; however, a nasal swab or sputum sample may also be used. Results are generally available within hours. The WHO has published several testing protocols for the disease.
+
+Several laboratories and companies have developed serological tests, which detect antibodies produced by the body in response to infection. Several have been evaluated by Public Health England and approved for use in the UK.
+
+The University of Oxford's CEBM has pointed to mounting evidence that "a good proportion of 'new' mild cases and people re-testing positives after quarantine or discharge from hospital are not infectious, but are simply clearing harmless virus particles which their immune system has efficiently dealt with" and have called for "an international effort to standardize and periodically calibrate testing" On 7September, the UK government issued "guidance for procedures to be implemented in laboratories to provide assurance of positive SARS-CoV-2 RNA results during periods of low prevalence, when there is a reduction in the predictive value of positive test results".
+
+Imaging
+
+Chest CT scans may be helpful to diagnose COVID‑19 in individuals with a high clinical suspicion of infection but are not recommended for routine screening. Bilateral multilobar ground-glass opacities with a peripheral, asymmetric, and posterior distribution are common in early infection. Subpleural dominance, crazy paving (lobular septal thickening with variable alveolar filling), and consolidation may appear as the disease progresses. Characteristic imaging features on chest radiographs and computed tomography (CT) of people who are symptomatic include asymmetric peripheral ground-glass opacities without pleural effusions.
+
+Many groups have created COVID‑19 datasets that include imagery such as the Italian Radiological Society which has compiled an international online database of imaging findings for confirmed cases. Due to overlap with other infections such as adenovirus, imaging without confirmation by rRT-PCR is of limited specificity in identifying COVID‑19. A large study in China compared chest CT results to PCR and demonstrated that though imaging is less specific for the infection, it is faster and more sensitive.
+
+Coding
+In late 2019, the WHO assigned emergency ICD-10 disease codes U07.1 for deaths from lab-confirmed SARS-CoV-2 infection and U07.2 for deaths from clinically or epidemiologically diagnosed COVID‑19 without lab-confirmed SARS-CoV-2 infection.
+
+Pathology
+The main pathological findings at autopsy are:
+ Macroscopy: pericarditis, lung consolidation and pulmonary oedema
+ Lung findings:
+ minor serous exudation, minor fibrin exudation
+ pulmonary oedema, pneumocyte hyperplasia, large atypical pneumocytes, interstitial inflammation with lymphocytic infiltration and multinucleated giant cell formation
+ diffuse alveolar damage (DAD) with diffuse alveolar exudates. DAD is the cause of acute respiratory distress syndrome (ARDS) and severe hypoxemia.
+ organisation of exudates in alveolar cavities and pulmonary interstitial fibrosis
+ plasmocytosis in BAL
+ Blood and vessels: disseminated intravascular coagulation (DIC); leukoerythroblastic reaction, endotheliitis, hemophagocytosis
+ Heart: cardiac muscle cell necrosis
+ Liver: microvesicular steatosis
+ Nose: shedding of olfactory epithelium
+ Brain: infarction
+ Kidneys: acute tubular damage.
+ Spleen: white pulp depletion.
+
+Prevention
+
+Preventive measures to reduce the chances of infection include getting vaccinated, staying at home, wearing a mask in public, avoiding crowded places, keeping distance from others, ventilating indoor spaces, managing potential exposure durations, washing hands with soap and water often and for at least twenty seconds, practising good respiratory hygiene, and avoiding touching the eyes, nose, or mouth with unwashed hands.
+
+Those diagnosed with COVID‑19 or who believe they may be infected are advised by the CDC to stay home except to get medical care, call ahead before visiting a healthcare provider, wear a face mask before entering the healthcare provider's office and when in any room or vehicle with another person, cover coughs and sneezes with a tissue, regularly wash hands with soap and water and avoid sharing personal household items.
+
+The first COVID‑19 vaccine was granted regulatory approval on 2December 2020 by the UK medicines regulator MHRA. It was evaluated for emergency use authorization (EUA) status by the US FDA, and in several other countries. Initially, the US National Institutes of Health guidelines do not recommend any medication for prevention of COVID‑19, before or after exposure to the SARS-CoV-2 virus, outside the setting of a clinical trial. Without a vaccine, other prophylactic measures, or effective treatments, a key part of managing COVID‑19 is trying to decrease and delay the epidemic peak, known as "flattening the curve". This is done by slowing the infection rate to decrease the risk of health services being overwhelmed, allowing for better treatment of active cases, and delaying additional cases until effective treatments or a vaccine become available.
+
+Vaccine
+
+Face masks and respiratory hygiene
+
+The WHO and the US CDC recommend individuals wear non-medical face coverings in public settings where there is an increased risk of transmission and where social distancing measures are difficult to maintain. This recommendation is meant to reduce the spread of the disease by asymptomatic and pre-symptomatic individuals and is complementary to established preventive measures such as social distancing. Face coverings limit the volume and travel distance of expiratory droplets dispersed when talking, breathing, and coughing. A face covering without vents or holes will also filter out particles containing the virus from inhaled and exhaled air, reducing the chances of infection. But, if the mask include an exhalation valve, a wearer that is infected (maybe without having noticed that, and asymptomatic) would transmit the virus outwards through it, despite any certification they can have. So the masks with exhalation valve are not for the infected wearers, and are not reliable to stop the pandemic in a large scale. Many countries and local jurisdictions encourage or mandate the use of face masks or cloth face coverings by members of the public to limit the spread of the virus.
+
+Masks are also strongly recommended for those who may have been infected and those taking care of someone who may have the disease. When not wearing a mask, the CDC recommends covering the mouth and nose with a tissue when coughing or sneezing and recommends using the inside of the elbow if no tissue is available. Proper hand hygiene after any cough or sneeze is encouraged. Healthcare professionals interacting directly with people who have COVID‑19 are advised to use respirators at least as protective as NIOSH-certified N95 or equivalent, in addition to other personal protective equipment.
+
+Indoor ventilation and avoiding crowded indoor spaces
+The CDC recommends that crowded indoor spaces should be avoided. When indoors, increasing the rate of air change, decreasing recirculation of air and increasing the use of outdoor air can reduce transmission. The WHO recommends ventilation and air filtration in public spaces to help clear out infectious aerosols.
+
+Exhaled respiratory particles can build-up within enclosed spaces with inadequate ventilation. The risk of COVID‑19 infection increases especially in spaces where people engage in physical exertion or raise their voice (e.g., exercising, shouting, singing) as this increases exhalation of respiratory droplets. Prolonged exposure to these conditions, typically more than 15 minutes, leads to higher risk of infection.
+
+Displacement ventilation with large natural inlets can move stale air directly to the exhaust in laminar flow while significantly reducing the concentration of droplets and particles. Passive ventilation reduces energy consumption and maintenance costs but may lack controllability and heat recovery. Displacement ventilation can also be achieved mechanically with higher energy and maintenance costs. The use of large ducts and openings helps to prevent mixing in closed environments. Recirculation and mixing should be avoided because recirculation prevents dilution of harmful particles and redistributes possibly contaminated air, and mixing increases the concentration and range of infectious particles and keeps larger particles in the air.
+
+Hand-washing and hygiene
+
+Thorough hand hygiene after any cough or sneeze is required. The WHO also recommends that individuals wash hands often with soap and water for at least twenty seconds, especially after going to the toilet or when hands are visibly dirty, before eating and after blowing one's nose. When soap and water are not available, the CDC recommends using an alcohol-based hand sanitiser with at least 60% alcohol. For areas where commercial hand sanitisers are not readily available, the WHO provides two formulations for local production. In these formulations, the antimicrobial activity arises from ethanol or isopropanol. Hydrogen peroxide is used to help eliminate bacterial spores in the alcohol; it is "not an active substance for hand antisepsis." Glycerol is added as a humectant.
+
+Social distancing
+
+Social distancing (also known as physical distancing) includes infection control actions intended to slow the spread of the disease by minimising close contact between individuals. Methods include quarantines; travel restrictions; and the closing of schools, workplaces, stadiums, theatres, or shopping centres. Individuals may apply social distancing methods by staying at home, limiting travel, avoiding crowded areas, using no-contact greetings, and physically distancing themselves from others. Many governments are now mandating or recommending social distancing in regions affected by the outbreak.
+
+Outbreaks have occurred in prisons due to crowding and an inability to enforce adequate social distancing. In the United States, the prisoner population is aging and many of them are at high risk for poor outcomes from COVID‑19 due to high rates of coexisting heart and lung disease, and poor access to high-quality healthcare.
+
+Surface cleaning
+After being expelled from the body, coronaviruses can survive on surfaces for hours to days. If a person touches the dirty surface, they may deposit the virus at the eyes, nose, or mouth where it can enter the body and cause infection. Evidence indicates that contact with infected surfaces is not the main driver of COVID‑19, leading to recommendations for optimised disinfection procedures to avoid issues such as the increase of antimicrobial resistance through the use of inappropriate cleaning products and processes. Deep cleaning and other surface sanitation has been criticized as hygiene theater, giving a false sense of security against something primarily spread through the air.
+
+The amount of time that the virus can survive depends significantly on the type of surface, the temperature, and the humidity. Coronaviruses die very quickly when exposed to the UV light in sunlight. Like other enveloped viruses, SARS-CoV-2 survives longest when the temperature is at room temperature or lower, and when the relative humidity is low (<50%).
+
+On many surfaces, including glass, some types of plastic, stainless steel, and skin, the virus can remain infective for several days indoors at room temperature, or even about a week under ideal conditions. On some surfaces, including cotton fabric and copper, the virus usually dies after a few hours. The virus dies faster on porous surfaces than on non-porous surfaces due to capillary action within pores and faster aerosol droplet evaporation. However, of the many surfaces tested, two with the longest survival times are N95 respirator masks and surgical masks, both of which are considered porous surfaces.
+
+The CDC says that in most situations, cleaning surfaces with soap or detergent, not disinfecting, is enough to reduce risk of transmission. The CDC recommends that if a COVID‑19 case is suspected or confirmed at a facility such as an office or day care, all areas such as offices, bathrooms, common areas, shared electronic equipment like tablets, touch screens, keyboards, remote controls, and ATM machines used by the ill persons should be disinfected. Surfaces may be decontaminated with 62–71 percent ethanol, 50–100 percent isopropanol, 0.1 percent sodium hypochlorite, 0.5 percent hydrogen peroxide, and 0.2–7.5 percent povidone-iodine. Other solutions, such as benzalkonium chloride and chlorhexidine gluconate, are less effective. Ultraviolet germicidal irradiation may also be used. A datasheet comprising the authorised substances to disinfection in the food industry (including suspension or surface tested, kind of surface, use dilution, disinfectant and inocuylum volumes) can be seen in the supplementary material of.
+
+Self-isolation
+
+Self-isolation at home has been recommended for those diagnosed with COVID‑19 and those who suspect they have been infected. Health agencies have issued detailed instructions for proper self-isolation. Many governments have mandated or recommended self-quarantine for entire populations. The strongest self-quarantine instructions have been issued to those in high-risk groups. Those who may have been exposed to someone with COVID‑19 and those who have recently travelled to a country or region with the widespread transmission have been advised to self-quarantine for 14 days from the time of last possible exposure.
+
+Healthy diet and lifestyle
+The Harvard T.H. Chan School of Public Health recommends a healthy diet, being physically active, managing psychological stress, and getting enough sleep.
+
+Consistently meeting scientific guidelines of 150+ minutes per week of exercise or similar physical activity was shown to be associated with a smaller risk of hospitalisation and death due to COVID‑19, even when considering likely risk factors such as elevated Body mass index (BMI).
+
+A meta-analysis, published online in October 2021, concluded that "Vitamin D supplementation in SARS-CoV-2 positive patients has the potential to positively impact patients with both mild and severe symptoms." The largest observational study on the subject using online questionnaires, with over 6,000 participants and a dosage regime near the RDI, is set to conclude in July 2021. One of the collaborators in the study is Synergy Biologics Ltd, a manufacturer of vitamin D3 supplements.
+
+International travel-related control measures 
+A 2021 Cochrane rapid review found that based upon low-certainty evidence, international travel-related control measures such as restricting cross-border travel may help to contain the spread of COVID‑19. Additionally, symptom/exposure-based screening measures at borders may miss many positive cases. While test-based border screening measures may be more effective, it could also miss many positive cases if only conducted upon arrival without follow-up. The review concluded that a minimum 10-day quarantine may be beneficial in preventing the spread of COVID‑19 and may be more effective if combined with an additional control measure like border screening.
+
+Treatment
+
+Prognosis
+
+The severity of COVID‑19 varies. The disease may take a mild course with few or no symptoms, resembling other common upper respiratory diseases such as the common cold. In 3–4% of cases (7.4% for those over age 65) symptoms are severe enough to cause hospitalization. Mild cases typically recover within two weeks, while those with severe or critical diseases may take three to six weeks to recover. Among those who have died, the time from symptom onset to death has ranged from two to eight weeks. The Italian Istituto Superiore di Sanità reported that the median time between the onset of symptoms and death was twelve days, with seven being hospitalised. However, people transferred to an ICU had a median time of ten days between hospitalisation and death. Prolonged prothrombin time and elevated C-reactive protein levels on admission to the hospital are associated with severe course of COVID‑19 and with a transfer to ICU.
+
+Some early studies suggest 10% to 20% of people with COVID‑19 will experience symptoms lasting longer than a month. A majority of those who were admitted to hospital with severe disease report long-term problems including fatigue and shortness of breath. On 30 October 2020, WHO chief Tedros Adhanom warned that "to a significant number of people, the COVID virus poses a range of serious long-term effects." He has described the vast spectrum of COVID‑19 symptoms that fluctuate over time as "really concerning". They range from fatigue, a cough and shortness of breath, to inflammation and injury of major organsincluding the lungs and heart, and also neurological and psychologic effects. Symptoms often overlap and can affect any system in the body. Infected people have reported cyclical bouts of fatigue, headaches, months of complete exhaustion, mood swings, and other symptoms. Tedros therefore concluded that a strategy of achieving herd immunity by infection, rather than vaccination, is "morally unconscionable and unfeasible".
+
+In terms of hospital readmissions about 9% of 106,000 individuals had to return for hospital treatment within two months of discharge. The average to readmit was eight days since first hospital visit. There are several risk factors that have been identified as being a cause of multiple admissions to a hospital facility. Among these are advanced age (above 65 years of age) and presence of a chronic condition such as diabetes, COPD, heart failure or chronic kidney disease.
+
+According to scientific reviews smokers are more likely to require intensive care or die compared to non-smokers. Acting on the same ACE2 pulmonary receptors affected by smoking, air pollution has been correlated with the disease. Short term and chronic exposure to air pollution seems to enhance morbidity and mortality from COVID‑19. Pre-existing heart and lung diseases and also obesity, especially in conjunction with fatty liver disease, contributes to an increased health risk of COVID‑19.
+
+It is also assumed that those that are immunocompromised are at higher risk of getting severely sick from SARS-CoV-2. One research that looked into the COVID‑19 infections in hospitalized kidney transplant recipients found a mortality rate of 11%.
+
+Genetics also plays an important role in the ability to fight off the disease. For instance, those that do not produce detectable type I interferons or produce auto-antibodies against these may get much sicker from COVID‑19. Genetic screening is able to detect interferon effector genes.
+
+Children
+
+While very young children have experienced lower rates of infection, older children have a rate of infection that is similar to the population as a whole. Children are likely to have milder symptoms and are at lower risk of severe disease than adults. The CDC reports that in the US roughly a third of hospitalized children were admitted to the ICU, while a European multinational study of hospitalized children from June 2020 found that about 8% of children admitted to a hospital needed intensive care. Four of the 582 children (0.7%) in the European study died, but the actual mortality rate may be "substantially lower" since milder cases that did not seek medical help were not included in the study.
+
+Complications
+
+Complications may include pneumonia, acute respiratory distress syndrome (ARDS), multi-organ failure, septic shock, and death. Cardiovascular complications may include heart failure, arrhythmias (including atrial fibrillation), heart inflammation, and thrombosis, particularly venous thromboembolism. Approximately 20–30% of people who present with COVID‑19 have elevated liver enzymes, reflecting liver injury.
+
+Neurologic manifestations include seizure, stroke, encephalitis, and Guillain–Barré syndrome (which includes loss of motor functions). Following the infection, children may develop paediatric multisystem inflammatory syndrome, which has symptoms similar to Kawasaki disease, which can be fatal. In very rare cases, acute encephalopathy can occur, and it can be considered in those who have been diagnosed with COVID‑19 and have an altered mental status.
+
+In the case of pregnant women, it is important to note that, according to the Centers for Disease Control and Prevention, pregnant women are at increased risk of becoming seriously ill from COVID‑19. This is because pregnant women with COVID‑19 appear to be more likely to develop respiratory and obstetric complications that can lead to miscarriage, premature delivery and intrauterine growth restriction.
+
+Fungal infections such as aspergillosis, candidiasis, cryptococcosis and mucormycosis have been recorded in patients recovering from COVID‑19.
+
+Longer-term effects
+
+Some early studies suggest that 10–20% of people with COVID‑19 will experience symptoms lasting longer than a month. A majority of those who were admitted to hospital with severe disease report long-term problems, including fatigue and shortness of breath. About 5–10% of patients admitted to hospital progress to severe or critical disease, including pneumonia and acute respiratory failure.
+
+By a variety of mechanisms, the lungs are the organs most affected in COVID‑19. In people requiring hospital admission, up to 98% of CT scans performed show lung abnormalities after 28 days of illness even if they had clinically improved.
+
+People with advanced age, severe disease, prolonged ICU stays, or who smoke are more likely to have long-lasting effects, including pulmonary fibrosis. Overall, approximately one-third of those investigated after four weeks will have findings of pulmonary fibrosis or reduced lung function as measured by DLCO, even in asymptomatic people, but with the suggestion of continuing improvement with the passing of more time.
+
+Immunity
+
+The immune response by humans to SARS-CoV-2 virus occurs as a combination of the cell-mediated immunity and antibody production, just as with most other infections. B cells interact with T cells and begin dividing before selection into the plasma cell, partly on the basis of their affinity for antigen. Since SARS-CoV-2 has been in the human population only since December 2019, it remains unknown if the immunity is long-lasting in people who recover from the disease. The presence of neutralizing antibodies in blood strongly correlates with protection from infection, but the level of neutralizing antibody declines with time. Those with asymptomatic or mild disease had undetectable levels of neutralizing antibody two months after infection. In another study, the level of neutralizing antibodies fell four-fold one to four months after the onset of symptoms. However, the lack of antibodies in the blood does not mean antibodies will not be rapidly produced upon reexposure to SARS-CoV-2. Memory B cells specific for the spike and nucleocapsid proteins of SARS-CoV-2 last for at least six months after the appearance of symptoms.
+
+Reinfection with COVID‑19 is possible but uncommon. The first case of reinfection was documented in August 2020. A systematic review found 17 cases of confirmed reinfection in medical literature as of May 2021.
+
+Mortality
+
+Several measures are commonly used to quantify mortality. These numbers vary by region and over time and are influenced by the volume of testing, healthcare system quality, treatment options, time since the initial outbreak, and population characteristics such as age, sex, and overall health.
+
+The mortality rate reflects the number of deaths within a specific demographic group divided by the population of that demographic group. Consequently, the mortality rate reflects the prevalence as well as the severity of the disease within a given population. Mortality rates are highly correlated to age, with relatively low rates for young people and relatively high rates among the elderly. In fact, one relevant factor of mortality rates is the age structure of the countries' populations. For example, the case fatality rate for COVID‑19 is lower in India than in the US since India's younger population represents a larger percentage than in the US.
+
+Case fatality rate 
+The case fatality rate (CFR) reflects the number of deaths divided by the number of diagnosed cases within a given time interval. Based on Johns Hopkins University statistics, the global death-to-case ratio is  (/) as of . The number varies by region.
+
+Infection fatality rate
+A key metric in gauging the severity of COVID‑19 is the infection fatality rate (IFR), also referred to as the infection fatality ratio or infection fatality risk. This metric is calculated by dividing the total number of deaths from the disease by the total number of infected individuals; hence, in contrast to the CFR, the IFR incorporates asymptomatic and undiagnosed infections as well as reported cases.
+
+Estimates
+
+A December 2020 systematic review and meta-analysis estimated that population IFR during the first wave of the pandemic was about 0.5% to 1% in many locations (including France, Netherlands, New Zealand, and Portugal), 1% to 2% in other locations (Australia, England, Lithuania, and Spain), and exceeded 2% in Italy. That study also found that most of these differences in IFR reflected corresponding differences in the age composition of the population and age-specific infection rates; in particular, the metaregression estimate of IFR is very low for children and younger adults (e.g., 0.002% at age 10 and 0.01% at age 25) but increases progressively to 0.4% at age 55, 1.4% at age 65, 4.6% at age 75, and 15% at age 85. These results were also highlighted in a December 2020 report issued by the WHO.
+
+An analysis of those IFR rates indicates that COVID‑19 is hazardous not only for the elderly but also for middle-aged adults, for whom the infection fatality rate of COVID-19 is two orders of magnitude greater than the annualized risk of a fatal automobile accident and far more dangerous than seasonal influenza.
+
+Earlier estimates of IFR
+At an early stage of the pandemic, the World Health Organization reported estimates of IFR between 0.3% and 1%. On 2July, The WHO's chief scientist reported that the average IFR estimate presented at a two-day WHO expert forum was about 0.6%. In August, the WHO found that studies incorporating data from broad serology testing in Europe showed IFR estimates converging at approximately 0.5–1%. Firm lower limits of IFRs have been established in a number of locations such as New York City and Bergamo in Italy since the IFR cannot be less than the population fatality rate. (After sufficient time however, people can get reinfected). As of 10 July, in New York City, with a population of 8.4 million, 23,377 individuals (18,758 confirmed and 4,619 probable) have died with COVID‑19 (0.3% of the population). Antibody testing in New York City suggested an IFR of ~0.9%, and ~1.4%. In Bergamo province, 0.6% of the population has died. In September 2020, the U.S. Centers for Disease Control and Prevention (CDC) reported preliminary estimates of age-specific IFRs for public health planning purposes.
+
+Sex differences
+
+COVID‑19 case fatality rates are higher among men than women in most countries. However, in a few countries like India, Nepal, Vietnam, and Slovenia the fatality cases are higher in women than men. Globally, men are more likely to be admitted to the ICU and more likely to die. One meta-analysis found that globally, men were more likely to get COVID‑19 than women; there were approximately 55 men and 45 women per 100 infections (CI: 51.43–56.58).
+
+The Chinese Center for Disease Control and Prevention reported the death rate was 2.8% for men and 1.7% for women. Later reviews in June 2020 indicated that there is no significant difference in susceptibility or in CFR between genders. One review acknowledges the different mortality rates in Chinese men, suggesting that it may be attributable to lifestyle choices such as smoking and drinking alcohol rather than genetic factors. Smoking, which in some countries like China is mainly a male activity, is a habit that contributes to increasing significantly the case fatality rates among men. Sex-based immunological differences, lesser prevalence of smoking in women and men developing co-morbid conditions such as hypertension at a younger age than women could have contributed to the higher mortality in men. In Europe as of February 2020, 57% of the infected people were men and 72% of those died with COVID‑19 were men. As of April 2020, the US government is not tracking sex-related data of COVID‑19 infections. Research has shown that viral illnesses like Ebola, HIV, influenza and SARS affect men and women differently.
+
+Ethnic differences
+In the US, a greater proportion of deaths due to COVID‑19 have occurred among African Americans and other minority groups. Structural factors that prevent them from practicing social distancing include their concentration in crowded substandard housing and in "essential" occupations such as retail grocery workers, public transit employees, health-care workers and custodial staff. Greater prevalence of lacking health insurance and care of underlying conditions such as diabetes, hypertension, and heart disease also increase their risk of death. Similar issues affect Native American and Latino communities. On the one hand, in the Dominican Republic there is a clear example of both gender and ethnic inequality. In this Latin American territory, there is great inequality and precariousness that especially affects Dominican women, with greater emphasis on those of Haitian descent. According to a US health policy non-profit, 34% of American Indian and Alaska Native People (AIAN) non-elderly adults are at risk of serious illness compared to 21% of white non-elderly adults. The source attributes it to disproportionately high rates of many health conditions that may put them at higher risk as well as living conditions like lack of access to clean water.
+
+Leaders have called for efforts to research and address the disparities. In the UK, a greater proportion of deaths due to COVID‑19 have occurred in those of a Black, Asian, and other ethnic minority background. More severe impacts upon victims including the relative incidence of the necessity of hospitalization requirements, and vulnerability to the disease has been associated via DNA analysis to be expressed in genetic variants at chromosomal region 3, features that are associated with European Neanderthal heritage. That structure imposes greater risks that those affected will develop a more severe form of the disease. The findings are from Professor Svante Pääbo and researchers he leads at the Max Planck Institute for Evolutionary Anthropology and the Karolinska Institutet. This admixture of modern human and Neanderthal genes is estimated to have occurred roughly between 50,000 and 60,000 years ago in Southern Europe.
+
+Comorbidities
+Biological factors (immune response) and the general behaviour (habits) can strongly determine the consequences of COVID‑19. Most of those who die of COVID‑19 have pre-existing (underlying) conditions, including hypertension, diabetes mellitus, and cardiovascular disease. According to March data from the United States, 89% of those hospitalised had preexisting conditions. The Italian Istituto Superiore di Sanità reported that out of 8.8% of deaths where medical charts were available, 96.1% of people had at least one comorbidity with the average person having 3.4 diseases. According to this report the most common comorbidities are hypertension (66% of deaths), type 2 diabetes (29.8% of deaths), Ischemic Heart Disease (27.6% of deaths), atrial fibrillation (23.1% of deaths) and chronic renal failure (20.2% of deaths).
+
+Most critical respiratory comorbidities according to the Centers for Disease Control and Prevention (CDC), are: moderate or severe asthma, pre-existing COPD, pulmonary fibrosis, cystic fibrosis. Evidence stemming from meta-analysis of several smaller research papers also suggests that smoking can be associated with worse outcomes. When someone with existing respiratory problems is infected with COVID‑19, they might be at greater risk for severe symptoms. COVID‑19 also poses a greater risk to people who misuse opioids and methamphetamines, insofar as their drug use may have caused lung damage.
+
+In August 2020, the CDC issued a caution that tuberculosis (TB) infections could increase the risk of severe illness or death. The WHO recommended that people with respiratory symptoms be screened for both diseases, as testing positive for COVID‑19 could not rule out co-infections. Some projections have estimated that reduced TB detection due to the pandemic could result in 6.3 million additional TB cases and 1.4 million TB-related deaths by 2025.
+
+History
+
+The virus is thought to be of natural animal origin, most likely through spillover infection. There are several theories about where the index case originated and investigations into the origin of the pandemic are ongoing. Phylogenetics estimates that SARS-CoV-2 arose in October or November 2019. A phylogenetic algorithm analysis suggested that the virus may have been circulating in Guangdong before Wuhan. Evidence suggests that it descends from a coronavirus that infects wild bats, and spread to humans through an intermediary wildlife host. The possibility that the virus was accidentally released from a laboratory is also under increasingly active consideration. U.S intelligence agencies found that the virus was not developed as a biological weapon and that it is unlikely for it to have been genetically engineered.
+
+The first confirmed human infections were in Wuhan, Hubei, China. A study of the first 41 cases of confirmed COVID‑19, published in January 2020 in The Lancet, reported the earliest date of onset of symptoms as 1December 2019. Official publications from the WHO reported the earliest onset of symptoms as 8December 2019. Human-to-human transmission was confirmed by the WHO and Chinese authorities by 20 January 2020. According to official Chinese sources, these were mostly linked to the Huanan Seafood Wholesale Market, which also sold live animals. In May 2020, George Gao, the director of the CDC, said animal samples collected from the seafood market had tested negative for the virus, indicating that the market was the site of an early superspreading event, but that it was not the site of the initial outbreak. Traces of the virus have been found in wastewater samples that were collected in Milan and Turin, Italy, on 18 December 2019.
+
+By December 2019, the spread of infection was almost entirely driven by human-to-human transmission. The number of COVID-19 cases in Hubei gradually increased, reaching sixty by 20 December, and at least 266 by 31 December. On 24 December, Wuhan Central Hospital sent a bronchoalveolar lavage fluid (BAL) sample from an unresolved clinical case to sequencing company Vision Medicals. On 27 and 28 December, Vision Medicals informed the Wuhan Central Hospital and the Chinese CDC of the results of the test, showing a new coronavirus. A pneumonia cluster of unknown cause was observed on 26 December and treated by the doctor Zhang Jixian in Hubei Provincial Hospital, who informed the Wuhan Jianghan CDC on 27 December. On 30 December, a test report addressed to Wuhan Central Hospital, from company CapitalBio Medlab, stated an erroneous positive result for SARS, causing a group of doctors at Wuhan Central Hospital to alert their colleagues and relevant hospital authorities of the result. The Wuhan Municipal Health Commission issued a notice to various medical institutions on "the treatment of pneumonia of unknown cause" that same evening. Eight of these doctors, including Li Wenliang (punished on 3January), were later admonished by the police for spreading false rumours and another, Ai Fen, was reprimanded by her superiors for raising the alarm.
+
+The Wuhan Municipal Health Commission made the first public announcement of a pneumonia outbreak of unknown cause on 31 December, confirming 27 casesenough to trigger an investigation.
+
+During the early stages of the outbreak, the number of cases doubled approximately every seven and a half days. In early and mid-January 2020, the virus spread to other Chinese provinces, helped by the Chinese New Year migration and Wuhan being a transport hub and major rail interchange. On 20 January, China reported nearly 140 new cases in one day, including two people in Beijing and one in Shenzhen. Later official data shows 6,174 people had already developed symptoms by then, and more may have been infected. A report in The Lancet on 24 January indicated human transmission, strongly recommended personal protective equipment for health workers, and said testing for the virus was essential due to its "pandemic potential". On 30 January, the WHO declared COVID-19 a Public Health Emergency of International Concern. By this time, the outbreak spread by a factor of 100 to 200 times.
+
+Italy had its first confirmed cases on 31 January 2020, two tourists from China. Italy overtook China as the country with the most deaths on 19 March 2020. By 26 March the United States had overtaken China and Italy with the highest number of confirmed cases in the world. Research on coronavirus genomes indicates the majority of COVID-19 cases in New York came from European travellers, rather than directly from China or any other Asian country. Retesting of prior samples found a person in France who had the virus on 27 December 2019, and a person in the United States who died from the disease on 6February 2020.
+
+RT-PCR testing of untreated wastewater samples from Brazil and Italy have suggested detection of SARS-CoV-2 as early as November and December 2019, respectively, but the methods of such sewage studies have not been optimised, many have not been peer-reviewed, details are often missing, and there is a risk of false positives due to contamination or if only one gene target is detected. A September 2020 review journal article said, "The possibility that the COVID‑19 infection had already spread to Europe at the end of last year is now indicated by abundant, even if partially circumstantial, evidence," including pneumonia case numbers and radiology in France and Italy in November and December.
+
+, Reuters reported that it had estimated the worldwide total number of deaths due to COVID‑19 to have exceeded five million.
+
+Misinformation
+
+After the initial outbreak of COVID‑19, misinformation and disinformation regarding the origin, scale, prevention, treatment, and other aspects of the disease rapidly spread online.
+
+In September 2020, the US Centers for Disease Control and Prevention (CDC) published preliminary estimates of the risk of death by age groups in the United States, but those estimates were widely misreported and misunderstood.
+
+Other species
+
+Humans appear to be capable of spreading the virus to some other animals, a type of disease transmission referred to as zooanthroponosis.
+
+Some pets, especially cats and ferrets, can catch this virus from infected humans. Symptoms in cats include respiratory (such as a cough) and digestive symptoms. Cats can spread the virus to other cats, and may be able to spread the virus to humans, but cat-to-human transmission of SARS-CoV-2 has not been proven. Compared to cats, dogs are less susceptible to this infection. Behaviors which increase the risk of transmission include kissing, licking, and petting the animal.
+
+The virus does not appear to be able to infect pigs, ducks, or chickens at all. Mice, rats, and rabbits, if they can be infected at all, are unlikely to be involved in spreading the virus.
+
+Tigers and lions in zoos have become infected as a result of contact with infected humans. As expected, monkeys and great ape species such as orangutans can also be infected with the COVID‑19 virus.
+
+Minks, which are in the same family as ferrets, have been infected. Minks may be asymptomatic, and can also spread the virus to humans. Multiple countries have identified infected animals in mink farms. Denmark, a major producer of mink pelts, ordered the slaughter of all minks over fears of viral mutations, following an outbreak referred to as Cluster 5. A vaccine for mink and other animals is being researched.
+
+Research
+
+International research on vaccines and medicines in COVID‑19 is underway by government organisations, academic groups, and industry researchers. The CDC has classified it to require a BSL3 grade laboratory. There has been a great deal of COVID‑19 research, involving accelerated research processes and publishing shortcuts to meet the global demand.
+
+, hundreds of clinical trials have been undertaken, with research happening on every continent except Antarctica. , more than 200 possible treatments had been studied in humans so far.
+
+Transmission and prevention research
+
+Modelling research has been conducted with several objectives, including predictions of the dynamics of transmission, diagnosis and prognosis of infection, estimation of the impact of interventions, or allocation of resources. Modelling studies are mostly based on compartmental models in epidemiology, estimating the number of infected people over time under given conditions. Several other types of models have been developed and used during the COVID‑19 including computational fluid dynamics models to study the flow physics of COVID‑19, retrofits of crowd movement models to study occupant exposure, mobility-data based models to investigate transmission, or the use of macroeconomic models to assess the economic impact of the pandemic. Further, conceptual frameworks from crisis management research have been applied to better understand the effects of COVID‑19 on organizations worldwide.
+
+Treatment-related research
+
+Repurposed antiviral drugs make up most of the research into COVID‑19 treatments. Other candidates in trials include vasodilators, corticosteroids, immune therapies, lipoic acid, bevacizumab, and recombinant angiotensin-converting enzyme 2.
+
+In March 2020, the World Health Organization (WHO) initiated the Solidarity trial to assess the treatment effects of some promising drugs: an experimental drug called remdesivir; anti-malarial drugs chloroquine and hydroxychloroquine; two anti-HIV drugs, lopinavir/ritonavir; and interferon-beta. More than 300 active clinical trials are underway as of April 2020.
+
+Research on the antimalarial drugs hydroxychloroquine and chloroquine showed that they were ineffective at best, and that they may reduce the antiviral activity of remdesivir. , France, Italy, and Belgium had banned the use of hydroxychloroquine as a COVID‑19 treatment.
+
+In June, initial results from the randomised RECOVERY Trial in the United Kingdom showed that dexamethasone reduced mortality by one third for people who are critically ill on ventilators and one fifth for those receiving supplemental oxygen. Because this is a well-tested and widely available treatment, it was welcomed by the WHO, which is in the process of updating treatment guidelines to include dexamethasone and other steroids. Based on those preliminary results, dexamethasone treatment has been recommended by the NIH for patients with COVID‑19 who are mechanically ventilated or who require supplemental oxygen but not in patients with COVID‑19 who do not require supplemental oxygen.
+
+In September 2020, the WHO released updated guidance on using corticosteroids for COVID‑19. The WHO recommends systemic corticosteroids rather than no systemic corticosteroids for the treatment of people with severe and critical COVID‑19 (strong recommendation, based on moderate certainty evidence). The WHO suggests not to use corticosteroids in the treatment of people with non-severe COVID‑19 (conditional recommendation, based on low certainty evidence). The updated guidance was based on a meta-analysis of clinical trials of critically ill COVID‑19 patients.
+
+In September 2020, the European Medicines Agency (EMA) endorsed the use of dexamethasone in adults and adolescents from twelve years of age and weighing at least  who require supplemental oxygen therapy. Dexamethasone can be taken by mouth or given as an injection or infusion (drip) into a vein.
+
+In November 2020, the US Food and Drug Administration (FDA) issued an emergency use authorization for the investigational monoclonal antibody therapy bamlanivimab for the treatment of mild-to-moderate COVID‑19. Bamlanivimab is authorized for people with positive results of direct SARS-CoV-2 viral testing who are twelve years of age and older weighing at least , and who are at high risk for progressing to severe COVID‑19 or hospitalization. This includes those who are 65 years of age or older, or who have chronic medical conditions.
+
+In February 2021, the FDA issued an emergency use authorization (EUA) for bamlanivimab and etesevimab administered together for the treatment of mild to moderate COVID‑19 in people twelve years of age or older weighing at least  who test positive for SARS‑CoV‑2 and who are at high risk for progressing to severe COVID‑19. The authorized use includes treatment for those who are 65 years of age or older or who have certain chronic medical conditions.
+
+In April 2021, the FDA revoked the emergency use authorization (EUA) that allowed for the investigational monoclonal antibody therapy bamlanivimab, when administered alone, to be used for the treatment of mild-to-moderate COVID‑19 in adults and certain pediatric patients.
+
+Cytokine storm
+
+A cytokine storm can be a complication in the later stages of severe COVID‑19. A cytokine storm is a potentially deadly immune reaction where a large amount of pro-inflammatory cytokines and chemokines are released too quickly. A cytokine storm can lead to ARDS and multiple organ failure. Data collected from Jin Yin-tan Hospital in Wuhan, China indicates that patients who had more severe responses to COVID‑19 had greater amounts of pro-inflammatory cytokines and chemokines in their system than patients who had milder responses. These high levels of pro-inflammatory cytokines and chemokines indicate presence of a cytokine storm.
+
+Tocilizumab has been included in treatment guidelines by China's National Health Commission after a small study was completed. It is undergoing a PhaseII non-randomised trial at the national level in Italy after showing positive results in people with severe disease. Combined with a serum ferritin blood test to identify a cytokine storm (also called cytokine storm syndrome, not to be confused with cytokine release syndrome), it is meant to counter such developments, which are thought to be the cause of death in some affected people. The interleukin-6 receptor (IL-6R) antagonist was approved by the FDA to undergo a PhaseIII clinical trial assessing its effectiveness on COVID‑19 based on retrospective case studies for the treatment of steroid-refractory cytokine release syndrome induced by a different cause, CAR T cell therapy, in 2017. There is no randomised, controlled evidence that tocilizumab is an efficacious treatment for CRS. Prophylactic tocilizumab has been shown to increase serum IL-6 levels by saturating the IL-6R, driving IL-6 across the blood-brain barrier, and exacerbating neurotoxicity while having no effect on the incidence of CRS.
+
+Lenzilumab, an anti-GM-CSF monoclonal antibody, is protective in murine models for CAR T cell-induced CRS and neurotoxicity and is a viable therapeutic option due to the observed increase of pathogenic GM-CSF secreting Tcells in hospitalised patients with COVID‑19.
+
+Passive antibodies
+
+Transferring purified and concentrated antibodies produced by the immune systems of those who have recovered from COVID‑19 to people who need them is being investigated as a non-vaccine method of passive immunisation. Viral neutralization is the anticipated mechanism of action by which passive antibody therapy can mediate defence against SARS-CoV-2. The spike protein of SARS-CoV-2 is the primary target for neutralizing antibodies. As of 8August 2020, eight neutralizing antibodies targeting the spike protein of SARS-CoV-2 have entered clinical studies. It has been proposed that selection of broad-neutralizing antibodies against SARS-CoV-2 and SARS-CoV might be useful for treating not only COVID‑19 but also future SARS-related CoV infections. Other mechanisms, however, such as antibody-dependent cellular cytotoxicity or phagocytosis, may be possible. Other forms of passive antibody therapy, for example, using manufactured monoclonal antibodies, are in development.
+
+The use of passive antibodies to treat people with active COVID‑19 is also being studied. This involves the production of convalescent serum, which consists of the liquid portion of the blood from people who recovered from the infection and contains antibodies specific to this virus, which is then administered to active patients. This strategy was tried for SARS with inconclusive results. An updated Cochrane review in May 2021 found high certainty evidence that, for the treatment of people with moderate to severe COVID‑19, convalescent plasma did not reduce mortality or bring about symptom improvement. There continues to be uncertainty about the safety of convalescent plasma administration to people with COVID‑19 and differing outcomes measured in different studies limits their use in determining efficacy.
+
+Bioethics
+Since the outbreak of the COVID‑19 pandemic, scholars have explored the bioethics, normative economics, and political theories of healthcare policies related to the public health crisis. Academics have pointed to the moral distress of healthcare workers, ethics of distributing scarce healthcare resources such as ventilators, and the global justice of vaccine diplomacies. The socio-economic inequalities between genders, races, groups with disabilities, communities, regions, countries, and continents have also drawn attention in academia and the general public.
+
+Effect on other diseases and the pharmacy trade
+There was a report on 3March 2021, that social distancing and common wearing of surgical masks and similar as a common precaution against COVID‑19 caused a drop in the spread rate of the common cold and flu.
+
+See also
+
+ Coronavirus diseases, a group of closely related syndromes
+ Disease X, a WHO term
+
+References
+
+Further reading
+
+  Scholia Q104287299.
+
+External links
+
+Health agencies
+ Coronavirus disease (COVID‑19) Facts by the World Health Organization (WHO)
+ Coronavirus 2019 (COVID-19) by the US Centers for Disease Control and Prevention (CDC)
+ Coronavirus (COVID‑19) by the UK National Health Service (NHS)
+
+Directories
+ Coronavirus Resource Center at the Center for Inquiry
+ 
+ COVID‑19 Resource Directory on OpenMD
+ COVID‑19 Information on FireMountain.net
+
+Medical journals
+ Coronavirus Disease 2019 (COVID‑19) by JAMA
+ BMJ's Coronavirus (covid‑19) Hub by the BMJ
+ Novel Coronavirus Information Center by Elsevier
+ COVID‑19 Resource Centre by The Lancet
+ Coronavirus (COVID‑19) Research Highlights by Springer Nature
+ Coronavirus (Covid‑19) by The New England Journal of Medicine
+ Covid‑19: Novel Coronavirus by Wiley Publishing
+
+Treatment guidelines
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+Occupational safety and health
+Vaccine-preventable diseases
+Viral respiratory tract infections
+Zoonoses
+Public health
+Coronavirus-associated diseases
+*****************
+reranking
+*****************
+=============== After Reranking ===============
+ 1 1.82351 Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019. The disease has since spread worldwide, leading to an ongoing pandemic. Symptoms of COVID‑19 are variable, but often include fever, cough, headache, fatigue, breathing difficulties, loss of smell, and loss of taste. Symptoms may begin one to fourteen days after exposure to the virus. At least a third of people who are infected do not develop noticeable symptoms. Of those people who develop symptoms noticeable enough to be classed as patients, most (81%) develop mild to moderate symptoms (up to mild pneumonia), while 14% develop severe symptoms (dyspnea, hypoxia, or more than 50% lung involvement on imaging), and 5% suffer critical symptoms (respiratory failure, shock, or multiorgan dysfunction). Older people are at a higher risk of developing severe symptoms. Some people continue to experience a range of effects (long COVID) for months after recovery, and damage to organs has been observed. Multi-year studies are underway to further investigate the long-term effects of the disease. COVID‑19 transmits when people breathe in air contaminated by droplets and small airborne particles containing the virus. The risk of breathing these in is highest when people are in close proximity, but they can be inhaled over longer distances, particularly indoors. Transmission can also occur if splashed or sprayed with contaminated fluids in the eyes, nose or mouth, and, rarely, via contaminated surfaces. People remain contagious for up to 20 days, and can spread the virus even if they do not develop symptoms. Several testing methods have been developed to diagnose the disease. The standard diagnostic method is by detection of the virus's nucleic acid by real-time reverse transcription polymerase chain reaction (rRT-PCR), transcription-mediated amplification (TMA), or by reverse transcription loop-mediated isothermal amplification (RT-LAMP) from a nasopharyngeal swab. Several COVID-19 vaccines have been approved and distributed in various countries, which have initiated mass vaccination campaigns. Other preventive measures include physical or social distancing, quarantining, ventilation of indoor spaces, covering coughs and sneezes, hand washing, and keeping unwashed hands away from the face. The use of face masks or coverings has been recommended in public settings to minimize the risk of transmissions. While work is underway to develop drugs that inhibit the virus, the primary treatment is symptomatic. Management involves the treatment of symptoms, supportive care, isolation, and experimental measures. Nomenclature During the initial outbreak in Wuhan, the virus and disease were commonly referred to as "coronavirus" and "Wuhan coronavirus", with the disease sometimes called "Wuhan pneumonia". In the past, many diseases have been named after geographical locations, such as the Spanish flu, Middle East respiratory syndrome, and Zika virus. In January 2020, the World Health Organization (WHO) recommended 2019-nCoV and 2019-nCoV acute respiratory disease as interim names for the virus and disease per 2015 guidance and international guidelines against using geographical locations or groups of people in disease and virus names to prevent social stigma. The official names COVID‑19 and SARS-CoV-2 were issued by the WHO on 11 February 2020. The Director-General, Tedros Adhanom explained that CO stands for corona, VI for virus, D for disease, and 19 for 2019, the year in which the outbreak was first identified. The WHO additionally uses "the COVID‑19 virus" and "the virus responsible for COVID‑19" in public communications. Signs and symptoms Cause COVID‑19 is caused by infection with a strain of coronavirus known as severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Transmission Virology Severe acute respiratory syndrome coronavirus2 (SARS-CoV-2) is a novel severe acute respiratory syndrome coronavirus. It was first isolated from three people with pneumonia connected to the cluster of acute respiratory illness cases in Wuhan. All structural features of the novel SARS-CoV-2 virus particle occur in related coronaviruses in nature. Outside the human body, the virus is destroyed by household soap, which bursts its protective bubble. SARS-CoV-2 is closely related to the original SARS-CoV. It is thought to have an animal (zoonotic) origin. Genetic analysis has revealed that the coronavirus genetically clusters with the genus Betacoronavirus, in subgenus Sarbecovirus (lineage B) together with two bat-derived strains. It is 96% identical at the whole genome level to other bat coronavirus samples (BatCov RaTG13). The structural proteins of SARS-CoV-2 include membrane glycoprotein (M), envelope protein (E), nucleocapsid protein (N), and the spike protein (S). The M protein of SARS-CoV-2 is about 98% similar to the M protein of bat SARS-CoV, maintains around 98% homology with pangolin SARS-CoV, and has 90% homology with the M protein of SARS-CoV; whereas, the similarity is only around 38% with the M protein of MERS-CoV. SARS-CoV-2 variants The many thousands of SARS-CoV-2 variants are grouped into either clades or lineages. The WHO, in collaboration with partners, expert networks, national authorities, institutions and researchers, have established nomenclature systems for naming and tracking SARS-CoV-2 genetic lineages by GISAID, Nextstrain and Pango. At the present time, the expert group convened by WHO has recommended the labeling of variants using letters of the Greek Alphabet, for example, Alpha, Beta, Delta, and Gamma, giving the justification that they "will be easier and more practical to discussed by non-scientific audiences." Nextstrain divides the variants into five clades (19A, 19B, 20A, 20B, and 20C), while GISAID divides them into seven (L, O, V, S, G, GH, and GR). The Pango tool groups variants into lineages, with many circulating lineages being classed under the B.1 lineage. Several notable variants of SARS-CoV-2 emerged throughout 2020. Cluster 5 emerged among minks and mink farmers in Denmark. After strict quarantines and a mink euthanasia campaign, the cluster was assessed to no longer be circulating among humans in Denmark as of 1 February 2021. , there are five dominant variants of SARS-CoV-2 spreading among global populations: the Alpha variant (B.1.1.7, formerly called the UK variant), first found in London and Kent, the Beta variant (B.1.351, formerly called the South Africa variant), the Gamma variant (P.1, formerly called the Brazil variant), the Delta variant (B.1.617.2, formerly called the India variant), and the Omicron variant (B.1.1.529), which had spread to 57 countries as of 7 December. Pathophysiology The SARS-CoV-2 virus can infect a wide range of cells and systems of the body. COVID‑19 is most known for affecting the upper respiratory tract (sinuses, nose, and throat) and the lower respiratory tract (windpipe and lungs). The lungs are the organs most affected by COVID‑19 because the virus accesses host cells via the receptor for the enzyme angiotensin-converting enzyme 2 (ACE2), which is most abundant on the surface of type II alveolar cells of the lungs. The virus uses a special surface glycoprotein called a "spike" to connect to the ACE2 receptor and enter the host cell. Respiratory tract Following viral entry, COVID‑19 infects the ciliated epithelium of the nasopharynx and upper airways. Nervous system One common symptom, loss of smell, results from infection of the support cells of the olfactory epithelium, with subsequent damage to the olfactory neurons. The involvement of both the central and peripheral nervous system in COVID‑19 has been reported in many medical publications. It is clear that many people with COVID-19 exhibit neurological or mental health issues. The virus is not detected in the CNS of the majority of COVID-19 patients with neurological issues. However, SARS-CoV-2 has been detected at low levels in the brains of those who have died from COVID‑19, but these results need to be confirmed. While virus has been detected in cerebrospinal fluid of autopsies, the exact mechanism by which it invades the CNS remains unclear and may first involve invasion of peripheral nerves given the low levels of ACE2 in the brain. The virus may also enter the bloodstream from the lungs and cross the blood-brain barrier to gain access to the CNS, possibly within an infected white blood cell. Gastrointestinal tract The virus also affects gastrointestinal organs as ACE2 is abundantly expressed in the glandular cells of gastric, duodenal and rectal epithelium as well as endothelial cells and enterocytes of the small intestine. Cardiovascular system The virus can cause acute myocardial injury and chronic damage to the cardiovascular system. An acute cardiac injury was found in 12% of infected people admitted to the hospital in Wuhan, China, and is more frequent in severe disease. Rates of cardiovascular symptoms are high, owing to the systemic inflammatory response and immune system disorders during disease progression, but acute myocardial injuries may also be related to ACE2 receptors in the heart. ACE2 receptors are highly expressed in the heart and are involved in heart function. A high incidence of thrombosis and venous thromboembolism have been found in people transferred to Intensive care units (ICU) with COVID‑19 infections, and may be related to poor prognosis. Blood vessel dysfunction and clot formation (as suggested by high D-dimer levels caused by blood clots) are thought to play a significant role in mortality, incidences of clots leading to pulmonary embolisms, and ischaemic events within the brain have been noted as complications leading to death in people infected with SARS-CoV-2. Infection appears to set off a chain of vasoconstrictive responses within the body, constriction of blood vessels within the pulmonary circulation has also been posited as a mechanism in which oxygenation decreases alongside the presentation of viral pneumonia. Furthermore, microvascular (arterioles and capillaries) blood vessel damage has been reported in a small number of tissue samples of the brainswithout detected SARS-CoV-2and the olfactory bulbs from those who have died from COVID‑19. COVID‑19 was also found to cause substantial – including morphological and mechanical – changes to blood cells – such as increased sizes – sometimes persisting for months after hospital discharge. Other organs Another common cause of death is complications related to the kidneys. Early reports show that up to 30% of hospitalized patients both in China and in New York have experienced some injury to their kidneys, including some persons with no previous kidney problems. Autopsies of people who died of COVID‑19 have found diffuse alveolar damage, and lymphocyte-containing inflammatory infiltrates within the lung. Immunopathology Although SARS-CoV-2 has a tropism for ACE2-expressing epithelial cells of the respiratory tract, people with severe COVID‑19 have symptoms of systemic hyperinflammation. Clinical laboratory findings of elevated IL2, IL7, IL6, granulocyte-macrophage colony-stimulating factor (GMCSF), interferon gamma-induced protein10 (IP10), monocyte chemoattractant protein1 (MCP1), macrophage inflammatory protein 1alpha (MIP1alpha), and tumour necrosis factor (TNFα) indicative of cytokine release syndrome (CRS) suggest an underlying immunopathology. Additionally, people with COVID‑19 and acute respiratory distress syndrome (ARDS) have classical serum biomarkers of CRS, including elevated C-reactive protein (CRP), lactate dehydrogenase (LDH), D-dimer, and ferritin. Systemic inflammation results in vasodilation, allowing inflammatory lymphocytic and monocytic infiltration of the lung and the heart. In particular, pathogenic GM-CSF-secreting T cells were shown to correlate with the recruitment of inflammatory IL-6-secreting monocytes and severe lung pathology in people with COVID‑19. Lymphocytic infiltrates have also been reported at autopsy. Viral and host factors Virus proteins Multiple viral and host factors affect the pathogenesis of the virus. The S-protein, otherwise known as the spike protein, is the viral component that attaches to the host receptor via the ACE2 receptors. It includes two subunits: S1 and S2. S1 determines the virus-host range and cellular tropism via the receptor-binding domain. S2 mediates the membrane fusion of the virus to its potential cell host via the H1 and HR2, which are heptad repeat regions. Studies have shown that S1 domain induced IgG and IgA antibody levels at a much higher capacity. It is the focus spike proteins expression that are involved in many effective COVID‑19 vaccines. The M protein is the viral protein responsible for the transmembrane transport of nutrients. It is the cause of the bud release and the formation of the viral envelope. The N and E protein are accessory proteins that interfere with the host's immune response. Host factors Human angiotensin converting enzyme 2 (hACE2) is the host factor that SARS-COV2 virus targets causing COVID‑19. Theoretically, the usage of angiotensin receptor blockers (ARB) and ACE inhibitors upregulating ACE2 expression might increase morbidity with COVID‑19, though animal data suggest some potential protective effect of ARB; however no clinical studies have proven susceptibility or outcomes. Until further data is available, guidelines and recommendations for hypertensive patients remain. The effect of the virus on ACE2 cell surfaces leads to leukocytic infiltration, increased blood vessel permeability,
+ 2 -8.53670  Xinjiang re-education camps emerged. Anna Hayes of Australia's James Cook University expressed concern about possible spread in the camps. As of late March, users of the social-media site Sina Weibo widely shared an undated photograph showing long lines at the Hankou funeral home in Wuhan. According to Caixin Global, the Hankou funeral home was operating 19 hours a day. Caixin also reported that there were a number of people who died with COVID-19 symptoms but were not tested and were thus excluded from the official case-tally. Some patients died of other diseases due to a lack of proper treatment when 
+ 3 -8.68522  The severity of COVID-19 varies. The disease may take a mild course with few or no symptoms, resembling other common upper respiratory diseases such as the common cold. In 3–4% of cases (7.4% for those over age 65) symptoms are severe enough to cause hospitalization. Mild cases typically recover within two weeks, while those with severe or critical diseases may take three to six weeks to recover. Among those who have died, the time from symptom onset to death has ranged from two to eight weeks. The Italian Istituto Superiore di Sanità reported that the median time between the onset of symptoms and death was twelve days, with seven being hospitalised. However, people transferred to 
+ 4 -8.88647  On 1 April, two United States officials said that China had deliberately concealed its cases and deaths according to a report by United States Intelligence Community. The officials asked not to be identified because the report is secret, and declined to detail its contents. The sources stated that the Chinese central government does not know the extent of the outbreak because lower-level officials reported falsified statistics to avoid losing their positions. The CIA is currently investigating in China to assess the COVID-19 totals. During the pandemic, no reports of cases of the COVID-19 in Xinjiang prisons or of conditions in 
+ 5 -8.92628  British scientists, and British government officials have expressed doubts about the accuracy of the figures provided by the Chinese government relating to the epidemic, raising concerns that the Beijing government has deliberately under-reported the extent of infections and deaths. Chinese Premier Li Keqiang reported on 24 March 2020 that the spread of domestically transmitted epidemic has essentially stopped and the outbreak has been controlled in China. Asymptomatic cases (people who tested positive but did not develop symptoms) were not counted as confirmed cases before 1 March. On 17 April 2020 the Wuhan government revised the number of COVID-19 deaths, 
+*****************
+compressing
+*****************
+[2024-06-13 06:38:30,369] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Symptoms of COVID‑19 are variable, but often include fever, cough, headache, fatigue, breathing difficulties, loss of smell, and loss of taste. At least a third of people who are infected do not develop noticeable symptoms. Multi-year studies are underway to further investigate the long-term effects of the disease. COVID‑19 transmits when people breathe in air contaminated by droplets and small airborne particles containing the virus. Several testing methods have been developed to diagnose the disease. The standard diagnostic method is by detection of the virus's nucleic acid by real-time reverse transcription polymerase chain reaction (rRT-PCR), transcription-mediated amplification (TMA), or by reverse transcription loop-mediated isothermal amplification (RT-LAMP) from a nasopharyngeal swab. While work is underway to develop drugs that inhibit the virus, the primary treatment is symptomatic. Nomenclature During the initial outbreak in Wuhan, the virus and disease were commonly referred to as "coronavirus" and "Wuhan coronavirus", with the disease sometimes called "Wuhan pneumonia". In the past, many diseases have been named after geographical locations, such as the Spanish flu, Middle East respiratory syndrome, and Zika virus. The official names COVID‑19 and SARS-CoV-2 were issued by the WHO on 11 February 2020. The WHO additionally uses "the COVID‑19 virus" and "the virus responsible for COVID‑19" in public communications. Signs and symptoms Cause COVID‑19 is caused by infection with a strain of coronavirus known as severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Transmission Virology Severe acute respiratory syndrome coronavirus2 (SARS-CoV-2) is a novel severe acute respiratory syndrome coronavirus. It was first isolated from three people with pneumonia connected to the cluster of acute respiratory illness cases in Wuhan. All structural features of the novel SARS-CoV-2 virus particle occur in related coronaviruses in nature. Genetic analysis has revealed that the coronavirus genetically clusters with the genus Betacoronavirus, in subgenus Sarbecovirus (lineage B) together with two bat-derived strains. It is 96% identical at the whole genome level to other bat coronavirus samples (BatCov RaTG13). The structural proteins of SARS-CoV-2 include membrane glycoprotein (M), envelope protein (E), nucleocapsid protein (N), and the spike protein (S). SARS-CoV-2 variants The many thousands of SARS-CoV-2 variants are grouped into either clades or lineages. Pathophysiology The SARS-CoV-2 virus can infect a wide range of cells and systems of the body. The lungs are the organs most affected by COVID‑19 because the virus accesses host cells via the receptor for the enzyme angiotensin-converting enzyme 2 (ACE2), which is most abundant on the surface of type II alveolar cells of the lungs. The virus uses a special surface glycoprotein called a "spike" to connect to the ACE2 receptor and enter the host cell. It is clear that many people with COVID-19 exhibit neurological or mental health issues. The virus is not detected in the CNS of the majority of COVID-19 patients with neurological issues. However, SARS-CoV-2 has been detected at low levels in the brains of those who have died from COVID‑19, but these results need to be confirmed. While virus has been detected in cerebrospinal fluid of autopsies, the exact mechanism by which it invades the CNS remains unclear and may first involve invasion of peripheral nerves given the low levels of ACE2 in the brain. The virus may also enter the bloodstream from the lungs and cross the blood-brain barrier to gain access to the CNS, possibly within an infected white blood cell. Infection appears to set off a chain of vasoconstrictive responses within the body, constriction of blood vessels within the pulmonary circulation has also been posited as a mechanism in which oxygenation decreases alongside the presentation of viral pneumonia. Furthermore, microvascular (arterioles and capillaries) blood vessel damage has been reported in a small number of tissue samples of the brainswithout detected SARS-CoV-2and the olfactory bulbs from those who have died from COVID‑19. COVID‑19 was also found to cause substantial – including morphological and mechanical – changes to blood cells – such as increased sizes – sometimes persisting for months after hospital discharge. Immunopathology Although SARS-CoV-2 has a tropism for ACE2-expressing epithelial cells of the respiratory tract, people with severe COVID‑19 have symptoms of systemic hyperinflammation. Clinical laboratory findings of elevated IL2, IL7, IL6, granulocyte-macrophage colony-stimulating factor (GMCSF), interferon gamma-induced protein10 (IP10), monocyte chemoattractant protein1 (MCP1), macrophage inflammatory protein 1alpha (MIP1alpha), and tumour necrosis factor (TNFα) indicative of cytokine release syndrome (CRS) suggest an underlying immunopathology. Additionally, people with COVID‑19 and acute respiratory distress syndrome (ARDS) have classical serum biomarkers of CRS, including elevated C-reactive protein (CRP), lactate dehydrogenase (LDH), D-dimer, and ferritin. In particular, pathogenic GM-CSF-secreting T cells were shown to correlate with the recruitment of inflammatory IL-6-secreting monocytes and severe lung pathology in people with COVID‑19. Viral and host factors Virus proteins Multiple viral and host factors affect the pathogenesis of the virus. S1 determines the virus-host range and cellular tropism via the receptor-binding domain. It is the cause of the bud release and the formation of the viral envelope. Host factors Human angiotensin converting enzyme 2 (hACE2) is the host factor that SARS-COV2 virus targets causing COVID‑19. The effect of the virus on ACE2 cell surfaces leads to leukocytic infiltration, increased blood vessel permeability,
+
+ The severity of COVID-19 varies. The disease may take a mild course with few or no symptoms, resembling other common upper respiratory diseases such as the common cold. Asymptomatic cases (people who tested positive but did not develop symptoms) were not counted as confirmed cases before 1 March. During the pandemic, no reports of cases of the COVID-19 in Xinjiang prisons or of conditions in 
+
+ Xinjiang re-education camps emerged. Caixin also reported that there were a number of people who died with COVID-19 symptoms but were not tested and were thus excluded from the official case-tally.
+
+Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: Viral image Says 80% of novel coronavirus cases are "mild.
+Answer: 
+2024-06-13 06:38:30 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Symptoms of COVID‑19 are variable, but often include fever, cough, headache, fatigue, breathing difficulties, loss of smell, and loss of taste. At least a third of people who are infected do not develop noticeable symptoms. Multi-year studies are underway to further investigate the long-term effects of the disease. COVID‑19 transmits when people breathe in air contaminated by droplets and small airborne particles containing the virus. Several testing methods have been developed to diagnose the disease. The standard diagnostic method is by detection of the virus's nucleic acid by real-time reverse transcription polymerase chain reaction (rRT-PCR), transcription-mediated amplification (TMA), or by reverse transcription loop-mediated isothermal amplification (RT-LAMP) from a nasopharyngeal swab. While work is underway to develop drugs that inhibit the virus, the primary treatment is symptomatic. Nomenclature During the initial outbreak in Wuhan, the virus and disease were commonly referred to as "coronavirus" and "Wuhan coronavirus", with the disease sometimes called "Wuhan pneumonia". In the past, many diseases have been named after geographical locations, such as the Spanish flu, Middle East respiratory syndrome, and Zika virus. The official names COVID‑19 and SARS-CoV-2 were issued by the WHO on 11 February 2020. The WHO additionally uses "the COVID‑19 virus" and "the virus responsible for COVID‑19" in public communications. Signs and symptoms Cause COVID‑19 is caused by infection with a strain of coronavirus known as severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Transmission Virology Severe acute respiratory syndrome coronavirus2 (SARS-CoV-2) is a novel severe acute respiratory syndrome coronavirus. It was first isolated from three people with pneumonia connected to the cluster of acute respiratory illness cases in Wuhan. All structural features of the novel SARS-CoV-2 virus particle occur in related coronaviruses in nature. Genetic analysis has revealed that the coronavirus genetically clusters with the genus Betacoronavirus, in subgenus Sarbecovirus (lineage B) together with two bat-derived strains. It is 96% identical at the whole genome level to other bat coronavirus samples (BatCov RaTG13). The structural proteins of SARS-CoV-2 include membrane glycoprotein (M), envelope protein (E), nucleocapsid protein (N), and the spike protein (S). SARS-CoV-2 variants The many thousands of SARS-CoV-2 variants are grouped into either clades or lineages. Pathophysiology The SARS-CoV-2 virus can infect a wide range of cells and systems of the body. The lungs are the organs most affected by COVID‑19 because the virus accesses host cells via the receptor for the enzyme angiotensin-converting enzyme 2 (ACE2), which is most abundant on the surface of type II alveolar cells of the lungs. The virus uses a special surface glycoprotein called a "spike" to connect to the ACE2 receptor and enter the host cell. It is clear that many people with COVID-19 exhibit neurological or mental health issues. The virus is not detected in the CNS of the majority of COVID-19 patients with neurological issues. However, SARS-CoV-2 has been detected at low levels in the brains of those who have died from COVID‑19, but these results need to be confirmed. While virus has been detected in cerebrospinal fluid of autopsies, the exact mechanism by which it invades the CNS remains unclear and may first involve invasion of peripheral nerves given the low levels of ACE2 in the brain. The virus may also enter the bloodstream from the lungs and cross the blood-brain barrier to gain access to the CNS, possibly within an infected white blood cell. Infection appears to set off a chain of vasoconstrictive responses within the body, constriction of blood vessels within the pulmonary circulation has also been posited as a mechanism in which oxygenation decreases alongside the presentation of viral pneumonia. Furthermore, microvascular (arterioles and capillaries) blood vessel damage has been reported in a small number of tissue samples of the brainswithout detected SARS-CoV-2and the olfactory bulbs from those who have died from COVID‑19. COVID‑19 was also found to cause substantial – including morphological and mechanical – changes to blood cells – such as increased sizes – sometimes persisting for months after hospital discharge. Immunopathology Although SARS-CoV-2 has a tropism for ACE2-expressing epithelial cells of the respiratory tract, people with severe COVID‑19 have symptoms of systemic hyperinflammation. Clinical laboratory findings of elevated IL2, IL7, IL6, granulocyte-macrophage colony-stimulating factor (GMCSF), interferon gamma-induced protein10 (IP10), monocyte chemoattractant protein1 (MCP1), macrophage inflammatory protein 1alpha (MIP1alpha), and tumour necrosis factor (TNFα) indicative of cytokine release syndrome (CRS) suggest an underlying immunopathology. Additionally, people with COVID‑19 and acute respiratory distress syndrome (ARDS) have classical serum biomarkers of CRS, including elevated C-reactive protein (CRP), lactate dehydrogenase (LDH), D-dimer, and ferritin. In particular, pathogenic GM-CSF-secreting T cells were shown to correlate with the recruitment of inflammatory IL-6-secreting monocytes and severe lung pathology in people with COVID‑19. Viral and host factors Virus proteins Multiple viral and host factors affect the pathogenesis of the virus. S1 determines the virus-host range and cellular tropism via the receptor-binding domain. It is the cause of the bud release and the formation of the viral envelope. Host factors Human angiotensin converting enzyme 2 (hACE2) is the host factor that SARS-COV2 virus targets causing COVID‑19. The effect of the virus on ACE2 cell surfaces leads to leukocytic infiltration, increased blood vessel permeability,
+
+ The severity of COVID-19 varies. The disease may take a mild course with few or no symptoms, resembling other common upper respiratory diseases such as the common cold. Asymptomatic cases (people who tested positive but did not develop symptoms) were not counted as confirmed cases before 1 March. During the pandemic, no reports of cases of the COVID-19 in Xinjiang prisons or of conditions in 
+
+ Xinjiang re-education camps emerged. Caixin also reported that there were a number of people who died with COVID-19 symptoms but were not tested and were thus excluded from the official case-tally.
+
+Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: Viral image Says 80% of novel coronavirus cases are "mild.
+Answer: 
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 3/500 [00:55<3:26:11, 24.89s/it][2024-06-13 06:38:30,775] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@0
+2024-06-13 06:38:30 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@0
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: An email says that 9-year old Craig Shergold of Carshalton, Great Britain is dying of Cancer.  As a dying wish, he wants to get into the Guinness Book of World Records by collecting the most greeting cards of anybody in history.  The email asks that the cards be sent to an address of the Make-A-Wish Foundation.  
+Answer: 
+q:An email says that 9-year old Craig Shergold of Carshalton, Great Britain is dying of Cancer.  As a dying wish, he wants to get into the Guinness Book of World Records by collecting the most greeting cards of anybody in history.  The email asks that the cards be sent to an address of the Make-A-Wish Foundation.  
+[2024-06-13 06:38:30,782] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:
+
+Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: An email says that 9-year old Craig Shergold of Carshalton, Great Britain is dying of Cancer.  As a dying wish, he wants to get into the Guinness Book of World Records by collecting the most greeting cards of anybody in history.  The email asks that the cards be sent to an address of the Make-A-Wish Foundation.  
+Answer: 
+2024-06-13 06:38:30 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:
+
+Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: An email says that 9-year old Craig Shergold of Carshalton, Great Britain is dying of Cancer.  As a dying wish, he wants to get into the Guinness Book of World Records by collecting the most greeting cards of anybody in history.  The email asks that the cards be sent to an address of the Make-A-Wish Foundation.  
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 4/500 [00:55<2:05:01, 15.12s/it][2024-06-13 06:38:30,921] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-13 06:38:30 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+retrieving
+*****************
+cq:Determine whether the given background supports or refutes the claim, and respond with 'SUPPORT' or 'REFUTE'. Do not generate any other content.
+Claim: Roche's schizophrenia drug misses goal in two late-stage trials.
+Answer: 
+q:Roche's schizophrenia drug misses goal in two late-stage trials.
+*****************
+searching
+*****************
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+["Roche's schizophrenia drug misses goal in two late-stage trials.\n\nRoche's experimental schizophrenia drug failed to meet its main goals in two late-stage trials, the Swiss drugmaker said on Monday, dealing a setback to its efforts to expand its psychiatry business.\n\nThe drug, called RG1258, is a so-called glutamate receptor antagonist, which works by blocking a chemical messenger in the brain called glutamate.\n\nIn the first trial, known as SUMMIT, RG1258 failed to significantly improve symptoms in patients with schizophrenia compared to a placebo, Roche said.\n\nIn the second trial, known as SUNRISE, RG1258 also failed to significantly improve symptoms in patients with schizophrenia, but did show a statistically significant improvement in a secondary measure of cognitive function.\n\nThe results were based on an analysis of data from 1,100 patients in the two trials.\n\nRoche said it would continue to study RG1258 in a smaller trial, known as SUNRISE-2, which is designed to look at the drug's effect on cognitive function in patients with schizophrenia.\n\nThe company said it would also study RG1258 in a trial", "Roche's schizophrenia drug misses goal in two late-stage trials."]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 124.23it/s]
+====================================================================================================
+1    3e22b4cd-f0d3-4a96-baed-8e4352722cb7 	 1.0 
+  early and late drug discovery. Early drug discovery focuses on genetic validation of a target, which is a strong predictor of success, but knock-out and overexpression systems are simplistic. Spatially and temporally conditional knock-out/knock-in systems have improved the level of nuance in in vivo analysis of protein function, but still fail to completely parallel the systemic breadth of pharmacological action. For example, drugs often act through multiple mechanisms, and often work best by engaging targets partially. Chemoproteomic tools offer a solution to bridge the gap between a genetic understanding of disease and a pharmacological understanding of drug action by identifying the many proteins involved in therapeutic success.
+====================================================================================================
+2    bbbac4c7-7732-436f-be98-5726da5e18b8 	 0.9189197996893229 
+  show a positive association between the antidepressant responses of ketamine and plasma (2S,6S;2R,6R)-HNK levels. In accordance with the notion that the NMDA receptor is not responsible for the antidepressant effects of ketamine, dizocilpine (MK-801), which binds to and blocks the same site on the NMDA receptor that ketamine does, lacks antidepressant-like effects. Moreover, the findings would explain why other NMDA receptor antagonists such as memantine, lanicemine, and traxoprodil have thus far failed to demonstrate ketamine-like antidepressant effects in human clinical trials. Instead of acting via blockade of the NMDA receptor, (2R,6R)-HNK increases activation of the AMPA receptor via a currently unknown/uncertain mechanism. The compound is now 
+====================================================================================================
+3    b3535f3c-d125-4ddf-80f6-a69c7c41292a 	 0.7885657798972375 
+  Arketamine appears to be more effective as a rapid-acting antidepressant than esketamine in preclinical research. In rodent studies, esketamine produced hyperlocomotion, prepulse inhibition deficits, and rewarding effects, while arketamine did not, in accordance with its lower potency as an NMDA receptor antagonist and dopamine reuptake inhibitor. As such, arketamine may have a lower propensity for producing psychotomimetic effects and a lower abuse potential in addition to superior antidepressant efficacy. A study conducted in mice found that ketamine's antidepressant activity is not caused by ketamine inhibiting NMDAR, but rather by sustained activation of a different glutamate receptor, the AMPA receptor, by a metabolite, (2R,6R)-hydroxynorketamine; as 
+====================================================================================================
+4    d7f6dfd6-876c-45fb-936c-54c10d2022b8 	 0.5954462995752632 
+  MTC who had been previously treated with cabozantinib, vandetanib or both (types of chemotherapy), and participants with advanced or metastatic RET-mutant MTC who had not received prior treatment with cabozantinib or vandetanib. Sixty-nine percent of the 55 previously treated participants for MTC experienced complete or partial shrinkage of their tumors which lasted more than 6 months for 76% of them. Out of 88 participants who had never undergone treatment with an approved drug, 73% experienced complete or partial shrinkage of their tumors which lasted more than six months for 61% of them. Efficacy for rearranged during transfection (RET) fusion-positive thyroid cancer was evaluated in participants 12 years of age and older. The study enrolled 
+====================================================================================================
+5    ccb19d43-5601-4835-828c-9aa9ddb8c0fd 	 0.5068816059615239 
+  or Geneuro GNbAC1 - Monoclonal antibody against the viral The HERV-W envelope glycoprotein, which is supposed to be somehow pathogenic. It has passed a Phase IIb and a high dosis safety profile study Currently in Phase IIb ; Fluoxetine (Prozac) ; Riluzole (Rilutek) Phase II studies are performed on mid-sized groups of patients (20 to 300) and are designed to assess whether a drug works in the targeted disease area, as well as to continue earlier safety assessments obtained in healthy volunteers. Treatment in MS phase II studies is with 4–12 months usually shorter than in phase III studies. 
+====================================================================================================
+6    3c72f46e-37e6-4440-ba5f-468377c53573 	 0.3 
+ A drug under development that would be used as an adjunct to antipsychotics improved cognitive impairment in patients with schizophrenia, according to data from a randomized, controlled Phase II trial.
+In the trial, which was sponsored by Forum, 319 schizophrenia patients were randomized to receive either encenicline in one of two doses daily, or a placebo, for 12 weeks.
+Patients in both encenicline dose groups showed significant cognitive improvement based on various measures, according to a presentation made late last month at the 15th International Congress on Schizophrenia Research. In a subset of 154 patients, the improvement was greater in the higher-dose group (0.9 mg) than the lower-dose cohort (0.27 mg).
+“These data shows that pro-cognitive effects in schizophrenia were observed for encenicline as assessed by two independent cognitive measures and a functional measure, Ilise Lombardo, MD, Forum’s vice president of clinical research and medical affairs at Forum Pharmaceuticals, told Medscape Medical News.
+Lombardo said that two six-month, Phase III trials are underway for encenicline. Each trial is to involve 700 patients.
+Encenicline (Forum Pharmaceuticals), a novel α-7 nicotinic acetylcholine receptor partial agonist, shows improvement of cognitive impairment in schizophrenia in a phase 2 randomized, controlled trial, potentially ushering in a long-anticipated treatment for an aspect of the disease not addressed by antipsychotics.
+Although cognitive impairment occurs in nearly all (98%) patients with schizophrenia, antipsychotics do not adequately offer improvement.
+With its unique mechanism seen as potentially helping to improve memory and cognitive function, encenicline is being studied as an adjunct to antipsychotics in treating cognitive impairment in schizophrenia as well as Alzheimer’s disease.
+====================================================================================================
+7    00c26a69-3168-4075-9bdf-749e4072cd55 	 0.2819078334141158 
+ [Updated, 1:10 ET] Investors are going to have to wait awhile before they see Amicus Therapeutics submit its Fabry Disease drug to the FDA for approval. And they immediately showed their displeasure by sending the Cranbury, NJ-based company’s stock down more than 20 percent.
+John Crowley, Amicus’ CEO, said on a conference call Monday that following discussions with the FDA, Amicus (NASDAQ: FOLD) has decided the data from its late-stage clinical trial of migalastat HCl isn’t enough to get the drug approved. Instead, Amicus will complete that study, as well as another ongoing Phase 3 trial before filing a new drug application (NDA) with the FDA.
+While that doesn’t mean migalastat is done as a potential treatment for Fabry, it does mean the verdict won’t be known for some time. With the crucial data expected in the second half of 2014, Amicus could be looking at 2015 before having a chance to win FDA approval.
+Investors weren’t thrilled. Shares plunged 20 percent to $2.53 apiece as of 10:08 ET, from a $3.19 Friday close.
+Those investors are understandably skeptical. Amicus’ drug for Gaucher Disease failed in clinical trials in 2009, and in December, Amicus said that the Fabry drug didn’t hit the main goal of its late-stage study after a six-month period.
+But Amicus believes that once all of its studies run their course—the Fabry study will conclude after two years of total data—the skeptics will be proven wrong.
+“We believe that the better regulatory strategy is to obtain all of the Phase 3 datasets and to combine and integrate these data into one NDA submission,” Crowley said on the call.
+Fabry is a rare inherited disease that affects between 5,000 and 10,000 people worldwide. It’s caused by the deficiency of a specific enzyme that breaks down a fat known as globotriaosylceramide (GL-3). Without the enzyme, GL-3 builds up in blood vessels, causing a host of side effects including severe kidney damage.
+Fabry is currently treated with enzyme-replacement therapies, such as agalsidase (Fabrazyme), which are administered intravenously. Amicus’ drug is a pill. Agalsidase, sold by Sanofi/Genzyme, is the only drug approved to treat Fabry in the U.S.
+Amicus has two late-stage trials going. In the first trial, 60 patients were broken into two equal-sized groups and randomly given either migalastat or a placebo. The placebo group was then transitioned to migalastat after six months.
+At the end of the year, patients are given an option to continue therapy for an additional year (Crowley said 57 of those patients elected to do so).
+In the second 60-patient study, 36 patients already undergoing enzyme-replacement therapy switched over to megalistat; the other 24 stayed on their existing therapy. Amicus is collecting data from that study over 18 months, and hopes to show that migalistat isn’t inferior to enzyme-replacement therapy, Crowley said on the call.
+Amicus met with the FDA following the disappointing six-month results from its first study, which showed that 41 percent of the patients taking its drug met the study’s goal—to reduce GL-3 levels by 50 percent—while 28 percent of the placebo group did. Amicus said that difference wasn’t statistically significant.
+Amicus proposed revisions to the study to the FDA based on reviewing the drug’s impact over 12 months, for example, but the agency indicated that wouldn’t help Amicus’ case for approval. Amicus hasn’t yet seen the 12-month data, Crowley said on the call.
+The FDA said it would review the drug based on the “entirety” of the clinical data the two late-stage studies, and agreed to a follow-up meeting after the 12-month data is available and the second Phase 3 study is completed, he said.
+[Updated with CEO comments] Crowley also points out that Amicus has shown in mid-stage trials both in Fabry and Pompe that its drugs can improve the effectiveness of enzyme-replacement therapies when used in concert with them, and that it has a “next generation” enzyme-replacement therapy for Fabry in preclinical development that is already partnered with GlaxoSmithKline that will begin clinical trials in early 2014.
+“We really get no credit for that—quite frankly looking at today’s stock market today I don’t think we get credit for much beyond our cash,” Crowley says.
+Amicus had about $85 million in cash on hand at the end of the first quarter, and while Crowley says that is enough to get Amicus through the second half of 2014, the company has already been exploring potential partnerships to help bring in revenue without diluting its stock. Amicus has a drug for Pompe disease, an enzyme-related muscle disorder, in mid-stage clinical trials, and a pre-clinical drug for Parkinson’s disease, both of which it owns all the rights to. Crowley says Amicus has already had discussions about partnerships for both, and could attempt to structure deals for those individually, or for its platform for creating next-generation enzyme-replacement therapies as a whole.
+“We’ll be open to lots of potential business development transactions in the quarters to come,” Crowley says.
+For the Pompe drug, Amicus would look to do something “that would mirror” its partnership with GlaxoSmithKline: Amicus would keep U.S. rights, give up international rights, and the partner would take on the majority of the development costs. For the Parkinson’s drug, Amicus would be “less insistent” on keeping marketing rights, and would be more apt to trade potential royalties and milestone payments for a share in the development expenses, according to Crowley.
+Crowley said on the call that the British pharma giant is still fully invested in its partnership with Amicus. GSK is Amicus’ largest shareholder and held 19.8 percent of its stock as of April 26, according to a proxy filed with the Securities and Exchange Commission.
+====================================================================================================
+8    885c5689-6bf4-42e0-9e2c-eccadee02ab2 	 0.2468822238171582 
+ Pomaglumetad (LY-404,039) is an amino acid analog drug that acts as a highly selective agonist for the metabotropic glutamate receptor group II subtypes mGluR2 and mGluR3. Pharmacological research has focused on its potential antipsychotic and anxiolytic effects. Pomaglumetad is intended as a treatment for schizophrenia and other psychotic and anxiety disorders by modulating glutamatergic activity and reducing presynaptic release of glutamate at synapses in limbic and forebrain areas relevant to these disorders. Human studies investigating therapeutic use of pomaglumetad have focused on the prodrug LY-2140023, a methionine amide of pomaglumetad (also called pomaglumetad methionil) since pomaglumetad exhibits low oral absorption and bioavailability in humans.
+
+Early human trials using this prodrug form of pomaglumetad gave encouraging results. However, pharmaceutical company Eli Lilly terminated further development of the compound in 2012 after it failed in phase III clinical trials. In September 2013, the results of a randomized, placebo-controlled clinical trial investigating the impact of adjunctive LY-2140023 on prominent negative symptoms in schizophrenia was published and failed to demonstrate any benefit.
+
+In 2015, Denovo Biopharma exclusively licensed LY-2140023 (the prodrug) for further development, having identified "a meaningful subset of patients who showed significantly improved outcomes".
+
+Pharmacology
+
+Mechanism of action and pharmacodynamics
+Clinical development of pomaglumetad resulted from efforts to discover potent and selective mGluR agonists for the treatment of psychiatric disorders. Pomaglumetad is highly selective for group II metabotropic glutamate receptors mGluR2 and mGluR3. These receptors reduce the activity of postsynaptic potentials in the cortex and act by inhibiting the release of glutamate and GABA. pomaglumetad has been shown to act as a potent full agonist at group II mGluRs as demonstrated by its ability to inhibit cyclic adenosine monophosphate, cAMP, formation as a result of stimulation by forskolin. Pomaglumetad has been shown to modulate glutamatergic activity in the limbic and forebrain areas, where group II mGlu receptors are most densely localized.
+
+The specific binding of pomaglumetad to human cloned mGlu receptors has been found to be highest for mGluR2 (K = 149 ± 11 nM) and relatively high for mGluR3 (K = 92 ± 14 nM). Research suggests that it does not have any appreciable affinity for other metabotropic glutamate receptors, ionotropic NMDA receptors, or kainate receptors, nor does it appear to have any affinity for adrenergic, benzodiazepine/GABAergic, histaminergic or muscarinic receptors.
+The functional activity of pomaglumetad on mGluR receptors has been further demonstrated by investigating the drug's ability to suppress electrically stimulated excitatory postsynaptic potentials, or EPSPs. Pomaglumetad has been shown to attenuate cortically evoked EPSPs in rat striatal spiny neurons in a concentration-dependent manner, mediated by activation of mGluR2 and mGluR3 receptors. This suppressive effect of pomaglumetad on stimulated EPSPs is reversed by the use of mGluR2/3 antagonists, such as LY341495.
+
+Pomaglumetad possesses partial agonist actions at D2 receptors and inhibits the binding of the D2-specific antagonist [3H]domperidone to human cloned D2 receptors. It increases the release of dopamine as well as its metabolites DOPAC and HVA in the prefrontal cortex in a manner similar to the atypical antipsychotic clozapine. Pomaglumetad also appears to have some effects on serotonin. It has been shown that pomaglumetad increases serotonin turnover, increasing the ratio of 5-HIAA to 5-HT, and suppresses serotonin-induced glutamate release in the prefrontal cortex.
+
+There is disagreement in the literature as to the possible agonistic action that pomaglumetad has on dopamine receptors. Attempts by Eli Lilly and AstraZeneca to replicate findings showing potent partial agonist action of mGluR2/3 agonists at D2 receptors were unsuccessful.
+
+Novelty
+Based on the glutamate hypothesis of schizophrenia, glutamate receptor agonists have been suggested as an effective treatment for psychotic patients. Pomaglumetad was one of the first drugs to be suggested as effective in treating psychosis without any apparent interference in dopaminergic function. Existing antipsychotic medications primarily treat schizophrenia by acting as antagonists at D2 receptors, while pomaglumetad has very low affinity for biogenic amine receptors.
+
+Structurally, pomaglumetad is a close relative to other mGluR2/3 orthosteric agonists eglumetad, LY-379,268, LY-389,795, and MGS-008, all of which are members of the bicyclohexane family. Pomaglumetad was the preferred drug candidate for further development due to its antipsychotic efficacy and lack of motor coordination effects at doses up to 30 mg/kg.
+
+Animal studies
+The pharmacokinetic profile of pomaglumetad has been primarily investigated in rodent models. It has shown high in vitro potency and efficacy as well as antipsychotic potential in animal studies. In overnight-fasted rats, intravenous dosing resulted in an AUC value of 2.9 ug*h/ml and a C value of 7.5 ug/ml. Oral administration resulted in an AUC value of 7.2 ug*h/ml and a C value of 4.0 ug/ml. The oral bioavailability in these rats was found to be 63%.
+
+Pomaglumetad demonstrates similar efficacy to clozapine for the treatment of psychotic symptoms in amphetamine and PCP animal models. In both mice and rat studies, the drug demonstrates inhibition of induced hyperlocomotion and conditioned avoidance responding. Pomaglumetad has also been shown to attenuate fear-potentiated startle and reduce marble burying in rodents, predictive of anxiolytic efficacy. Use of pomaglumetad in rodent models indicates a lack of motor side effects or impairment, as determined by experiments using a rotarod. There also appear to be no sedative effects.
+
+Animal studies and neurochemical models have also shown that use of pomaglumetad augments the efficacy of known antipsychotics, predictive of potential clinical efficacy in schizophrenia treatment. Assays of locomotion and conditioned avoidance showed evidence of synergy between pomaglumetad and antipsychotic medication, as well as an absence of motor impairment typically observed with high doses of antipsychotic medications. The combination of pomaglumetad (5 and 20 mg/kg) and risperidone (0.3 mg/kg) achieved prefrontal cortical dopamine efflux significantly higher than that observed with treatment by either drug alone.
+
+Clinical use of pomaglumetad methionil 
+Despite its apparent efficacy in animal models and in vitro, as well as its highly selective agonistic properties at mGlu2 and mGlu3 receptors, pomaglumetad displayed only 3% oral bioavailability in humans in a phase I clinical trial. A single dose of 200 mg results in an AUC value of 900 ng*h/ml. The drug's poor uptake has been cited as, in part, due to its interaction with the peptide transporter PepT 1. This led to the synthesis and development of pomaglumetad methionil (LY-2140023), an oral methionine prodrug of pomaglumetad, in 2010 for oral treatment of schizophrenia by Eli Lilly.
+
+Synthesis and pharmacology
+LY-2140023 was identified using the analogous peptide prodrug approach used previously for talaglumetad, the prodrug of eglumetad. Synthesis was the result of preparation of LY-389795 followed by oxidation to pomaglumetad and coupling with L-methionine. LY-2140023 uses a human peptide transporter and hydrolytic pathways to deliver pomaglumetad to systemic circulation in humans. It is rapidly absorbed and hydrolyzed to produce active pomaglumetad (~70% conversion), increasing its estimated bioavailability to 49%. In humans, use of LY-2140023 resulted in significantly higher plasma levels of pomaglumetad compared with oral administration of LY-404039. LY-2140023 appears to be an inactive prodrug, as K values for the drug have been found to be greater than 100 μM.
+
+Treatment for schizophrenia
+LY-2140023 is the first drug acting on mGlu receptors that has been studied in humans for the treatment of schizophrenia. It has been proposed as useful treatment of both positive and negative symptoms by acting as a selective agonist at mGlu receptors and modulating glutamatergic neurotransmission. It is suspected that LY-2140023 may balance and normalize dysregulated and hyperactive cortical pyramidal neurons in regions associated with schizophrenia and psychosis such as the thalamus, prefrontal cortex, and limbic system. Clinical trials using LY-2140023 have investigated its use as a therapy when administered alone and as an adjuvant therapy used in addition to atypical antipsychotics.
+
+Dosage and usage
+The dosage of LY-2140023 given to patients has varied by clinical trial, though dosages have typically ranged between 10 mg and 40 mg twice daily (BID). In an early phase II monotherapy trial, the dosage shown to be efficacious was 40 mg BID. Later trials investigating the use of LY-2140023 as an adjuvant to the antipsychotic medications already used by patients participating in the study utilized a lower dose of 20 mg BID. If treatment was well tolerated after a week at this target dose, the dose was increased to 40 mg BID. However, if the 20 mg dose was not well tolerated, the dose was decreased to 10 mg.
+
+Efficacy and clinical trials
+In 2007, a randomized phase II clinical trial showed that LY-2140023 taken twice daily for 4 weeks improved schizophrenia symptoms as measured with the PANSS and CGI-S when compared to placebo. However, post hoc analysis did not demonstrate a statistically significant difference in efficacy between LY-2140023 and olanzapine (positive control) groups. The researchers on the clinical trial hypothesized that the lack of significant difference between LY-2140023 and olanzapine on their outcome measures was due to incorrect dosage of LY-2140023, and that the optimal therapeutic dose was yet to be determined.
+
+A second randomized, double-blind, placebo- and active-controlled clinical trial gave schizophrenia patients various doses (5, 20, 40, or 80 mg) of LY-2140023 monohydrate twice daily, yet none of the four doses were found to be more efficacious than placebo on measures of PANSS total score. However, the results of this study were considered inconclusive because neither the LY-2140023 or the olanzapine (active control) groups demonstrated significant differences in treatment as compared to the placebo. Due to the possibility of a heightened placebo response that may have reduced the ability to detect a significant response to the drug across the LY-2140023 and olanzapine groups, clinical studies of the drug's efficacy were continued.
+
+A phase II, multicenter, randomized, parallel, active-controlled study with an open-label design was conducted in 2013 to investigate tolerability, efficacy and adverse effects of long-term treatment with LY-2140023. Patients receiving LY-2140023 were compared to patients receiving other antipsychotic medications, including olanzapine, risperidone, and aripiprazole, for a 24-week treatment phase and optional 28-week extension phase. Researchers found that over the initial 6–8 weeks of treatment, the improvement on the PANSS did not differ between groups. At later time points, it was found that the groups receiving the antipsychotic medications showed significantly greater improvement than the LY-2140023 group.
+
+Tolerability and side effects
+LY-2140023 has generally been found to be safe and tolerable. The most common treatment-emergent adverse effects reported with use of the drug include insomnia, nausea, headache, somnolence, affect lability and blood creatine phosphokinase increase. No clinically significant changes in vital signs or worsening of extrapyramidal symptoms were reported in association with LY-2140023 use during an initial phase II clinical trial. However, a second, multicenter study reported four patients experiencing convulsions, suggesting a potential for increased risk of seizures during treatment. A long-term study found that there was no statistically significant difference in the time to discontinuation of use due to lack of tolerability between patients using LY-2140023 and other antipsychotic medications.
+
+Mild weight loss has also been associated with LY-2140023. In patients receiving 40 mg twice daily, a 0.51 kg weight reduction was observed after 4 weeks of treatment.
+
+Eli Lilly stops phase III development
+In August 2012, Eli Lilly and Company announced their decision to stop their ongoing clinical studies investigating LY-2140023 as a treatment for schizophrenia after their phase II study did not meet its primary endpoint. The company completed a phase II, randomized, double-blind, placebo- and active-controlled, parallel-group-assignment, dose-ranging, inpatient, multi-center clinical trial. Patients were randomized to receive 5, 20, 40, or 80 mg of LY-2140023, placebo, or olanzapine for 28 days. Results of the clinical trial indicated that neither LY-2140023 nor olanzapine were significantly more efficacious than the placebo as determined with PANSS total scores. Post hoc analyses indicated only a trend towards improvement with LY-2140023, while olanzapine was associated with a significant improvement in total PANSS total score. Of the decision to stop development, Jan Lundberg, PhD and president of Lilly Research Laboratories, said "I'm disappointed in what these results mean for patients with schizophrenia who still are searching for options to treat this terrible illness".
+
+References 
+
+MGlu2 receptor agonists
+MGlu3 receptor agonists
+Schizophrenia
+====================================================================================================
+9    1103e31b-4cfa-4369-93a7-97411836f8a5 	 0.2468822238171582 
+ Pomaglumetad (LY-404,039) is an amino acid analog drug that acts as a highly selective agonist for the metabotropic glutamate receptor group II subtypes mGluR2 and mGluR3. Pharmacological research has focused on its potential antipsychotic and anxiolytic effects. Pomaglumetad is intended as a treatment for schizophrenia and other psychotic and anxiety disorders by modulating glutamatergic activity and reducing presynaptic release of glutamate at synapses in limbic and forebrain areas relevant to these disorders. Human studies investigating therapeutic use of pomaglumetad have focused on the prodrug LY-2140023, a methionine amide of pomaglumetad (also called pomaglumetad methionil) since pomaglumetad exhibits low oral absorption and bioavailability in humans.
+
+Early human trials using this prodrug form of pomaglumetad gave encouraging results. However, pharmaceutical company Eli Lilly terminated further development of the compound in 2012 after it failed in phase III clinical trials. In September 2013, the results of a randomized, placebo-controlled clinical trial investigating the impact of adjunctive LY-2140023 on prominent negative symptoms in schizophrenia was published and failed to demonstrate any benefit.
+
+In 2015, Denovo Biopharma exclusively licensed LY-2140023 (the prodrug) for further development, having identified "a meaningful subset of patients who showed significantly improved outcomes".
+
+Pharmacology
+
+Mechanism of action and pharmacodynamics
+Clinical development of pomaglumetad resulted from efforts to discover potent and selective mGluR agonists for the treatment of psychiatric disorders. Pomaglumetad is highly selective for group II metabotropic glutamate receptors mGluR2 and mGluR3. These receptors reduce the activity of postsynaptic potentials in the cortex and act by inhibiting the release of glutamate and GABA. pomaglumetad has been shown to act as a potent full agonist at group II mGluRs as demonstrated by its ability to inhibit cyclic adenosine monophosphate, cAMP, formation as a result of stimulation by forskolin. Pomaglumetad has been shown to modulate glutamatergic activity in the limbic and forebrain areas, where group II mGlu receptors are most densely localized.
+
+The specific binding of pomaglumetad to human cloned mGlu receptors has been found to be highest for mGluR2 (K = 149 ± 11 nM) and relatively high for mGluR3 (K = 92 ± 14 nM). Research suggests that it does not have any appreciable affinity for other metabotropic glutamate receptors, ionotropic NMDA receptors, or kainate receptors, nor does it appear to have any affinity for adrenergic, benzodiazepine/GABAergic, histaminergic or muscarinic receptors.
+The functional activity of pomaglumetad on mGluR receptors has been further demonstrated by investigating the drug's ability to suppress electrically stimulated excitatory postsynaptic potentials, or EPSPs. Pomaglumetad has been shown to attenuate cortically evoked EPSPs in rat striatal spiny neurons in a concentration-dependent manner, mediated by activation of mGluR2 and mGluR3 receptors. This suppressive effect of pomaglumetad on stimulated EPSPs is reversed by the use of mGluR2/3 antagonists, such as LY341495.
+
+Pomaglumetad possesses partial agonist actions at D2 receptors and inhibits the binding of the D2-specific antagonist [3H]domperidone to human cloned D2 receptors. It increases the release of dopamine as well as its metabolites DOPAC and HVA in the prefrontal cortex in a manner similar to the atypical antipsychotic clozapine. Pomaglumetad also appears to have some effects on serotonin. It has been shown that pomaglumetad increases serotonin turnover, increasing the ratio of 5-HIAA to 5-HT, and suppresses serotonin-induced glutamate release in the prefrontal cortex.
+
+There is disagreement in the literature as to the possible agonistic action that pomaglumetad has on dopamine receptors. Attempts by Eli Lilly and AstraZeneca to replicate findings showing potent partial agonist action of mGluR2/3 agonists at D2 receptors were unsuccessful.
+
+Novelty
+Based on the glutamate hypothesis of schizophrenia, glutamate receptor agonists have been suggested as an effective treatment for psychotic patients. Pomaglumetad was one of the first drugs to be suggested as effective in treating psychosis without any apparent interference in dopaminergic function. Existing antipsychotic medications primarily treat schizophrenia by acting as antagonists at D2 receptors, while pomaglumetad has very low affinity for biogenic amine receptors.
+
+Structurally, pomaglumetad is a close relative to other mGluR2/3 orthosteric agonists eglumetad, LY-379,268, LY-389,795, and MGS-008, all of which are members of the bicyclohexane family. Pomaglumetad was the preferred drug candidate for further development due to its antipsychotic efficacy and lack of motor coordination effects at doses up to 30 mg/kg.
+
+Animal studies
+The pharmacokinetic profile of pomaglumetad has been primarily investigated in rodent models. It has shown high in vitro potency and efficacy as well as antipsychotic potential in animal studies. In overnight-fasted rats, intravenous dosing resulted in an AUC value of 2.9 ug*h/ml and a C value of 7.5 ug/ml. Oral administration resulted in an AUC value of 7.2 ug*h/ml and a C value of 4.0 ug/ml. The oral bioavailability in these rats was found to be 63%.
+
+Pomaglumetad demonstrates similar efficacy to clozapine for the treatment of psychotic symptoms in amphetamine and PCP animal models. In both mice and rat studies, the drug demonstrates inhibition of induced hyperlocomotion and conditioned avoidance responding. Pomaglumetad has also been shown to attenuate fear-potentiated startle and reduce marble burying in rodents, predictive of anxiolytic efficacy. Use of pomaglumetad in rodent models indicates a lack of motor side effects or impairment, as determined by experiments using a rotarod. There also appear to be no sedative effects.
+
+Animal studies and neurochemical models have also shown that use of pomaglumetad augments the efficacy of known antipsychotics, predictive of potential clinical efficacy in schizophrenia treatment. Assays of locomotion and conditioned avoidance showed evidence of synergy between pomaglumetad and antipsychotic medication, as well as an absence of motor impairment typically observed with high doses of antipsychotic medications. The combination of pomaglumetad (5 and 20 mg/kg) and risperidone (0.3 mg/kg) achieved prefrontal cortical dopamine efflux significantly higher than that observed with treatment by either drug alone.
+
+Clinical use of pomaglumetad methionil 
+Despite its apparent efficacy in animal models and in vitro, as well as its highly selective agonistic properties at mGlu2 and mGlu3 receptors, pomaglumetad displayed only 3% oral bioavailability in humans in a phase I clinical trial. A single dose of 200 mg results in an AUC value of 900 ng*h/ml. The drug's poor uptake has been cited as, in part, due to its interaction with the peptide transporter PepT 1. This led to the synthesis and development of pomaglumetad methionil (LY-2140023), an oral methionine prodrug of pomaglumetad, in 2010 for oral treatment of schizophrenia by Eli Lilly.
+
+Synthesis and pharmacology
+LY-2140023 was identified using the analogous peptide prodrug approach used previously for talaglumetad, the prodrug of eglumetad. Synthesis was the result of preparation of LY-389795 followed by oxidation to pomaglumetad and coupling with L-methionine. LY-2140023 uses a human peptide transporter and hydrolytic pathways to deliver pomaglumetad to systemic circulation in humans. It is rapidly absorbed and hydrolyzed to produce active pomaglumetad (~70% conversion), increasing its estimated bioavailability to 49%. In humans, use of LY-2140023 resulted in significantly higher plasma levels of pomaglumetad compared with oral administration of LY-404039. LY-2140023 appears to be an inactive prodrug, as K values for the drug have been found to be greater than 100 μM.
+
+Treatment for schizophrenia
+LY-2140023 is the first drug acting on mGlu receptors that has been studied in humans for the treatment of schizophrenia. It has been proposed as useful treatment of both positive and negative symptoms by acting as a selective agonist at mGlu receptors and modulating glutamatergic neurotransmission. It is suspected that LY-2140023 may balance and normalize dysregulated and hyperactive cortical pyramidal neurons in regions associated with schizophrenia and psychosis such as the thalamus, prefrontal cortex, and limbic system. Clinical trials using LY-2140023 have investigated its use as a therapy when administered alone and as an adjuvant therapy used in addition to atypical antipsychotics.
+
+Dosage and usage
+The dosage of LY-2140023 given to patients has varied by clinical trial, though dosages have typically ranged between 10 mg and 40 mg twice daily (BID). In an early phase II monotherapy trial, the dosage shown to be efficacious was 40 mg BID. Later trials investigating the use of LY-2140023 as an adjuvant to the antipsychotic medications already used by patients participating in the study utilized a lower dose of 20 mg BID. If treatment was well tolerated after a week at this target dose, the dose was increased to 40 mg BID. However, if the 20 mg dose was not well tolerated, the dose was decreased to 10 mg.
+
+Efficacy and clinical trials
+In 2007, a randomized phase II clinical trial showed that LY-2140023 taken twice daily for 4 weeks improved schizophrenia symptoms as measured with the PANSS and CGI-S when compared to placebo. However, post hoc analysis did not demonstrate a statistically significant difference in efficacy between LY-2140023 and olanzapine (positive control) groups. The researchers on the clinical trial hypothesized that the lack of significant difference between LY-2140023 and olanzapine on their outcome measures was due to incorrect dosage of LY-2140023, and that the optimal therapeutic dose was yet to be determined.
+
+A second randomized, double-blind, placebo- and active-controlled clinical trial gave schizophrenia patients various doses (5, 20, 40, or 80 mg) of LY-2140023 monohydrate twice daily, yet none of the four doses were found to be more efficacious than placebo on measures of PANSS total score. However, the results of this study were considered inconclusive because neither the LY-2140023 or the olanzapine (active control) groups demonstrated significant differences in treatment as compared to the placebo. Due to the possibility of a heightened placebo response that may have reduced the ability to detect a significant response to the drug across the LY-2140023 and olanzapine groups, clinical studies of the drug's efficacy were continued.
+
+A phase II, multicenter, randomized, parallel, active-controlled study with an open-label design was conducted in 2013 to investigate tolerability, efficacy and adverse effects of long-term treatment with LY-2140023. Patients receiving LY-2140023 were compared to patients receiving other antipsychotic medications, including olanzapine, risperidone, and aripiprazole, for a 24-week treatment phase and optional 28-week extension phase. Researchers found that over the initial 6–8 weeks of treatment, the improvement on the PANSS did not differ between groups. At later time points, it was found that the groups receiving the antipsychotic medications showed significantly greater improvement than the LY-2140023 group.
+
+Tolerability and side effects
+LY-2140023 has generally been found to be safe and tolerable. The most common treatment-emergent adverse effects reported with use of the drug include insomnia, nausea, headache, somnolence, affect lability and blood creatine phosphokinase increase. No clinically significant changes in vital signs or worsening of extrapyramidal symptoms were reported in association with LY-2140023 use during an initial phase II clinical trial. However, a second, multicenter study reported four patients experiencing convulsions, suggesting a potential for increased risk of seizures during treatment. A long-term study found that there was no statistically significant difference in the time to discontinuation of use due to lack of tolerability between patients using LY-2140023 and other antipsychotic medications.
+
+Mild weight loss has also been associated with LY-2140023. In patients receiving 40 mg twice daily, a 0.51 kg weight reduction was observed after 4 weeks of treatment.
+
+Eli Lilly stops phase III development
+In August 2012, Eli Lilly and Company announced their decision to stop their ongoing clinical studies investigating LY-2140023 as a treatment for schizophrenia after their phase II study did not meet its primary endpoint. The company completed a phase II, randomized, double-blind, placebo- and active-controlled, parallel-group-assignment, dose-ranging, inpatient, multi-center clinical trial. Patients were randomized to receive 5, 20, 40, or 80 mg of LY-2140023, placebo, or olanzapine for 28 days. Results of the clinical trial indicated that neither LY-2140023 nor olanzapine were significantly more efficacious than the placebo as determined with PANSS total scores. Post hoc analyses indicated only a trend towards improvement with LY-2140023, while olanzapine was associated with a significant improvement in total PANSS total score. Of the decision to stop development, Jan Lundberg, PhD and president of Lilly Research Laboratories, said "I'm disappointed in what these results mean for patients with schizophrenia who still are searching for options to treat this terrible illness".
+
+References 
+
+MGlu2 receptor agonists
+MGlu3 receptor agonists
+Schizophrenia
+====================================================================================================
+10    63c44c98-55bb-46f9-9d2d-700a9a2e86a3 	 0.23119523880541365 
+ Eli Lilly has been forced to discontinue development of schizophrenia drug candidate, pomaglumetad methionil (mGlu2/3), after disappointing results in the second of two phase III clinical trials.
+The decision is a setback for Lilly, which had been hoping to position pomaglumetad methionil as a successor to its flagship schizophrenia drug Zyprexa (olanzapine), which is being hit hard by generic competition since losing patent protection last year.
+An analysis of the phase III HBBN study revealed that it was unlikely to meet its primary efficacy endpoint, while a phase II study called HBCO looking at pomaglumetad methionil in combination with other antipsychotics was similarly disappointing, said Lilly in a statement.
+Pomaglumetad methionil was different from existing antipsychotic drugs because it worked on glutamate rather than dopamine receptors, but worrying signs of a lack of efficacy had already been seen in phase II studies reported in 2009.
+The company pressed on because of a positive efficacy signal in a patient subgroup, but reported that its first phase III trial was negative last month, prompting analysts to scale back their expectations of approval and slash sales forecasts.
+President of Lilly Research Laboratories Jan Lundberg said: "I'm disappointed in what these results mean for patients with schizophrenia who still are searching for options to treat this terrible illness", whilst reaffirming the company's commitment to neuroscience research.
+The company said it would have to take a $25m-$30m charge in relation to the termination of the programme in its third-quarter results.
+The demise of pomaglumetad methionil comes in the wake of a string of negative trial results for Lilly, which badly needs new product launches as it is also facing patent expiries for blockbuster osteoporosis drug Evista (raloxifene).
+Alzheimer's drug candidate solanezumab missed its endpoint in to phase III trials earlier this month, although there were signs of some efficacy and it had been given little chance of success given the earlier failure of Pfizer' similar drug bapineuzumab.
+Meanwhile, a comparative study of the firm's osteoporosis drug Forteo (teriparatide) with rival drug risedronate on back pain was negative, and Daiichi Sankyo-partnered blood thinner Effient (prasugrel) failed to show superiority to clopidogrel in preventing heart attacks and strokes in cardiovascular patients.
+Other drugs in Lilly's pipeline are now becoming even more crucial to the company, notably oncology candidate ramucirumab which is in phase III testing for metastatic colorectal cancer, metastatic gastric adenocarcinoma and hepatocellular cancer.
+Can we talk about the ego-bias and chemicals influencing your target audience’s behaviour?
+Is Medical Market Research Serious About Science?
+*****************
+reranking
+*****************
+  1%|          | 4/500 [01:16<2:38:40, 19.20s/it]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    documents = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 266, in retrieval
+    reranked_docs, _ = self._rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 228, in _rerank
+    docs = rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 21, in rerank
+    reranked_docs, similarity_scores = run_rerank(model, expansion_model, tokenizer, bert_tokenizer, mode, query, docs, top_k)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 70, in run_rerank
+    reranked_docs, scores = rankllama_rerank(model, tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/dlm/rankllama.py", line 34, in rankllama_rerank
+    outputs = model(**inputs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1352, in forward
+    transformer_outputs = self.model(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 968, in forward
+    layer_outputs = decoder_layer(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 727, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 216, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 172.00 MiB. GPU 0 has a total capacity of 44.52 GiB of which 78.94 MiB is free. Including non-PyTorch memory, this process has 44.44 GiB memory in use. Of the allocated memory 42.46 GiB is allocated by PyTorch, and 1.64 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2024-06-13 06:38:52 [INFO] server: Stop milvus...
+[2024-06-13 06:38:54,893] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 171967) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-13_06:38:54
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 171967)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

@@ -1,0 +1,205 @@
+06/15 14:26:18 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/TriviaQA]
+06/15 14:26:18 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-15 14:26:19.333077: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 14:26:19.387239: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 14:26:20.197904: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.34s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.32s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.31s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.11s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/2202624_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.756 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:02<00:14,  2.03s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:04<00:13,  2.24s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:06<00:11,  2.37s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:10<00:10,  2.71s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:12<00:07,  2.64s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:14<00:04,  2.41s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:16<00:02,  2.21s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:17<00:00,  1.81s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:17<00:00,  2.18s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:8
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:8
+If you want to use `BertLMHeadModel` as a standalone, add `is_decoder=True.`
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/15 14:27:06 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/TriviaQA]
+[2024-06-15 14:27:07,006] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-15 14:27:07 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-15 14:27:07,008] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@True
+2024-06-15 14:27:07 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@True
+*****************
+retrieving
+*****************
+cq:Question: Who was the man behind The Chipmunks?
+Answer: 
+q:Who was the man behind The Chipmunks?
+*****************
+searching
+*****************
+Jun 15, 2024 2:27:07 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+['The man behind The Chipmunks was Ross Bagdasarian, Sr., a singer, songwriter, and producer who was born in 1919 in Fort Wayne, Indiana. Bagdasarian attended the University of Southern California, where he studied music and engineering. After graduating, he worked as a radio announcer and disc jockey before starting his own record label, called Original Sound.\n\nIn 1958, Bagdasarian created The Chipmunks, a singing group consisting of four chipmunks: Alvin, Simon, Theodore, and David Seville (Bagdasarian\'s stage name). The group\'s first hit was "The Chipmunk Song (Christmas Don\'t Be Late)," which reached number one on the Billboard charts in 1958. The song was a novelty hit, featuring the Chipmunks singing a sped-up version of "Alouette," a French folk song.\n\nThe Chipmunks went on to have several more hits, including "Megan," "Pizza Pizza," and "The Twelve Days of Christmas." The group\'s popularity led to a television series, a feature film, and a Broadway musical.\n\nBagdasarian continued to produce music under the Original Sound label, which he sold to Warner Bros. in 1963. He also produced music for', 'Who was the man behind The Chipmunks?']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 14.45it/s]
+====================================================================================================
+1    46cbbaf5-937d-4aec-b5c5-f95420e9be46 	 1.0 
+  A Very Merry Chipmunk is a 1994 music album by Alvin and the Chipmunks, released by Sony Wonder. It is their fourth Christmas album. The album reached #147 on the Billboard 200. It was the first in a series of 25 Christmas compilation albums put forth by Turner Broadcasting company. The fact that it appeared on the Billboard 200, caused Sony to print 5,000 more copies, resulting in a sudden decline in pricing. Wal-Mart put a special on it for 97 cents shortly after Christmas 1994.
+====================================================================================================
+2    0721bf59-d712-4a4c-8484-9e08e40a1c1a 	 0.43556865614202767 
+  The Very Best of The Chipmunks with David Seville is a 1975 music album by Alvin and the Chipmunks, released by United Artists, containing ten tracks, and apparently re-released in 1995 by Capitol Records containing nine tracks.
+====================================================================================================
+3    085ea5d5-ee9d-4cb2-bfb1-3a28e0d80f12 	 0.3 
+  David "Dave" Seville is a fictional character, the producer and manager of the fictional singing group Alvin and the Chipmunks. The character was created by Ross Bagdasarian Sr. Bagdasarian had used the name "David Seville" as his stage name prior to the creation of the Chipmunks, while writing and recording novelty records in the 1950s. One of the records, recorded in 1958 under the David Seville stage name, was "Witch Doctor", featuring a sped-up high-pitched vocal technique. Bagdasarian would later use that technique in "The Chipmunk Song (Christmas Don't Be Late)", which would introduce both Alvin and the Chipmunks as a singing group and 
+====================================================================================================
+4    4fe19213-940d-4514-8643-9fbf123bd265 	 0.2751658835917974 
+ 1) "Here Comes Christmas" (Thomas Chase/Steve Rucker/Jill H. Roberts)  – 2:40 ; Musicians and vocalists ; Jai Winding — keyboards ; Ron Hicklin — singing voice of Alvin ; Gene Morford — singing voice of Simon ; Randy Crenshaw — singing voice of Theodore ; Production crew ; Guy DeFazio — engineer ; 1) "The Chipmunk Song (Christmas Don't Be Late)" (with Kenny G) (Ross Bagdasarian Sr.)  – 5:33 ; Musicians and vocalists ; Kenny G — saxophone ; Dean Parks — guitar ; Nathan East — bass ; John Capek — keyboards ; Michael Botts — drums and percussion ; Gerry Beckley — singing 
+====================================================================================================
+5    65836620-8692-4825-85c3-1a83120100f8 	 0.21511369739618796 
+  When You Wish Upon a Chipmunk is a 1995 music album by Alvin and the Chipmunks, released by Sony Wonder, and contains 10 tracks. The album features the Chipmunks and Chipettes singing Disney songs. A footnote on the back of the CD case stated that The Walt Disney Company neither sponsored nor endorsed the album. However, coincidentally, the home entertainment division Buena Vista Home Video (now Walt Disney Studios Home Entertainment) had released several Chipmunks cartoons on home video in the early 1990s.
+====================================================================================================
+6    5a0ad5d7-a15f-474c-8a75-be475b33ead6 	 0.14000874578457068 
+  music producer "Dave". Bagdasarian would go on to create The Alvin Show, based on the Alvin and the Chipmunks group, where he voiced the semi-fictional character David Seville, based largely on himself, with Alvin based on Ross's sometimes rebellious son Adam. Bagdasarian Sr. died in 1972, and his son (Adam's brother) Ross Bagdasarian Jr. took over ownership of Bagdasarian Productions. He reprised the David Seville character, first in a series of novelty albums beginning with 1980's Chipmunk Punk. Bagdasarian Jr. subsequently assumed the role on the TV series Alvin and the Chipmunks, which ran in original episodes from 1983–1990. Bagdasarian Jr. has voiced David 
+====================================================================================================
+7    bc8c72ca-8d3d-4203-a884-dd5b85d6da38 	 0.12515742134759442 
+  "The Chipmunk Song (Christmas Don't Be Late)" is a novelty Christmas song written by Ross Bagdasarian (under the stage name of David Seville) in 1958. Bagdasarian sang and recorded the song, varying the tape speeds to produce high-pitched "chipmunk" voices, with the vocals credited to Alvin and the Chipmunks, Seville's cartoon virtual band. The song won three Grammy Awards in 1958, for Best Comedy Performance, Best Children's Recording, and Best Engineered Record (non-classical).
+====================================================================================================
+8    0a87925a-1f72-4933-8469-08193b3a15ca 	 0.11387078630302672 
+  whose compositions were recorded by the group included Hazlewood, Red West, David Gates, Boyce and Hart, Clint Ballard Jr. and Bonner & Gordon. Dino, Desi & Billy's best known songs were "I'm a Fool" (1965; U.S. Billboard Hot 100 No. 17; later covered by Alvin and the Chipmunks for their 1965 album Chipmunks à Go-Go) and "Not the Lovin' Kind" (1965; U.S. No. 25). Both were hits for the group before any group member had reached the age of 15. Following this success, in 1965, they toured as an opening act for the Beach Boys. The group also opened for Paul Revere & the Raiders, 
+====================================================================================================
+9    a8471c62-9557-41c8-944e-6215880556a5 	 0.08873053494124064 
+  "Alvin's Harmonica" is a song from the fictional musical group, Alvin and the Chipmunks, which also features additional vocals by Ross Bagdasarian, Sr. who plays David Seville in the song. The song was released as the second single from the group's debut album, Let's All Sing with the Chipmunks in 1958. Like "Witch Doctor" and "The Chipmunk Song", it was adapted as one of the musical segments featured in The Alvin Show.
+====================================================================================================
+10    59d0337a-1c85-4890-b9f0-bd11a9a6b97d 	 0.056465582063594505 
+  pop singles chart in December of that year. The Jackson 5 recorded a popular cover in 1970 with a young Michael Jackson singing lead. ; "The Chipmunk Song", written by Ross Bagdasarian Sr./David Seville and performed by Alvin and the Chipmunks (1958) ; "You're a Mean One, Mr. Grinch" originally done for the 1966 cartoon special How the Grinch Stole Christmas!; lyrics written by Dr. Seuss, music by Albert Hague, and performed by Thurl Ravenscroft ; "Snoopy's Christmas" performed by The Royal Guardsmen in 1967; a follow-up to their earlier song "Snoopy Vs. The Red Baron" recorded in 1966 ; "Santa Claus Is a Black Man" by Akim 
+*****************
+reranking
+*****************
+Converted docs to temp collection
+
+Loading collection:   0%|          | 0/10 [00:00<?, ?it/s][ALoading collection: 100%|██████████| 10/10 [00:00<00:00, 90006.52it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:00<00:00,  1.78it/s][A100%|██████████| 1/1 [00:00<00:00,  1.53it/s]
+Completed passage expansion
+
+loading collection....: 0it [00:00, ?it/s][Aloading collection....: 0it [00:00, ?it/s]
+
+0it [00:00, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+0it [00:00, ?it/s]
+Completed indexing collection
+Loading hdf5 file.....
+
+Creating direct index.....: 0it [00:00, ?it/s][ACreating direct index.....: 0it [00:00, ?it/s]
+Reranking.....
+  0%|          | 0/500 [00:54<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    docs = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 267, in retrieval
+    reranked_docs, _ = self._rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 229, in _rerank
+    docs = rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 21, in rerank
+    reranked_docs, similarity_scores = run_rerank(model, expansion_model, tokenizer, bert_tokenizer, mode, query, docs, top_k)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 79, in run_rerank
+    reranked_docs, scores = tilde_rerank(model, expansion_model, tokenizer, bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 34, in tilde_rerank
+    reranked_docs, scores = execute_rerank(bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 122, in execute_rerank
+    token_scores = direct_index[doc_id]
+KeyError: '0'
+2024-06-15 14:28:02 [INFO] server: Stop milvus...
+[2024-06-15 14:28:07,531] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 2203275) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-15_14:28:07
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2203275)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

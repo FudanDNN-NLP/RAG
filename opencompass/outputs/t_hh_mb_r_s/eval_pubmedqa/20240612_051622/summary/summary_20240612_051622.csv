@@ -1,0 +1,2 @@
+dataset,version,metric,mode,llama-3-8b-ragga-disturb
+pubmedQA,0b2966,Acc,gen,0.48

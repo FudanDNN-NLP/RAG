@@ -1,0 +1,10 @@
+query	2	1
+query	9	2
+query	8	3
+query	7	4
+query	6	5
+query	4	6
+query	3	7
+query	0	8
+query	1	9
+query	5	10

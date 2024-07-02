@@ -1,0 +1,188 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to\nA. make more phone calls\nB. quit eating lunch out\nC. buy less with monopoly money\nD. have lunch with friends\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "B. Quit eating lunch out",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: There is most likely going to be fog around:\nA. a marsh\nB. a tundra\nC. the plains\nD. a desert\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "A. a marsh",
+        "gold": "A",
+        "context": "\n\n"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Predators eat\nA. lions\nB. humans\nC. bunnies\nD. grass\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is C. bunnies.\n\nExplanation: Predators are animals that hunt and feed on other animals, including bunnies. Bunnies are small mammals that are often preyed upon by predators such as foxes, coyotes",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Oak tree seeds are planted and a sidewalk is paved right next to that spot, until eventually, the tree is tall and the roots must extend past the sidewalk, which means\nA. roots may be split\nB. roots may begin to die\nC. parts may break the concrete\nD. roots may fall apart\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is C. Parts of the roots may break the concrete as they grow beyond the sidewalk. This can cause damage to the sidewalk and potentially lead to cracks or breaks in the concrete.",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: An electric car runs on electricity via\nA. gasoline\nB. a power station\nC. electrical conductors\nD. fuel\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is C. Electrical conductors.\n\nExplanation: Electric cars run on electricity, which is stored in batteries and used to power an electric motor. The electricity flows through electrical conductors, such as copper wires, to reach the motor. Therefore",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: As the rain forest is deforested the atmosphere will increase with\nA. oxygen\nB. nitrogen\nC. carbon\nD. rain\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "As the rainforest is deforested, the atmosphere will decrease in oxygen (A) and increase in carbon dioxide (C). The correct answer is C.\n\nConfidence: 90%",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "6": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: an electric car contains a motor that runs on\nA. gas\nB. hydrogen\nC. ions\nD. plutonium\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "C. ions",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "7": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The middle of the day usually involves the bright star nearest to the earth to be straight overhead why?\nA. moons gravity\nB. human planet rotation\nC. global warming\nD. moon rotation\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is B. Human planet rotation.\n\nExplanation:\nThe middle of the day occurs when the Earth rotates on its axis, causing the sun to appear directly overhead in the sky. This happens because of the Earth's rotation around its axis, which",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "8": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The summer solstice in the northern hemisphere is four months before\nA. May\nB. July\nC. April\nD. October\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The answer to this question is B. July.\n\nConfidence: 90%",
+        "gold": "D",
+        "context": "\n\n"
+    },
+    "9": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The main component in dirt is\nA. microorganisms\nB. broken stones\nC. pollution\nD. bacteria\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The main component in dirt is A. microorganisms. Dirt, also known as soil, is made up of a variety of substances including minerals, organic matter, water, and living organisms such as bacteria, fungi, and insects. Microorganisms are an",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "10": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: It's easier for human's to survive in:\nA. a cave\nB. the ocean.\nC. a town\nD. alone\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "C. a town",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "11": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A cactus stem is used to store\nA. fruit\nB. liquid\nC. food\nD. spines\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "B. Liquid",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "12": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A red-tailed hawk is searching for prey. It is most likely to swoop down on\nA. an eagle\nB. a cow\nC. a gecko\nD. a deer\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "Based on the information provided, the answer would be C. a gecko.\n\nExplanation:\nRed-tailed hawks are birds of prey that primarily feed on small mammals such as rodents and rabbits. They also hunt reptiles like lizards and snakes.",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "13": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The chance of wildfires is increased by\nA. parched foliage\nB. torrential rain\nC. lush foliage\nD. careful fire maintenance\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "A. parched foliage",
+        "gold": "A",
+        "context": "\n\n"
+    },
+    "14": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A positive effect of burning biofuel is\nA. shortage of crops for the food supply\nB. an increase in air pollution\nC. powering the lights in a home\nD. deforestation in the amazon to make room for crops\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is C. powering the lights in a home.\n\nBiofuels are fuels that are derived from organic matter, such as plants and waste materials. They can be burned to produce energy, just like fossil fuels. However, unlike fossil fuels",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "15": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: As gasoline costs rise, alternative fuels are being used, which means that\nA. wind power will be expensive\nB. gas costs will rise\nC. oil costs will be maintained\nD. gasoline will be needed less\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "D. Gasoline will be needed less.\n\nConfidence: 90%",
+        "gold": "D",
+        "context": "\n\n"
+    },
+    "16": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A person wants to be able to have more natural power in their home. They choose to cease using a traditional electric company to source this electricity, and so decide to install\nA. sun grafts\nB. sunlight shields\nC. panels collecting sunlight\nD. solar bees\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is C. panels collecting sunlight. Solar panels convert sunlight into electrical energy, which can then be used to power homes and businesses. This option aligns with the person's goal of having more natural power in their home. Options A,",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "17": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A Mola Mola might live where?\nA. Lake Michigan\nB. The Mississippi River\nC. Bay of Bengal\nD. Lake Eerie\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The answer to this question would be C, Bay of Bengal.",
+        "gold": "C",
+        "context": "\n\n"
+    },
+    "18": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which requires energy to move?\nA. weasel\nB. willow\nC. mango\nD. poison ivy\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "A. Weasel",
+        "gold": "A",
+        "context": "\n\n"
+    },
+    "19": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: An animal that only eats plants is a\nA. rat\nB. moth\nC. chimpanzee\nD. pig\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "B",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "20": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: There was a lot more water vapor in the air when we went on a trip to\nA. Hanoi\nB. Athens\nC. Baghdad\nD. Phoenix\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "Sure, I'd be happy to help! Based on the information provided, it seems that there was likely more water vapor in the air during your trip to Phoenix (Option D) compared to the other cities mentioned.\n\nPhoenix is known for its hot and",
+        "gold": "A",
+        "context": "\n\n"
+    },
+    "21": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: An example of conservation is avoiding the use of\nA. gasoline\nB. air\nC. snow\nD. clothes\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "B",
+        "gold": "A",
+        "context": "\n\n"
+    },
+    "22": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What can feathers on Spheniscidae be used for?\nA. keeping warm\nB. flying\nC. sleeping\nD. eating\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "A. keeping warm",
+        "gold": "A",
+        "context": "\n\n"
+    },
+    "23": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Overpopulation can cause\nA. More fresh water for people to drink\nB. Lower Life Expectancy in Countries\nC. More food for more people\nD. More space for places to people to live\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "B",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "24": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Shining a light through a diamond can\nA. make a lot of bright lights shine\nB. summon a brilliant wave of color\nC. heat up a room\nD. make a lot of money\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "B",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "25": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: If you were attacked by a shark and had to punch it sharply where it pulls in air from, you'd use your hand to make contact with\nA. its snout\nB. its gills\nC. its nose\nD. its belly\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "B. Its gills",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "26": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: which of these would stop a car quicker?\nA. a wheel with wet brake pads\nB. a wheel without brake pads\nC. a wheel with worn brake pads\nD. a wheel with dry brake pads\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is D. A wheel with dry brake pads will stop a car faster than the other options.\n\nExplanation:\nBrake pads are designed to provide friction between the wheels and the road, allowing the vehicle to slow down or come to a complete",
+        "gold": "D",
+        "context": "\n\n"
+    },
+    "27": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: what system is needed for a body to get its needed supply of the gas humans breathe in?\nA. the circulatory system\nB. the digestive system\nC. the school system\nD. central nervous system\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is A. The circulatory system is responsible for delivering oxygen and nutrients to cells throughout the body, including the lungs where we breathe in air. It is essential for maintaining proper bodily functions and overall health.",
+        "gold": "A",
+        "context": "\n\n"
+    },
+    "28": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Every evening a child can look into the night sky and see that the moon is\nA. gone\nB. breaking\nC. falling\nD. moving upwards\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is D. The moon appears to be moving upwards in the night sky as it orbits around the Earth.",
+        "gold": "D",
+        "context": "\n\n"
+    },
+    "29": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: When it's flying, a plane has no friction with the\nA. wings\nB. ground\nC. air\nD. clouds\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is C. air.\n\nExplanation: Friction occurs when two surfaces come into contact and one surface resists the motion of the other. In the case of an airplane in flight, there is very little friction between the plane's wings and",
+        "gold": "B",
+        "context": "\n\n"
+    },
+    "30": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: To grow plants require\nA. acid rain\nB. pesticides\nC. shafts of sunlight\nD. moonbeam rays\nAnswer:<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "C. shafts of sunlight",
+        "gold": "C",
+        "context": "\n\n"
+    }
+}

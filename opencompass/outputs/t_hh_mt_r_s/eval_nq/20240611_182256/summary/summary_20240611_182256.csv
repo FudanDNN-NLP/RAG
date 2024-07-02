@@ -1,0 +1,3 @@
+dataset,version,metric,mode,llama-3-8b-ragga-disturb
+nq,c9cd92,EM score,gen,0.31
+nq,c9cd92,F1 score,gen,0.36

@@ -1,0 +1,1014 @@
+06/14 01:57:25 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/pubmedQA]
+06/14 01:57:25 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-14 01:57:25.658964: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-14 01:57:25.712884: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-14 01:57:26.500194: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.40s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.44s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.39s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.15s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/911889_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.724 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:07,  1.11s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:08,  1.49s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:07,  1.53s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:06,  1.54s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.49s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.45s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:10<00:01,  1.43s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.34s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'MonoT5', 'compression_method': 'longllmlingua', 'repack_method': 'compact_reverse'},milvus:1
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'MonoT5', 'compression_method': 'longllmlingua', 'repack_method': 'compact_reverse'}
+milvus:1
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+init llm_lingua
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.53s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.65s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.93s/it]
+06/14 01:58:12 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/pubmedQA]
+[2024-06-14 01:58:12,416] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-14 01:58:12 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s]*****************
+compressing
+*****************
+[2024-06-14 01:58:26,669] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:In one study, it was found that chromoplasts are still present in white flowers.
+
+In order for mitosis to occur, the nucleus has to move into the center of the cell.
+
+Annexin V apoptosis detection kit (55647) was purchased
+
+cutin biosynthesis ; surface wax formation ; mitochondrial growth ; adaptation to environmental changes ; lipid metabolism ; fertilization of flowering plants ; adaptation of plants under stress conditions ; activation and regulation of signaling cascades ; apoptosis ; symbiosis ; fruit ripening Ordinarily, most lipids do not spontaneously exit membranes because their hydrophobicity makes them poorly soluble in water.
+
+Inhibition of Drp1 by either expression of a Drp1 dominant mutant or RNA interference leads to increased length and interconnectivity of mitochondrial tubules, thereby inhibiting the fission process and preventing cell death .
+
+Using Newton’s second law, Kaufman et al have described mitochondrial energy output as the product of mitochondrial mass and metabolic rate .
+
+The entire process of chromoplast formation is not yet completely understood on the molecular level.
+
+ gene is highly expressed in leaves, which results in the production of the carotenoid lutein.
+
+Accordingly, pancreatic beta cells from autophagy-related protein 7 (ATG7) mutant mice show mitochondrial swelling .
+
+Mitochondria play an important role in the production of energy within cells, and are essential in the regulation of cellular life and death.
+
+Phragmosome formation is 
+
+Mitochondria fulfil multiple tasks in nutrient metabolism, energy production, redox homeostasis and stress response, and are essential for pancreatic beta cell function.
+
+However, electron microscopy has revealed part of the 
+
+Discovering how to regulate mitochondrial function to reduce cancer growth holds great potential for future cancer therapy development.
+
+Mammalian large GTPases regulate mitochondrial fusion: mitofusins (Mfn) 1 and 2 mediate outer mitochondrial membrane (OMM) fusion, while optic atrophy 1 (Opa1) is responsible for inner mitochondrial membrane (IMM) fusion.
+
+Because mitochondria form a cell type-specific, highly dynamic network, it is important to take into account not only their total mass but also their structure and mobility as health-determining factors [1, 3, 4, 5].
+
+This happens during G2 phase of the cell cycle.
+
+Fission protein 1 (FIS1), which initiates fission, and dynamin-related protein 1 (DRP1), whose recruitment and ring-shaped oligomerisation on a mitochondrion result in its splitting, are two key regulators of the mitochondrial network [7, 8, 9].
+
+Organelles unable to recover their MMP fall prey to quality control processes and are removed by mitophagy [12, 13].
+
+In most healthy mammalian cells, mitochondria exhibit tubular, reticular, or networked morphology which is regulated by dynamic remodeling via the balance between fusion and fission events [2, 3].
+
+White flowers are caused by a recessive allele in tomato plants.
+
+proteins produced for pathogen defense by plants.
+
+Alongside the role of mitochondria in regulating apoptotic cell death mediated primarily production of reactive oxygen species and release of cytochrome c, there is evidence of other links between mitochondria and inflammation that have implications for cell viability.
+
+Mitochondria are crucial cell organelles.
+
+Conversely dynamin-related protein 1 (Drp1) is the master regulator of mitochond division in most eukaryotic organisms .
+
+The interactions of proteins are mediated by mitochondrial fission factor (MFF) and the mitochondrial dynamics proteins (MID49/MID51 via a mechanism that is incompletely understood .
+
+The lack of pigment petalsthers is due a mutation in the CrtRb2 which disrupts the carotenoid biosynthesis pathway.
+
+Reintegration of a single mitochondrion into the network is dependent on respir chain activity, which determines mitochondrial membrane (MMP) [12, 13].
+
+ enzymhib members are thought regulate the germination of se as well as protect against insects and herbivores.
+
+The fact that expression of optic atro protein 1 (OPA1), a mitochondrial fusion inducer and master mitochond cristae biogenetic factor, is followingF-ĸB highlights a point of mitochondrial control that might be influenced by Tα sign.
+
+Actin fil these cytoplasmic strands the nucleus into the center of the cell.
+
+ecause mitochondrial function is crucial for pancreatic beta–secretion coupling, mitochond network failure is capable of prom hyperglycaemia [, 6].
+
+LTPs in plants may involved:
+
+  The phragmosome a sheet cytoplas forming vacuol plant cells in preparation mit.
+
+Ev has emer indicating Drp1 B mitochondrial translocation a crucial step for induction apoptosis [1–13].
+
+Ultimately however, specifically initi pathway fully integrated the autophagic turn process, renderingoph dependent on overall cellular quality mechanisms .
+
+ dynam health of the mitochondrial network is regulated by f and fusioning factors and a quality system that removes dysfunctional organ.
+1, 3, 4, ].
+Th cytoplas str fuse trans sheet cytoplasm plane of future phragmos.
+ly,topmic strands form penetrate the central vacuole and provide pathways migration.
+i mitochond able to f process that conducted twoofusins (F1 and MFN2 outer mitochondrial memb by optic atrophy protein 1 (OPA1) for the inner mitochondrial memb its crist structure [10, ].
+
+P1 continuously degrad surface of mitochond, soon as is reduction in MMP, Pised and bind Parkin eventually leading to mitophagy [, 16, 1].
+ogether Drp1 its O recept Fission (Fis1), mitochondrial f (MFF), mitochondrial elongation 1 (ief1) medi mitochondrial fission–].antly, excess mitochond f mitochond struct disarray linked increasedochond production reactive oxygen species (RO impaired and activation cell death9, ].
+ assuming that thisochucose supply provoke a dramatic loss of mitochondrial mass, which at odds with the finding that mitochrial fragment—but not mitochond loss—occ response nutri excess .
+
+It can be speculated thisusible, mitochond with M remain in the, thereby guaranteeing stimulussecretion. reallocationri viability .
+Mitochology was exam st with the mitoch membrane potentialsens MitoTracker (CMX).
+
+agyively a low level nearly isreg to stress .
+
+ contrast to animal cellsu to9% of the total and the nucleus against the cell wall.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?
+Answer: 
+2024-06-14 01:58:26 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:In one study, it was found that chromoplasts are still present in white flowers.
+
+In order for mitosis to occur, the nucleus has to move into the center of the cell.
+
+Annexin V apoptosis detection kit (55647) was purchased
+
+cutin biosynthesis ; surface wax formation ; mitochondrial growth ; adaptation to environmental changes ; lipid metabolism ; fertilization of flowering plants ; adaptation of plants under stress conditions ; activation and regulation of signaling cascades ; apoptosis ; symbiosis ; fruit ripening Ordinarily, most lipids do not spontaneously exit membranes because their hydrophobicity makes them poorly soluble in water.
+
+Inhibition of Drp1 by either expression of a Drp1 dominant mutant or RNA interference leads to increased length and interconnectivity of mitochondrial tubules, thereby inhibiting the fission process and preventing cell death .
+
+Using Newton’s second law, Kaufman et al have described mitochondrial energy output as the product of mitochondrial mass and metabolic rate .
+
+The entire process of chromoplast formation is not yet completely understood on the molecular level.
+
+ gene is highly expressed in leaves, which results in the production of the carotenoid lutein.
+
+Accordingly, pancreatic beta cells from autophagy-related protein 7 (ATG7) mutant mice show mitochondrial swelling .
+
+Mitochondria play an important role in the production of energy within cells, and are essential in the regulation of cellular life and death.
+
+Phragmosome formation is 
+
+Mitochondria fulfil multiple tasks in nutrient metabolism, energy production, redox homeostasis and stress response, and are essential for pancreatic beta cell function.
+
+However, electron microscopy has revealed part of the 
+
+Discovering how to regulate mitochondrial function to reduce cancer growth holds great potential for future cancer therapy development.
+
+Mammalian large GTPases regulate mitochondrial fusion: mitofusins (Mfn) 1 and 2 mediate outer mitochondrial membrane (OMM) fusion, while optic atrophy 1 (Opa1) is responsible for inner mitochondrial membrane (IMM) fusion.
+
+Because mitochondria form a cell type-specific, highly dynamic network, it is important to take into account not only their total mass but also their structure and mobility as health-determining factors [1, 3, 4, 5].
+
+This happens during G2 phase of the cell cycle.
+
+Fission protein 1 (FIS1), which initiates fission, and dynamin-related protein 1 (DRP1), whose recruitment and ring-shaped oligomerisation on a mitochondrion result in its splitting, are two key regulators of the mitochondrial network [7, 8, 9].
+
+Organelles unable to recover their MMP fall prey to quality control processes and are removed by mitophagy [12, 13].
+
+In most healthy mammalian cells, mitochondria exhibit tubular, reticular, or networked morphology which is regulated by dynamic remodeling via the balance between fusion and fission events [2, 3].
+
+White flowers are caused by a recessive allele in tomato plants.
+
+proteins produced for pathogen defense by plants.
+
+Alongside the role of mitochondria in regulating apoptotic cell death mediated primarily production of reactive oxygen species and release of cytochrome c, there is evidence of other links between mitochondria and inflammation that have implications for cell viability.
+
+Mitochondria are crucial cell organelles.
+
+Conversely dynamin-related protein 1 (Drp1) is the master regulator of mitochond division in most eukaryotic organisms .
+
+The interactions of proteins are mediated by mitochondrial fission factor (MFF) and the mitochondrial dynamics proteins (MID49/MID51 via a mechanism that is incompletely understood .
+
+The lack of pigment petalsthers is due a mutation in the CrtRb2 which disrupts the carotenoid biosynthesis pathway.
+
+Reintegration of a single mitochondrion into the network is dependent on respir chain activity, which determines mitochondrial membrane (MMP) [12, 13].
+
+ enzymhib members are thought regulate the germination of se as well as protect against insects and herbivores.
+
+The fact that expression of optic atro protein 1 (OPA1), a mitochondrial fusion inducer and master mitochond cristae biogenetic factor, is followingF-ĸB highlights a point of mitochondrial control that might be influenced by Tα sign.
+
+Actin fil these cytoplasmic strands the nucleus into the center of the cell.
+
+ecause mitochondrial function is crucial for pancreatic beta–secretion coupling, mitochond network failure is capable of prom hyperglycaemia [, 6].
+
+LTPs in plants may involved:
+
+  The phragmosome a sheet cytoplas forming vacuol plant cells in preparation mit.
+
+Ev has emer indicating Drp1 B mitochondrial translocation a crucial step for induction apoptosis [1–13].
+
+Ultimately however, specifically initi pathway fully integrated the autophagic turn process, renderingoph dependent on overall cellular quality mechanisms .
+
+ dynam health of the mitochondrial network is regulated by f and fusioning factors and a quality system that removes dysfunctional organ.
+1, 3, 4, ].
+Th cytoplas str fuse trans sheet cytoplasm plane of future phragmos.
+ly,topmic strands form penetrate the central vacuole and provide pathways migration.
+i mitochond able to f process that conducted twoofusins (F1 and MFN2 outer mitochondrial memb by optic atrophy protein 1 (OPA1) for the inner mitochondrial memb its crist structure [10, ].
+
+P1 continuously degrad surface of mitochond, soon as is reduction in MMP, Pised and bind Parkin eventually leading to mitophagy [, 16, 1].
+ogether Drp1 its O recept Fission (Fis1), mitochondrial f (MFF), mitochondrial elongation 1 (ief1) medi mitochondrial fission–].antly, excess mitochond f mitochond struct disarray linked increasedochond production reactive oxygen species (RO impaired and activation cell death9, ].
+ assuming that thisochucose supply provoke a dramatic loss of mitochondrial mass, which at odds with the finding that mitochrial fragment—but not mitochond loss—occ response nutri excess .
+
+It can be speculated thisusible, mitochond with M remain in the, thereby guaranteeing stimulussecretion. reallocationri viability .
+Mitochology was exam st with the mitoch membrane potentialsens MitoTracker (CMX).
+
+agyively a low level nearly isreg to stress .
+
+ contrast to animal cellsu to9% of the total and the nucleus against the cell wall.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?
+Answer: 
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 1/500 [00:16<2:19:14, 16.74s/it]*****************
+compressing
+*****************
+[2024-06-14 01:58:33,623] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:No, there were only slight differences in visual acuity between the Landolt C and Snellen E charts, even in individuals with strabismus amblyopia.
+
+The Snellen E chart slightly overestimated visual acuity compared to the Landolt C chart.
+
+The cutoff values for amblyopia were found to be < +0.14 (20/27 Snellen equivalent) for the tumbling E chart and < +0.24 (20/35 Snellen equivalent) for the Landolt C chart.
+
+The study mentioned in the reference answer included 100 patients with various eye disorders, including 39 with amblyopia due to strabismus, as well as 13 healthy volunteers.
+
+In a prospective observational study, the Landolt C tumbling E charts were compared in managing amblyopia in children under 10 years old.
+
+ased on these findings, it can be concluded that visual acuity scores for tumbling chart were significantly better than those for the Landolt C chart in children under 10 years old.
+
+ can lead to overestimation of visual acuity in children with amblyopia.
+
+The study found that the mean logMAR visual acu obtained by the tumbling E chart were significantly better than those obtained by the Landolt C.
+
+fore, assessing visual acuity, it is important consider used measurement.
+
+Landolt C Tumbling E discrim left-right directionality which a skill is sufficiently developed presch.
+
+Therefore when managing amblyopia in, it is important consider age of the child type of acu.'s acu was separately in each eye using Landolt C tumbling charts a random order.
+However is to note that there be small in lower visual acu range that need to be taken.
+Receiver analysisoff foru for chart.
+It that differences optot recognition occur their details appear under.
+fore, alternative methods foruringesch children
+S group because not know their letters well enough lettersCommon visual field include scotoma (area of reduced vision), hemianopia (half of visual field lost), homonymous hemianopsia and bitemporal hemianopia.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Landolt C and snellen e acuity: differences in strabismus amblyopia?
+Answer: 
+2024-06-14 01:58:33 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:No, there were only slight differences in visual acuity between the Landolt C and Snellen E charts, even in individuals with strabismus amblyopia.
+
+The Snellen E chart slightly overestimated visual acuity compared to the Landolt C chart.
+
+The cutoff values for amblyopia were found to be < +0.14 (20/27 Snellen equivalent) for the tumbling E chart and < +0.24 (20/35 Snellen equivalent) for the Landolt C chart.
+
+The study mentioned in the reference answer included 100 patients with various eye disorders, including 39 with amblyopia due to strabismus, as well as 13 healthy volunteers.
+
+In a prospective observational study, the Landolt C tumbling E charts were compared in managing amblyopia in children under 10 years old.
+
+ased on these findings, it can be concluded that visual acuity scores for tumbling chart were significantly better than those for the Landolt C chart in children under 10 years old.
+
+ can lead to overestimation of visual acuity in children with amblyopia.
+
+The study found that the mean logMAR visual acu obtained by the tumbling E chart were significantly better than those obtained by the Landolt C.
+
+fore, assessing visual acuity, it is important consider used measurement.
+
+Landolt C Tumbling E discrim left-right directionality which a skill is sufficiently developed presch.
+
+Therefore when managing amblyopia in, it is important consider age of the child type of acu.'s acu was separately in each eye using Landolt C tumbling charts a random order.
+However is to note that there be small in lower visual acu range that need to be taken.
+Receiver analysisoff foru for chart.
+It that differences optot recognition occur their details appear under.
+fore, alternative methods foruringesch children
+S group because not know their letters well enough lettersCommon visual field include scotoma (area of reduced vision), hemianopia (half of visual field lost), homonymous hemianopsia and bitemporal hemianopia.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Landolt C and snellen e acuity: differences in strabismus amblyopia?
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 2/500 [00:21<1:19:46,  9.61s/it]*****************
+compressing
+*****************
+[2024-06-14 01:58:57,773] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:An explanation for this is that children are susceptible to autonomic disorders as illustrated by the cyclic vomiting syndrome, which is a nonepileptic condition specific to childhood.
+
+An explanation for this is that children are susceptible to autonomic disorders as illustrated by the cyclic vomiting syndrome, which is a nonepileptic condition specific to childhood.
+
+An explanation for this is that children are susceptible to autonomic disorders as illustrated by the cyclic vomiting syndrome, which is a nonepileptic condition specific to childhood.
+
+An explanation for this is that children are susceptible to autonomic disorders as illustrated by the cyclic vomiting syndrome, which is a nonepileptic condition specific to childhood.
+
+Epileptic discharges in Panayiotopoulos syndrome, irrespective of their location at onset, activate emetic and autonomic centers prior to any other conventional neocortical seizure manifestations.
+
+Epileptic discharges in Panayiotopoulos syndrome, irrespective of their location at onset, activate emetic and autonomic centers prior to any other conventional neocortical seizure manifestations.
+
+Epileptic discharges in Panayiotopoulos syndrome, irrespective of their location at onset, activate emetic and autonomic centers prior to any other conventional neocortical seizure manifestations.
+
+Epileptic discharges in Panayiotopoulos syndrome, irrespective of their location at onset, activate emetic and autonomic centers prior to any other conventional neocortical seizure manifestations.
+
+Most of the seizures are prolonged and half of them last more than 30 minutes thus constituting autonomic status epilepticus, which is the more common nonconvulsive status epilepticus in normal children.
+
+Most of the seizures are prolonged and half of them last more than 30 minutes thus constituting autonomic status epilepticus, which is the more common nonconvulsive status epilepticus in normal children.
+
+Most of the seizures are prolonged and half of them last more than 30 minutes thus constituting autonomic status epilepticus, which is the more common nonconvulsive status epilepticus in normal children.
+
+Most of the seizures are prolonged and half of them last more than 30 minutes thus constituting autonomic status epilepticus, which is the more common nonconvulsive status epilepticus in normal children.
+
+However, it has been recently reported that sometime after status epilepticus in children with Panayiotopoulos syndrome the growth of the frontal and prefrontal lobes is slightly decreased and the scores on neuropsychological tests is decreased.
+
+However, it has been recently reported that sometime after status epilepticus in children with Panayiotopoulos syndrome the growth of the frontal and prefrontal lobes is slightly decreased and the scores on neuropsychological tests is decreased.
+
+However, it has been recently reported that sometime after status epilepticus in children with Panayiotopoulos syndrome the growth of the frontal and prefrontal lobes is slightly decreased and the scores on neuropsychological tests is decreased.
+
+However, it has been recently reported that sometime after status epilepticus in children with Panayiotopoulos syndrome the growth of the frontal and prefrontal lobes is slightly decreased and the scores on neuropsychological tests is decreased.
+
+The significant increase in plasma vas#pressin may explain the emetic autonomic symptoms.
+
+The significant increase in plasma vas#pressin may explain the emetic autonomic symptoms.
+
+The significant increase in plasma vas#pressin may explain the emetic autonomic symptoms.
+
+The significant increase in plasma vas#pressin may explain the emetic autonomic symptoms.
+
+Diagnosis Diagnostic tests The most important determinant of the neurodiagnostic procedures is the state of the child at the time of first medical attendance: (1) The child has a brief or lengthy seizure of Panayiotopoulos syndrome but fully recovers prior to arriving in the accident and emergency department or being seen by a physician.
+
+Diagnosis Diagnostic tests The most important determinant of the neurodiagnostic procedures is the state of the child at the time of first medical attendance: (1) The child has a brief or lengthy seizure of Panayiotopoulos syndrome but fully recovers prior to arriving in the accident and emergency department or being seen by a physician.
+
+Diagnosis Diagnostic tests The most important determinant of the neurodiagnostic procedures is the state of the child at the time of first medical attendance: (1) The child has a brief or lengthy seizure of Panayiotopoulos syndrome but fully recovers prior to arriving in the accident and emergency department or being seen by a physician.
+
+Diagnosis Diagnostic tests The most important determinant of the neurodiagnostic procedures is the state of the child at the time of first medical attendance: (1) The child has a brief or lengthy seizure of Panayiotopoulos syndrome but fully recovers prior to arriving in the accident and emergency department or being seen by a physician.
+
+There is a high prevalence of febrile seizures (about 17%).
+
+There is a high prevalence of febrile seizures (about 17%).
+
+There is a high prevalence of febrile seizures (about 17%).
+
+There is a high prevalence of febrile seizures (about 17%).
+
+The same child may have brief or prolonged seizures and autonomic manifestations may be severe or inconspicuous.
+
+The same child may have brief or prolonged seizures and autonomic manifestations may be severe or inconspicuous.
+
+The same child may have brief or prolonged seizures and autonomic manifestations may be severe or inconspicuous.
+
+The same child may have brief or prolonged seizures and autonomic manifestations may be severe or inconspicuous.
+
+In approximately one fifth of the seizures the child becomes unresponsive and flaccid (syn-like epile seizures or ictal syncope) before or often without convulsions.
+
+In approximately one fifth of the seizures the child becomes unresponsive and flaccid (syncope-like epileptic seizures or ictal syncope) before or often without convulsions.
+
+In approximately one fifth of the seizures the child becomes unresponsive and flaccid (syncope-like epileptic seizures or ictal syncope) before or often without convulsions.
+
+In approximately one fifth of the seizures the child becomes unresponsive and flaccid (syncope-like epileptic seizures or ictal syncope) before or often without convulsions.
+istically, even after the most severe seizures autonom status epilepticus, the is normal after a hours of sleep, which diagnostic and reassuring.
+
+Characteristically, even after the most severe seizures and autonomic status epilepticus, the child is normal after a few hours of sleep, which is both diagnostic and reassuring.
+
+Characteristically, even after the most severe seizures and autonomic status epilepticus, the child is normal after a few hours of sleep, which is both diagnostic and reassuring.
+
+Characteristically, even after the most severe seizures and autonomic status epilepticus, the child is normal after a few hours of sleep, which is both diagnostic and reassuring.
+
+ is characterized by seizures, prolonged predomin autonom symptoms and by E [electroencephalogram showsifting/or foci often occip predominance
+ characterized seizures, often prolonged, with predominantly autonomic sympt, and by E [electroencephalogram] that shows shifting and/or multiple foci, often with occipital predomin
+It is characterized by seizures, often prolonged, with predominantly autonomic symptoms, and by an EEG [electroencephalogram] that shows shifting and/or multiple foci, often with occipital predominance
+It is characterized by seizures, often prolonged, with predominantly autonomic symptoms, and by an EEG [electroencephalogram] that shows shifting and/or multiple foci, often with occipital predomin
+
+A with the distinct clinical features Panayiotopoul syndrome particularly us and lengthy seiz, not investigations other than E.
+A child with the distinctive clinical features of Panayiotopoulos synd us emetic lengthy seizures may need investig other EA child with the distinctive clinical features of Panayiotopoulos syndrome, particularly ictus emeticus and lengthy seizures, may not need any investigations other than EEG
+A child with the distinctive clinical features of Panayiotopoulos syndrome, particularly ictus emeticus and lengthy seizures, may need investigations other EEG
+Syn ep se syn) with becomingcompletely unresponsive and flaccid rag of the seiz- epileptic seiz syncope with the child becoming "completely unresponsive and flacc like a occur fifth the seiz
+Syncope-like epileptic seizures (ictal syncope) with the child becoming "completely unresponsive and flaccid like a rag doll" occur in one fifth of the seizuresSyncope-like epileptic seizures (ictalcope) with the child becoming "completely unresponsive and flaccid like a rag doll" occur in one fifth of the seures
+However such mutations were found in another couple siblings and many cases with Panayiotop syndHowever such found couple sib many typical PanayiotHowever, no such mutations were found another couple of sib many other cases PanayiotopHowever no such mutations were found another couple of sib many other cases Panayiotopoul synd various EEGations often follow an age-mation related various E and seiz (matur various E and seiz manifest an (maturation localization
+
+ Eiz age (maturation localization
+Signs symptay exclus ins with infre autonomic epileptic seizures autonom status epilept.
+ sympt exclus withreic epile seiz
+
+Sign and symptayiotop synd exclusively normal manifest withre autonomic epile seiz autonomic status epileptSign sympt Panayiotop synd exclusively normal and manifest with infreic epileptic seizures autonomic status epilept.
+
+ diffuse epileogenicity bequally, preating area diffptating epileptogen mayqu is diff epptogenqu data indicate thatA mut when a more clinical phenotype Panayop syndThese data indicate SC1A mut when contribute phenot of Panayop synd.
+
+ indicate1 to a more clinical phenot of Panayiotopos syndrome.Th that contributeotiot
+) The with a lengthyrome partiallyco inictal stage tired m confused and to the accident emergency department by a phys lengthizayop aictal m drows the accident and emergency department or when seen by a physician.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Syncope during bathing in infants, a pediatric form of water-induced urticaria?
+Answer: 
+2024-06-14 01:58:57 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:An explanation for this is that children are susceptible to autonomic disorders as illustrated by the cyclic vomiting syndrome, which is a nonepileptic condition specific to childhood.
+
+An explanation for this is that children are susceptible to autonomic disorders as illustrated by the cyclic vomiting syndrome, which is a nonepileptic condition specific to childhood.
+
+An explanation for this is that children are susceptible to autonomic disorders as illustrated by the cyclic vomiting syndrome, which is a nonepileptic condition specific to childhood.
+
+An explanation for this is that children are susceptible to autonomic disorders as illustrated by the cyclic vomiting syndrome, which is a nonepileptic condition specific to childhood.
+
+Epileptic discharges in Panayiotopoulos syndrome, irrespective of their location at onset, activate emetic and autonomic centers prior to any other conventional neocortical seizure manifestations.
+
+Epileptic discharges in Panayiotopoulos syndrome, irrespective of their location at onset, activate emetic and autonomic centers prior to any other conventional neocortical seizure manifestations.
+
+Epileptic discharges in Panayiotopoulos syndrome, irrespective of their location at onset, activate emetic and autonomic centers prior to any other conventional neocortical seizure manifestations.
+
+Epileptic discharges in Panayiotopoulos syndrome, irrespective of their location at onset, activate emetic and autonomic centers prior to any other conventional neocortical seizure manifestations.
+
+Most of the seizures are prolonged and half of them last more than 30 minutes thus constituting autonomic status epilepticus, which is the more common nonconvulsive status epilepticus in normal children.
+
+Most of the seizures are prolonged and half of them last more than 30 minutes thus constituting autonomic status epilepticus, which is the more common nonconvulsive status epilepticus in normal children.
+
+Most of the seizures are prolonged and half of them last more than 30 minutes thus constituting autonomic status epilepticus, which is the more common nonconvulsive status epilepticus in normal children.
+
+Most of the seizures are prolonged and half of them last more than 30 minutes thus constituting autonomic status epilepticus, which is the more common nonconvulsive status epilepticus in normal children.
+
+However, it has been recently reported that sometime after status epilepticus in children with Panayiotopoulos syndrome the growth of the frontal and prefrontal lobes is slightly decreased and the scores on neuropsychological tests is decreased.
+
+However, it has been recently reported that sometime after status epilepticus in children with Panayiotopoulos syndrome the growth of the frontal and prefrontal lobes is slightly decreased and the scores on neuropsychological tests is decreased.
+
+However, it has been recently reported that sometime after status epilepticus in children with Panayiotopoulos syndrome the growth of the frontal and prefrontal lobes is slightly decreased and the scores on neuropsychological tests is decreased.
+
+However, it has been recently reported that sometime after status epilepticus in children with Panayiotopoulos syndrome the growth of the frontal and prefrontal lobes is slightly decreased and the scores on neuropsychological tests is decreased.
+
+The significant increase in plasma vas#pressin may explain the emetic autonomic symptoms.
+
+The significant increase in plasma vas#pressin may explain the emetic autonomic symptoms.
+
+The significant increase in plasma vas#pressin may explain the emetic autonomic symptoms.
+
+The significant increase in plasma vas#pressin may explain the emetic autonomic symptoms.
+
+Diagnosis Diagnostic tests The most important determinant of the neurodiagnostic procedures is the state of the child at the time of first medical attendance: (1) The child has a brief or lengthy seizure of Panayiotopoulos syndrome but fully recovers prior to arriving in the accident and emergency department or being seen by a physician.
+
+Diagnosis Diagnostic tests The most important determinant of the neurodiagnostic procedures is the state of the child at the time of first medical attendance: (1) The child has a brief or lengthy seizure of Panayiotopoulos syndrome but fully recovers prior to arriving in the accident and emergency department or being seen by a physician.
+
+Diagnosis Diagnostic tests The most important determinant of the neurodiagnostic procedures is the state of the child at the time of first medical attendance: (1) The child has a brief or lengthy seizure of Panayiotopoulos syndrome but fully recovers prior to arriving in the accident and emergency department or being seen by a physician.
+
+Diagnosis Diagnostic tests The most important determinant of the neurodiagnostic procedures is the state of the child at the time of first medical attendance: (1) The child has a brief or lengthy seizure of Panayiotopoulos syndrome but fully recovers prior to arriving in the accident and emergency department or being seen by a physician.
+
+There is a high prevalence of febrile seizures (about 17%).
+
+There is a high prevalence of febrile seizures (about 17%).
+
+There is a high prevalence of febrile seizures (about 17%).
+
+There is a high prevalence of febrile seizures (about 17%).
+
+The same child may have brief or prolonged seizures and autonomic manifestations may be severe or inconspicuous.
+
+The same child may have brief or prolonged seizures and autonomic manifestations may be severe or inconspicuous.
+
+The same child may have brief or prolonged seizures and autonomic manifestations may be severe or inconspicuous.
+
+The same child may have brief or prolonged seizures and autonomic manifestations may be severe or inconspicuous.
+
+In approximately one fifth of the seizures the child becomes unresponsive and flaccid (syn-like epile seizures or ictal syncope) before or often without convulsions.
+
+In approximately one fifth of the seizures the child becomes unresponsive and flaccid (syncope-like epileptic seizures or ictal syncope) before or often without convulsions.
+
+In approximately one fifth of the seizures the child becomes unresponsive and flaccid (syncope-like epileptic seizures or ictal syncope) before or often without convulsions.
+
+In approximately one fifth of the seizures the child becomes unresponsive and flaccid (syncope-like epileptic seizures or ictal syncope) before or often without convulsions.
+istically, even after the most severe seizures autonom status epilepticus, the is normal after a hours of sleep, which diagnostic and reassuring.
+
+Characteristically, even after the most severe seizures and autonomic status epilepticus, the child is normal after a few hours of sleep, which is both diagnostic and reassuring.
+
+Characteristically, even after the most severe seizures and autonomic status epilepticus, the child is normal after a few hours of sleep, which is both diagnostic and reassuring.
+
+Characteristically, even after the most severe seizures and autonomic status epilepticus, the child is normal after a few hours of sleep, which is both diagnostic and reassuring.
+
+ is characterized by seizures, prolonged predomin autonom symptoms and by E [electroencephalogram showsifting/or foci often occip predominance
+ characterized seizures, often prolonged, with predominantly autonomic sympt, and by E [electroencephalogram] that shows shifting and/or multiple foci, often with occipital predomin
+It is characterized by seizures, often prolonged, with predominantly autonomic symptoms, and by an EEG [electroencephalogram] that shows shifting and/or multiple foci, often with occipital predominance
+It is characterized by seizures, often prolonged, with predominantly autonomic symptoms, and by an EEG [electroencephalogram] that shows shifting and/or multiple foci, often with occipital predomin
+
+A with the distinct clinical features Panayiotopoul syndrome particularly us and lengthy seiz, not investigations other than E.
+A child with the distinctive clinical features of Panayiotopoulos synd us emetic lengthy seizures may need investig other EA child with the distinctive clinical features of Panayiotopoulos syndrome, particularly ictus emeticus and lengthy seizures, may not need any investigations other than EEG
+A child with the distinctive clinical features of Panayiotopoulos syndrome, particularly ictus emeticus and lengthy seizures, may need investigations other EEG
+Syn ep se syn) with becomingcompletely unresponsive and flaccid rag of the seiz- epileptic seiz syncope with the child becoming "completely unresponsive and flacc like a occur fifth the seiz
+Syncope-like epileptic seizures (ictal syncope) with the child becoming "completely unresponsive and flaccid like a rag doll" occur in one fifth of the seizuresSyncope-like epileptic seizures (ictalcope) with the child becoming "completely unresponsive and flaccid like a rag doll" occur in one fifth of the seures
+However such mutations were found in another couple siblings and many cases with Panayiotop syndHowever such found couple sib many typical PanayiotHowever, no such mutations were found another couple of sib many other cases PanayiotopHowever no such mutations were found another couple of sib many other cases Panayiotopoul synd various EEGations often follow an age-mation related various E and seiz (matur various E and seiz manifest an (maturation localization
+
+ Eiz age (maturation localization
+Signs symptay exclus ins with infre autonomic epileptic seizures autonom status epilept.
+ sympt exclus withreic epile seiz
+
+Sign and symptayiotop synd exclusively normal manifest withre autonomic epile seiz autonomic status epileptSign sympt Panayiotop synd exclusively normal and manifest with infreic epileptic seizures autonomic status epilept.
+
+ diffuse epileogenicity bequally, preating area diffptating epileptogen mayqu is diff epptogenqu data indicate thatA mut when a more clinical phenotype Panayop syndThese data indicate SC1A mut when contribute phenot of Panayop synd.
+
+ indicate1 to a more clinical phenot of Panayiotopos syndrome.Th that contributeotiot
+) The with a lengthyrome partiallyco inictal stage tired m confused and to the accident emergency department by a phys lengthizayop aictal m drows the accident and emergency department or when seen by a physician.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Syncope during bathing in infants, a pediatric form of water-induced urticaria?
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 3/500 [00:45<2:15:58, 16.42s/it]*****************
+compressing
+*****************
+[2024-06-14 01:59:01,973] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:Yes, the long-term results of the Duhamel technique are superior to those of the transanal pull-through (TAPT) technique in terms of fecal continence and quality of life (QoL) for children with Hirschsprung disease (HD).
+
+Therefore, based on this study, the Duhamel technique has shown better long-term outcomes in terms of fecal continence and QoL compared to the TAPT technique for the treatment of children with HD.
+
+The transvaginal approach is used 39% of the time, transabdominal/transvesical approach is used 36% of the time, the laparoscopic/robotic approach is used to treat 15% of urogenital fistulas and a combination of transabdominal-transvaginal approach is used 3% of the time.
+
+The results showed that both the QoL FCI impaired in patients who underwent surgery for correction HD, but the impairment in QoL was greater in patients who underw the TAP technique.
+
+Percut surgery also been proven to be without resid deformities and recurrence after surgery.
+
+It is for health professionals to consider these findings when choosing the most appropriate surg technique for their.
+ a study comparing the surg techniques, it was found that patients who underw Duhamel technique less impairment in Qo compared to those who underwent TAPT technique.
+1 pulley is and long released once,ery a.ery through vag is successful0% of
+The surgical treatment to correct can be approached in different ways.
+
+The advantages over open surgery are that percutaneous surgery is simpler, more straightforward and shorter concerning the duration.
+
+is done according to the pivot maneuver the chances of incomplete release and damage to the digital nerve nearby will be increased.
+
+The study used the Fecal Continence Index (FCI) questionnaire and the questionnaire for the Assessment of Quality of Life in Children and Adolescents with Fecal Incontinence (AQLCAFI) to evaluate the incidence of fecal incontinence and QoL in children with HD.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Are the long-term results of the transanal pull-through equal to those of the transabdominal pull-through?
+Answer: 
+2024-06-14 01:59:01 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:Yes, the long-term results of the Duhamel technique are superior to those of the transanal pull-through (TAPT) technique in terms of fecal continence and quality of life (QoL) for children with Hirschsprung disease (HD).
+
+Therefore, based on this study, the Duhamel technique has shown better long-term outcomes in terms of fecal continence and QoL compared to the TAPT technique for the treatment of children with HD.
+
+The transvaginal approach is used 39% of the time, transabdominal/transvesical approach is used 36% of the time, the laparoscopic/robotic approach is used to treat 15% of urogenital fistulas and a combination of transabdominal-transvaginal approach is used 3% of the time.
+
+The results showed that both the QoL FCI impaired in patients who underwent surgery for correction HD, but the impairment in QoL was greater in patients who underw the TAP technique.
+
+Percut surgery also been proven to be without resid deformities and recurrence after surgery.
+
+It is for health professionals to consider these findings when choosing the most appropriate surg technique for their.
+ a study comparing the surg techniques, it was found that patients who underw Duhamel technique less impairment in Qo compared to those who underwent TAPT technique.
+1 pulley is and long released once,ery a.ery through vag is successful0% of
+The surgical treatment to correct can be approached in different ways.
+
+The advantages over open surgery are that percutaneous surgery is simpler, more straightforward and shorter concerning the duration.
+
+is done according to the pivot maneuver the chances of incomplete release and damage to the digital nerve nearby will be increased.
+
+The study used the Fecal Continence Index (FCI) questionnaire and the questionnaire for the Assessment of Quality of Life in Children and Adolescents with Fecal Incontinence (AQLCAFI) to evaluate the incidence of fecal incontinence and QoL in children with HD.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Are the long-term results of the transanal pull-through equal to those of the transabdominal pull-through?
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 4/500 [00:49<1:34:38, 11.45s/it]*****************
+compressing
+*****************
+[2024-06-14 01:59:11,274] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:Limitations of this study include lack of randomization, age difference between women in the intervention and comparison groups, lack of generalizability beyond the single health maintenance organization studied, and possible unmeasured confounders.
+
+Knowledge of the importance of early cancer detection, receipt of a recommendation from a physician, younger age, and higher socioeconomic status are all associated with increased use of mammography (10).
+
+In the postreminder implementation phase, women who received the intervention were 1.51 times more likely to undergo mammography than those in the comparison group (95% confidence interval [CI],1.40 – 1.62), after controlling for demographics and clinic visits.
+
+In the prereminder phase, 63.4% of targeted women underwent mammography, compared with 75.4% in the postreminder implementation phase and 80.6% in the maintenance phases.
+
+Using electronic medical record data, the investigators compared compliance with mammography during a prereminder phase (2004), a postreminder implementation phase (2006), and a postreminder maintenance phase (January 1 – July 1, 2007).
+
+Beginning in 1993, the tri-annual interval was eliminated and women were invited for repeated screening every 1 or 2 years on the basis of the
+
+July 14, 2009 — A multimodal reminder system can be both effectively implemented and maintained in a large health system and increase mammography rates, according to the results of a study reported online July 14 in the American Journal of Preventive Medicine.
+
+Despite these benefits, however, a 1995 survey revealed that 30% of eligible U.S. women had not obtained a screening mammogram in the preceding 2 years (4).
+
+The primary comparison group was women aged 42 to 49 years, for whom clinical guidelines also recommend mammography, who did not receive the reminder system intervention.
+
+Women who have not undergone screening mammography within their recommended screening interval are identified by routine monthly computerized reviews of the Group Health Cooperative radiology information systems.
+
+The study sample consisted of 35,104 women aged 42 years or older who were 20 months past their last mammogram (index date) and who were members of the Kaiser Permanente Northwest health maintenance organization.
+
+Such factors as age, socioeconomic status, and physician recommendation have been associated with greater use of screening.
+
+It has been suggested that fear of a false-positive result will “dissuade women from obtaining the life-saving benefits of mammography” (12).
+
+The women identified by these reviews are mailed letters reminding them to schedule a clinical breast examination and screening mammography through a screening center.
+
+Despite the mortality benefits of breast cancer screening, not all women receive regular mamm.
+A randomized trial screening recommendation from the's primary care phys rather than from the director of the breast cancer screening center showed that methods had an equal effect (19).
+
+We studied 0 of age or older who were enrolled in Group Health Cooperative of Puget' breast cancer screening.
+
+If we the country's mamm the same amount, we could detect as many as 25,000 additional cases of breast cancer each year."
+
+This effect maintained in the postreminder maintenance phase (hazard ratio, 1.81; 95 CI, 1.65 –1.99).
+The intervention, which targeted aged 50 to 9, consisted a "mammogram due soon" post mailed 20 months after the last mammogram followed up 2 automated phone calls and1 live nonrespond.
+ information from questionnaire stored mainframe database linked to radiology information systems that record when women undergo mammography.
+
+However, we not know whether mamm affects screening behavior
+
+sequently, studies factors that screen adherence morbidity and mort rate associated breast cancer5-9).
+
+We also examined whether the false-pos mograms screeningounded by age, risk breast cancer, mamm
+
+However having ab mamm affect screening
+
+Am J Pre Med
+We are effective, but many women them, even health insurance," lead author Adrian Feld MD Kaiser Permanente's Center Health Research Portland Oregon, said in a news release.
+The endpoint the time participants underwent mammography during 10 after the index date
+ the time screen group did not improve.
+
+"If widely implemented, this intervention could substantially improve community mammography screening.... Future studies should address practice-based factors that assist patients in completing mammograms within the context of a reminder program, as well as other factors that affect the reach and cost effectiveness of delivering the intervention to diverse patient groups in multiple settings."
+
+The relation between a false-positive mammogram and the likelihood of adherence to screening in the next recommended interval was strongest among women who had not previously undergone mammography (odds ratio, 1.66 [CI, 1.26 to 2.17]).
+
+These invitation letters summarize the woman's risk factors for breast cancer, inform women of their recommended screening interval, and are signed by the clinician in charge of the breast cancer screening center.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Can tailored interventions increase mammography use among HMO women?
+Answer: 
+2024-06-14 01:59:11 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:Limitations of this study include lack of randomization, age difference between women in the intervention and comparison groups, lack of generalizability beyond the single health maintenance organization studied, and possible unmeasured confounders.
+
+Knowledge of the importance of early cancer detection, receipt of a recommendation from a physician, younger age, and higher socioeconomic status are all associated with increased use of mammography (10).
+
+In the postreminder implementation phase, women who received the intervention were 1.51 times more likely to undergo mammography than those in the comparison group (95% confidence interval [CI],1.40 – 1.62), after controlling for demographics and clinic visits.
+
+In the prereminder phase, 63.4% of targeted women underwent mammography, compared with 75.4% in the postreminder implementation phase and 80.6% in the maintenance phases.
+
+Using electronic medical record data, the investigators compared compliance with mammography during a prereminder phase (2004), a postreminder implementation phase (2006), and a postreminder maintenance phase (January 1 – July 1, 2007).
+
+Beginning in 1993, the tri-annual interval was eliminated and women were invited for repeated screening every 1 or 2 years on the basis of the
+
+July 14, 2009 — A multimodal reminder system can be both effectively implemented and maintained in a large health system and increase mammography rates, according to the results of a study reported online July 14 in the American Journal of Preventive Medicine.
+
+Despite these benefits, however, a 1995 survey revealed that 30% of eligible U.S. women had not obtained a screening mammogram in the preceding 2 years (4).
+
+The primary comparison group was women aged 42 to 49 years, for whom clinical guidelines also recommend mammography, who did not receive the reminder system intervention.
+
+Women who have not undergone screening mammography within their recommended screening interval are identified by routine monthly computerized reviews of the Group Health Cooperative radiology information systems.
+
+The study sample consisted of 35,104 women aged 42 years or older who were 20 months past their last mammogram (index date) and who were members of the Kaiser Permanente Northwest health maintenance organization.
+
+Such factors as age, socioeconomic status, and physician recommendation have been associated with greater use of screening.
+
+It has been suggested that fear of a false-positive result will “dissuade women from obtaining the life-saving benefits of mammography” (12).
+
+The women identified by these reviews are mailed letters reminding them to schedule a clinical breast examination and screening mammography through a screening center.
+
+Despite the mortality benefits of breast cancer screening, not all women receive regular mamm.
+A randomized trial screening recommendation from the's primary care phys rather than from the director of the breast cancer screening center showed that methods had an equal effect (19).
+
+We studied 0 of age or older who were enrolled in Group Health Cooperative of Puget' breast cancer screening.
+
+If we the country's mamm the same amount, we could detect as many as 25,000 additional cases of breast cancer each year."
+
+This effect maintained in the postreminder maintenance phase (hazard ratio, 1.81; 95 CI, 1.65 –1.99).
+The intervention, which targeted aged 50 to 9, consisted a "mammogram due soon" post mailed 20 months after the last mammogram followed up 2 automated phone calls and1 live nonrespond.
+ information from questionnaire stored mainframe database linked to radiology information systems that record when women undergo mammography.
+
+However, we not know whether mamm affects screening behavior
+
+sequently, studies factors that screen adherence morbidity and mort rate associated breast cancer5-9).
+
+We also examined whether the false-pos mograms screeningounded by age, risk breast cancer, mamm
+
+However having ab mamm affect screening
+
+Am J Pre Med
+We are effective, but many women them, even health insurance," lead author Adrian Feld MD Kaiser Permanente's Center Health Research Portland Oregon, said in a news release.
+The endpoint the time participants underwent mammography during 10 after the index date
+ the time screen group did not improve.
+
+"If widely implemented, this intervention could substantially improve community mammography screening.... Future studies should address practice-based factors that assist patients in completing mammograms within the context of a reminder program, as well as other factors that affect the reach and cost effectiveness of delivering the intervention to diverse patient groups in multiple settings."
+
+The relation between a false-positive mammogram and the likelihood of adherence to screening in the next recommended interval was strongest among women who had not previously undergone mammography (odds ratio, 1.66 [CI, 1.26 to 2.17]).
+
+These invitation letters summarize the woman's risk factors for breast cancer, inform women of their recommended screening interval, and are signed by the clinician in charge of the breast cancer screening center.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Can tailored interventions increase mammography use among HMO women?
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 5/500 [00:59<1:28:25, 10.72s/it]*****************
+compressing
+*****************
+[2024-06-14 01:59:22,482] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:Yes, double balloon enteroscopy (DBE) has been found to be efficacious and safe in a community setting.
+
+Overall, the evidence suggests that DBE is an efficacious and safe procedure that can be successfully performed in a community setting.
+
+The study found that the yield, efficacy, and complication rate of DBE in the community setting were comparable to those in a tertiary referral center.
+
+The study reported that 44 antegrade and 44 retrograde DBEs were performed, with the mean time per antegrade DBE being 107.4±30.0 minutes and the mean time per lower DBE being 100.7±27.3 minutes.
+
+This suggests that DBE can be successfully performed in a community setting for a variety of indications, including evaluation of anemia/gastrointestinal bleed, small bowel inflammatory bowel disease (IBD), and dilation of strictures.
+
+In the specific study mentioned, a total of 88 DBE procedures were performed on 66 patients in a community setting.
+
+Research has shown that DBE performed in a community setting is equally as safe and effective as when it is performed in a tertiary referral center.
+
+The diagnostic yield of DBE ranges between 43% and 83%, with a subsequent change in management for 57% to 84% of patients.
+
+Lastly, intraoperative enteroscopy, in which the small bowel is "pleated" over an endoscope at laparotomy or laparoscopy, is the most accurate technique but has a significant complication rate.The disease mainly affects the proximal small bowel and decreases in severity distally and may spare the distal jejunum and ileum.
+
+In this review, we will discuss the aetiology, current diagnostic approach and the therapeutic options available for managing patients with small bowel bleed.
+
+Small bowel bleeding: a comprehensive review.
+
+Another technique is double-balloon enteroscopy (DBE), which allows for the traversal of the entire small bowel using an enteroscope with an overtube.
+
+The enteroscope is inserted by either the oral or anal route, so that therapeutic procedures can be carried out.12,14 General anesthesia is often required for this complex and prolonged technique.
+
+In last decade, the availability of advanced diagnostic innovations like capsule endoscopy (CE), double-balloon enteroscopy (DBE) and computed tomography enterography has led to better understanding of the aetiological profile of small bowel bleeding and there is a paradigm shift in the management of small bowel bleeding, with the majority of cases now being treated non-surgically.
+
+Capsule endoscopy and deep enteros have improved our ability to investigate small bowel bleeds.
+
+Double-balloon enteroscopy (DBE), a technique that can traverse the whole of the small bowel using an enteroscope with an overtube, was first described in 2001.
+
+ overall diagnostic yield is between 43% and 83%, with a subsequent change in management for 57% to 84% of patients.
+ American Gastroology Association technical in 2007 concluded that, even if there is an association betweenic stenosisiodysplasia, it weak often
+
+OD to detect duodenal pathology obtain biopsyfor coeliac disease, tropical sprue, Whipp's disease,etalipoproteina
+Deep enteroscopy has also an added advantage therapeut potential.
+Aortic valve had amelioratedWF abnormality, suggesting an association between
+
+285745 - Eopic thy presenting as submandibular mass.
+
+Lastly, intraoperative enteroscopy, in which the small bowel "pleated" over an endoscope at laparotomy or laparoscopy, is the most accurate technique but has a significant complication rateCapsule endos currently used investigation obscure GI bleeding (discuss later), of small bow Crohn, suspected or refract malabsor syndrome. celiac disease suspected small bowel tumors including screening in familial polypos syndromes13 The major drawbacks of capsule endoscopy inability take biops visualization of mosal surface, capsule retention requiring surg or endoscopic removal (1% to %).
+oscopy for enteropy and aspir bacter overgrow ; Capsule Endos able visualise the whole small intest and occasionally. systematic by et
+Push enteros currently most available technique for bowel exam. The( 201They visualosal submucos,inedothel with or no smooth muscle, lackammat orrot well asrosis8, 9].
+It be used its effectiveness and are compar to those observed in tertiary referral centers.
+
+ ofter-ousM) theecum right most (7),un10 ileum (. duodenum%) are other sites A .
+that included 222 smallies, OGIB, at 66%, was the most common indication and angiodysplasia was the most common underlying lesion (50%) .
+
+Endoscopic therapy in the form of electrocautery to ablate bleeding sources, biopsy, and dilation of Crohn's-related small bowel strictures was also performed in some cases.
+
+In cases of difficult diagnosis, surgery and intra-operative enteroscopy can help with diagnosis and management.
+
+If the source of GI bleeding is between the ampulla of Vater and the terminal ileum, it is designated as mid-GI bleeding [3, 4].
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Double balloon enteroscopy: is it efficacious and safe in a community setting?
+Answer: 
+2024-06-14 01:59:22 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:Yes, double balloon enteroscopy (DBE) has been found to be efficacious and safe in a community setting.
+
+Overall, the evidence suggests that DBE is an efficacious and safe procedure that can be successfully performed in a community setting.
+
+The study found that the yield, efficacy, and complication rate of DBE in the community setting were comparable to those in a tertiary referral center.
+
+The study reported that 44 antegrade and 44 retrograde DBEs were performed, with the mean time per antegrade DBE being 107.4±30.0 minutes and the mean time per lower DBE being 100.7±27.3 minutes.
+
+This suggests that DBE can be successfully performed in a community setting for a variety of indications, including evaluation of anemia/gastrointestinal bleed, small bowel inflammatory bowel disease (IBD), and dilation of strictures.
+
+In the specific study mentioned, a total of 88 DBE procedures were performed on 66 patients in a community setting.
+
+Research has shown that DBE performed in a community setting is equally as safe and effective as when it is performed in a tertiary referral center.
+
+The diagnostic yield of DBE ranges between 43% and 83%, with a subsequent change in management for 57% to 84% of patients.
+
+Lastly, intraoperative enteroscopy, in which the small bowel is "pleated" over an endoscope at laparotomy or laparoscopy, is the most accurate technique but has a significant complication rate.The disease mainly affects the proximal small bowel and decreases in severity distally and may spare the distal jejunum and ileum.
+
+In this review, we will discuss the aetiology, current diagnostic approach and the therapeutic options available for managing patients with small bowel bleed.
+
+Small bowel bleeding: a comprehensive review.
+
+Another technique is double-balloon enteroscopy (DBE), which allows for the traversal of the entire small bowel using an enteroscope with an overtube.
+
+The enteroscope is inserted by either the oral or anal route, so that therapeutic procedures can be carried out.12,14 General anesthesia is often required for this complex and prolonged technique.
+
+In last decade, the availability of advanced diagnostic innovations like capsule endoscopy (CE), double-balloon enteroscopy (DBE) and computed tomography enterography has led to better understanding of the aetiological profile of small bowel bleeding and there is a paradigm shift in the management of small bowel bleeding, with the majority of cases now being treated non-surgically.
+
+Capsule endoscopy and deep enteros have improved our ability to investigate small bowel bleeds.
+
+Double-balloon enteroscopy (DBE), a technique that can traverse the whole of the small bowel using an enteroscope with an overtube, was first described in 2001.
+
+ overall diagnostic yield is between 43% and 83%, with a subsequent change in management for 57% to 84% of patients.
+ American Gastroology Association technical in 2007 concluded that, even if there is an association betweenic stenosisiodysplasia, it weak often
+
+OD to detect duodenal pathology obtain biopsyfor coeliac disease, tropical sprue, Whipp's disease,etalipoproteina
+Deep enteroscopy has also an added advantage therapeut potential.
+Aortic valve had amelioratedWF abnormality, suggesting an association between
+
+285745 - Eopic thy presenting as submandibular mass.
+
+Lastly, intraoperative enteroscopy, in which the small bowel "pleated" over an endoscope at laparotomy or laparoscopy, is the most accurate technique but has a significant complication rateCapsule endos currently used investigation obscure GI bleeding (discuss later), of small bow Crohn, suspected or refract malabsor syndrome. celiac disease suspected small bowel tumors including screening in familial polypos syndromes13 The major drawbacks of capsule endoscopy inability take biops visualization of mosal surface, capsule retention requiring surg or endoscopic removal (1% to %).
+oscopy for enteropy and aspir bacter overgrow ; Capsule Endos able visualise the whole small intest and occasionally. systematic by et
+Push enteros currently most available technique for bowel exam. The( 201They visualosal submucos,inedothel with or no smooth muscle, lackammat orrot well asrosis8, 9].
+It be used its effectiveness and are compar to those observed in tertiary referral centers.
+
+ ofter-ousM) theecum right most (7),un10 ileum (. duodenum%) are other sites A .
+that included 222 smallies, OGIB, at 66%, was the most common indication and angiodysplasia was the most common underlying lesion (50%) .
+
+Endoscopic therapy in the form of electrocautery to ablate bleeding sources, biopsy, and dilation of Crohn's-related small bowel strictures was also performed in some cases.
+
+In cases of difficult diagnosis, surgery and intra-operative enteroscopy can help with diagnosis and management.
+
+If the source of GI bleeding is between the ampulla of Vater and the terminal ileum, it is designated as mid-GI bleeding [3, 4].
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: Double balloon enteroscopy: is it efficacious and safe in a community setting?
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 6/500 [01:10<1:29:37, 10.89s/it]*****************
+compressing
+*****************
+[2024-06-14 01:59:35,055] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] ??????????????final prompt:Background:This retrospective study aimed to analyze the 30-day mortality, age-related 30-day mortality, and 1-year mortality following emergency laparotomy, in order to encourage data collection, improve care, and establish best practices in this area.
+
+Saunders DI, Murray D, Pichel AC, Varley S, Peden CJ, UK Emergency Laparotomy Network.
+
+Despite being one of the most commonly performed emergency surgical procedures, there is a scarcity of data on the outcomes and postoperative mortality rates of emergency laparotomy.
+
+The fundamental objective was an evidence-based identification of the factors determining survival and pattern of survival after emergency laparotomy.
+
+Taking a similar approach, a unique global study of 1,409 children undergoing emergency laparotomy from 253 centres in 43 countries showed that adjusted mortality in children following surgery may be as high as 7 times greater in low-HDI and 
+
+Yes, laparotomy during endovascular repair of ruptured abdominal aortic aneurysms (REVAR) is associated with increased mortality.
+
+Indeed, emergency laparotomy carries a high rate of mortality, with recent studies suggesting a 30-day mortality rate of 14-15%.
+
+In this study the overall global mortality rate was 1·6 per cent at 24 hours (high 1·1 per cent, middle 1·9 per cent, low 3·4 per cent; P < 0·001), increasing to 5·4 per cent by 30 days (high 4·5 
+
+Emergency laparotomy is considered as a high-risk procedure with significant postoperative morbidity and mortality.
+
+Mortality and postoperative care after emergency laparotomy.
+
+These results indicate that age is a significant factor in mortality following emergency laparotomy.
+
+In conclusion, emergency laparotomy is associated with high mortality rates, particularly in patients over the age of 70.
+
+This study aimed at creating data on survival pattern and various factors influencing mortality in patients who underwent emergency laparotomy in the department of general surgery of a tertiary care teaching hospital in Karnataka, India.
+
+Variations in mortality after emergency laparotomy: The first report of the UK emergency laparotomy network.
+
+This reaffirms the need for an optimized pattern of care in patients undergoing emergency laparotomy including multidisciplinary care to tackle immediate postoperative complications.
+
+The overall 30-day mortality was found to be 23.84% (36/151).
+
+The findings revealed that 30-day mortality was 12.4% in those under the age of 70, and 22% in those over the age of 70 (p<0.001).
+
+Patient safety were suggested to play an important role, use of WHO Surgical Safety Checklist associated with reduced mortality at 30 days.
+
+A descript retrospective study was conducted among 151 patients those who underwent emergency laparotomy in the Department of General Surgery Mysore Medical College and Research Institute, over a period of 8 months (January 01, 2016 – August 31, 2016).
+
+Risk factors for postoper mortality and morities in emergency surger.
+
+Cke Adoch H, Thomas MJ, Cook TM,eden CJ.
+
+The1 patients had emergency laparomy over a period of 8.
+The included 44 patients who underwent477 laparotomies from June 200 to May 2012.
+
+Identification and characterisation of the-risk surgical population United.
+
+The overall 30-day mort rate was 23.84% (36/151).
+P RM, Harrison DA, James P, Watson, H C, Rhodes, et al.
+Gibbs,erson Daley,,uri, et al.
+oper serum album level as predictor of oper mortality morbidity from the Vical risk.Emer laparomy one of most common procedures department and associated significant mort rates ranging from  to 0., It has reported advanced the mortality rate more%.Th- postoper mort was the.
+More the centralizing emergencyical to centers multidisciplinary which include emerge care the elder physicians could leadcomes.Onepective 74 adult emer lapar7res in-, and low-income countries mort is three times compared with high-HDI countries even when adjustgn it to onving outcomes, in this. study util the Americange Surg Qualityement Program who requiredcomit lapar RE had worse 30 surv to those who underwent RE without.
+Lap is performed ofinalment syndrome, which condition characterized by elevated intra-abdominal pressure.
+
+The cause of death was documented as death due to medical complication in 76% of cases, death due to surgical complications in 22%, and combined in 4%.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: 30-Day and 1-year mortality in emergency general surgery laparotomies: an area of concern and need for improvement?
+Answer: 
+2024-06-14 01:59:35 [WARNING] icl_gen_inferencer: ??????????????final prompt:Background:This retrospective study aimed to analyze the 30-day mortality, age-related 30-day mortality, and 1-year mortality following emergency laparotomy, in order to encourage data collection, improve care, and establish best practices in this area.
+
+Saunders DI, Murray D, Pichel AC, Varley S, Peden CJ, UK Emergency Laparotomy Network.
+
+Despite being one of the most commonly performed emergency surgical procedures, there is a scarcity of data on the outcomes and postoperative mortality rates of emergency laparotomy.
+
+The fundamental objective was an evidence-based identification of the factors determining survival and pattern of survival after emergency laparotomy.
+
+Taking a similar approach, a unique global study of 1,409 children undergoing emergency laparotomy from 253 centres in 43 countries showed that adjusted mortality in children following surgery may be as high as 7 times greater in low-HDI and 
+
+Yes, laparotomy during endovascular repair of ruptured abdominal aortic aneurysms (REVAR) is associated with increased mortality.
+
+Indeed, emergency laparotomy carries a high rate of mortality, with recent studies suggesting a 30-day mortality rate of 14-15%.
+
+In this study the overall global mortality rate was 1·6 per cent at 24 hours (high 1·1 per cent, middle 1·9 per cent, low 3·4 per cent; P < 0·001), increasing to 5·4 per cent by 30 days (high 4·5 
+
+Emergency laparotomy is considered as a high-risk procedure with significant postoperative morbidity and mortality.
+
+Mortality and postoperative care after emergency laparotomy.
+
+These results indicate that age is a significant factor in mortality following emergency laparotomy.
+
+In conclusion, emergency laparotomy is associated with high mortality rates, particularly in patients over the age of 70.
+
+This study aimed at creating data on survival pattern and various factors influencing mortality in patients who underwent emergency laparotomy in the department of general surgery of a tertiary care teaching hospital in Karnataka, India.
+
+Variations in mortality after emergency laparotomy: The first report of the UK emergency laparotomy network.
+
+This reaffirms the need for an optimized pattern of care in patients undergoing emergency laparotomy including multidisciplinary care to tackle immediate postoperative complications.
+
+The overall 30-day mortality was found to be 23.84% (36/151).
+
+The findings revealed that 30-day mortality was 12.4% in those under the age of 70, and 22% in those over the age of 70 (p<0.001).
+
+Patient safety were suggested to play an important role, use of WHO Surgical Safety Checklist associated with reduced mortality at 30 days.
+
+A descript retrospective study was conducted among 151 patients those who underwent emergency laparotomy in the Department of General Surgery Mysore Medical College and Research Institute, over a period of 8 months (January 01, 2016 – August 31, 2016).
+
+Risk factors for postoper mortality and morities in emergency surger.
+
+Cke Adoch H, Thomas MJ, Cook TM,eden CJ.
+
+The1 patients had emergency laparomy over a period of 8.
+The included 44 patients who underwent477 laparotomies from June 200 to May 2012.
+
+Identification and characterisation of the-risk surgical population United.
+
+The overall 30-day mort rate was 23.84% (36/151).
+P RM, Harrison DA, James P, Watson, H C, Rhodes, et al.
+Gibbs,erson Daley,,uri, et al.
+oper serum album level as predictor of oper mortality morbidity from the Vical risk.Emer laparomy one of most common procedures department and associated significant mort rates ranging from  to 0., It has reported advanced the mortality rate more%.Th- postoper mort was the.
+More the centralizing emergencyical to centers multidisciplinary which include emerge care the elder physicians could leadcomes.Onepective 74 adult emer lapar7res in-, and low-income countries mort is three times compared with high-HDI countries even when adjustgn it to onving outcomes, in this. study util the Americange Surg Qualityement Program who requiredcomit lapar RE had worse 30 surv to those who underwent RE without.
+Lap is performed ofinalment syndrome, which condition characterized by elevated intra-abdominal pressure.
+
+The cause of death was documented as death due to medical complication in 76% of cases, death due to surgical complications in 22%, and combined in 4%.
+
+Based on the background information, determine if the answer to the question is 'YES', 'NO', or 'MAYBE'. Do not generate any other content.
+Question: 30-Day and 1-year mortality in emergency general surgery laparotomies: an area of concern and need for improvement?
+Answer: 
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|▏         | 7/500 [01:22<1:33:58, 11.44s/it]*****************
+compressing
+*****************
+  1%|▏         | 7/500 [01:50<2:09:19, 15.74s/it]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 246, in inference
+    documents, _ = test_retrieval._compress(
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 245, in _compress
+    compressed_docs = compressor(
+  File "/data/zfr/finalTest/opencompass/JointTest/compressor/compressor/compressorRaga.py", line 32, in compressor
+    return query_based_abstractive_summarization(model, query,docs,compression_ratio)
+  File "/data/zfr/finalTest/opencompass/JointTest/compressor/compressor/compressorRaga.py", line 57, in query_based_abstractive_summarization
+    return lingua_compress(llm_lingua, query, docs, compression_ratio)
+  File "/data/zfr/finalTest/opencompass/JointTest/compressor/compressor/testLLMlingua.py", line 41, in lingua_compress
+    compressed_prompt = llm_lingua.compress_prompt(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llmlingua/prompt_compressor.py", line 615, in compress_prompt
+    context = self.iterative_compress_prompt(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llmlingua/prompt_compressor.py", line 1474, in iterative_compress_prompt
+    self_loss, self_past_key_values = self.get_ppl(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llmlingua/prompt_compressor.py", line 169, in get_ppl
+    response = self.model(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1164, in forward
+    outputs = self.model(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 968, in forward
+    layer_outputs = decoder_layer(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 713, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 629, in forward
+    key_states, value_states = past_key_value.update(key_states, value_states, self.layer_idx, cache_kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/cache_utils.py", line 156, in update
+    self.value_cache[layer_idx] = torch.cat([self.value_cache[layer_idx], value_states], dim=-2)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB. GPU 1 has a total capacity of 44.52 GiB of which 6.94 MiB is free. Including non-PyTorch memory, this process has 44.51 GiB memory in use. Of the allocated memory 42.21 GiB is allocated by PyTorch, and 1.96 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[2024-06-14 02:00:08,959] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 912333) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-14_02:00:08
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 912333)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

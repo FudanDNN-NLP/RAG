@@ -1,0 +1,126 @@
+{
+    "accuracy": 80.0,
+    "details": {
+        "0": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: An important source of information on the credit rating of retail businesses is\nA. the Retail Merchants Association\nB. the local chamber of commerce\nC. Dun & Bradstreet, Inc.\nD. the United States Retail Credit Association\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is C. Dun & Bradstreet, Inc.\n\nExplanation: Dun & Bradstreet (D&B) is a well-known company that provides business credit reports and credit scores for businesses. They collect data from various sources such as public records,",
+            "predictions": "C",
+            "references": "C"
+        },
+        "1": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: In preparation for a writing unit on short stories, a teacher presents students with several examples of short stories and works with them to identify defining characteristics of the genre. Which of the following best describes this instructional strategy?\nA. Conferencing\nB. Discipline-based inquiry\nC. Self-Regulated Strategy Development\nD. Introduction-Body-Conclusion strategy\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is B. Discipline-based inquiry.\n\nIn discipline-based inquiry, teachers use real-world examples and authentic materials to help students understand the concepts and principles of a particular subject area. In this case, the teacher uses short stories as examples to help",
+            "predictions": "B",
+            "references": "B"
+        },
+        "2": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Paper will burn at approximately what temperature in Fahrenheit?\nA. 986 degrees\nB. 2125 degrees\nC. 3985 degrees\nD. 451 degrees\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is D. 451 degrees.\n\nExplanation: The temperature at which paper burns is around 451 degrees Fahrenheit, as stated in Ray Bradbury's novel \"Fahrenheit 451.\" This temperature is often used as a reference point for measuring",
+            "predictions": "D",
+            "references": "D"
+        },
+        "3": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The Apple iMac computer is available in all of the following colors except which?\nA. Tangerine\nB. Strawberry\nC. Kiwi\nD. Grape\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is D. Grape.\n\nExplanation: The Apple iMac computer is available in several colors, including tangerine, strawberry, and kiwi. However, grape is not one of the available colors for the iMac. Therefore, option",
+            "predictions": "D",
+            "references": "C"
+        },
+        "4": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What were the first names of the early American explorers Lewisand Clark?\nA. Morgan and Mason\nB. Meriwether and William\nC. Cabot and Joseph\nD. Meredith and George\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is B. Meriwether and William.\n\nConfidence: 100%",
+            "predictions": "B",
+            "references": "B"
+        },
+        "5": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A teacher provides support for small, flexible groups of beginning readers. As students read a text or a book that is unfamiliar to them, the teacher works with the students to teach them how to use a variety of reading strategies. Which of the following reading approaches is described?\nA. Direct instruction\nB. Literature circle\nC. Guided reading\nD. Read-aloud\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is C. Guided reading.\n\nGuided reading is an approach in which a teacher works with a small group of students who are at a similar reading level and provides them with targeted instruction and support as they read a text or a book",
+            "predictions": "C",
+            "references": "C"
+        },
+        "6": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is varicella?\nA. a fancy pasta\nB. a type of opera\nC. the chicken pox virus\nD. ancient Roman poetry\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "C. the chicken pox virus",
+            "predictions": "C",
+            "references": "C"
+        },
+        "7": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground: The electrical resistivity of most materials changes with temperature. If the temperature T does not vary too much, a linear approximation is typically used: , and the relationship only holds in a range of temperatures around the reference. Electronics ; Electronic packaging ; Heat sinks ; Brackets ; Industry ; Nuclear reactor cooling ; Gas turbine cooling ; Internal combustion engines ; Heat exchangers ; Thermal insulation ; Flight ; Hypersonic flight vehicles ; Thermal supervision for space vehicles ; Residential/Building Science ; Performance of building envelops Most experimentally determined values of the thermal contact resistance fall between 0.000005 and 0.0005 m2 K/W (the corresponding range of thermal contact conductance is 200,000 to 2000 W/m2 K). To know whether the thermal contact resistance is significant or not, magnitudes of the thermal resistances of the layers are compared with typical values of thermal contact resistance. Thermal contact resistance is significant and may dominate for good heat conductors such as metals but can be neglected for poor heat conductors such as insulators. Flexibility and Compressibility: These sensors are flexible and can be easily bent or stretched without compromising their functionality. This characteristic allows them to conform to curved and uneven surfaces, making them suitable for applications such as artificial skin and epidermal electronics. This change in resistance serves as a highly sensitive temperature sensing mechanism. High Linearity and Repeatability: The bi-sheath-core fiber temperature sensors exhibit high linearity in their temperature response, meaning that the change in resistance is proportional to the change in temperature. They also possess good repeatability, meaning that the sensing performance remains consistent over multiple heating and cooling cycles. Insensitivity to Compressive Deformations: The sensors can withstand compressive deformations of up to -20% strain without being affected. This makes them robust and reliable in situations where mechanical stresses or deformations are applied. These characteristics make them ideal for applications in artificial skin, epidermal electronics, and other fields where accurate and reliable temperature sensing is crucial. The measured voltage will contain both the fundamental and third harmonic components (ω and 3ω respectively), because the Joule heating of the metal structure induces oscillations in its resistance with frequency 2ω due to the temperature coefficient of resistance (TCR) of the metal heater/sensor as stated in the following equation:  where C0 is constant. The heater is driven with AC current at frequency ω, which induces periodic joule heating at frequency 2ω due to the oscillation of the AC signal during a single period. Note, the phase delay\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following materials has a resistance that is LEAST affected by temperature changes?\nA. Copper\nB. Carbon\nC. Germanium\nD. Silicon\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is A. Copper.\n\nExplanation:\n\nCopper is known for having a relatively stable resistance to temperature changes. Its temperature coefficient of resistance (TCR) is very low, which means that it maintains its conductivity even when exposed to varying temperatures",
+            "predictions": "A",
+            "references": "A"
+        },
+        "8": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A second-year college student is usually called a what?\nA. sophomore\nB. senior\nC. freshman\nD. junior\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is A. Sophomore.\n\nConfidence: 100%",
+            "predictions": "A",
+            "references": "A"
+        },
+        "9": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: In the film 'The Talented Mr Ripley' who plays Mr Ripley?\nA. Jude Law\nB. Matt Damon\nC. Dustin Hoffman\nD. Ben Affleck\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "Sure, I'd be happy to help! The answer to your question is A. Jude Law.\n\nJude Law played the role of Dickie Greenleaf in the 1999 film \"The Talented Mr. Ripley.\" He was nominated for",
+            "predictions": "A",
+            "references": "B"
+        },
+        "10": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A hard-edge painting is most likely to be characterized by\nA. an even, solid paint application\nB. blurry color mixed on the painting's surface\nC. scratchy brush marks clearly separated\nD. translucent multiple layers of paint\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "A. An even, solid paint application. Hard-edge paintings are characterized by sharp, clean edges and flat areas of color that are applied in a smooth, uniform manner. This can be achieved through the use of acrylic or oil paints, which can be",
+            "predictions": "A",
+            "references": "A"
+        },
+        "11": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Who was president of the United States when Bill Clinton was born?\nA. Herbert Hoover\nB. Harry S Truman\nC. Franklin Roosevelt\nD. Dwight Eisenhower\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is C. Franklin Roosevelt. Franklin D. Roosevelt was the President of the United States at the time of William Jefferson Blythe III's birth on August 19, 1946.",
+            "predictions": "C",
+            "references": "B"
+        },
+        "12": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following lists includes minerals only?\nA. Granite, gabbro, diorite, quartz, feldspar\nB. Gold, quartz, topaz, diamond, corundum\nC. Gneiss, schist, phyllite, chlorite, mica\nD. Coal, chert, limestone, dolomite, halite\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is A. Granite, gabbro, diorite, quartz, and feldspar are all types of rocks that can be classified as minerals.\n\nConfidence: 95%",
+            "predictions": "A",
+            "references": "B"
+        },
+        "13": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following is a likely outcome of the development and use of genetically modified plants?\nA. Reduced cost of plant seeds\nB. New plant varieties being patented\nC. Increased genetic diversity within a planted field\nD. Less oversight and fewer regulations than for unmodified crops\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is B. New plant varieties being patented.\n\nGenetically modified (GM) plants are created through the use of biotechnology, which involves the manipulation of an organism's genes using genetic engineering techniques. This can result in new plant varieties that",
+            "predictions": "B",
+            "references": "B"
+        },
+        "14": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A teacher reads aloud Where the Wild Things Are, a picture storybook in which a boy named Max encounters wild monsters that are vividly portrayed. The teacher then shows the students picture cards depicting scenes from the beginning, middle, and end of the story. Which of the following concepts of literary structure is the teacher helping students understand?\nA. Plot sequence\nB. Point of view\nC. Character development\nD. Setting\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is A. Plot sequence.\n\nExplanation:\nIn this scenario, the teacher is reading a picture storybook to the students and showing them picture cards depicting scenes from the beginning, middle, and end of the story. This activity helps students understand",
+            "predictions": "A",
+            "references": "A"
+        },
+        "15": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which movie popularized the phrase \"You talkin' to me?\"\nA. Ghost Busters\nB. Taxi Driver\nC. Joker\nD. Groundhog Day\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is B. Taxi Driver. The famous line \"You talkin' to me?\" was spoken by Robert De Niro's character, Travis Bickle, in the 1976 film \"Taxi Driver.\" This iconic line has since",
+            "predictions": "B",
+            "references": "B"
+        },
+        "16": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:Common hydraulic fluids are based on mineral oil or water. Examples of equipment that might use hydraulic fluids are excavators and backhoes, hydraulic brakes, power steering systems, automatic transmissions, garbage trucks, aircraft flight control systems, lifts, and industrial machinery. Water usage by hydraulic fracturing can be a problem in areas that experience water shortage. Surface water may be contaminated through spillage and improperly built and maintained waste pits, in jurisdictions where these are permitted. Further, ground water can be contaminated if fracturing fluids and formation fluids are able to escape during hydraulic fracturing. However, the possibility of groundwater contamination from the fracturing fluid upward migration is negligible, even in a long-term period. Produced water, the water that returns to the \n\nA high pressure injection injury is an injury caused by high-pressure injection of oil, grease, diesel fuel, gasoline, solvents, water, or even air, into the body. The most common causes are accidents with grease guns, paint sprayers, and pressure washers, but working on diesel and gasoline engine fuel injection systems as well as pinhole leaks in pressurized hydraulic lines can also cause this injury. Additionally, there is at least one known case of deliberate self-injection with a grease gun. With hydraulic fluids, paint, and detergents, these injuries are extremely serious as most hydraulic fluids and organic solvents are highly toxic. But even with pure water or air, these injuries cause compartment syndrome which leads to cell death if surgical intervention is delayed. Surface spills related to the hydraulic fracturing occur mainly because of equipment failure or engineering misjudgments. Groundwater may become contaminated by trucks carrying hydraulic fracturing chemicals and wastewater if they are involved in accidents on the way to hydraulic fracturing sites or disposal destinations.\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following most likely indicates the presence of water in the hydraulic system in a piece of farm machinery?\nA. A grayish, milky fluid\nB. Excessive fluid use\nC. Excessive thinning of the fluid\nD. A noisy relief valve\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "A. A grayish, milky fluid",
+            "predictions": "A",
+            "references": "A"
+        },
+        "17": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What animal represents the year 2000 on the Chinese calendar?\nA. dragon\nB. rabbit\nC. tiger\nD. monkey\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The answer to this question is A. Dragon.\n\nExplanation:\nIn the Chinese zodiac, each year is represented by an animal from the twelve animals of the Chinese zodiac cycle. The dragon is the fifth animal in the cycle and represents the year ",
+            "predictions": "A",
+            "references": "A"
+        },
+        "18": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of the following is part of a farm combine?\nA. Beater\nB. Conditioner\nC. Seed plate\nD. Furrow opener\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is A. Beater.\n\nExplanation:\nA farm combine, also known as a combine harvester, is a machine used in agriculture to harvest and thresh crops such as wheat, oats, barley, and corn. The beater is one",
+            "predictions": "A",
+            "references": "A"
+        },
+        "19": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about miscellaneous. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: According to legend in what country are you most likely to meet a leprechaun?\nA. Ireland\nB. Poland\nC. Greenland\nD. Scotland\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "A. Ireland",
+            "predictions": "A",
+            "references": "A"
+        }
+    },
+    "type": "GEN"
+}

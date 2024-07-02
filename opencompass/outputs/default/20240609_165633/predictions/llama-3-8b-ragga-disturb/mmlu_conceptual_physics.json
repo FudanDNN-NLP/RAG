@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThe horizontal position of the projectile is\n\nOur equations of motion are now \n\n Consider a uniform irrotational flow represents the complex potential of uniform flow over a cylinder.\n\n† Directed 40 degrees from horizontal.\n\nSuppose the angular momentum the particle P of. where is\n\n will allow ( y0 ) to be nonzero.\n\nThere is a multiple-choice question about conceptual physics. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: A 10-N force at an angle 45° above the horizontal has a horizontal component of about\nA. 7 N\nB. 5 N\nC. 10 N\nD. 12 N\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "Sure, I'd be happy to help! Here's my answer:\nThe correct answer is B. 5 N.\nConfidence: 80%",
+        "gold": "A",
+        "context": "\n\nThe horizontal position of the projectile is\n\nOur equations of motion are now \n\n Consider a uniform irrotational flow represents the complex potential of uniform flow over a cylinder.\n\n† Directed 40 degrees from horizontal.\n\nSuppose the angular momentum the particle P of. where is\n\n will allow ( y0 ) to be nonzero.\n\n"
+    }
+}

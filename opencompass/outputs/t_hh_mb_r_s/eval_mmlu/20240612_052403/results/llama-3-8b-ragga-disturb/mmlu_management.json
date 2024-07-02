@@ -1,0 +1,66 @@
+{
+    "accuracy": 80.0,
+    "details": {
+        "0": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the term for a sub-optimal but acceptable outcome of negotiations between parties?\nA. Bargaining\nB. Satisficing\nC. Accepting\nD. Compromising\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is B. Satisficing.\n\nSatisficing refers to a decision-making strategy in which an individual chooses the first option that meets their minimum requirements, rather than seeking out the best possible solution. This approach can result in a sub-opt",
+            "predictions": "B",
+            "references": "B"
+        },
+        "1": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the term for the 'rule of thumb' type of bias in decision making?\nA. Framing bias\nB. Hindsight bias\nC. Over-confidence bias\nD. Heuristics\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is D. Heuristics.\n\nHeuristics are mental shortcuts that people use to make decisions quickly and efficiently, often without fully considering all available information. They can be helpful in certain situations, but they can also lead to biases and",
+            "predictions": "D",
+            "references": "D"
+        },
+        "2": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is a normative perspective?\nA. The way things are.\nB. The way things are going to be.\nC. The way things should be.\nD. The way things were.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is C. The way things should be.\n\nNormative perspectives refer to beliefs, values, and attitudes that individuals hold about what is right, good, and desirable in a particular context. It encompasses moral, ethical, and social norms that",
+            "predictions": "C",
+            "references": "C"
+        },
+        "3": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: In the 'five forces model', what is the type of competitive activity that exists between organisations?\nA. The potential for entry into the industry\nB. The threat of substitute products\nC. The power of customers\nD. The level of rivalry\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is D. The level of rivalry.\n\nIn the five forces model, the level of rivalry refers to the degree of competition among existing firms in an industry. It takes into account factors such as the number and size of competitors, their market",
+            "predictions": "D",
+            "references": "D"
+        },
+        "4": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which one of the following political leaders could not be termed a 'transformational' leader?\nA. Margaret Thatcher\nB. Mikhail Gorbachov\nC. Nelson Mandela\nD. Bill Clinton\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "Based on the information provided, the correct answer would be A. Margaret Thatcher.\n\nMargaret Thatcher was a conservative politician who served as Prime Minister of the United Kingdom from 1979 to 1990. While she was a strong and influential leader during",
+            "predictions": "A",
+            "references": "D"
+        },
+        "5": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is a Gantt chart a type of?\nA. Work flow design\nB. Work schedule design\nC. Work rate design\nD. Work output design\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "B. Work schedule design",
+            "predictions": "B",
+            "references": "B"
+        },
+        "6": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which one of the following is a feature of McGregor's Theory X?\nA. Workers enjoy responsibility.\nB. Workers view physical and mental effort as a natural part of work.\nC. Workers like to show initiative.\nD. Workers like to be directed.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is D. Workers like to be directed.\n\nMcGregor's Theory X suggests that workers are inherently lazy, unmotivated, and resistant to change. They require close supervision and direction in order to perform their jobs effectively. This theory",
+            "predictions": "D",
+            "references": "D"
+        },
+        "7": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the term for power derived from status or position in an organisation?\nA. Referent\nB. Expert\nC. Reward\nD. Legitimate\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is D. Legitimate.\n\nExplanation:\nLegitimate power refers to the authority that comes with one's position or role within an organization. It is based on the idea that people are expected to follow the rules and guidelines set by those in",
+            "predictions": "D",
+            "references": "D"
+        },
+        "8": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:Max Weber believed that to run a well organized environment, workers needed to be controlled to work together like a well oiled machine. Henri Fayol was an engineer who developed 14 principals of management; division of work, authority, discipline, unity of demand, unity of direction, subordination of individual interest to the general interests, remuneration, centralization, scalar chain, order, equity, stability of tenure of personnel, initiative, and esprit de corps. The German sociologist Max Weber (1864-1920) argued that bureaucracy constitutes the most efficient and rational way in which human activity can be organized and that systematic processes and organized hierarchies are necessary to maintain order, to maximize efficiency, and to eliminate favoritism. On the other hand, Weber also saw unfettered bureaucracy as a threat to individual freedom, with the potential of trapping individuals in an impersonal \"iron cage\" of rule-based, rational control. \"Weber perceived bureaucratization as an efficient institutional representation of rationality in modern capitalist society, yet also recognized how this could be \"potentially dehumanizing, even malevolent, in its impersonality and possible elevation of economic efficiency and profit-maximization over human values and social justice. Writing in the early 20th century, Max Weber believed that a definitive feature of a developed state had come to be its bureaucratic support. Weber wrote that the typical characteristics of modern bureaucracy are that officials define its mission, the scope of work is bound by rules, and management is composed of career experts who manage top down, communicating through writing and binding public servants' discretion with rules. Bureaucracies were distinct from the feudal system and patrimonialism where people were promoted on the basis of personal relationships. In bureaucracies, there was a set of rules that are clearly defined and promotion through technical qualifications, seniority and disciplinary control. Weber believes that this influenced modern society and how we operate today, especially politically. Bureaucratic formalism is often connected to Weber's metaphor of the iron cage because the bureaucracy is the greatest expression of rationality. Weber wrote that bureaucracies are goal-oriented organizations that are based on rational principles that are used to efficiently reach their goals. However, Weber also recognizes that there are constraints within the \"iron cage\" of such a bureaucratic system.\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which writer is most associated with bureaucratic structures?\nA. Henry Fayol\nB. Max Weber\nC. Adam Smith\nD. Mary Parker Follett\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "B",
+            "predictions": "B",
+            "references": "B"
+        },
+        "9": {
+            "prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nThere is a multiple-choice question about management. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Who of the following is the industrial philanthropist?\nA. Frederick Taylor\nB. Seebohm Rowntree\nC. Henry Ford\nD. Max Weber\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+            "origin_prediction": "The correct answer is C. Henry Ford.\n\nHenry Ford was an American industrialist and founder of the Ford Motor Company, which revolutionized the automotive industry with its assembly line production method. He also established the Ford Foundation, which has provided funding for various",
+            "predictions": "C",
+            "references": "B"
+        }
+    },
+    "type": "GEN"
+}

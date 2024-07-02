@@ -1,0 +1,393 @@
+06/15 14:26:20 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/openbookqa]
+06/15 14:26:20 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-15 14:26:20.634072: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 14:26:20.688031: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 14:26:21.516971: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.26s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.27s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.22s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.12it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.02s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/2202618_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.747 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:02<00:14,  2.06s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:04<00:12,  2.12s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:05<00:09,  1.96s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:07<00:07,  1.91s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:09<00:05,  1.73s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:10<00:03,  1.64s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:12<00:01,  1.59s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.33s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:12<00:00,  1.62s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:2
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': False, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:2
+If you want to use `BertLMHeadModel` as a standalone, add `is_decoder=True.`
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/15 14:27:11 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/openbookqa]
+[2024-06-15 14:27:11,378] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-15 14:27:11 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-15 14:27:11,381] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@True
+2024-06-15 14:27:11 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@True
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to
+A. make more phone calls
+B. quit eating lunch out
+C. buy less with monopoly money
+D. have lunch with friends
+Answer:
+q:A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is toA person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to
+A. make more phone calls
+B. quit eating lunch out
+C. buy less with monopoly money
+D. have lunch with friends
+*****************
+searching
+*****************
+Jun 15, 2024 2:27:11 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+['To save money for a nice vacation at the end of the year, the person decided to cut back on expenses. They realized that eating lunch out every day was a significant expense, so they decided to start bringing their lunch to work. This change alone would save them over $1,000 a year. They also decided to cut back on phone calls, as they found that they were making unnecessary calls that could be avoided. By making these changes, the person was able to save over $1,500 a year, which would go a long way towards their vacation fund. They also made a conscious effort to buy less with monopoly money, as they found that they were spending more than they needed to on these games. By being more mindful of their spending, the person was able to save an additional $500 a year. Overall, these changes allowed the person to save over $2,000 a year, which would be enough to afford a nice vacation at the end of the year.\n"""\n\n\nPassage:"""\nTo save money for a nice vacation at the end of the year, the person decided to cut back on expenses. They realized that eating lunch out every day was a significant expense, so they decided to start bringing their lunch to work. This change alone would save them over $1,000 a year. They also decided to cut back on phone calls, as they found that they were making unnecessary', 'A person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is toA person wants to start saving money so that they can afford a nice vacation at the end of the year. After looking over their budget and expenses, they decide the best way to save money is to\nA. make more phone calls\nB. quit eating lunch out\nC. buy less with monopoly money\nD. have lunch with friends']
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 12.46it/s]
+====================================================================================================
+1    f1256f54-3493-45ee-8045-d1849b1c6aa9 	 1.0 
+  works best when it matters the least. 45. Aircraft flight in the 21st century will always be in a westerly direction, preferably supersonic, crossing time zones to provide the additional hours needed to fix the broken electronics. 46. One should expect that the expected can be prevented, but the unexpected should have been expected. 47. A billion saved is a billion earned. 48. Two-thirds of the Earth's surface is covered with water. The other third is covered with auditors from headquarters. 49. The more time you spend talking about what you have been doing, the less time you have to spend doing what you have been 
+====================================================================================================
+2    d8d76a61-ed17-465f-8572-f7fd6ba06cc8 	 0.8956629860388425 
+  is less than its NRV ($70), the cost of the good will get recorded as the cost of inventory. In next year's income statement after the good was sold, this company will record a revenue of $100, Cost of Goods Sold of $25, and Cost of Completion and Disposal of $20+$10=$30. This leads to a profit of $100-$25-$30=$45 on this transaction. Suppose we changed the example so that it costs $60 to advertise to the customer. Now the good's NRV will be $100-$20-$60=$20. In this year's income statement, since the NRV ($20) is less than the cost of the good ($25), the NRV will get recorded 
+====================================================================================================
+3    ad46a651-4c46-4066-ab8d-e9fc9eb687f4 	 0.7078901488018813 
+  of the railroad superintendent who was boasting to a friend of the efficiency of the organization he had built up. Pointing to a wheel tapper, he said, "That man has that job because of long faithfulness and experience." "Why does he tap the wheels?" asked the friend. The superintendent called the man over. "How long have you been with the road?" he asked. "Twenty years." "How long have you been tapping wheels?" "Eighteen years." "See," the superintendent said to his friend, "that's the kind of man we keep on an important job." Said the friend to the man: "Tell me why 
+====================================================================================================
+4    81908c9c-d4fe-4fc7-a4b7-c6fb041220d7 	 0.6594991282723575 
+  "He sat down opposite the treasury and observed how the crowd put money into the treasury. Many rich people put in large sums. A poor widow also came and put in two small coins worth a few cents. Calling his disciples to himself, he said to them, 'Amen, I say to you, this poor widow put in more than all the other contributors to the treasury. For they have all contributed from their surplus wealth, but she, from her poverty, has contributed all she had, her whole livelihood.
+====================================================================================================
+5    23141b86-10fa-49c7-96c0-8bdb2d202b24 	 0.4717330486140206 
+  I thought to myself "what kind of restaurant is this, that they would have a television in the ladies' room? This must be pretty posh." And so we peeked around the corner, and there was a little lady sitting there with her head tilted to the side and she was just gone—she was asleep. And the TV was just blasting loud. And I looked at her and my heart just filled up with compassion for this lady, and I thought to myself, "God, she works hard for the money, cooped up in this stinky little room all night." Then I thought about it, and I said, "She works hard for the money... She works hard for the money... Susan! 
+====================================================================================================
+6    a684ba21-cb65-4ac6-ac27-6a6dcb416251 	 0.46953007798245733 
+  loses. At the new 5 to 1 payout, he could get a bet that pays 0.625 if he wins and costs 0.125 if he loses, this is 0.125 better than his original bet in both states. Therefore his original bet now has a value of -0.125. Given his new wealth level of 0.875, his 40% bet (the Kelly amount for the 5 to 1 payout) is 0.35. The two formulations are equivalent. In the original formulation, the bettor has 0.25 bet at 2 to 1 and 0.225 bet at 5 to 1. If he wins, he gets 2.625 and if 
+====================================================================================================
+7    e1eaac35-9363-4df8-b6be-d843f81a60e2 	 0.3793366760822262 
+  by private people, they were built by private people, they were operated by the people who had the rights to the lighthouses, which they could bequeath to others and sell. Some have said what happened in lighthouses wasn't really private enterprise. The government was involved in some way in setting the rights and so on. I think that's humbug because you could say that there's no private property in houses by that logic, since you can't transfer your rights to a house without the examination of title and registration and without obeying a whole series of regulations, many enforced by government. Critics have maintained that these rights (to collect light dues etc.) were withdrawn 
+====================================================================================================
+8    dd1c761f-e459-43bd-9026-6d0fc7cfc112 	 0.3 
+ I was eight years old the first time a bleeding episode sent me to the emergency room.
+My parents had pulled my tooth the night before, and I woke up in the middle of the night to a strange sensation on my face. I got up, looked in the mirror, and screamed.
+My face was covered in blood and my tooth was still bleeding. My parents took me to the ER, where I was given a shot in my gums to stop the bleeding.
+For years, everyone was dismissive of my bleeding symptoms, so I wasn’t overly concerned. It wasn’t until I was 29 that I was finally diagnosed with a rare bleeding disorder called Factor V Deficiency.
+You’ve probably never heard of this disease, but I bet you’re familiar with Factor VIII Deficiency…better known as Hemophilia.
+Your body has several different proteins called clotting factors which work together to make your blood clot properly. If any of these proteins are missing or deficient (like my factor five), blood clots more slowly than it should.
+I have a mild to moderate deficiency, which means that I am very, very lucky.
+Those with severe deficiencies are at risk for internal bleeding into major organs, spontaneous bleeding that occurs for no reason, and hemorrhaging from minor injuries.
+Because my deficiency is mild, I am only at risk for severe bleeding in situations where heavy bleeding is common, such as during surgery. As a precaution, I would be given transfusions of fresh frozen plasma prior to surgery…which will cost several thousand dollars.
+It’s important for me to be aware of this and to plan for it. I do have insurance but my insurance company is awful, and they’ll find any excuse they can to pay as little as possible.
+If you have a chronic illness, it’s crucial to plan financially for your illness. Medical bills can be extraordinarily expensive, and it your disease causes you to be disabled, you may lose income as well.
+Here are several tips on how to financially plan for a chronic illness.
+One of the best financial choices you can make when you have a chronic illness is to choose the best insurance plan for your particular situation.
+Thoroughly review what the plan covers, what the deductible and coinsurance are, how much the co-pays cost, what prescriptions cost, etc. It’s also important to note any exclusions or exceptions to coverage.
+Depending on your income and health situation, you might be eligible for assistance programs such as Medicaid, CHIP, or government subsidies to help with the cost of insurance premiums.
+Because my insurance company loves to get out paying for anything, I am very thorough about researching what my medical costs will be before I have any major tests or procedures.
+If you’re about to have surgery or anything else expensive, get the CPT code from your doctor’s office so you can confirm with your insurance company that a service is covered. Get this confirmation in writing if possible.
+Also, make sure that both the hospital (or clinic) and the doctor are in-network. I had a gall bladder ultrasound earlier this year that wasn’t covered because the clinic was in-network, but the radiologist (a man I never met) who reviewed the scan was not.
+A health care savings account is a great way to cover qualified out-of-pocket medical costs.
+With an HSA (health savings account) or FSA (flexible spending account), your employer will deduct money from your check and deposit it into a savings account that you can use for medical expenses.
+This reduces your taxable income which saves you money. For example, if you earn $40,000 per year and put $3,000 into an FSA, you’ll be taxed as though you only earned $37,000.
+What’s the difference between an FSA and an HSA? HSA’s are only used with high deductible health care plans. If you don’t have a high deductible plan, an FSA is a possible alternative for you.
+FSA’s and HSA’s have different rules regarding annual limits, how much can be rolled over into the next year, and how the expenses are tracked.
+For more info, read FSA vs. HSA.
+An HSA or FSA probably won’t be enough to cover all of your out-of-pocket medical expenses. For any major emergencies, you can use an emergency fund instead.
+Ideally, this money would already be saved before you start racking up medical bills, but that isn’t always what happens. If you’re struggling to pay your bills, the idea of saving might seem insane.
+Dave Ramsey, author of The Total Money Makeover, recommends saving a $1,000 emergency fund before you start paying off debt.
+This allows you to cover minor emergencies without taking on any additional debt. If $1,000 seems nuts, try a smaller amount to start with. Save any little bit of money you can here and there. It adds up!
+After you’re debt-free, Dave suggests squirreling away three to 6 months of expenses in savings. This money can save you if you’re unable to work temporarily due to your illness or if you have an expensive medical emergency.
+When you’re dealing with a chronic illness, you may have tons of medical bills to keep track of. Medical bills are notorious for frequent errors, so you want to be able to keep a close eye on them.
+I keep all of my medical bills in a folder. You might try keeping them in a three ring binder if that works best for you.
+Your binder could include all of your bills, records of payments, logins for medical records, your medication list, and any other pertinent information. If you’re a super organized person, you may want to create a spreadsheet to track everything.
+Once you have your bills organized, it’ll be easier to review them and spot any errors. Sometimes an insurance company may accidentally send you a bill for the same service more than once. I’ve found numerous errors on my medical bills.
+On more than one occasion, I’ve been charged a (more expensive) specialist visit copay for a primary care visit. Another time, I received a bill for a copay I had already paid in person. I’ve saved hundreds of dollars just by reviewing my bills and questioning errors.
+If you’re struggling to pay your bills, call up the hospital and ask about a payment plan. Depending on your income, you may also qualify for some sort of financial assistance. If not, you can still look into doing a no-interest payment plan.
+Paying what you can allows you to start chipping away at your debt and to avoid paying more late fees on unpaid bills.
+If your illness (or any other health condition) ever prevents you from being able to work, it’s important to have disability insurance that covers a portion of your income.
+Keep in mind that having a pre-existing condition may impact your disability insurance application and your disability insurance might not cover certain pre-existing conditions.
+Life insurance is another important consideration. Again, certain pre-existing health conditions may make you ineligible for life insurance. Do your research so you know what is and what isn’t covered.
+Thinking about life insurance and disability is unpleasant, but it’s best to be as prepared as possible.
+If you find yourself buried in medical bills or if you become disabled and unable to work a “regular” job, you may want to look into easy ways to make money from home.
+When you’re struggling financially, you might feel like you’re already frugal and there’s nothing more you can do to save. There usually are more ways to save money than most people realize.
+Create a budget and stick to it. Make sure your budget includes your estimated medical expenses for each month.
+Review your bank accounts regularly. My husband isn’t the most organized person (he has many other amazing qualities!), and he’s been charged for subscriptions for months after he canceled them without even realizing it.
+It’s also important to review your paychecks and any other financial information regularly. Mistakes happen! You shouldn’t have to pay for someone else’s mistake.
+Cut items from your budget where you can. You could try getting rid of cable or your landline telephone, canceling any subscriptions you aren’t using, or finding ways to have fun for free.
+Reduce spending in other areas. Groceries are a big budget buster for many people. You could find a cheaper grocery store, use coupons, or buy items in bulk.
+In addition, you could try finding a cheaper cell phone plan or a less expensive internet package. Many companies are willing to negotiate on prices if you threaten to cancel your account and go elsewhere.
+Choose the best insurance plan for you.
+Do your research so you know what to expect.
+Use an HSA or FSA for out-of-pocket medical expenses.
+Stay organized and review medical bills for errors.
+Set up a payment plan if needed.
+Consider disability and life insurance.
+Find easy ways to save money and earn more.
+Good advice. I’m retired and have congestive heart failure and diabetes and my wife is disabled with rheumatoid arthritis and fibromyalgia, so we have chronic illness x 4. Staying organized when it comes to medical bills and insurance is critical. Also, while a pre-existing condition could affect your ability to get disability insurance, if you go to work at a large corporation like my wife did, you are more likely to be accepted without issue.
+We work hard to keep our finances solid so we can afford our insurance, medical care, and prescription medications. Everyone needs to know their “why” they save money, and for us, it’s chronic illness.
+Wow, that’s a lot to deal with! Best of luck with everything!
+Yes. Before I got my prescription savings card, for one year I was paying 400.00+ a month for my pills until I reached my 2500.00 deductible. It got to the point that as soon as I started feeling better, I tapered to 2 pills a day instead of 4 a day to stretch them out as much as possible. And even now with my savings card, I only pay 10.00 a month which is great. But I know good things don’t always last forever so depending on what happens next year with healthcare, I’ve got to figure out how to make sure I can always get my prescription.
+Wow! Definitely best to plan ahead!
+Jen – nice to see another writer out there touching on this. There are a few others out there and my better half is dealing with something similar.
+I’ll add if you plan on leaving your job, how big the network is for your ACA plan is critical to review. Specialists in rare disorders/diseases work at universities and can be difficult to get approved if you’re in a small network plan. Some states offer nationwide networks through a big 4 insurance provider. The other option (which we’re considering) is to just be in the same state as the top research team in the field.
+Insurance companies drive me insane. My 21-year old son was diagnosed with Type 1 diabetes two days before his 13th birthday. This is a crazy expensive disease and the costs continue to increase yearly, we currently pay $900 a month for insulin, approximately $1300 for three months of insulin pump supplies, $200 for test strips, etc. I work for a small company and we change insurance companies every year or two to get the best rates so each time we change it’s a lengthy process to get approved for all his supplies. Thankfully he can stay on my insurance until 26 and hopefully by then he’ll be through with college and have his own reliable insurance through his own employer but I certainly hate the fact this insurance benefits are always going to be a huge consideration with any job choice he makes.
+How frustrating! It’s crazy how expensive medical costs are for chronic conditions.
+Hey Jen, very timely article for me. Just yesterday I started on a weekly injection treatment for a low hormone my body isn’t producing well. This certainly isn’t an illness and for the most part, I can get along just fine without the treatment, but it has caused me a little concern to now have to plan for this moving forward.
+I’ll start digging into your recommendations, thank you!
+I’m sorry to hear that. It’s definitely good to be prepared!
+====================================================================================================
+9    0e029461-478f-41b3-8f33-4a81c2920a99 	 0.20641023908313172 
+ In round 1, there is a change in an autonomous variable (say the government invests in a bridge making project for which it approaches a construction company) by an amount $1 (just an assumption for simplification). Now let the marginal propensity to consume for the construction company be 'c'. Thus, the construction company would spend an amount c×$1 i.e. $c. ; In round 2, the construction company incurs expenditure ($c) by procuring raw materials, say cement, steel, gravel, mortar, etc. from respective companies and thus, this amount $c becomes income for these companies. Now again the marginal propensity to consume for 
+====================================================================================================
+10    44dcfbf8-4260-461c-ae0e-60783e9d9e3c 	 0.14748050284967795 
+ Spina Bifida Awareness: What is Spina Bifida?
+* I apologize for not doing this in a very timely manner. We have been sick and the baby has been, well, a baby.
+Drawing of a baby born with Spina Bifida.
+Spina Bifida is the most common permanently disabling birth defect in the United States.
+Can Spina Bifida be detected before birth?
+Yes. There are three tests*.
+A blood test during the 16th to 18th weeks of pregnancy. This is called the alpha-fetoprotein (AFP screening test). This test is higher in about 75–80 % of women who have a fetus with Spina Bifida.
+An ultrasound of the fetus. This is also called a sonogram and can show signs of Spina Bifida such as the open spine.
+There are three different types of Spina Bifida – Spina Bifida Occulta, Meningocele, and Myelomeningocele (Meningomyelocele), also called Spina Bifida Cystica.
+It is often called “hidden Spina Bifida” because about 15 percent of healthy people have it and do not know it. Spina Bifida Occulta usually does not cause harm, and has no visible signs. The spinal cord and nerves are usually fine. People find out they have it after having an X-ray of their back. It is considered an incidental finding because the X-Ray is normally done for other reasons. However, in a small group of people with SBO, pain and neurological symptoms may occur. Tethered cord can be an insidious complication that requires investigation by a neurosurgeon.
+A meningocele causes part of the spinal cord to come through the spine like a sac that is pushed out. Nerve fluid is in the sac, and there is usually no nerve damage. Individuals with this condition may have minor disabilities.
+his is the most severe form of Spina Bifida. It happens when parts of the spinal cord and nerves come through the open part of the spine. It causes nerve damage and other disabilities. Seventy to ninety percent of children with this condition also have too much fluid on their brains. This happens because fluid that protects the brain and spinal cord is unable to drain like it should. The fluid builds up, causing pressure and swelling. Without treatment, a person’s head grows too big, and may have brain damage. Children who do not have Spina Bifida can also have this problem, so parents need to check with a doctor.
+Basically, all of that means that in different forms and different severities, the spinal cord does not fuse together and is usually open and exposed when the baby is born. A surgery is done to close the opening immediately after birth.
+People with Spina Bifida also have hydrocephalus (water on the brain) due to the inability for spinal fluid to drain properly. Almost always, a shunt is surgically placed to help fluid drain properly.
+As the child gets older, these problems translate into physical disability, as well as dyslexia and other kinds of intellectual difficulties.
+The severity of the disability of a person with Spina Bifida tends to depend of the location of the defect. The higher the defect is on the spine, the more severe the disability, and the more functions it affects.
+Physical disability ranges from being fairly unaffected, able to walk and get around without assistance, to needing braces, a walker, and/or a wheelchair. The nerves that are affected can also cause loss of sensation, poor circulation, and many times, incontinence. They can sometimes get blisters and sores on the skin, and almost always have a latex allergy.
+Katie is, I think, somewhere in the middle of that spectrum. Though she uses a wheelchair now, like me, she didn’t always. She used to get around well with the assistance of a walker, and she has always worn braces. She started using a wheelchair around when she started high school, when walking more than a few meters became very painful to her knees, hips, and back.
+I asked Kate to share some of her own knowledge and experiences of Spina Bifida. It was much more personal and helpful than anything I was able to find on a website.
+Started using a chair regularly in 9th grade. Before that it was only for anywhere that would have meant a lot of walking (vacations, museums, zoo, mall, etc).
+No one knows the cause of SB for sure but it is thought to be a combo of environmental and genetic. Lots of research is and has been done on the genetic side. Tends to happen more often in areas with a lot of farm land.
+Nobody knew I had SB until I was born. My mom had no idea I didn’t move as much as I was supposed to. Because it was her first pregnancy and she had nothing to compare it to. Now they test for it.
+My parents were told I probably wouldn’t ever walk. I’ve apparently always like to prove people wrong. Tell me I can’t do something and I will do everything in my power to prove you wrong.
+Starting at about 12 or 13 I started having pain especially in my knees and back. It continued to progress from there until I had constant back pain as well as frequent knee and hip pain.
+My muscles especially the ones in my legs started twitching around the same time and I didn’t find out until I was 28 that that it was caused by tethered cord which should have been discovered when I was in my early teens but wasn’t. At this point the risks of the surgery to untether me out way the benefits so I just have to live with it.
+I had lots of physical therapy when I was little. Of course at that age PT is playing games and having fun. Took ballet and tap dance too.
+Many people have learning disabilities. Specifically Nonverbal Learning Disorder. It is a big part of having Spina Bifida.
+School was incredibly difficult for me. I started falling behind in math in about 3rd grade. Math still makes no sense to me even simple addition and subtraction takes me longer to do then most people.
+Big projects were hard because they require you to break them down into smaller parts and I never figured out how to do that. I always ended up scrambling at the last second to finish.
+I have a very hard time summarizing things I’ve read but I love to read.
+I’ve been called lazy when many times I just forgot that I was asked to do something. Or couldn’t remember/didn’t know how to do something.
+I’ve had many situations where I was asked to do a list of things and only manage to remember one maybe two of the things I was supposed to do, and have to ask what else I was supposed to do. Or I spend so much time doing the first thing that there’s no time left for the rest.
+Talking to Kate and reading her answers, I found out so many things I had not known before, even through spending every day with her for years.
+I started to recognize some things about myself, that I had previously dismissed, or just believed when people (mainly teachers and fellow students) said I was lazy or just not trying hard enough. Be careful, especially teachers, how you handle a child that doesn’t ‘fit in the mold’. Teachers can be a child’s greatest empowerers or their most destructive bulldozers.
+I started to get angry and frustrated, specifically about our school system, and how if you can’t cut it the way they lay it out, with reading and writing and math tests, you’re almost doomed for failure. Even though there is a wealth of other knowledge and talent that these children and people have to offer. Or just more effective ways of displaying what they have learned.
+That is where we have failed as a society.
+Do I know how to fix it? No, I don’t. But it needs to be fixed. One person can’t change it. 100 people can’t change it. It needs to start as a change in our hearts and mindsets.
+In 10th grade, just after turning 15; and after finally settling in, getting used to, and even starting to like California, my dad’s job moved us to Minnesota. Again, I would leave what friends I had finally made, and be the new, awkward handicap kid that didn’t know anyone.
+I survived the second term, just getting my work done and spending my extra time in my room with my CD player. Third term started, and it included World History with Mr. Laliberte. He was a goofy, hockey loving, first year teacher, who was not much older than we were.
+That’s where I met Katie. She sat in a desk at the front of the class, and used a wheelchair, but I didn’t know why. Tired of not having any local friend, and honestly, tired of being shunned by snobs because I walked differently, I decided to just do it. Just talk to her. I figured we at least had one thing in common, and if she didn’t seem friendly, she would just be one more person on the long list.
+So one day walking back to Mr. Laliberte’s class from the cafeteria, I did it. I introduced myself, and I asked if she had cerebral palsy. I knew she didn’t, because she moved differently than I did, but I didn’t want to just say “What do you have” or “What’s wrong with you”. She said she had Spina Bifida. I think that was the extent of our conversation that day, and I don’t really remember what happened between then and the day that we went to see Monsters Inc. with a group of new friends from Laliberte’s class, and her (now our) friend Katrina, but by that summer we were pretty much inseparable.
+I am lucky enough to have two best friends. Kelly and I have known each other since I was 9, and we have kept in touch and are still best friends despite everything life has thrown at us. But there are aspects of my life that nobody can quite understand as well as Katie does. And there is so much power and comfort in having someone that understands. Not just someone that believes you or even believes in you, but someone who understands. Because they’ve been there. Because they are there.
+So, in honor of Katie (aka Kate), I will be doing a Spina Bifida Awareness series for October; Spina Bifida Awareness month. Due to family issues, a packed schedule, and me not realizing it was October until a month in, I am getting a much later start than I wanted to. But I am starting off with Kate’s answers to the Invisible Illness survey.
+Read on and stay tuned!
+2. I was diagnosed with it in the year: 1984. As soon as I was born.
+3. But I had symptoms since: In the womb but nobody realized it.
+7. My favourite medical TV show is: House!
+10. Each day I take at least 0 pills & vitamins: I refuse to rely on meds at this point though I could definitely use them. I know I’ll hit a point where I won’t have a choice but I want to postpone the inevitable for as long as possible.
+11. Regarding alternative treatments I: Haven’t really tried anything.
+13. Regarding working and career: I miss working but it’s difficult when I can’t work more than 5hrs a day and only if I only work a few days a week.
+14. People would be surprised to know: Sometimes I actually like being disabled.
+17. The commercials about my illness: There aren’t any really.
+18. Something I really miss doing since my disability has progressed is: Running around. I used to love playing baseball and tag and just running around outside.
+21. If I could have one day of feeling normal again I would: Go for a run or a bike ride. Go shopping. Maybe go to the zoo. Any place I don’t go by myself now because I’m afraid I won’t be able to get around.
+22. My illness has taught me: You can never truly know, or judge, what another person is going through. Stole this but I couldn’t have said it better myself.
+23. Want to know a secret? One thing people say that gets under my skin is: I can’t believe you can (fill in the blank). Drives me crazy when people assume I can’t do something.
+24. But I love it when people: Take the time to get to know me.
+26. When someone is diagnosed I’d like to tell them: Don’t listen to other people. Only you know what you can and can’t do and what you do and don’t want.
+27. Something that has surprised me about living with an illness is: How much harder everything is to do.
+28. The nicest thing someone did for me when I wasn’t feeling well was: Lots of things.
+29. I’m going to get involved with Invisible Illness Week next year because: It’s important for people to pay attention to what other people are going through even if they can’t see it.
+Generally speaking, I do not follow politics. Besides a few issues that are important to our family, I just don’t keep up on them. I’m busy keeping up with Dora the Explorer, how I’m going to handle a baby from a wheelchair, and the drama of second grade. If I need to know something, I call my politically savvy cousin, Shekinah. I don’t know who my state governor or Senators are (Shekinah is probably having a heart attack now), and I usually don’t know what we’re voting on until I get the ballot in the mail. I vote, and I have a good understanding of our political system due to paying attention in class, but that’s as far as it goes.
+But something came to my attention the other day. As most of us have heard, Wendy Davis of Texas, recently turned to filibustering as a way of stopping a law from passing. Now, to be honest, when I first heard about Ms. Davis, I did not know what filibustering was. So I researched it and read about it. Even then, I wasn’t sure I had it right. From what I understood, filibustering is when you take the floor and just talk. For hours on end, without stopping, as a way to stall the political process, to stop a law from passing that you do not agree with. That couldn’t be right. Permitted, recognized stalling? In the government? That’s something akin to a 6 year old distracting his parents so his friend can sneak a frog in the back door. So I called Shekinah, and I had understood correctly. Filibustering is a grown up term for stalling.
+*For the record, Shekinah believes that filibusters can be a useful tool when used correctly and when necessary, and I agree with her.
+The issue at hand was abortion. For the record I do not agree with abortion, and therefore do not agree with Wendy Davis, but if we look past our disagreement, there is another issue at hand.
+Ms. Davis’ filibuster was objected when another senator helped her with a back brace.
+Filibustering has strict rules. The rules vary for each of the 13 states that allow filibusters, but they are similar. In the state of Texas, the rules are that the senator has to stay on topic, and is not allowed to eat, drink, use the restroom, or sit or lean on a desk or chair.
+From reading these rules of filibustering, you cannot do it from a wheelchair. If you are not able to stand for hours on end, your attempt will be unsuccessful. As of now, I don’t know of any disabled senators, but that doesn’t mean there will never be one. And we can’t wait until there is one to change this rule. If a disabled senator wanted to exercise their right to filibuster, they would have to wait for the rules to be changed. That would most likely make it too late for the Senator to filibuster the issue at hand.
+I believe those are reasonable guidelines for a perfectly able bodied person. But let’s set disability aside. What about a senator with a back problem? Or a knee problem? I’m sure there are a few senators with those. It is unfair and unconstitutional that they would not have the same opportunity. Add on someone with diabetes or hypoglycemia, who can’t go many hours without eating, and I bet we’ve covered 30 percent of the senate. Not to mention the possibility of someone who has bladder or bowel problems, that isn’t able to wait to use the restroom.
+I’m not saying that those rules should be done away with completely. I can see why they are a necessary element of the filibuster. What I am saying is that they should be reasonably flexible. Just as any employer would be required to make reasonable accommodations in order for me to work, the senate should be required to make reasonable accommodations to allow a senator with a medical problem to filibuster. “Under any circumstances” should not be a part of those rules.
+These rules should be changed to support equality. No person’s lack of physical ability should keep them from taking part in the political process. From being allowed to fight for their beliefs. In a country where we boast about our freedom and equality, “under any circumstances” should not be a phrase found in our government policies referring to physical ability.
+If you were a senator in one of these states, would you be physically able to filibuster under those rules?
+As Shekinah would say: Quick! Call your senators!
+Filibustering is a common practice at our house, too.
+I met someone yesterday that I think may have changed my life with something she said, and she probably doesn’t even know it.
+Yesterday my community group (like a bible study group) hosted a barbeque in the park. I almost didn’t go, but since we were doing it to reach out to the community and as an act of kindness, I decided to go. After we arrived, a family arrived that I hadn’t met before. They had seven(!) kids, and one of them was using a wheelchair.
+I told her that I liked her chair, and that it looked a lot like mine. I wasn’t using my chair, even though I really needed to, because I haven’t figured out the art of baby chasing from a wheelchair (another post for another time).
+The way she sat and her shorter stature made me wonder if she had Spina Bifida, so I asked her mom when she was off playing with the other kids. She does have Spina Bifida, which as I’ve mentioned, one of my best friends, Kate, has, so we got to talking.
+One of her friends adopted a child that has CP, so she was asking some questions about it, because her friend is looking for information. It came up that one of the biggest challenges I face is cooking.
+I can’t stand in the kitchen long enough to make a meal. I’ve tried bringing my wheelchair in to do it, but the counters and stove are right at eye-level from my chair. Also, it’s hard to get around in the tight quarters in a wheelchair. I’ve tried using a barstool, but that doesn’t work, because you have to move all around the kitchen to cook. What doesn’t help is that I don’t particularly like cooking, so it’s already not enjoyable.
+I tend to force myself to try to cook to save money. Eating out is expensive, and my husband, who is a cook, doesn’t wasn’t to come home from work and cook some more. The money thing has never really bothered him, so he doesn’t mind eating out. But our family doesn’t have a lot of extra money, so I feel that I need to save wherever I can.
+Also, he is from Mexico, where they don’t eat cereal or a sandwich as a meal, so while my daughter and I are fine with eating just that, he is not. And since in Mexico the women tend to spend a lot of their time cooking awesome food, I somehow feel like I’m not as good of a wife for not doing it.
+I know this is ridiculous, especially since he has in no way ever made me feel that way, but like I’ve said, sometimes I’m pretty hard on myself.
+Recently, I had an opportunity to save money and have some easy, home-made frozen meals on hand, but it meant I would have to cook 2 meals, and make enough food for about 40 people each meal.
+I was reluctant to participate. I can barely cook dinner for my own family; why would I want to try doing it for 40 people? Twice? One of the girls offered to help me, but me cooking usually ends in tears, so I declined her help. Plus, I didn’t see much point in me sitting and directing her on what to do.
+I liked the idea of saving money and having meals ready to heat. Being a health nut, I’d rather have home-cooked meals available than fast food anyway. My husband offered to help, so I decided to give it a shot. He did the shopping and came home, but within 10 minutes of cooking I was in tears. When I thought of how much I still needed to do, that brought on more tears. He was sweet and brought me some medicine and my wheelchair, and a coke and chocolate (that always calms me down). Somehow we finished it all, but I was in a lot of pain, and I will NOT be doing that again. Well, never say never; perhaps the trick is to not do it all in one day. It was a busy week, so it just worked out that way.
+That comment kind of got to me. ‘Frustrating’ is not the right word. I felt that ‘frustrating’ would imply that I simply did not want to do it because it is complicated. ‘Frustrating’ sounds like I simply chose not to be lazy. In cases like this, I wish pain was visible. I wish they could see it and know. Because I chose to dry my tears and have a smile on my face when we arrived.
+I am in pain all the time. Sometimes severe, sometimes not, but all the time. But I generally keep it to myself. I don’t go around with a frown on my face, or complain about it all the time. That’s just my choice. The truth is that I have a lot to smile and be happy about, and I think those things are more important. But sometimes I think my smile makes my pain seem less real to those around me. Some tend to think I’m making excuses or being lazy, or that when my family helps me with something, they are babying me.
+I have always done as much as I can for myself. I have always pushed myself to be as independent as I can be. But I do have limits, and I know what they are. I can’t do as much physically as other people. So what is frustrating is when other people question those limits. When they assume I am simply not trying.
+Don’t get me wrong, I don’t mind when people ask if I can do something. I would much rather they ask than assume that I cannot. What bothers me is when I tell them I can’t, but they want me to do it anyway. When they imply that if I would just put in some effort, I could do it. Kate had a similar incident on the same weekend, and I doubt we are alone in this.
+Okay, enough with my rant and tangent. The person didn’t mean it that way, cooking is just a sensitive subject for me.
+Wow. So simple, so silly, but in my world, so profound. I’ve never had anyone really understand before. Nobody ever just give me permission to spend the extra money on something that’s considered a luxury because, well, that’s what I need to do.
+So from now on, I’m going to do what I need to do. I’m going to eat out when I the pain is too much to stand, and I’m not going to feel bad about it. I’m going to listen to my body, and not force it to stand. I’m going to use my chair when I need to, baby and all. The more I force myself now, the less I’ll be able to use my legs later. So I’m going to take care of myself, and not let other people be my guide. I’m going to do my best, and let God do the rest.
+So thank you new friend, for giving me permission. Something that I didn’t know I needed, but it has kind of set me free.
+Sometimes when daddy’s at work, we have cereal for dinner. But we like it that way.
+When I was a kid, I had a whole list of things I was sure I wouldn’t have to deal with when I was FINALLY a grown-up. Little did I realize, becoming a grown-up didn’t mean you could make your problems go away, and sometimes, adults act just as badly as children.
+Among this list of problems was the issue of discrimination. I’m not talking about open discrimination that says you can’t play on the baseball team or work for our company because you’re handicapped. I’m talking about the kind of discrimination that there are no laws against. The kind that we think doesn’t exist anymore. The kind that we tell ourselves we would never take part in.
+Imagine this: I’m 10 years old and in 5th grade. I recently decided to stop spending time with the new girl from Florida that had befriended me. After chasing her and her new group around the schoolyard because they said they were running from ‘the weird kid’, and trying to convince them to stop, I finally figured out that ‘the weird kid’ was me.
+Not wanting to spend recess embarrassed, walking around alone, I decided to befriend a new group of kids. Some girls from my class were sitting in a circle under a tree. I decided to see what they were up to. A few of them glanced at me as I drew near, making worried expressions. Adrienne* walked over to me.
+Adrienne runs back to the group, relays the message, and comes back.
+“Why not?” Thinking: Seriously? They’re sending a messenger before I get too close? Like I’m contagious?
+*Names were changed. If my blog ever goes viral, I don’t want to be sued for slander.
+That is a true story. I don’t remember really feeling like people saw me differently because of my disability until 4th grade, when Tiffany was in my class. She was the first one to ever really be mean simply because I walked funny. Unfortunately, Tiffany was also in my 5th grade class, and she spread her disdain to other girls in the class. Tiffany did not attend my middle school, but it had plenty of its own girls that would treat me as a lower class.
+So, since then, when I meet new people, I have always wondered if they will view me differently because I am disabled. It definitely affects my confidence. And I always thought “Well at least when I’m a grown-up, people won’t treat me differently, because they will know better. And kids will just respect me because I’m a grown-up.
+I have found that that is not necessarily true. People still treat me differently. Recently, I went to a party. The only person I knew at the party was the person who invited me. Originally, I wasn’t going to go. I knew I wouldn’t know anyone else there, and I would sit there, bored and alone. But I didn’t want to make that person feel bad, and I thought, just maybe, it would turn out to be a good time.
+When I arrived, we chatted for a minute, and then she went to socialize with other people. I sat awkwardly alone for a while, while everyone else was talking and laughing and having a good time. I thought “This is stupid. I’m in a room full of people, and I’m the only one sitting alone.” So I went to the table next to me and said hello, trying to make conversation. Big mistake. One of them responded, while the other two just glared with irritation. After a few sentences, we had pretty much run out of things to say. So I started on a different subject. One of the girls answered the question I asked, and then all of them turned around and started talking about something else. I decided that was my cue to leave, so I thanked the host and left.
+These women were at least 30 years old. Too old to be holding on to cliques. And I could be wrong about them not including me because of my disability, but I don’t think so. I have seen it too many times. Too many times have I struggled to prove that I am ‘a normal person’ in order to be included. This is only one example, but there are many more.
+I believe that everyone is equal. No matter what your job title or salary. No matter where you come from or your family background. No matter if you’re the President or a drive thru cashier. No matter your abilities or inabilities. No one person is better than another. And you know, God is no respecter of persons. But we, in order to make ourselves feel important, count ourselves better than other people.
+Another side to this is when people over-compensate. I’ve noticed that when I go to the store in a wheelchair, a lot of people treat me as a small child. They smile at me like I’m cute and call me sweetie. I prefer this over acting like I have leprosy, but I would really rather be treated like any other adult.
+I want to live in a world where it’s not weird to say hello. Where people don’t think talking to me is social suicide because my knees are turned in or I’m in a wheelchair. I don’t want to worry that maybe someday my kids will be excluded because their mom walks funny and wears braces.
+In this case, I don’t want my disability to change, I want the world’s view on people with disabilities to change. I would love to see a day when whether or not you can walk is as unimportant as the color of your hair.
+I’m not writing this post to get sympathy or throw a fit. I’m writing this post as a challenge to all of us. A challenge to treat people as you would want to be treated. To see people in wheelchairs or with walkers just as you would see them if they could walk like anybody else. To recognize that people who walk differently or talk differently or have Down’s syndrome or autism are regular people on the inside, even if they appear differently on the outside. Even take it one step further and realize that someday, it could be you in that wheelchair. If it was you, would you want people to treat you differently than they do now?
+So I challenge you to take a stand for equality. To decide that no matter what your friends think, you will be all-inclusive. Because equality is there whether we choose to recognize it or not.
+*****************
+reranking
+*****************
+Converted docs to temp collection
+
+Loading collection:   0%|          | 0/10 [00:00<?, ?it/s][ALoading collection: 100%|██████████| 10/10 [00:00<00:00, 48377.21it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:00<00:00,  1.71it/s][A100%|██████████| 1/1 [00:00<00:00,  1.49it/s]
+Completed passage expansion
+
+loading collection....:   0%|          | 0/7 [00:00<?, ?it/s][Aloading collection....: 100%|██████████| 7/7 [00:00<00:00, 70918.18it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:00<00:00,  3.03it/s][A100%|██████████| 1/1 [00:00<00:00,  2.39it/s]
+Completed indexing collection
+Loading hdf5 file.....
+
+Creating direct index.....: 0it [00:00, ?it/s][ACreating direct index.....: 7it [00:00, 20013.72it/s]
+Reranking.....
+  0%|          | 0/500 [00:53<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 225, in inference
+    docs = myretrieve(entry[idx][1]["prompt"], query)
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 58, in myretrieve
+    Docs = test_retrieval.retrieval(classification_query, query)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 267, in retrieval
+    reranked_docs, _ = self._rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 229, in _rerank
+    docs = rerank(
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 21, in rerank
+    reranked_docs, similarity_scores = run_rerank(model, expansion_model, tokenizer, bert_tokenizer, mode, query, docs, top_k)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/main.py", line 79, in run_rerank
+    reranked_docs, scores = tilde_rerank(model, expansion_model, tokenizer, bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 34, in tilde_rerank
+    reranked_docs, scores = execute_rerank(bert_tokenizer, query, docs)
+  File "/data/zfr/finalTest/opencompass/JointTest/reranking/reranking/tilde/run_rerank.py", line 122, in execute_rerank
+    token_scores = direct_index[doc_id]
+KeyError: '7'
+2024-06-15 14:28:06 [INFO] server: Stop milvus...
+[2024-06-15 14:28:08,802] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 2203304) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-15_14:28:08
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2203304)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

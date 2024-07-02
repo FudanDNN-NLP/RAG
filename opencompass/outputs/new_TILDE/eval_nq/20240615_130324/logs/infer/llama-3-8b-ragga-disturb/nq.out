@@ -1,0 +1,158 @@
+06/15 13:03:27 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/nq]
+06/15 13:03:27 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-15 13:03:28.182081: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 13:03:28.235485: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 13:03:29.021249: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.52s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.45s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.34s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.03it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.13s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/1761013_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.725 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:05,  1.18it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:04,  1.23it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:04,  1.22it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:03,  1.23it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:04<00:02,  1.23it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:04<00:01,  1.24it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:05<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:06<00:00,  1.43it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:06<00:00,  1.30it/s]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+!!!!!!!!!!!!!!!!!!!!jt:{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'},milvus:1
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'TILDE', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:1
+If you want to use `BertLMHeadModel` as a standalone, add `is_decoder=True.`
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+06/15 13:04:00 - OpenCompass - INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^Start inferencing [llama-3-8b-ragga-disturb/nq]
+[2024-06-15 13:04:00,452] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [INFO] Starting inference process...
+2024-06-15 13:04:00 [INFO] icl_gen_inferencer: Starting inference process...
+  0%|          | 0/500 [00:00<?, ?it/s][2024-06-15 13:04:00,543] [opencompass.openicl.icl_inferencer.icl_gen_inferencer] [WARNING] shifou？@@@@@@@@@1
+2024-06-15 13:04:00 [WARNING] icl_gen_inferencer: shifou？@@@@@@@@@1
+*****************
+reranking
+*****************
+Converted docs to temp collection
+
+Loading collection:   0%|          | 0/10 [00:00<?, ?it/s][ALoading collection: 100%|██████████| 10/10 [00:00<00:00, 103563.06it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:00<00:00,  1.72it/s][A100%|██████████| 1/1 [00:00<00:00,  1.48it/s]
+Completed passage expansion
+
+loading collection....:   0%|          | 0/10 [00:00<?, ?it/s][Aloading collection....: 100%|██████████| 10/10 [00:00<00:00, 101557.00it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][Ahuggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+100%|██████████| 1/1 [00:00<00:00,  3.30it/s][A100%|██████████| 1/1 [00:00<00:00,  2.55it/s]
+Completed indexing collection
+Loading hdf5 file.....
+
+Creating direct index.....: 0it [00:00, ?it/s][ACreating direct index.....: 10it [00:00, 21542.39it/s]
+Reranking.....
+Reranked (score, doc_id): [(36.39794921875, '4'), (24.12890625, '2'), (14.216796875, '8'), (11.81640625, '6'), (11.2265625, '7'), (9.19921875, '5'), (8.716796875, '1'), (5.66015625, '3'), (1.7919921875, '0'), (0, '9')]
+Index time: 1.769869327545166s
+=============== After Reranking ===============
+ 1 36.39795  The Nobel Prize in Physics (Nobelpriset i fysik) is awarded annually by the Royal Swedish Academy of Sciences to scientists who have made outstanding contributions in Physics. It is one of the five Nobel Prizes which were established by the will of Alfred Nobel in 1895. Every year, the Royal Swedish Academy of Sciences sends out forms, which amount to a personal and exclusive invitation, to about three thousand selected individuals to invite them to submit nominations. The names of the nominees are never publicly announced, and neither are they told that they have been considered for the Prize. Nomination records are strictly sealed 
+ 2 24.12891  Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is best known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics. Relativity and quantum mechanics are together the two pillars of modern physics. His mass–energy equivalence formula E = mc2 , which arises from relativity theory, has been dubbed "the world's most famous equation". His work is also known for its influence on the philosophy of science. He received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the 
+ 3 14.21680  Lorentz subsequently reinterpreted these as the fundamental equations of electrodynamics and Oliver Heaviside developed the notation we use today. The theory behind Maxwell's equations was the first grand unification theory of the forces of Nature as this theory united the electric and magnetic fields. A person who is stationary may experience only an electric field but a person who is in relative motion may experience an electric current and a magnetic field. Thus the one field (called the electromagnetic field) may appear in different guises. In his famous 1905 'Special Relativity' paper, Albert Einstein  showed that Maxwell's equations were invariant under a Lorentz 
+ 4 11.81641 Hendrik Antoon Lorentz made significant contributions to both physics and society. In the field of physics, Lorentz played a crucial role in the development of the classical theory of electromagnetism. Together with James Clerk Maxwell, Lorentz formulated the electron theory, which provided electromagnetism with its final form. This theory, often referred to as the Maxwell-Lorentz theory, explained phenomena such as the Zeeman effect, which gave the first indication of the existence of electrons.
+
+Lorentz's groundbreaking work also included the establishment of the Lorentz transformation in 1904. This transformation preceded Albert Einstein's special theory of relativity and laid the foundation for it. Lorentz's contributions to theoretical physics were recognized with the Nobel Prize in Physics in 1902.
+
+Outside of his scientific achievements, Lorentz made important contributions to society. He played an influential role in promoting the new developments in physics through his involvement in the Solvay conferences as the chairman. These conferences brought together leading physicists to discuss and advance the field.
+
+Furthermore, Lorentz held important positions nationally and internationally. He chaired the Zuiderzee committee at the national level, contributing to the management and protection of the Zuiderzee, a former inlet of the North Sea in the Netherlands. Internationally, Lorentz served as the president of the International Commission on Intellectual Cooperation of the League of Nations. His leadership in this role helped foster intellectual collaboration between nations.
+
+Lorentz's unique greatness was widely recognized, and he was greatly respected by his peers. Albert Einstein, one of the greatest scientists of all time, expressed that Lorentz meant more to him personally than anyone else he had met in his life.
+
+In summary, Hendrik Antoon Lorentz's contributions to physics include the development of the electron theory, the explanation of the Zeeman effect, and the establishment of the Lorentz transformation. In society, he played a prominent role in advancing physics through the Solvay conferences and held important positions both nationally and internationally. His impact on both fields was widely recognized and admired.
+ 5 11.22656   Around 1904–1905, the works of Hendrik Lorentz, Henri Poincaré and finally Albert Einstein's special theory of relativity, exclude the possibility of propagation of any effects faster than the speed of light. It followed that Newton's law of gravitation would have to be replaced with another law, compatible with the principle of relativity, while still obtaining the Newtonian limit for circumstances where relativistic effects are negligible. Such attempts were made by Henri Poincaré (1905), Hermann Minkowski (1907) and Arnold Sommerfeld (1910). In 1907 Einstein came to the conclusion that to achieve this a successor to special relativity was needed. From 1907 to 1915, Einstein worked towards a new theory, using his equivalence principle as a key concept to guide his way. According 
+  0%|          | 0/500 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 101, in run
+    self._inference()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 141, in _inference
+    inferencer.inference(
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 255, in inference
+    docs = self._repack(ds_reader.dataset["test"]["query"][index + idx], reranked_docs[0])
+AttributeError: 'GenInferencer' object has no attribute '_repack'
+[2024-06-15 13:04:06,370] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 1761173) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-15_13:04:06
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1761173)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

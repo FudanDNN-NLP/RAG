@@ -1,0 +1,20 @@
+2024-06-15 14:31:50.372962: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-15 14:31:50.426695: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-15 14:31:51.296838: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+!!!!!!!!!!!!!!!!!!!!IGI
+['run.py', './configs/myeval/eval_tqa.py', '-w', 'outputs/f_hh_mt_r_s/eval_tqa']
+06/15 14:31:53 - OpenCompass - WARNING - SlurmRunner is not used, so the partition argument is ignored.
+06/15 14:31:53 - OpenCompass - INFO - Partitioned into 1 tasks.
+06/15 14:31:53 - OpenCompass - WARNING - !!!!!!!!!!!!['run.py', './configs/myeval/eval_tqa.py', '-w', 'outputs/f_hh_mt_r_s/eval_tqa']
+  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [2:06:04<00:00, 7564.00s/it]100%|██████████| 1/1 [2:06:04<00:00, 7564.00s/it]
+launch OpenICLInfer[llama-3-8b-ragga-disturb/TriviaQA] on GPU 7
+06/15 16:37:57 - OpenCompass - INFO - Partitioned into 1 tasks.
+  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:06<00:00,  6.87s/it]100%|██████████| 1/1 [00:06<00:00,  6.87s/it]
+launch OpenICLEval[llama-3-8b-ragga-disturb/TriviaQA] on CPU 
+dataset    version    metric    mode      llama-3-8b-ragga-disturb
+---------  ---------  --------  ------  --------------------------
+TriviaQA   c9cd92     EM score  gen                           0.57
+TriviaQA   c9cd92     F1 score  gen                           0.60
+06/15 16:38:04 - OpenCompass - INFO - write summary to /data/zfr/finalTest/opencompass/outputs/f_hh_mt_r_s/eval_tqa/20240615_143153/summary/summary_20240615_143153.txt
+06/15 16:38:04 - OpenCompass - INFO - write csv to /data/zfr/finalTest/opencompass/outputs/f_hh_mt_r_s/eval_tqa/20240615_143153/summary/summary_20240615_143153.csv

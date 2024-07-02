@@ -1,0 +1,8 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about college computer science. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: The access matrix approach to protection has the difficulty that\nA. the matrix, if stored directly, is large and can be clumsy to manage\nB. it is not capable of expressing complex protection requirements\nC. deciding whether a process has access to a resource is undecidable\nD. there is no way to express who has rights to change the access matrix itself\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "The correct answer is D. There is no way to express who has rights to change the access matrix itself.\n\nIn the access matrix approach to protection, each subject (process) is associated with an access control list (ACL), which specifies the resources that",
+        "gold": "A",
+        "context": "temp contexts"
+    }
+}

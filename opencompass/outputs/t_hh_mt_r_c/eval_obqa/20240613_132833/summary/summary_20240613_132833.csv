@@ -1,0 +1,2 @@
+dataset,version,metric,mode,llama-3-8b-ragga-disturb
+openbookqa,6dddbd,accuracy,gen,74.60

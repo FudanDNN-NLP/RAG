@@ -1,0 +1,68 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Colin Kaepernick became a starting quarterback during the 49ers 63rd season in the National Football League.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "SUPPORT",
+        "gold": "NOT ENOUGH INFO",
+        "context": "\n\n"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Tilda Swinton is a vegan.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "SUPPORT",
+        "gold": "NOT ENOUGH INFO",
+        "context": "\n\n"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Fox 2000 Pictures released the film Soul Food.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "Soul Food is a 1997 American comedy-drama film directed by George Tillman Jr. It was produced by Gary Lucchesi and Tom Rosenberg of FilmColony and distributed by 20th Century Fox. The screenplay was written by Ken",
+        "gold": "SUPPORTS",
+        "context": "\n\n"
+    },
+    "3": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Anne Rice was born in New Jersey.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "NOT ENOUGH INFO. The provided background does not provide sufficient information to determine whether the claim is true or false. It only mentions that Anne Rice is an American author known for her Gothic fiction novels, but it does not specify where she was born.",
+        "gold": "NOT ENOUGH INFO",
+        "context": "\n\n"
+    },
+    "4": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Telemundo is a English-language television network.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "REFUTE\nConfidence: 90%",
+        "gold": "REFUTES",
+        "context": "\n\n"
+    },
+    "5": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Damon Albarn's debut album was released in 2011.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "NOT ENOUGH INFO. The claim is false because Damon Albarn's debut album \"Everyday Robots\" was released on May 18, 2014, not in 2011. However, I cannot provide a definitive answer without more context or",
+        "gold": "REFUTES",
+        "context": "\n\n"
+    },
+    "6": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: There is a capital called Mogadishu.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "SUPPORT",
+        "gold": "SUPPORTS",
+        "context": "\n\n"
+    },
+    "7": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Savages was exclusively a German film.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "SUPPORT",
+        "gold": "REFUTES",
+        "context": "\n\n"
+    },
+    "8": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Happiness in Slavery is a gospel song by Nine Inch Nails.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "NOT ENOUGH INFO. The provided background does not provide sufficient information to determine if \"Happiness in Slavery\" is a gospel song by Nine Inch Nails. It only mentions that it's an industrial rock band from Ohio, but doesn't specify",
+        "gold": "NOT ENOUGH INFO",
+        "context": "\n\n"
+    },
+    "9": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Andrew Kevin Walker is only Chinese.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "NOT ENOUGH INFO. The provided background does not contain sufficient information to determine if Andrew Kevin Walker is only Chinese. It would be necessary to have more specific details about his ethnicity or nationality in order to make a determination.",
+        "gold": "REFUTES",
+        "context": "\n\n"
+    },
+    "10": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:\n\nDetermine whether the given background supports, refutes, or provides not enough information about the claim, and respond with 'SUPPORT', 'REFUTE', or 'NOT ENOUGH INFO'. Do not generate any other content.\nClaim: Shooter is about an expert marksman who tries to stop the assassination of the president.\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "NOT ENOUGH INFO",
+        "gold": "NOT ENOUGH INFO",
+        "context": "\n\n"
+    }
+}

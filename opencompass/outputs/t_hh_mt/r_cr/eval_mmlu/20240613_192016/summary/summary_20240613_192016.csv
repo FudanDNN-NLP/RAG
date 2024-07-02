@@ -1,0 +1,2 @@
+dataset,version,metric,mode,llama-3-8b-ragga-disturb
+MMLU,c2174f,accuracy,gen,65.20

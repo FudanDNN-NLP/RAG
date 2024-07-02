@@ -1,0 +1,145 @@
+06/13 06:26:24 - OpenCompass - INFO - Task****** [llama-3-8b-ragga-disturb/PubHealth]
+06/13 06:26:24 - OpenCompass - WARNING - %%%%%%%%%%%%%%%%%%%%%%%%%%%%jtjjtjtjtjtjtjt:-1
+2024-06-13 06:26:25.051409: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-13 06:26:25.103437: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-13 06:26:25.921618: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.49s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.32s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.26s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.07s/it]
+!!!!!!!!!!!!!!!!!!!!IGI
+['/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py', 'tmp/162472_0_params.py']
+Building prefix dict from the default dictionary ...
+Loading model from cache /data/zfr/.cache/jieba.cache
+Loading model cost 0.731 seconds.
+Prefix dict has been built successfully.
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:10,  1.57s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:09,  1.63s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:07,  1.45s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.37s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:04,  1.35s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.31s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.26s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.08s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.27s/it]
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+*****************
+init_models
+*****************
+{'w_q': 0.3, 'w_d': 0.4, 'w_k': 0.3, 'search_k': 10, 'compression_ratio': 0.4, 'top_k': 5, 'Vector_Store': 'milvus', 'with_retrieval_classification': True, 'search_method': 'hyde_with_hybrid', 'rerank_model': 'RankLLaMA', 'compression_method': 'recomp', 'repack_method': 'sides'}
+milvus:4
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.53s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.58s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.57s/it]
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at meta-llama/Llama-2-7b-hf and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at google-bert/bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+*****************
+retrieving
+*****************
+cq:There is a multiple-choice question. Answer the question by choosing "A", "B", "C" or "D". Do not generate any other content.
+Question: Which substance is capable of dripping?
+A. Oxygen
+B. Juice
+C. Wood
+D. Lightning
+q:Which substance is capable of dripping?
+A. Oxygen
+B. Juice
+C. Wood
+D. Lightning
+*****************
+searching
+*****************
+Jun 13, 2024 6:27:45 AM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.3` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.75` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:537: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `30` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+["The rain continued to pour down, creating a symphony of sound as it hit the pavement. The drops were large and heavy, each one a small explosion as it landed. The scent of wet earth and fresh rain filled the air, and the occasional flash of lightning illuminated the sky. The thunder was deafening, shaking the ground beneath my feet. I could feel the vibrations in my chest, and I knew that this was no ordinary storm.\n\nAs I walked through the streets, I noticed that the water was rising. The gutters were overflowing, and the water was creeping up the curbs. I could see the water lapping at the edges of the sidewalks, and I knew that it wouldn't be long before it was ankle-deep.\n\nSuddenly, I heard a dripping sound. At first, I thought it was just the rain, but the sound was too regular. I looked up and saw a leaky roof, water dripping steadily from a small hole. The water was collecting in a bucket, but it was clear that it wouldn't be enough to contain the leak.\n\nI approached the building and knocked on the door. A woman answered, and I explained the situation. She thanked me and led me to the source of the leak. It was a small hole in the roof, but it was enough to cause a significant amount of damage.\n\nWe spent the", 'Which substance is capable of dripping?\nA. Oxygen\nB. Juice\nC. Wood\nD. Lightning']
+2024-06-13 06:28:01 [ERROR] server: Open /data/zfr/finalTest/opencompass/JointTest/data/wikipedia_milvus4.db failed, the file has been opened by another program
+2024-06-13 06:28:01 [ERROR] server_manager: Start local milvus failed
+2024-06-13 06:28:01 [ERROR] milvus_client: Failed to create new connection using: 866a28bddfb94064aef2ac99d0631009
+Traceback (most recent call last):
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 172, in <module>
+    inferencer.run()
+  File "/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py", line 88, in run
+    self.dataset = build_dataset_from_cfg(self.dataset_cfg)
+  File "/data/zfr/finalTest/opencompass/opencompass/utils/build.py", line 13, in build_dataset_from_cfg
+    return LOAD_DATASET.build(dataset_cfg)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+    return self.build_func(cfg, *args, **kwargs, registry=self)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 98, in build_from_cfg
+    obj_cls = registry.get(obj_type)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/mmengine/registry/registry.py", line 451, in get
+    self.import_from_location()
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/mmengine/registry/registry.py", line 376, in import_from_location
+    import_module(loc)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/data/zfr/finalTest/opencompass/opencompass/datasets/__init__.py", line 1, in <module>
+    from .advglue import *  # noqa: F401, F403
+  File "/data/zfr/finalTest/opencompass/opencompass/datasets/advglue.py", line 6, in <module>
+    from opencompass.openicl.icl_evaluator import AccEvaluator
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/__init__.py", line 2, in <module>
+    from .icl_evaluator import *  # noqa
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_evaluator/__init__.py", line 13, in <module>
+    from .lm_evaluator import LMEvaluator  # noqa
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_evaluator/lm_evaluator.py", line 10, in <module>
+    from opencompass.openicl.icl_inferencer import GenInferencer
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/__init__.py", line 6, in <module>
+    from .icl_gen_inferencer import GenInferencer  # noqa
+  File "/data/zfr/finalTest/opencompass/opencompass/openicl/icl_inferencer/icl_gen_inferencer.py", line 44, in <module>
+    import JointTest.JointRetrival2 as jt
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 317, in <module>
+    Docs = test_retrieval.retrieval(cq, prompt)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 267, in retrieval
+    search_docs, _ = self._search(query=query, retrieval_config=self.retrieval_config)
+  File "/data/zfr/finalTest/opencompass/JointTest/JointRetrival2.py", line 197, in _search
+    docs = search(query, top_k=kwargs["retrieval_config"]["search_k"], search_method=kwargs["retrieval_config"]["search_method"], milvus_id=self.milvus_id)
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/queries2retrievers.py", line 282, in search
+    dense_results = get_text_retriever(similarity_top_k=top_k, milvus_id=milvus_id).retrieve(pseudo_doc)
+  File "/data/zfr/finalTest/opencompass/JointTest/retrieval2/nodes2retrievers.py", line 102, in get_text_retriever
+    vector_store = MilvusVectorStore(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/llama_index/vector_stores/milvus/base.py", line 219, in __init__
+    self._milvusclient = MilvusClient(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/pymilvus/milvus_client/milvus_client.py", line 58, in __init__
+    self._using = self._create_connection(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/pymilvus/milvus_client/milvus_client.py", line 651, in _create_connection
+    raise ex from ex
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/pymilvus/milvus_client/milvus_client.py", line 648, in _create_connection
+    connections.connect(using, user, password, db_name, token, uri=uri, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/pymilvus/orm/connections.py", line 382, in connect
+    raise ConnectionConfigException(message="Open local milvus failed")
+pymilvus.exceptions.ConnectionConfigException: <ConnectionConfigException: (code=1, message=Open local milvus failed)>
+[2024-06-13 06:28:08,319] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 162849) of binary: /data/zfr/anaconda3/envs/joint/bin/python
+Traceback (most recent call last):
+  File "/data/zfr/anaconda3/envs/joint/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.2.0', 'console_scripts', 'torchrun')())
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/zfr/anaconda3/envs/joint/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/zfr/finalTest/opencompass/opencompass/tasks/openicl_infer.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-06-13_06:28:08
+  host      : test
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 162849)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

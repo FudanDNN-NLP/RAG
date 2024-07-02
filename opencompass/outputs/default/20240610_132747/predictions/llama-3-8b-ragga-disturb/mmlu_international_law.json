@@ -1,0 +1,20 @@
+{
+    "0": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about international law. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which State ordinarily exercises jurisdiction in respect of crimes committed on board vessels?\nA. The coastal State\nB. The flag State\nC. All States enjoy such jurisdiction\nD. The International Tribunal for the Law of the Sea\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    },
+    "1": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about international law. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: Which of these statements best describes the UK Constitution?\nA. The UK Constitution's only source of power is that of the sovereign\nB. The UK Constitution gives the judiciary the power to overturn acts of parliament\nC. The UK Constitution is uncodified and can be found in a number of sources\nD. The UK Constitution is based on a Bill of Rights\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "C",
+        "context": "temp contexts"
+    },
+    "2": {
+        "origin_prompt": "<|start_header_id|>system<|end_header_id|>\n\n<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBackground:temp contextsThere is a multiple-choice question about international law. Answer the question by choosing \"A\", \"B\", \"C\" or \"D\". Do not generate any other content.\nQuestion: What is the meaning of international legal personality?\nA. It means that only States are considered subjects of international law\nB. It means having rights and duties under international law and a capacity to enforce these by or against the relevant actor\nC. It means that an entity may challenge the authority of States\nD. It is a term that is meant to denote legal, as opposed, to physical persons under international law\nAnswer: <|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+        "prediction": "temp result",
+        "gold": "B",
+        "context": "temp contexts"
+    }
+}
