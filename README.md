@@ -6,6 +6,7 @@ This is an implementation of the paper:
 
 <a href="https://arxiv.org/pdf/2407.01219">Searching for Best Practices in Retrieval-Augmented Generation</a>
 
+  ![workflow](workflow.png)
 
 ## Citation
 If you use this code in your work, please cite our paper:
