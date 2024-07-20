@@ -6,7 +6,7 @@ enter from : comprssorRaga.py
 ```
 def compressor(query, docs, compression_ratio):
     
-    # 判断语言类型
+    # 判断语言的类型
     
     query_lan_type = check_lan(query)
     docs_lan_type = check_lan(docs)
@@ -15,4 +15,5 @@ def compressor(query, docs, compression_ratio):
        return query_based_abstrctive_summarization(query,docs,query_lan_type,compression_ratio)
     else:
        return abstrctive_summarization(docs,compression_ratio)
+
 ```
