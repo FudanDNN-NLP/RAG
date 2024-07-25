@@ -209,6 +209,8 @@ if __name__ == '__main__':
     main("data/msmarco_ans_small/qrels.dev.small.tsv", "dlm/runs/run.rankllama.ans_small.dev.tsv")
     print("================  After Reranking (TILDEv2)  ================")
     main("data/msmarco_ans_small/qrels.dev.small.tsv", "tilde/runs/TILDEv2.txt")
+    print("================  After Reranking (bge-reranker-v2-m3)  ================")
+    main("data/msmarco_ans_small/qrels.dev.small.tsv", "dlm/runs/run.bge.ans_small.dev.tsv")
 
     print("================  Random Ordering  ================")
     main("data/msmarco/passage/dev-6980/qrels.dev.small.tsv", "data/msmarco/passage/dev-6980/run.dev.small_shuffled.tsv")

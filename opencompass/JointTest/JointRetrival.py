@@ -5,6 +5,7 @@ from JointTest.retrieval.queries2retrievers import search
 from JointTest.reranking.reranking.main import rerank
 from JointTest.reranking.reranking.text_chunker import repack
 from JointTest.reranking.reranking.dlm.pygaggle.pygaggle.rerank.transformer import MonoT5, MonoBERT
+from FlagEmbedding import FlagReranker
 import time
 from tqdm import tqdm
 from llmlingua import PromptCompressor
@@ -113,6 +114,11 @@ class JointRetrieval:
             elif model_name == "RankLLaMA":
                 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf")
                 rerank_model = get_model("castorini/rankllama-v1-7b-lora-passage", self.device)
+                bert_tokenizer = None
+                expansion_model = None
+            elif model_name == "BGE":
+                rerank_model = FlagReranker('BAAI/bge-reranker-v2-m3', use_fp16=True)
+                tokenizer = None
                 bert_tokenizer = None
                 expansion_model = None
             else:

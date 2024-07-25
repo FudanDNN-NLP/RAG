@@ -3,6 +3,7 @@ from copy import deepcopy
 from itertools import permutations
 from typing import List
 
+from FlagEmbedding import FlagReranker
 from transformers import (AutoTokenizer,
                           AutoModelForSequenceClassification,
                           AutoModelForSeq2SeqLM,
@@ -14,14 +15,14 @@ from sentence_transformers import CrossEncoder
 from .base import Reranker, Query, Text
 from .similarity import SimilarityMatrixProvider
 from ..model import (BatchTokenizer,
-                            LongBatchEncoder,
-                            QueryDocumentBatch,
-                            DuoQueryDocumentBatch,
-                            QueryDocumentBatchTokenizer,
-                            SpecialTokensCleaner,
-                            T5BatchTokenizer,
-                            T5DuoBatchTokenizer,
-                            greedy_decode)
+                     LongBatchEncoder,
+                     QueryDocumentBatch,
+                     DuoQueryDocumentBatch,
+                     QueryDocumentBatchTokenizer,
+                     SpecialTokensCleaner,
+                     T5BatchTokenizer,
+                     T5DuoBatchTokenizer,
+                     greedy_decode)
 
 from peft import PeftModel, PeftConfig
 
@@ -35,42 +36,42 @@ __all__ = ['MonoT5',
            'SentenceTransformersReranker']
 
 prediction_tokens = {
-        'castorini/monot5-base-msmarco':             ['▁false', '▁true'],
-        'castorini/monot5-base-msmarco-10k':         ['▁false', '▁true'],
-        'castorini/monot5-large-msmarco':            ['▁false', '▁true'],
-        'castorini/monot5-large-msmarco-10k':        ['▁false', '▁true'],
-        'castorini/monot5-base-med-msmarco':         ['▁false', '▁true'],
-        'castorini/monot5-3b-med-msmarco':           ['▁false', '▁true'],
-        'castorini/monot5-3b-msmarco-10k':           ['▁false', '▁true'],
-        'castorini/rankllama-v1-7b-lora-passage':    ['▁false', '▁true'],
-        'unicamp-dl/mt5-base-en-msmarco':            ['▁no'   , '▁yes'],
-        'unicamp-dl/ptt5-base-pt-msmarco-10k-v2':    ['▁não'  , '▁sim'],
-        'unicamp-dl/ptt5-base-pt-msmarco-100k-v2':   ['▁não'  , '▁sim'],
-        'unicamp-dl/ptt5-base-en-pt-msmarco-100k-v2':['▁não'  , '▁sim'],
-        'unicamp-dl/mt5-base-en-pt-msmarco-v2':      ['▁no'   , '▁yes'],
-        'unicamp-dl/mt5-base-mmarco-v2':             ['▁no'   , '▁yes'],
-        'unicamp-dl/mt5-base-en-pt-msmarco-v1':      ['▁no'   , '▁yes'],
-        'unicamp-dl/mt5-base-mmarco-v1':             ['▁no'   , '▁yes'],
-        'unicamp-dl/ptt5-base-pt-msmarco-10k-v1':    ['▁não'  , '▁sim'],
-        'unicamp-dl/ptt5-base-pt-msmarco-100k-v1':   ['▁não'  , '▁sim'],
-        'unicamp-dl/ptt5-base-en-pt-msmarco-10k-v1': ['▁não'  , '▁sim'],
-        'unicamp-dl/mt5-3B-mmarco-en-pt':            ['▁'  , '▁true'],
-        'unicamp-dl/mt5-13b-mmarco-100k':            ['▁', '▁true'],
-        }
+    'castorini/monot5-base-msmarco': ['▁false', '▁true'],
+    'castorini/monot5-base-msmarco-10k': ['▁false', '▁true'],
+    'castorini/monot5-large-msmarco': ['▁false', '▁true'],
+    'castorini/monot5-large-msmarco-10k': ['▁false', '▁true'],
+    'castorini/monot5-base-med-msmarco': ['▁false', '▁true'],
+    'castorini/monot5-3b-med-msmarco': ['▁false', '▁true'],
+    'castorini/monot5-3b-msmarco-10k': ['▁false', '▁true'],
+    'castorini/rankllama-v1-7b-lora-passage': ['▁false', '▁true'],
+    'unicamp-dl/mt5-base-en-msmarco': ['▁no', '▁yes'],
+    'unicamp-dl/ptt5-base-pt-msmarco-10k-v2': ['▁não', '▁sim'],
+    'unicamp-dl/ptt5-base-pt-msmarco-100k-v2': ['▁não', '▁sim'],
+    'unicamp-dl/ptt5-base-en-pt-msmarco-100k-v2': ['▁não', '▁sim'],
+    'unicamp-dl/mt5-base-en-pt-msmarco-v2': ['▁no', '▁yes'],
+    'unicamp-dl/mt5-base-mmarco-v2': ['▁no', '▁yes'],
+    'unicamp-dl/mt5-base-en-pt-msmarco-v1': ['▁no', '▁yes'],
+    'unicamp-dl/mt5-base-mmarco-v1': ['▁no', '▁yes'],
+    'unicamp-dl/ptt5-base-pt-msmarco-10k-v1': ['▁não', '▁sim'],
+    'unicamp-dl/ptt5-base-pt-msmarco-100k-v1': ['▁não', '▁sim'],
+    'unicamp-dl/ptt5-base-en-pt-msmarco-10k-v1': ['▁não', '▁sim'],
+    'unicamp-dl/mt5-3B-mmarco-en-pt': ['▁', '▁true'],
+    'unicamp-dl/mt5-13b-mmarco-100k': ['▁', '▁true'],
+}
 
 
 class MonoT5(Reranker):
-    def __init__(self, 
-                 pretrained_model_name_or_path: str  = 'castorini/monot5-base-msmarco-10k',
+    def __init__(self,
+                 pretrained_model_name_or_path: str = 'castorini/monot5-base-msmarco-10k',
                  model: T5ForConditionalGeneration = None,
                  tokenizer: QueryDocumentBatchTokenizer = None,
-                 use_amp = False,
-                 token_false = None,
-                 token_true  = None):
+                 use_amp=False,
+                 token_false=None,
+                 token_true=None):
         self.model = model or self.get_model(pretrained_model_name_or_path)
         self.tokenizer = tokenizer or self.get_tokenizer(pretrained_model_name_or_path)
         self.token_false_id, self.token_true_id = self.get_prediction_tokens(
-                pretrained_model_name_or_path, self.tokenizer, token_false, token_true)
+            pretrained_model_name_or_path, self.tokenizer, token_false, token_true)
         self.pretrained_model_name_or_path = pretrained_model_name_or_path
         self.device = next(self.model.parameters(), None).device
         self.use_amp = use_amp
@@ -81,7 +82,7 @@ class MonoT5(Reranker):
         device = device or ('cuda' if torch.cuda.is_available() else 'cpu')
         device = torch.device(device)
         return AutoModelForSeq2SeqLM.from_pretrained(pretrained_model_name_or_path,
-                                                          *args, **kwargs).to(device).eval()
+                                                     *args, **kwargs).to(device).eval()
 
     @staticmethod
     def get_tokenizer(pretrained_model_name_or_path: str,
@@ -90,23 +91,23 @@ class MonoT5(Reranker):
             AutoTokenizer.from_pretrained(pretrained_model_name_or_path, use_fast=False, *args, **kwargs),
             batch_size=batch_size
         )
+
     @staticmethod
     def get_prediction_tokens(pretrained_model_name_or_path: str,
-            tokenizer, token_false, token_true):
+                              tokenizer, token_false, token_true):
         if not (token_false and token_true):
             if pretrained_model_name_or_path in prediction_tokens:
                 token_false, token_true = prediction_tokens[pretrained_model_name_or_path]
                 token_false_id = tokenizer.tokenizer.get_vocab()[token_false]
-                token_true_id  = tokenizer.tokenizer.get_vocab()[token_true]
+                token_true_id = tokenizer.tokenizer.get_vocab()[token_true]
                 return token_false_id, token_true_id
             else:
                 raise Exception(f"We don't know the indexes for the non-relevant/relevant tokens for\
                         the checkpoint {pretrained_model_name_or_path} and you did not provide any.")
         else:
             token_false_id = tokenizer.tokenizer.get_vocab()[token_false]
-            token_true_id  = tokenizer.tokenizer.get_vocab()[token_true]
+            token_true_id = tokenizer.tokenizer.get_vocab()[token_true]
             return token_false_id, token_true_id
-
 
     def rescore(self, query: Query, texts: List[Text]) -> List[Text]:
         texts = deepcopy(texts)
@@ -132,16 +133,16 @@ class MonoT5(Reranker):
 
 class RankLLaMA(Reranker):
     def __init__(self,
-                 pretrained_model_name_or_path: str  = 'castorini/rankllama-v1-7b-lora-passage',
+                 pretrained_model_name_or_path: str = 'castorini/rankllama-v1-7b-lora-passage',
                  model: PeftModel = None,
                  tokenizer: AutoTokenizer = None,
-                 use_amp = False,
-                 token_false = None,
-                 token_true  = None):
+                 use_amp=False,
+                 token_false=None,
+                 token_true=None):
         self.model = model or self.get_model(pretrained_model_name_or_path)
         self.tokenizer = tokenizer or self.get_tokenizer(pretrained_model_name_or_path)
         self.token_false_id, self.token_true_id = self.get_prediction_tokens(
-                pretrained_model_name_or_path, self.tokenizer, token_false, token_true)
+            pretrained_model_name_or_path, self.tokenizer, token_false, token_true)
         self.pretrained_model_name_or_path = pretrained_model_name_or_path
         self.device = next(self.model.parameters(), None).device
         self.use_amp = use_amp
@@ -158,8 +159,7 @@ class RankLLaMA(Reranker):
 
     @staticmethod
     def get_tokenizer(pretrained_model_name_or_path: str, *args, batch_size: int = 8, **kwargs):
-        # return AutoTokenizer.from_pretrained('meta-llama/Llama-2-7b-hf')
-        return AutoTokenizer.from_pretrained('/data/wyx/.cache/huggingface/hub/Llama-2-7b-hf')
+        return AutoTokenizer.from_pretrained('meta-llama/Llama-2-7b-hf')
 
     @staticmethod
     def get_prediction_tokens(pretrained_model_name_or_path: str, tokenizer, token_false, token_true):
@@ -167,22 +167,22 @@ class RankLLaMA(Reranker):
             if pretrained_model_name_or_path in prediction_tokens:
                 token_false, token_true = prediction_tokens[pretrained_model_name_or_path]
                 token_false_id = tokenizer.get_vocab()[token_false]
-                token_true_id  = tokenizer.get_vocab()[token_true]
+                token_true_id = tokenizer.get_vocab()[token_true]
                 return token_false_id, token_true_id
             else:
                 raise Exception(f"We don't know the indexes for the non-relevant/relevant tokens for\
                         the checkpoint {pretrained_model_name_or_path} and you did not provide any.")
         else:
             token_false_id = tokenizer.get_vocab()[token_false]
-            token_true_id  = tokenizer.get_vocab()[token_true]
+            token_true_id = tokenizer.get_vocab()[token_true]
             return token_false_id, token_true_id
-
 
     def rescore(self, query: Query, texts: List[Text]) -> List[Text]:
         texts = deepcopy(texts)
 
         for passage in texts:
-            inputs = self.tokenizer(f'query: {query.text}', f'document: {passage.text}', return_tensors='pt').to(self.device)
+            inputs = self.tokenizer(f'query: {query.text}', f'document: {passage.text}', return_tensors='pt').to(
+                self.device)
 
             # Run the model forward
             with torch.no_grad():
@@ -194,11 +194,31 @@ class RankLLaMA(Reranker):
         return texts
 
 
+class BgeReranker(Reranker):
+    def __init__(self,
+                 pretrained_model_name_or_path: str = 'BAAI/bge-reranker-v2-m3',
+                 model: PeftModel = None):
+        self.model = model or self.get_model(pretrained_model_name_or_path)
+        self.pretrained_model_name_or_path = pretrained_model_name_or_path
+
+    @staticmethod
+    def get_model(pretrained_model_name_or_path: str, *args, device: str = None, **kwargs):
+        return FlagReranker(pretrained_model_name_or_path, use_fp16=True)
+
+    def rescore(self, query: Query, texts: List[Text]) -> List[Text]:
+        texts = deepcopy(texts)
+
+        for passage in texts:
+            passage.score = self.model.compute_score([query.text, passage.text])
+
+        return texts
+
+
 class DuoT5(Reranker):
     def __init__(self,
                  model: T5ForConditionalGeneration = None,
                  tokenizer: QueryDocumentBatchTokenizer = None,
-                 use_amp = False):
+                 use_amp=False):
         self.model = model or self.get_model()
         self.tokenizer = tokenizer or self.get_tokenizer()
         self.device = next(self.model.parameters(), None).device
@@ -253,7 +273,7 @@ class DuoT5_3B_Med(Reranker):
     def __init__(self,
                  model: T5ForConditionalGeneration = None,
                  tokenizer: QueryDocumentBatchTokenizer = None,
-                 use_amp = False):
+                 use_amp=False):
         self.model = model or self.get_model()
         self.tokenizer = tokenizer or self.get_tokenizer()
         self.device = next(self.model.parameters(), None).device
@@ -355,7 +375,7 @@ class MonoBERT(Reranker):
     def __init__(self,
                  model: PreTrainedModel = None,
                  tokenizer: PreTrainedTokenizer = None,
-                 use_amp = False):
+                 use_amp=False):
         self.model = model or self.get_model()
         self.tokenizer = tokenizer or self.get_tokenizer()
         self.device = next(self.model.parameters(), None).device
@@ -456,4 +476,4 @@ class SentenceTransformersReranker(Reranker):
             text.score = score.item()
 
         return texts
-        
+

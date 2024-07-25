@@ -19,7 +19,8 @@ from pygaggle.pygaggle.rerank.transformer import (
     MonoT5,
     DuoT5,
     MonoBERT,
-    RankLLaMA
+    RankLLaMA,
+    BgeReranker
 )
 from pygaggle.pygaggle.rerank.random import RandomReranker
 from pygaggle.pygaggle.rerank.similarity import CosineSimilarityMatrixProvider
@@ -37,9 +38,10 @@ from peft import PeftModel, PeftConfig
 
 
 SETTINGS = MsMarcoSettings()
-METHOD_CHOICES = ('transformer', 'bm25', 't5', 'seq_class_transformer', 'llama',
+METHOD_CHOICES = ('transformer', 'bm25', 't5', 'seq_class_transformer', 'llama', 'bge_reranker',
                   'random', 'duo_t5')
 
+# os.environ['CUDA_VISIBLE_DEVICES'] = '4,5,6,7'
 
 
 class PassageRankingEvaluationOptions(BaseModel):
@@ -148,6 +150,10 @@ def construct_llama(options: PassageRankingEvaluationOptions) -> Reranker:
     # return RankLLaMA(device=options.device)
 
 
+def construct_bge_reranker(options: PassageRankingEvaluationOptions) -> Reranker:
+    return BgeReranker()
+
+
 def main():
     apb = ArgumentParserBuilder()
     apb.add_opts(opt('--task', type=str, default='msmarco'),
@@ -184,6 +190,7 @@ def main():
                          duo_t5=construct_duo_t5,
                          seq_class_transformer=construct_seq_class_transformer,
                          llama=construct_llama,
+                         bge_reranker=construct_bge_reranker,
                          random=lambda _: RandomReranker())
     reranker = construct_map[options.method](options)
     writer = MsMarcoWriter(args.output_file, args.overwrite_output)
