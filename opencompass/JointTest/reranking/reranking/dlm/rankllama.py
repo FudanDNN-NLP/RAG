@@ -16,12 +16,7 @@ def rankllama_rerank(model, tokenizer, query, docs):
     # Load the tokenizer and model
     # tokenizer = AutoTokenizer.from_pretrained('meta-llama/Llama-2-7b-hf')
     # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    # tokenizer = AutoTokenizer.from_pretrained('/data/wyx/.cache/huggingface/hub/Llama-2-7b-hf')
     # model = get_model('castorini/rankllama-v1-7b-lora-passage', device)
-
-    # Define a query-passage pair
-    # query = "What is llama?"
-    # passage = "The llama is a domesticated South American camelid, widely used as a meat and pack animal by Andean cultures since the pre-Columbian era."
 
     # Tokenize the query-passage pair
     scores = []
