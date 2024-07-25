@@ -125,7 +125,6 @@ class EncodeDataset(Dataset):
 def main(model, tokenizer, args):
     # model = BertLMHeadModel.from_pretrained("ielab/TILDE", cache_dir='./cache')
     # tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', use_fast=True, cache_dir='./cache')
-    # tokenizer = BertTokenizer.from_pretrained("/data/wyx/.cache/huggingface/hub/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594")
     model.eval().to(DEVICE)
     with open(os.path.join(args['output_dir'], f"collection-tilde-expanded-top{args['topk']}.jsonl"), "w+") as wf:
         _, bad_ids = clean_vocab(tokenizer)
