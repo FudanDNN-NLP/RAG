@@ -140,7 +140,6 @@ def chunk_to_nodes(root_dir, llm, chunk_size, chunk_overloop,nodes_storage_path,
     transformations.insert(0,splitter)
     pipeline = IngestionPipeline(transformations=transformations)
     total_nodes = pipeline.run(documents=documents)
-    #进行node的存取
     storage_nodes(total_nodes, nodes_storage_path)
     generate_fintune_dataset(total_nodes, fintune_dataset_path)
 

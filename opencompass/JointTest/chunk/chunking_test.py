@@ -19,9 +19,7 @@ from llama_index.core import Settings
 from llama_index.core import SimpleKeywordTableIndex
 from llama_index.core.schema import MetadataMode,IndexNode,TextNode
 from tqdm import tqdm
-# from llama_index.vector_stores.deeplake import DeepLakeVectorStore
 from llama_index.core.indices import keyword_table
-#请求openai存在延迟，使用协程
 nest_asyncio.apply()
 from llama_index.core.node_parser import(
     TokenTextSplitter,
@@ -148,7 +146,7 @@ if args.testsize:
 else:
     df = pd.DataFrame(columns=["chunkmanner","Average_Response_time","Average_Faithfulness","Average_Relevancy"])
     for man in args.chunkmanners:
-        print(f"正在处理{man}")
+        print(f"dealing with {man}")
         splitter = None
         query_engine = None
         nodes = None
@@ -250,7 +248,7 @@ else:
             )
             nodes = pipeline.run(documents=documents)   
         else:
-            print("输出参数存在错误")
+            print("parameter error")
             break
 
 
