@@ -1,31 +1,21 @@
-import os
 import re
 import time
 import json
-import argparse
 import pandas as pd
 from tqdm import tqdm
-from line_profiler import LineProfiler
-from .nodes2retrievers import (
-    get_keyword_retriever,
-    get_question_retriever,
+# from .nodes2retrievers import (
+from nodes2retrievers import (
     get_text_retriever,
     getnodes,
 )
-from llama_index.vector_stores.milvus import MilvusVectorStore
 from llama_index.core import (
     VectorStoreIndex,
-    ServiceContext,
     StorageContext,
-    Document,
-    load_indices_from_storage,
 )
-import pickle
-from . import data2nodes
+# from . import data2nodes
+import data2nodes
 from llama_index.core import PromptTemplate
-from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core.indices.query.query_transform import HyDEQueryTransform
-
 # from llama_index.retrievers.bm25 import BM25Retriever
 from llama_index.core.evaluation import EmbeddingQAFinetuneDataset
 from langchain.output_parsers import PydanticToolsParser
@@ -33,7 +23,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain_core.pydantic_v1 import BaseModel, Field
 from pyserini.search.lucene import LuceneSearcher
-from pyserini.search.hybrid import HybridSearcher
 
 
 class SubQuery(BaseModel):
@@ -48,9 +37,8 @@ class SubQuery(BaseModel):
 llm, embed_model, _ = data2nodes.setingAll()
 
 
-
 def hyde_generate(query):
-    hyde = HyDEQueryTransform(llm=llm, include_original=True)  
+    hyde = HyDEQueryTransform(llm=llm, include_original=True)
     hydoc = hyde.run(query)
     print(hydoc.custom_embedding_strs)
     # return hydoc.custom_embedding_strs
@@ -72,11 +60,11 @@ def rewrite_query(query: str, llm, num_queries: int = 3):
     results = []
     for query in queries:
         query = re.sub(r"\d+\.", "", query)
-        query = query.strip().replace('"', "")  
+        query = query.strip().replace('"', "")
         results.append(query)
     results = results[:num_queries]
     print(results)
-    return results 
+    return results
 
 
 def generate_sub_questions(query):
@@ -87,16 +75,16 @@ def generate_sub_questions(query):
     you need to answer in order to answer the original question.
 
     If there are acronyms or words you are not familiar with, do not try to rephrase them."""
-    prompt = ChatPromptTemplate.from_messages(  
+    prompt = ChatPromptTemplate.from_messages(
         [
             ("system", system),
             ("human", "{question}"),
         ]
     )
-    llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0)  
-    llm_with_tools = llm.bind_tools([SubQuery]) 
-    parser = PydanticToolsParser(tools=[SubQuery]) 
-    query_analyzer = prompt | llm_with_tools | parser  
+    llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0)
+    llm_with_tools = llm.bind_tools([SubQuery])
+    parser = PydanticToolsParser(tools=[SubQuery])
+    query_analyzer = prompt | llm_with_tools | parser
     sub_questions = query_analyzer.invoke({"question": {query}})
     results = []
     for sub_question in sub_questions:
@@ -112,13 +100,13 @@ def merge_nodes(nodes_list):
             id_score_dict[node.node_id].append(node.score)
         else:
             id_score_dict[node.node_id] = [node.score]
-            merged_nodes.append(node)  
+            merged_nodes.append(node)
     for id, score_list in id_score_dict.items():
-        average_score = max(score_list) 
+        average_score = max(score_list)
         id_score_dict[id] = average_score
     for node in merged_nodes:
         node.score = id_score_dict[node.node_id]
-    sorted_merged_nodes = sorted(merged_nodes, key=lambda x: x.score, reverse=True) 
+    sorted_merged_nodes = sorted(merged_nodes, key=lambda x: x.score, reverse=True)
     return sorted_merged_nodes
 
 
@@ -156,7 +144,9 @@ def calculate_weighted_scores(nodes_list, weights):
     return sorted_weighted_nodes
 
 
-def hybrid_results(dense_results, sparse_results, alpha, k, normalization=True, weight_on_dense=False):
+def hybrid_results(
+    dense_results, sparse_results, alpha, k, normalization=True, weight_on_dense=False
+):
     dense_hits = {node.node_id: node.score for node in dense_results}
     sparse_hits = {hit.docid: hit.score for hit in sparse_results}
     hybrid_result = []
@@ -175,14 +165,21 @@ def hybrid_results(dense_results, sparse_results, alpha, k, normalization=True, 
             sparse_score = sparse_hits[doc]
             dense_score = dense_hits[doc]
         if normalization:
-            sparse_score = (sparse_score - min_sparse_score) / (max_sparse_score - min_sparse_score)
-            dense_score = (dense_score - min_dense_score) / (max_dense_score - min_dense_score)
-
+            sparse_score = (sparse_score - min_sparse_score) / (
+                max_sparse_score - min_sparse_score
+            )
+            dense_score = (dense_score - min_dense_score) / (
+                max_dense_score - min_dense_score
+            )
             # sparse_score = (sparse_score - (min_sparse_score + max_sparse_score) / 2) \
             #                / (max_sparse_score - min_sparse_score)
             # dense_score = (dense_score - (min_dense_score + max_dense_score) / 2) \
             #               / (max_dense_score - min_dense_score)
-        score = alpha * sparse_score + dense_score if not weight_on_dense else sparse_score + alpha * dense_score
+        score = (
+            alpha * sparse_score + dense_score
+            if not weight_on_dense
+            else sparse_score + alpha * dense_score
+        )
         hybrid_result.append((doc, score))
         sorted_hybrid_result = sorted(hybrid_result, key=lambda x: x[1], reverse=True)[:k]
     return sorted_hybrid_result
@@ -229,7 +226,9 @@ def persist_bm25_index(nodes_path):
     nodes = getnodes(nodes_path)[:10]
     storage_context = StorageContext.from_defaults()
     storage_context.docstore.add_documents(nodes)
-    index = VectorStoreIndex(nodes=nodes, storage_context=storage_context, show_progress=True)
+    index = VectorStoreIndex(
+        nodes=nodes, storage_context=storage_context, show_progress=True
+    )
     index.storage_context.persist(persist_dir="./index/test_index")
     end = time.time()
     total_time = end - start
@@ -238,14 +237,29 @@ def persist_bm25_index(nodes_path):
 
 def search(query, search_method, top_k, milvus_id=1):
     if search_method == "original":
-        nodes = get_text_retriever(similarity_top_k=top_k, milvus_id=milvus_id).retrieve(query)
-        top_k_nodes = [{"node_id": node.node_id, "score": node.score, "text": node.text} for node in nodes]
+        nodes = get_text_retriever(
+            similarity_top_k=top_k, milvus_id=milvus_id
+        ).retrieve(query)
+        top_k_nodes = [
+            {"node_id": node.node_id, "score": node.score, "text": node.text}
+            for node in nodes
+        ]
     elif search_method == "hyde":
-        nodes = get_text_retriever(similarity_top_k=top_k, milvus_id=milvus_id).retrieve(hyde_generate(query))
-        top_k_nodes = [{"node_id": node.node_id, "score": node.score, "text": node.text} for node in nodes]
+        nodes = get_text_retriever(
+            similarity_top_k=top_k, milvus_id=milvus_id
+        ).retrieve(hyde_generate(query))
+        top_k_nodes = [
+            {"node_id": node.node_id, "score": node.score, "text": node.text}
+            for node in nodes
+        ]
     elif search_method == "hybrid":
-        searcher = LuceneSearcher("/data/zfr/finalTest/opencompass/JointTest/data/bm25_index")  # BM25
-        dense_results = get_text_retriever(similarity_top_k=top_k, milvus_id=milvus_id).retrieve(query)
+        searcher = LuceneSearcher(
+            # "/data/zfr/finalTest/opencompass/JointTest/data/bm25_index"
+            "/home/xgao/RAG/RAG/data/index/bm25_index"
+        )  # BM25
+        dense_results = get_text_retriever(
+            similarity_top_k=top_k, milvus_id=milvus_id
+        ).retrieve(query)
         sparse_results = searcher.search(query, k=top_k)
         nodes = hybrid_results(dense_results, sparse_results, alpha=0.3, k=top_k)
         top_k_nodes = []
@@ -255,9 +269,14 @@ def search(query, search_method, top_k, milvus_id=1):
             top_k_nodes.append({"node_id": node[0], "score": node[1], "text": contents})
 
     elif search_method == "hyde_with_hybrid":
-        searcher = LuceneSearcher("/data/zfr/finalTest/opencompass/JointTest/data/bm25_index")  # BM25
+        searcher = LuceneSearcher(
+            # "/data/zfr/finalTest/opencompass/JointTest/data/bm25_index"
+            "/home/xgao/RAG/RAG/data/index/bm25_index"
+        )  # BM25
         pseudo_doc = hyde_generate(query).custom_embedding_strs[0]
-        dense_results = get_text_retriever(similarity_top_k=top_k, milvus_id=milvus_id).retrieve(pseudo_doc)
+        dense_results = get_text_retriever(
+            similarity_top_k=top_k, milvus_id=milvus_id
+        ).retrieve(pseudo_doc)
         sparse_results = searcher.search(pseudo_doc, k=top_k)
         nodes = hybrid_results(dense_results, sparse_results, alpha=0.3, k=top_k)
         top_k_nodes = []
@@ -288,11 +307,13 @@ def search(query, search_method, top_k, milvus_id=1):
     elif search_method == "rewrite":
         top_k_nodes = retrieve_nodes(
             rewrite_query(query=query, llm=llm, num_queries=3),
-            get_question_retriever,
+            get_text_retriever,
             top_k,
         )
     elif search_method == "decomposition":
-        top_k_nodes = retrieve_nodes(generate_sub_questions(query), get_text_retriever, top_k)
+        top_k_nodes = retrieve_nodes(
+            generate_sub_questions(query), get_text_retriever, top_k
+        )
     else:
         raise ValueError(f"Unknown search method: {search_method}")
     rank = 1
@@ -301,3 +322,5 @@ def search(query, search_method, top_k, milvus_id=1):
         print(rank, "  ", node["node_id"], "\t", node["score"], "\n", node["text"])  #
         rank += 1
     return top_k_nodes
+
+search("Who is joe biden?", "hybrid", 10)
