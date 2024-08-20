@@ -21,7 +21,7 @@ pip install -e .
 ```
 wget https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
 mkdir ~/java
-tar -zxf  openjdk-11.0.1_linux-x64_bin.tar.gz -C ~/java
+tar -zxf openjdk-11.0.1_linux-x64_bin.tar.gz -C ~/java
 ```
 Add the following statements into `` ~/.bashrc ``:
 ```
