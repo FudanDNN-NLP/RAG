@@ -3,9 +3,7 @@ import time
 import json
 import pandas as pd
 start_time = time.time()
-
 data = pd.read_json("test.json")
-
 
 llm_lingua = PromptCompressor(
     model_name="microsoft/llmlingua-2-xlm-roberta-large-meetingbank",
