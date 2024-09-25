@@ -33,7 +33,7 @@ export JVM_PATH=$JAVA_HOME/lib/server/libjvm.so
 ```
 Then run `` source ~/.bashrc `` to activate the environment variable changes to the current user.
 
-## Reproduction
+## **Reproducibility** 
 You can run the evaluation of best practices and efficiency practices in the paper by:
 ```
 cd RAG/opencompass
