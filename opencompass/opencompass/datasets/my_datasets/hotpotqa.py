@@ -16,9 +16,15 @@ from opencompass.utils.logging import get_logger
 class HotpotQADataset(BaseDataset):
     @staticmethod
     def load():
-        dataset = DatasetDict()
+        import os
+
+        current_directory = os.path.dirname(__file__)
+        parent_directory = os.path.dirname(current_directory)
+        gp_directory = os.path.dirname(parent_directory)
+        ggp_directory = os.path.dirname(gp_directory)
+        file_path = os.path.join(ggp_directory, "data/my_datasets/hotpotqa/hotpot_dev_distractor_v1.json")
         with open(
-            "/data/zfr/RAGGA/opencompass/data/my_datasets/hotpotqa/hotpot_dev_distractor_v1.json",
+            file_path,
             "r",
             encoding="utf-8",
         ) as f:

@@ -14,7 +14,14 @@ class arccDataset(BaseDataset):
 
     @staticmethod
     def load():
-        with open("/data/zfr/finalTest/opencompass/data/my_datasets/arc_c/ARC-Challenge-Test.jsonl", "r", errors="ignore") as in_f:
+        import os
+
+        current_directory = os.path.dirname(__file__)
+        parent_directory = os.path.dirname(current_directory)
+        gp_directory = os.path.dirname(parent_directory)
+        ggp_directory = os.path.dirname(gp_directory)
+        file_path = os.path.join(ggp_directory, "data/my_datasets/arc_c/ARC-Challenge-Test.jsonl")
+        with open(file_path, "r", errors="ignore") as in_f:
             rows = []
             index = 0
             for line in in_f:
@@ -38,4 +45,3 @@ class arccDataset(BaseDataset):
                     }
                 )
             return Dataset.from_list(rows)
-        

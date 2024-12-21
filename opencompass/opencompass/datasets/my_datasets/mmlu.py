@@ -15,8 +15,14 @@ class mmluDataset(BaseDataset):
 
     @staticmethod
     def load(name: str):
+        import os
+
+        current_directory = os.path.dirname(__file__)
+        parent_directory = os.path.dirname(current_directory)
+        gp_directory = os.path.dirname(parent_directory)
+        ggp_directory = os.path.dirname(gp_directory)
         raw_data = []
-        filename = osp.join("/data/zfr/finalTest/opencompass/data/my_datasets/mmlu/", f"{name}_test.csv")
+        filename = osp.join(ggp_directory,"data/my_datasets/mmlu/", f"{name}_test.csv")
         with open(filename, encoding="utf-8") as f:
             reader = csv.reader(f)
             data = list(reader)

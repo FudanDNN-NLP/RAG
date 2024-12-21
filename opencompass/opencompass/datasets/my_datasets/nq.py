@@ -15,7 +15,15 @@ class nqDataset(BaseDataset):
 
     @staticmethod
     def load():
-        with open("/data/zfr/finalTest/opencompass/data/my_datasets/nq/nq-test.qa.csv", "r", encoding="utf-8") as f:
+
+        import os
+
+        current_directory = os.path.dirname(__file__)
+        parent_directory = os.path.dirname(current_directory)
+        gp_directory = os.path.dirname(parent_directory)
+        ggp_directory = os.path.dirname(gp_directory)
+        file_path = os.path.join(ggp_directory, "data/my_datasets/nq/nq-test.qa.csv")
+        with open(file_path, "r", encoding="utf-8") as f:
             reader = csv.reader(f, delimiter="\t")
             raw_data = []
             index = 0

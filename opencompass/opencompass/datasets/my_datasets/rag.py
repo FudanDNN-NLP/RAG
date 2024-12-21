@@ -15,7 +15,15 @@ class ragDataset(BaseDataset):
 
     @staticmethod
     def load():
-        with open("/data/zfr/ragas/rag_test.json", "r", encoding="utf-8") as f:
+        import os
+
+        current_directory = os.path.dirname(__file__)
+        parent_directory = os.path.dirname(current_directory)
+        gp_directory = os.path.dirname(parent_directory)
+        ggp_directory = os.path.dirname(gp_directory)
+        gggp_directory=os.path.dirname(ggp_directory)
+        file_path = os.path.join(gggp_directory, "ragas/rag_test.json")
+        with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
             raw_data = []
             for item in data:

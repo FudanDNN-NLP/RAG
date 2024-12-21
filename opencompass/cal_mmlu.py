@@ -17,8 +17,9 @@ def read_all_json_files(directory):
     return json_data
 
 
+
 # 使用示例
-directory_path = "/data/zfr/finalTest/opencompass/outputs/f_hh_mt_r_s/eval_mmlu/20240615_143153/results/llama-3-8b-ragga-disturb"
+directory_path = "outputs/f_hh_mt_r_s/eval_mmlu/20240615_143153/results/llama-3-8b-ragga-disturb"
 all_json_data = read_all_json_files(directory_path)
 
 total = 0
@@ -33,10 +34,9 @@ for json_content in all_json_data:
 
 print('***************')
 print(num)
-print("asdassda")
 print(total / num)
 
-# directory_path = "/data/zfr/finalTest/opencompass/outputs/f_hyde_mt_r_s/eval_mmlu/20240611_130927/results/llama-3-8b-ragga-disturb"
+# directory_path = "outputs/f_hyde_mt_r_s/eval_mmlu/20240611_130927/results/llama-3-8b-ragga-disturb"
 # all_json_data = read_all_json_files(directory_path)
 
 

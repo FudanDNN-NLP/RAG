@@ -15,8 +15,15 @@ class webQDataset(BaseDataset):
 
     @staticmethod
     def load():
+        import os
+
+        current_directory = os.path.dirname(__file__)
+        parent_directory = os.path.dirname(current_directory)
+        gp_directory = os.path.dirname(parent_directory)
+        ggp_directory = os.path.dirname(gp_directory)
+        file_path = os.path.join(ggp_directory, "data/my_datasets/webquestions/webquestions-test.jsonl")
         with open(
-            "/data/zfr/finalTest/opencompass/data/my_datasets/webquestions/webquestions-test.jsonl",
+            file_path,
             "r",
             encoding="utf-8",
         ) as f:

@@ -254,8 +254,7 @@ def search(query, search_method, top_k, milvus_id=1):
         ]
     elif search_method == "hybrid":
         searcher = LuceneSearcher(
-            # "/data/zfr/finalTest/opencompass/JointTest/data/bm25_index"
-            "/home/xgao/RAG/RAG/data/index/bm25_index"
+            "./data/bm25_index"
         )  # BM25
         dense_results = get_text_retriever(
             similarity_top_k=top_k, milvus_id=milvus_id
@@ -270,8 +269,7 @@ def search(query, search_method, top_k, milvus_id=1):
 
     elif search_method == "hyde_with_hybrid":
         searcher = LuceneSearcher(
-            # "/data/zfr/finalTest/opencompass/JointTest/data/bm25_index"
-            "/home/xgao/RAG/RAG/data/index/bm25_index"
+            "./data/bm25_index"
         )  # BM25
         pseudo_doc = hyde_generate(query).custom_embedding_strs[0]
         dense_results = get_text_retriever(
